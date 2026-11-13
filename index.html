@@ -156,26 +156,78 @@ footer{font-size:.8rem;color:var(--muted)}
 .qc .big{font:800 1.5rem/1.1 var(--f-disp);color:var(--o-p29)}
 .qc p{margin:0;font-size:.92rem}
 .qc a{font-size:.8rem;color:var(--muted)}
+
+/* Arquitectura v2: cabecera breve, estado en una línea, panel único fijo, pestañas por partido en móvil */
+header.top{display:block}
+header.top h1{font-size:clamp(1.6rem,4.2vw,2.5rem);line-height:1.08}
+header.top p{margin:8px 0 0;color:var(--muted);font-size:1.02rem}
+.state{display:flex;flex-wrap:wrap;gap:6px 16px;align-items:center;font-size:.85rem;color:var(--muted);background:var(--paper);border-radius:12px;padding:10px 14px}
+.state b{color:var(--ink)}
+.st-k b{font-family:var(--f-disp);color:var(--accent);font-size:1rem}
+.st-i{display:inline-flex;align-items:center;gap:6px}
+.d{width:10px;height:10px;border-radius:50%;display:inline-block}
+.d1{background:var(--o-p29)} .d2{border:2px dashed var(--o-p29);box-sizing:border-box} .d3{background:var(--line)}
+.st-more{width:100%;background:none;padding:0}
+.st-more summary{font-family:var(--f-body);font-weight:400;font-size:.82rem;color:var(--accent)}
+.st-more p{margin:8px 0 2px;font-size:.85rem}
+.cmp{display:flex;flex-direction:column;gap:12px}
+.cmp>h2{font-family:var(--f-disp);font-size:1.45rem;margin:0}
+.panel{position:sticky;top:0;z-index:6;background:var(--bg);padding:8px 0 6px;border-bottom:1px solid var(--line);display:flex;flex-direction:column;gap:6px;margin-inline:-4px;padding-inline:4px}
+.prow{display:flex;align-items:center;gap:10px;min-width:0}
+.plab{flex:none;width:78px;font-size:.7rem;text-transform:uppercase;letter-spacing:.07em;color:var(--muted);line-height:1.15}
+.plab small{display:block;text-transform:none;letter-spacing:0}
+.chips{display:flex;flex-wrap:wrap;gap:6px;padding:2px;min-width:0;flex:1}
+.chips::-webkit-scrollbar{display:none}
+.topic{flex:none;scroll-snap-align:start;flex-direction:row;padding:7px 12px 7px 9px;border-radius:999px;font-size:.86rem;white-space:nowrap;gap:6px;min-height:0;text-align:left}
+.topic svg{width:18px;height:18px}
+.party{flex:none;white-space:nowrap;padding:6px 12px 6px 9px;font-size:.86rem}
+.hint{margin:0;min-height:0;font-size:.8rem}
+.hint:empty{display:none}
+.tools{display:flex;flex-wrap:wrap;gap:8px 12px;align-items:center}
+.tools input[type=search]{font:inherit;font-size:.95rem;color:var(--ink);background:var(--paper);border:1.5px solid var(--line);border-radius:10px;padding:8px 10px;min-width:0;flex:1 1 240px}
+details.context{padding:10px 16px}
+details.context summary{font-size:.9rem;color:var(--accent)}
+details.context ul{margin:8px 0 2px}
+.legendbox{padding:10px 16px}
+.legendbox summary{font-size:.85rem;font-family:var(--f-body);font-weight:400;color:var(--muted)}
+.legendbox .legend{margin-top:8px}
+.ptabs{display:none}
+@media (max-width:700px){
+ .plab{width:auto;position:absolute;left:-9999px}
+ .chips{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;scroll-snap-type:x proximity}
+ .chips::-webkit-scrollbar{display:none}
+ .flags{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;padding-bottom:2px}
+ .flags::-webkit-scrollbar{display:none}
+ .flag{flex:none;white-space:nowrap}
+ .quim .qgrid{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:10px;scrollbar-width:none;margin-inline:-16px;padding-inline:16px}
+ .quim .qgrid::-webkit-scrollbar{display:none}
+ .quim .qc{flex:0 0 84%;scroll-snap-align:center}
+ .ptabs{display:flex;gap:6px;position:sticky;top:var(--ph,96px);z-index:5;background:var(--bg);padding:6px 0;overflow-x:auto;scrollbar-width:none}
+ .ptab{flex:1 0 auto;font:inherit;font-size:.85rem;font-weight:700;border:0;border-bottom:3px solid transparent;background:none;color:var(--muted);padding:6px 8px;cursor:pointer}
+ .ptab[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--pc)}
+ .cols{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;scrollbar-width:none;margin-inline:-16px;padding-inline:16px}
+ .cols::-webkit-scrollbar{display:none}
+ .cols>.col{flex:0 0 calc(100% - 8px);scroll-snap-align:center}
+ .cols>.none{flex:1}
+}
 </style>
 </head>
 <body>
 <div class="wrap">
-<header>
+<header class="top">
   <div>
     <h1>Qué prometen los partidos el 29-N y qué no cuentan</h1>
-    <p>Elige un tema y hasta cuatro partidos. Cada propuesta lleva su origen, su fuente y una lectura crítica: si ya existe, si le falta cifra o plazo, si depende de las comunidades, si choca con lo que votó el partido, si las cifras no salen.</p>
+    <p>Coste, plazos, lo que ya existe y lo que votaron. Cada dato, con su fuente.</p>
   </div>
-  <div class="count"><b>4 / 13</b><span>programas 29-N presentados</span></div>
 </header>
 
-<div class="context" role="note" style="margin-bottom:14px">
-  <h3>Cómo leemos las propuestas</h3>
-  <p style="margin:0;max-width:90ch">Nos fijamos en lo que los programas prometen y en lo que no cuentan: cuánto cuesta, quién lo paga, en qué plazo, si ya existe, si depende de otra administración y si choca con lo que el partido votó o con las cifras oficiales. Cada observación lleva su fuente y se puede comprobar. Una promesa solo se marca como «quimera» cuando las cifras lo muestran, con la cuenta a la vista. Si encuentras un error, escríbenos y lo corregimos en público.</p>
-</div>
-
-<div class="status" role="note">
-  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 7v6M12 16.5v.5"/></svg>
-  <p><b>Actualizado el 13 de noviembre de 2026.</b> PP (10 de noviembre, «La reconstrucción nacional», 249 medidas) y Vox (12 de noviembre, «Es sentido común», 115 medidas) tienen su columna sacada del texto oficial, con número de medida y página enlazada al documento. ERC (5 de noviembre, 258 propuestas) y PNV (9 de noviembre) han presentado el suyo, pero no hemos encontrado un documento oficial accesible. Sus propuestas proceden de resúmenes de prensa y se marcan con recuadro discontinuo. PSOE, Frente Amplio, Podemos y el resto aún no lo han publicado: mostramos sus compromisos públicos y su acción de gobierno, con la misma lectura crítica, y añadiremos cada programa el día que salga. Para ellos se muestran documentos y declaraciones de 2026, proposiciones de ley y programas anteriores, cada uno con su etiqueta.</p>
+<div class="state" role="note">
+  <span class="st-k">Programas 29-N <b>4 / 13</b></span>
+  <span class="st-i"><i class="d d1"></i>Texto oficial: <b>PP, Vox</b></span>
+  <span class="st-i"><i class="d d2"></i>Vía prensa: <b>ERC, PNV</b></span>
+  <span class="st-i"><i class="d d3"></i>Sin programa aún: <b>PSOE, Frente Amplio, Podemos y resto</b></span>
+  <details class="st-more"><summary>Qué significa</summary>
+  <p><b>Actualizado el 13 de noviembre de 2026.</b> PP (10 de noviembre, «La reconstrucción nacional», 249 medidas) y Vox (12 de noviembre, «Es sentido común», 115 medidas) tienen su columna sacada del texto oficial, con número de medida y página enlazada al documento. ERC (5 de noviembre, 258 propuestas) y PNV (9 de noviembre) han presentado el suyo, pero no hemos encontrado un documento oficial accesible: sus propuestas proceden de resúmenes de prensa y se marcan con recuadro discontinuo. PSOE, Frente Amplio, Podemos y el resto aún no lo han publicado: mostramos sus compromisos públicos y su acción de gobierno, con la misma lectura crítica, y añadiremos cada programa el día que salga.</p></details>
 </div>
 
 <section class="quim" aria-labelledby="qt">
@@ -227,27 +279,22 @@ footer{font-size:.8rem;color:var(--muted)}
 </section>
 
 
-<section aria-labelledby="t1">
-  <h2 id="t1"><span class="n">1</span>Elige el tema</h2>
-  <div class="topics" id="topics"></div>
-</section>
-
-<section aria-labelledby="t2">
-  <h2 id="t2"><span class="n">2</span>Elige partidos (máximo 4)</h2>
-  <div class="parties" id="parties"></div>
-  <p class="hint" id="hint" aria-live="polite"></p>
-</section>
-
-<section id="res" aria-labelledby="t3" style="display:flex;flex-direction:column;gap:14px">
-  <h2 id="t3"><span class="n">3</span>Compara</h2>
-  <div class="bar">
-    <label for="tsel">Tema</label>
-    <select id="tsel"></select>
-    <input type="search" id="q" placeholder="Buscar en todos los temas: «dentista», «alquiler», «IRPF»…" aria-label="Buscar en todas las propuestas">
+<section id="res" class="cmp" aria-labelledby="t3">
+  <h2 id="t3">Compara</h2>
+  <div class="panel">
+    <div class="prow"><span class="plab">Tema</span><div class="chips" id="topics" role="toolbar" aria-label="Tema"></div></div>
+    <div class="prow"><span class="plab">Partidos <small>máx. 4</small></span><div class="chips" id="parties" role="toolbar" aria-label="Partidos"></div></div>
+    <p class="hint" id="hint" aria-live="polite"></p>
+  </div>
+  <div class="tools">
+    <input type="search" id="q" placeholder="Buscar en todos los temas: «alquiler», «IRPF», «dentista»…" aria-label="Buscar en todas las propuestas">
     <label class="switch"><input type="checkbox" id="crit" checked> Lectura crítica</label>
     <div class="flags" id="flags" aria-label="Ver solo propuestas con esta observación"></div>
   </div>
-  <div class="context" id="context" hidden></div>
+  <details class="context" id="context" hidden></details>
+  <div class="ptabs" id="ptabs" role="tablist" aria-label="Partido visible"></div>
+  <div class="cols" id="cols" aria-live="polite"></div>
+  <details class="legendbox"><summary>Qué significa cada color</summary>
   <div class="legend">
     <span class="o-p29"><span class="sw"></span>Programa 29-N (texto oficial)</span>
     <span class="o-p29"><span class="sw"></span>Programa 29-N vía prensa (recuadro discontinuo)</span>
@@ -256,8 +303,7 @@ footer{font-size:.8rem;color:var(--muted)}
     <span class="o-pl"><span class="sw"></span>Proposición de ley</span>
     <span class="o-gob"><span class="sw"></span>Acción de gobierno / ley</span>
     <span class="o-pa"><span class="sw"></span>Programa anterior (2023 o antes)</span>
-  </div>
-  <div class="cols" id="cols" aria-live="polite"></div>
+  </div></details>
 </section>
 
 <section class="mapbox" aria-labelledby="t4">
@@ -268,6 +314,7 @@ footer{font-size:.8rem;color:var(--muted)}
 
 <details>
   <summary>Cómo se hace la lectura crítica</summary>
+  <p>Nos fijamos en lo que los programas prometen y en lo que no cuentan: cuánto cuesta, quién lo paga, en qué plazo, si ya existe, si depende de otra administración y si choca con lo que el partido votó o con las cifras oficiales. Una promesa solo se marca como «quimera» cuando las cifras lo muestran, con la cuenta a la vista. Si encuentras un error, escríbenos y lo corregimos en público.</p>
   <p>Cada observación responde a una pregunta comprobable, la misma para todos los partidos. No se valora si una propuesta es buena o mala. Se informa de lo que el lector necesita para juzgarla.</p>
   <dl id="method"></dl>
   <p>Solo se pone una observación cuando hay un hecho que la respalde (una ley, una votación, una fecha o lo que dice la propia fuente). Si falta, no se pone. Que un partido tenga más observaciones suele indicar que hay más documentación suya, no que sea peor.</p>
@@ -881,7 +928,7 @@ function save(){try{localStorage.setItem('c29n2',JSON.stringify({t:topic,p:sel,c
 
 function drawTopics(){
  $('topics').innerHTML=TOPICS.map(([k,n])=>`<button class="topic" id="tp-${k}" data-k="${k}" aria-pressed="${k===topic&&!q}">${ICON[k]}<span>${n}</span></button>`).join('');
- $('tsel').innerHTML=TOPICS.map(([k,n])=>`<option value="${k}"${k===topic?' selected':''}>${n}</option>`).join('');
+ const a=$('tp-'+topic);if(a&&!q){const c=$('topics');const l=a.offsetLeft-c.offsetLeft;if(l<c.scrollLeft||l+a.offsetWidth>c.scrollLeft+c.clientWidth)c.scrollTo({left:l-12,behavior:'smooth'})}
 }
 function drawParties(){
  $('parties').innerHTML=PARTIES.map(([k,n,c])=>`<button class="party" id="pa-${k}" data-k="${k}" style="--pc:${c}" aria-pressed="${sel.includes(k)}"><i></i>${n}</button>`).join('');
@@ -904,11 +951,12 @@ function drawFlags(){
 }
 function drawContext(){
  const c=!q&&CLAVES[topic];$('context').hidden=!c;
- if(c)$('context').innerHTML=`<h3>Antes de comparar: ${esc(tname(topic))}</h3><ul>${c.map(x=>`<li>${esc(x)}</li>`).join('')}</ul>`;
+ if(c)$('context').innerHTML=`<summary>Contexto: ${esc(tname(topic))} (${c.length} dato${c.length>1?'s':''})</summary><ul>${c.map(x=>`<li>${esc(x)}</li>`).join('')}</ul>`;
 }
 function drawCols(){
  const cols=$('cols');cols.style.setProperty('--k',Math.max(sel.length,1));
- if(!sel.length){cols.innerHTML='<div class="none"><b>Elige al menos un partido</b>En el paso 2.</div>';return}
+ if(!sel.length){cols.innerHTML='<div class="none"><b>Elige al menos un partido</b>Arriba, en «Partidos».</div>';$('ptabs').innerHTML='';return}
+ $('ptabs').innerHTML=sel.map((k,i)=>{const p=PARTIES.find(x=>x[0]===k);return `<button class="ptab" role="tab" data-i="${i}" style="--pc:${p[2]}" aria-selected="${i===0}">${p[1]}</button>`}).join('');
  cols.innerHTML=sel.map(k=>{
   const p=PARTIES.find(x=>x[0]===k);const list=itemsFor(k);
   const tally={};list.forEach(([,it])=>it[3].forEach(n=>{if(n[0]!=='ctx')tally[n[0]]=(tally[n[0]]||0)+1}));
@@ -928,14 +976,13 @@ function drawMap(){
 function drawMethod(){$('method').innerHTML=Object.values(FLAGS).map(([l,d])=>`<dt>${l}</dt><dd>${esc(d)}</dd>`).join('')}
 function refresh(){drawTopics();drawContext();drawFlags();drawCols();save()}
 function showRes(){
- const r=$('res').getBoundingClientRect();
- if(r.top>innerHeight*0.6||r.top<-50)$('res').scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'start'});
+ const r=$('cols').getBoundingClientRect();
+ if(r.top>innerHeight*0.7||r.top<0)$('res').scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'start'});
  const c=$('cols');c.classList.remove('flash');void c.offsetWidth;c.classList.add('flash');
 }
 function setTopic(k){topic=k;q='';$('q').value='';only=null;refresh();showRes()}
 
 $('topics').addEventListener('click',e=>{const b=e.target.closest('.topic');if(b)setTopic(b.dataset.k)});
-$('tsel').addEventListener('change',e=>setTopic(e.target.value));
 $('parties').addEventListener('click',e=>{const b=e.target.closest('.party');if(!b)return;const k=b.dataset.k;
  if(sel.includes(k)){sel=sel.filter(x=>x!==k);$('hint').textContent=''}
  else if(sel.length>=4){$('hint').textContent='Ya hay cuatro partidos. Quita uno para añadir otro.';return}
@@ -948,6 +995,10 @@ $('map').addEventListener('click',e=>{const td=e.target.closest('td');if(!td)ret
  if(!sel.includes(p)){if(sel.length>=4)sel.pop();sel.push(p)}drawParties();setTopic(td.dataset.t)});
 $('crit').checked=crit;
 drawParties();drawMap();drawMethod();refresh();
+/* pestañas de partido (móvil) */
+$('ptabs').addEventListener('click',e=>{const b=e.target.closest('.ptab');if(!b)return;const col=$('cols').children[+b.dataset.i];if(col)$('cols').scrollTo({left:col.offsetLeft-$('cols').offsetLeft-16,behavior:'smooth'})});
+$('cols').addEventListener('scroll',()=>{const c=$('cols');const i=Math.round(c.scrollLeft/Math.max(1,(c.children[0]||{}).offsetWidth+12));[...$('ptabs').children].forEach((t,j)=>t.setAttribute('aria-selected',j===i))},{passive:true});
+const setPH=()=>document.documentElement.style.setProperty('--ph',document.querySelector('.panel').offsetHeight+'px');setPH();addEventListener('resize',setPH);
 </script>
 </body>
 </html>
