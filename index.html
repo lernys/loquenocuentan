@@ -140,6 +140,22 @@ footer{font-size:.8rem;color:var(--muted)}
 @media (max-width:860px){.cols{grid-template-columns:repeat(min(var(--k),2),minmax(0,1fr))}}
 @media (max-width:560px){.cols{grid-template-columns:1fr}header{grid-template-columns:1fr}.count{text-align:left}details dl{grid-template-columns:1fr}}
 @media (prefers-reduced-motion:reduce){.flash{animation:none}}
+
+.quim{display:flex;flex-direction:column;gap:12px;margin:0 0 16px}
+.quim>h2{font-family:var(--f-disp);font-size:1.45rem;margin:0}
+.quim>p{margin:0;color:var(--muted);max-width:80ch}
+.qgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px}
+.qc{background:var(--paper);border-radius:14px;padding:16px;border-top:6px solid var(--pc);display:flex;flex-direction:column;gap:10px}
+.qc .who{font:700 .78rem var(--f-body);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.qc h3{font-family:var(--f-disp);font-size:1.12rem;line-height:1.2;margin:0}
+.qc .stamp{align-self:flex-start;background:var(--o-p29);color:#fff;font:800 .8rem var(--f-disp);padding:4px 10px;border-radius:6px;letter-spacing:.02em}
+.qb{display:flex;flex-direction:column;gap:4px;font-size:.85rem}
+.qb .bar{height:14px;border-radius:4px;background:var(--o-p29)}
+.qb .bar.k{background:var(--ink);opacity:.75}
+.qb b{font-family:var(--f-disp);font-size:1.05rem}
+.qc .big{font:800 1.5rem/1.1 var(--f-disp);color:var(--o-p29)}
+.qc p{margin:0;font-size:.92rem}
+.qc a{font-size:.8rem;color:var(--muted)}
 </style>
 </head>
 <body>
@@ -161,6 +177,44 @@ footer{font-size:.8rem;color:var(--muted)}
   <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 7v6M12 16.5v.5"/></svg>
   <p><b>Actualizado el 13 de noviembre de 2026.</b> PP (10 de noviembre, «La reconstrucción nacional», 249 medidas) y Vox (12 de noviembre, «Es sentido común», 115 medidas) tienen su columna sacada del texto oficial, con número de medida y página enlazada al documento. ERC (5 de noviembre, 258 propuestas) y PNV (9 de noviembre) han presentado el suyo, pero no hemos encontrado un documento oficial accesible. Sus propuestas proceden de resúmenes de prensa y se marcan con recuadro discontinuo. PSOE, Frente Amplio, Podemos y el resto aún no lo han publicado: mostramos sus compromisos públicos y su acción de gobierno, con la misma lectura crítica, y añadiremos cada programa el día que salga. Para ellos se muestran documentos y declaraciones de 2026, proposiciones de ley y programas anteriores, cada uno con su etiqueta.</p>
 </div>
+
+<section class="quim" aria-labelledby="qt">
+  <h2 id="qt">Las cuentas que no salen</h2>
+  <p>Promesas que, con las cifras oficiales en la mano, no pueden cumplirse en una legislatura. Misma regla para todos los partidos: cuando el ritmo exigido multiplica el máximo reciente, se marca como quimera.</p>
+  <div class="qgrid">
+    <article class="qc" style="--pc:#1f6fc4">
+      <span class="who">PP · medida 144</span>
+      <h3>«Construir un millón de viviendas»</h3>
+      <div class="qb"><span>Harían falta cada año</span><b>250.000</b><div class="bar" style="width:100%"></div></div>
+      <div class="qb"><span>Se terminaron en 2025</span><b>92.000</b><div class="bar k" style="width:36.8%"></div></div>
+      <span class="big">2,7 veces el ritmo actual</span>
+      <p>Sin plazo, sin presupuesto y sin decir cuántas serían públicas. El suelo y las licencias no dependen del Estado. En enero hablaba de «iniciar» un millón; ahora, de «construir».</p>
+      <span class="stamp">QUIMERA</span>
+      <a href="https://www.eldebate.com/economia/20260618/banco-espana-cifra-750000-deficit-vivienda-doble-italia-pide-simplificar-regulacion_429981.html" target="_blank" rel="noopener">Fuente: Banco de España, Informe Anual 2025 ↗</a>
+    </article>
+    <article class="qc" style="--pc:#d93a26">
+      <span class="who">Vox · medidas 3 y 43</span>
+      <h3>«Rebaja masiva» del IRPF, el IVA y Sociedades</h3>
+      <div class="qb"><span>Coste del IRPF según su propio economista</span><b>46.000 millones</b><div class="bar k" style="width:54%"></div></div>
+      <div class="qb"><span>Coste según Hacienda</span><b>85.000 millones</b><div class="bar" style="width:100%"></div></div>
+      <span class="big">0 € cuantificados en el programa</span>
+      <p>Lo paga con recortes: «se recortarán todos los gastos superfluos de la Administración hasta el mínimo imprescindible». No dice cuáles. Quien cobra el salario mínimo no ahorraría nada.</p>
+      <span class="stamp">CUENTA SIN CERRAR</span>
+      <a href="https://www.politicaelectoral.com/es/espana/generales-2026/nacional/vox" target="_blank" rel="noopener">Fuente: Política Electoral, con datos de Vox y Hacienda ↗</a>
+    </article>
+    <article class="qc" style="--pc:#c2185b">
+      <span class="who">Frente Amplio · programa 2023</span>
+      <h3>Dos millones de viviendas públicas en diez años</h3>
+      <div class="qb"><span>Harían falta cada año, solo públicas</span><b>200.000</b><div class="bar" style="width:100%"></div></div>
+      <div class="qb"><span>Se terminaron en 2025, de todo tipo</span><b>92.000</b><div class="bar k" style="width:46%"></div></div>
+      <span class="big">Más del doble de todo lo que se construye</span>
+      <p>Con el 1 % del PIB al año. La misma cuenta que al PP: la promesa supera con mucho lo que el país construye hoy.</p>
+      <span class="stamp">QUIMERA</span>
+      <a href="https://www.politicaelectoral.com/es/espana/generales-2026/nacional/sumar" target="_blank" rel="noopener">Fuente: Política Electoral ↗</a>
+    </article>
+  </div>
+</section>
+
 
 <section aria-labelledby="t1">
   <h2 id="t1"><span class="n">1</span>Elige el tema</h2>
@@ -259,7 +313,7 @@ const FLAGS={
  otro:['Otro ámbito','¿Procede de un programa autonómico, europeo o muy antiguo, no de las generales?'],
  falso:['Dato desmentido','¿Una cifra que usa el partido choca con los datos oficiales? Misma regla para todos los partidos.'],
  derechos:['Recorta derechos','¿Choca con derechos fundamentales, la Constitución, el derecho europeo o sentencias de los tribunales? Misma regla para todos los partidos.'],
- inviable:['Inviable según las cifras','¿El ritmo que exige la propuesta supera varias veces el máximo reciente? Misma regla para todos los partidos.'],
+ inviable:['Quimera: las cifras no salen','¿El ritmo que exige la propuesta supera varias veces el máximo reciente? Misma regla para todos los partidos.'],
  ctx:['Contexto','Dato que ayuda a situar la propuesta, sin juicio.']
 };
 
