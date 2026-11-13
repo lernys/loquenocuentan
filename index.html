@@ -1,0 +1,876 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Lo que no cuentan · Comparador crítico 29-N</title>
+<meta name="description" content="Qué prometen PP, PSOE, Vox, Frente Amplio y el resto para el 29-N, y qué no cuentan: coste, plazos, lo que ya existe, lo que han votado. Cada dato, con su fuente.">
+<link rel="canonical" href="https://loquenocuentan.com/">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_ES">
+<meta property="og:site_name" content="Lo que no cuentan">
+<meta property="og:title" content="Qué prometen los partidos el 29-N y qué no cuentan">
+<meta property="og:description" content="Qué prometen PP, PSOE, Vox, Frente Amplio y el resto para el 29-N, y qué no cuentan: coste, plazos, lo que ya existe, lo que han votado. Cada dato, con su fuente.">
+<meta property="og:url" content="https://loquenocuentan.com/">
+<meta property="og:image" content="https://loquenocuentan.com/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Qué prometen los partidos el 29-N y qué no cuentan">
+<meta name="twitter:description" content="Qué prometen PP, PSOE, Vox, Frente Amplio y el resto para el 29-N, y qué no cuentan: coste, plazos, lo que ya existe, lo que han votado. Cada dato, con su fuente.">
+<meta name="twitter:image" content="https://loquenocuentan.com/og.png">
+<meta name="theme-color" content="#0f6e74">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&display=swap">
+<style>
+/* Layout: estado + tema + partidos + barra fija de lectura (tema, buscador, filtros) + columnas con propuesta y lectura crítica; debajo, mapa de silencios y método */
+:root{
+  --bg:#f3f5f7; --paper:#ffffff; --ink:#18212b; --muted:#5a6673; --line:#d8dee5;
+  --accent:#0f6e74; --accent-soft:#dff0f0; --warn-bg:#fff3d6; --warn-ink:#6b4a00;
+  --crit:#8a4b00; --crit-bg:#fff7ea; --crit-line:#e9c48c;
+  --o-p29:#b3261e; --o-p29-bg:#fde8e6; --o-pa:#5b6b80; --o-doc:#1f7a46; --o-dec:#a35b00; --o-pl:#6b3fa0; --o-gob:#0f6e74;
+  --o-pa-bg:#e8ecf2; --o-doc-bg:#e0f2e7; --o-dec-bg:#fbeedb; --o-pl-bg:#eee6f7; --o-gob-bg:#dff0f0;
+  --empty:#eef1f4; --hatch:#dde3e9;
+  --f-disp:"Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+  --f-body:"Atkinson Hyperlegible", "Segoe UI", system-ui, sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0f1418; --paper:#172027; --ink:#e6ecf1; --muted:#9aa7b3; --line:#2b3741;
+  --accent:#5cc3c8; --accent-soft:#163338; --warn-bg:#3a2e12; --warn-ink:#f2d69a;
+  --crit:#f2c27a; --crit-bg:#2a2214; --crit-line:#6b5226;
+  --o-p29:#ff9a8f; --o-p29-bg:#3a1c1a; --o-pa:#a9b6c7; --o-doc:#7fd3a0; --o-dec:#f0b45e; --o-pl:#c4a3ee; --o-gob:#5cc3c8;
+  --o-pa-bg:#222c37; --o-doc-bg:#18301f; --o-dec-bg:#33270f; --o-pl-bg:#2a2038; --o-gob-bg:#163338;
+  --empty:#1b252d; --hatch:#24303a; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0f1418; --paper:#172027; --ink:#e6ecf1; --muted:#9aa7b3; --line:#2b3741;
+  --accent:#5cc3c8; --accent-soft:#163338; --warn-bg:#3a2e12; --warn-ink:#f2d69a;
+  --crit:#f2c27a; --crit-bg:#2a2214; --crit-line:#6b5226;
+  --o-p29:#ff9a8f; --o-p29-bg:#3a1c1a; --o-pa:#a9b6c7; --o-doc:#7fd3a0; --o-dec:#f0b45e; --o-pl:#c4a3ee; --o-gob:#5cc3c8;
+  --o-pa-bg:#222c37; --o-doc-bg:#18301f; --o-dec-bg:#33270f; --o-pl-bg:#2a2038; --o-gob-bg:#163338;
+  --empty:#1b252d; --hatch:#24303a; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:16px;line-height:1.5;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:20px 48px}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--bg)}
+.wrap{max-width:1180px;margin:0 auto;display:flex;flex-direction:column;gap:28px}
+h1,h2,h3{font-family:var(--f-disp);margin:0;text-wrap:balance;letter-spacing:-.01em}
+h1{font-size:clamp(1.7rem,4vw,2.5rem);font-weight:800}
+h2{font-size:1.15rem;font-weight:700;display:flex;gap:10px;align-items:baseline}
+h2 .n{font-size:.8rem;color:var(--paper);background:var(--accent);border-radius:999px;width:24px;height:24px;display:inline-grid;place-items:center;flex:none}
+a{color:var(--accent)}
+header{display:grid;grid-template-columns:1fr auto;gap:16px;align-items:end}
+header p{margin:6px 0 0;color:var(--muted);max-width:62ch}
+.count{font-family:var(--f-disp);text-align:right}
+.count b{font-size:2.6rem;line-height:1;display:block;color:var(--accent)}
+.count span{font-size:.8rem;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+.status{background:var(--warn-bg);color:var(--warn-ink);border-radius:12px;padding:14px 18px;display:flex;gap:14px;align-items:flex-start}
+.status svg{flex:none;margin-top:2px}
+.status p{margin:0}
+.topics{display:grid;grid-template-columns:repeat(auto-fill,minmax(104px,1fr));gap:8px;margin-top:12px}
+.topic{background:var(--paper);border:1.5px solid var(--line);border-radius:12px;padding:12px 6px 10px;display:flex;flex-direction:column;align-items:center;gap:6px;cursor:pointer;color:var(--muted);font:inherit;font-size:.82rem;line-height:1.2;text-align:center;min-height:92px}
+.topic svg{width:30px;height:30px;color:var(--accent)}
+.topic:hover{border-color:var(--accent);color:var(--ink)}
+.topic[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--paper)}
+.topic[aria-pressed="true"] svg{color:var(--paper)}
+.parties{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.party{background:var(--paper);border:1.5px solid var(--line);border-radius:999px;padding:7px 14px 7px 10px;display:flex;align-items:center;gap:8px;cursor:pointer;font:inherit;font-size:.9rem;color:var(--ink)}
+.party i{width:12px;height:12px;border-radius:50%;background:var(--pc);flex:none}
+.party[aria-pressed="true"]{border-color:var(--ink);box-shadow:inset 0 0 0 1px var(--ink);font-weight:700}
+.party:hover{border-color:var(--muted)}
+.hint{font-size:.85rem;color:var(--muted);margin:8px 0 0;min-height:1.3em}
+button:focus-visible,select:focus-visible,input:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);padding-block:10px;border-bottom:1px solid var(--line);display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.bar label{font-size:.75rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
+.bar select,.bar input[type=search]{font:inherit;font-size:.95rem;color:var(--ink);background:var(--paper);border:1.5px solid var(--line);border-radius:10px;padding:7px 10px;min-width:0}
+.bar select{font-family:var(--f-disp);font-weight:700}
+.bar input[type=search]{flex:1 1 220px}
+.switch{display:flex;align-items:center;gap:8px;font-size:.9rem;cursor:pointer}
+.switch input{width:18px;height:18px;accent-color:var(--accent)}
+.flags{display:flex;flex-wrap:wrap;gap:6px;width:100%}
+.flag{font:inherit;font-size:.78rem;border:1.5px solid var(--crit-line);background:var(--paper);color:var(--crit);border-radius:999px;padding:4px 10px;cursor:pointer}
+.flag[aria-pressed="true"]{background:var(--crit);border-color:var(--crit);color:var(--paper)}
+.flag b{font-variant-numeric:tabular-nums}
+
+.context{background:var(--accent-soft);border-radius:12px;padding:14px 18px;display:flex;flex-direction:column;gap:8px}
+.context h3{font-size:.8rem;text-transform:uppercase;letter-spacing:.08em;color:var(--accent)}
+.context ul{margin:0;padding-left:18px;display:flex;flex-direction:column;gap:4px;max-width:90ch}
+.legend{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:.8rem;color:var(--muted)}
+.cols{display:grid;grid-template-columns:repeat(var(--k),minmax(0,1fr));gap:14px;align-items:start}
+.col{background:var(--paper);border-radius:14px;border-top:6px solid var(--pc);padding:14px;display:flex;flex-direction:column;gap:10px;min-width:0}
+.col h3{font-size:1.1rem;display:flex;justify-content:space-between;gap:8px;align-items:baseline}
+.col h3 small{font-family:var(--f-body);font-weight:400;font-size:.78rem;color:var(--muted)}
+.tally{font-size:.78rem;color:var(--muted);display:flex;flex-wrap:wrap;gap:4px 10px}
+.tally span b{color:var(--crit)}
+.item{border-radius:10px;padding:10px 12px;background:var(--obg);display:flex;flex-direction:column;gap:6px}
+.item p{margin:0;font-size:.94rem}
+.tline{display:flex;justify-content:space-between;gap:8px;align-items:baseline}
+.tag{font-size:.68rem;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--oc)}
+.ttopic{font-size:.7rem;color:var(--muted)}
+.src{font-size:.75rem;color:var(--muted)}
+.note{background:var(--crit-bg);border:1px dashed var(--crit-line);border-radius:8px;padding:7px 9px;font-size:.85rem;display:flex;flex-direction:column;gap:2px}
+.note .k{font-size:.66rem;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--crit)}
+.note a{font-size:.72rem}
+.none{border-radius:10px;padding:16px 12px;background:repeating-linear-gradient(135deg,var(--empty) 0 10px,var(--hatch) 10px 20px);color:var(--muted);font-size:.9rem;text-align:center}
+.none b{display:block;color:var(--ink);font-family:var(--f-disp)}
+.o-pa{--oc:var(--o-pa);--obg:var(--o-pa-bg)} .o-doc{--oc:var(--o-doc);--obg:var(--o-doc-bg)}
+.o-dec{--oc:var(--o-dec);--obg:var(--o-dec-bg)} .o-pl{--oc:var(--o-pl);--obg:var(--o-pl-bg)}
+.o-gob{--oc:var(--o-gob);--obg:var(--o-gob-bg)}
+.o-p29,.o-p29p{--oc:var(--o-p29);--obg:var(--o-p29-bg)}
+.o-p29p{border:1px dashed var(--o-p29)}
+.sw{display:inline-block;width:10px;height:10px;border-radius:3px;background:var(--oc);margin-right:5px;vertical-align:-1px}
+.mapbox{background:var(--paper);border-radius:14px;padding:16px;display:flex;flex-direction:column;gap:10px}
+.mapbox p{margin:0;color:var(--muted);font-size:.9rem;max-width:80ch}
+.scroll{overflow-x:auto}
+table{border-collapse:separate;border-spacing:3px;font-size:.8rem;font-variant-numeric:tabular-nums}
+th{font-weight:700;text-align:left;padding:4px 6px;white-space:nowrap}
+thead th{writing-mode:vertical-rl;transform:rotate(180deg);text-align:left;height:70px;font-family:var(--f-disp)}
+td{width:34px;height:28px;text-align:center;border-radius:5px;cursor:pointer}
+td.z{background:repeating-linear-gradient(135deg,var(--empty) 0 5px,var(--hatch) 5px 10px);color:var(--muted)}
+td.l1{background:var(--accent-soft)} td.l2{background:color-mix(in srgb,var(--accent) 45%,var(--paper))} td.l3{background:var(--accent);color:var(--paper)}
+details{background:var(--paper);border-radius:14px;padding:14px 18px}
+summary{cursor:pointer;font-family:var(--f-disp);font-weight:700}
+details p,details li{color:var(--muted);font-size:.9rem;max-width:85ch}
+details dl{display:grid;grid-template-columns:max-content 1fr;gap:6px 14px;font-size:.9rem;margin:10px 0}
+details dt{font-weight:700;color:var(--crit)} details dd{margin:0;color:var(--muted)}
+footer{font-size:.8rem;color:var(--muted)}
+.flash{animation:flash .6s ease}
+@keyframes flash{from{background:var(--accent-soft)}to{background:transparent}}
+@media (max-width:860px){.cols{grid-template-columns:repeat(min(var(--k),2),minmax(0,1fr))}}
+@media (max-width:560px){.cols{grid-template-columns:1fr}header{grid-template-columns:1fr}.count{text-align:left}details dl{grid-template-columns:1fr}}
+@media (prefers-reduced-motion:reduce){.flash{animation:none}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <div>
+    <h1>Qué prometen los partidos el 29-N y qué no cuentan</h1>
+    <p>Elige un tema y hasta cuatro partidos. Cada propuesta lleva su origen, su fuente y una lectura crítica: si ya existe, si le falta cifra o plazo, si depende de las comunidades, si choca con lo que votó el partido, si las cifras no salen.</p>
+  </div>
+  <div class="count"><b>4 / 13</b><span>programas 29-N presentados</span></div>
+</header>
+
+<div class="context" role="note" style="margin-bottom:14px">
+  <h3>Cómo leemos las propuestas</h3>
+  <p style="margin:0;max-width:90ch">Nos fijamos en lo que los programas prometen y en lo que no cuentan: cuánto cuesta, quién lo paga, en qué plazo, si ya existe, si depende de otra administración y si choca con lo que el partido votó o con las cifras oficiales. Cada observación lleva su fuente y se puede comprobar. Una promesa solo se marca como «inviable» cuando las cifras lo muestran, con la cuenta a la vista. Si encuentras un error, escríbenos y lo corregimos en público.</p>
+</div>
+
+<div class="status" role="note">
+  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 7v6M12 16.5v.5"/></svg>
+  <p><b>Actualizado el 12 de noviembre de 2026.</b> PP (10 de noviembre, «La reconstrucción nacional», 249 medidas) y Vox (12 de noviembre, «Es sentido común», 115 medidas) tienen su columna sacada del texto oficial, con número de medida y página enlazada al documento. ERC (5 de noviembre, 258 propuestas) y PNV (9 de noviembre) han presentado el suyo, pero no hemos encontrado un documento oficial accesible. Sus propuestas proceden de resúmenes de prensa y se marcan con recuadro discontinuo. PSOE, Frente Amplio, Podemos y el resto aún no lo han publicado. Para ellos se muestran documentos y declaraciones de 2026, proposiciones de ley y programas anteriores, cada uno con su etiqueta.</p>
+</div>
+
+<section aria-labelledby="t1">
+  <h2 id="t1"><span class="n">1</span>Elige el tema</h2>
+  <div class="topics" id="topics"></div>
+</section>
+
+<section aria-labelledby="t2">
+  <h2 id="t2"><span class="n">2</span>Elige partidos (máximo 4)</h2>
+  <div class="parties" id="parties"></div>
+  <p class="hint" id="hint" aria-live="polite"></p>
+</section>
+
+<section id="res" aria-labelledby="t3" style="display:flex;flex-direction:column;gap:14px">
+  <h2 id="t3"><span class="n">3</span>Compara</h2>
+  <div class="bar">
+    <label for="tsel">Tema</label>
+    <select id="tsel"></select>
+    <input type="search" id="q" placeholder="Buscar en todos los temas: «dentista», «alquiler», «IRPF»…" aria-label="Buscar en todas las propuestas">
+    <label class="switch"><input type="checkbox" id="crit" checked> Lectura crítica</label>
+    <div class="flags" id="flags" aria-label="Ver solo propuestas con esta observación"></div>
+  </div>
+  <div class="context" id="context" hidden></div>
+  <div class="legend">
+    <span class="o-p29"><span class="sw"></span>Programa 29-N (texto oficial)</span>
+    <span class="o-p29"><span class="sw"></span>Programa 29-N vía prensa (recuadro discontinuo)</span>
+    <span class="o-doc"><span class="sw"></span>Documento del partido 2026</span>
+    <span class="o-dec"><span class="sw"></span>Declaración 2026</span>
+    <span class="o-pl"><span class="sw"></span>Proposición de ley</span>
+    <span class="o-gob"><span class="sw"></span>Acción de gobierno / ley</span>
+    <span class="o-pa"><span class="sw"></span>Programa anterior (2023 o antes)</span>
+  </div>
+  <div class="cols" id="cols" aria-live="polite"></div>
+</section>
+
+<section class="mapbox" aria-labelledby="t4">
+  <h2 id="t4">Quién habla de qué</h2>
+  <p>Número de propuestas localizadas por tema y partido. Las casillas rayadas son silencios: no se ha encontrado nada. Pulsa una casilla para abrirla arriba.</p>
+  <div class="scroll"><table id="map"></table></div>
+</section>
+
+<details>
+  <summary>Cómo se hace la lectura crítica</summary>
+  <p>Cada observación responde a una pregunta comprobable, la misma para todos los partidos. No se valora si una propuesta es buena o mala. Se informa de lo que el lector necesita para juzgarla.</p>
+  <dl id="method"></dl>
+  <p>Solo se pone una observación cuando hay un hecho que la respalde (una ley, una votación, una fecha o lo que dice la propia fuente). Si falta, no se pone. Que un partido tenga más observaciones suele indicar que hay más documentación suya, no que sea peor.</p>
+</details>
+
+<details>
+  <summary>Fuentes y límites</summary>
+  <ul>
+    <li>Orden de preferencia: programa del 29-N (texto oficial del PP; resúmenes de prensa de ERC y PNV), documento oficial del partido, proposición de ley, declaraciones de 2026 recogidas por prensa y, en último lugar, el programa anterior.</li>
+    <li>Un programa recoge promesas, no medidas aprobadas. Una declaración de mitin pesa menos que un documento firmado.</li>
+    <li>Varias propuestas proceden de comparadores independientes (DatosClaros, Política Electoral, Politicheck) que enlazan la fuente original. Conviene abrir el enlace antes de citar una cifra.</li>
+    <li>Los partidos con menos documentación aparecen con más silencios. Eso refleja lo localizado hasta hoy, no necesariamente lo que piensan.</li>
+    <li>Los partidos se ordenan por escaños de 2023, que no es una clasificación. Al abrir aparecen los cuatro con más escaños; se puede cambiar cualquiera.</li>
+  </ul>
+</details>
+<footer>Herramienta informativa sin afiliación. Actualizado el 12 de noviembre de 2026.</footer>
+</div>
+
+<script>
+const ICON = {
+ disc:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="4" r="1.8"/><path d="M11 7v6h5l2 5"/><path d="M8 10.5a6 6 0 1 0 7.5 7.8"/></svg>',
+ dep:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/><path d="M9 11h6M12 8v6"/></svg>',
+ soc:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="8" cy="7" r="2.5"/><circle cx="16" cy="7" r="2.5"/><path d="M3 19c0-3 2.2-5 5-5s5 2 5 5M11 19c0-3 2.2-5 5-5s5 2 5 5"/></svg>',
+ san:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><rect x="3.5" y="6" width="17" height="14" rx="2.5"/><path d="M9 6V4h6v2M12 10v6M9 13h6"/></svg>',
+ pen:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="10" cy="4" r="1.8"/><path d="M10 7v7l-2 6M10 14l3 6M10 9l3 2"/><path d="M16 10v10"/></svg>',
+ viv:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M3 11l9-7 9 7"/><path d="M5.5 9.5V20h13V9.5"/><path d="M10 20v-5h4v5"/></svg>',
+ imp:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M18 5L6 19"/><circle cx="7" cy="7" r="2.5"/><circle cx="17" cy="17" r="2.5"/></svg>',
+ emp:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5h6v2M3 12h18"/></svg>',
+ edu:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11v5c3 2 9 2 12 0v-5M22 9v6"/></svg>',
+ inm:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></svg>',
+ igu:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 3v18M5 7h14M5 7l-3 7a3 3 0 0 0 6 0zM19 7l-3 7a3 3 0 0 0 6 0z"/></svg>',
+ jov:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="6" r="3"/><path d="M6 21v-3a6 6 0 0 1 12 0v3"/><path d="M15 3.5l3-1.5"/></svg>',
+ uni:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11v5c3 2 9 2 12 0v-5"/><path d="M22 9v6"/></svg>',
+ ext:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3.5 3 14.5 0 18M12 3c-3 3.5-3 14.5 0 18"/></svg>',
+ ter:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M2 20l7-12 4 6 3-4 6 10z"/><circle cx="17" cy="5" r="1.6"/></svg>'
+};
+const TOPICS=[
+ ['viv','Vivienda'],['jov','Jóvenes'],['san','Sanidad'],['pen','Pensiones'],['emp','Empleo y autónomos'],
+ ['imp','Impuestos'],['edu','Educación'],['uni','Universidades'],['inm','Inmigración'],['disc','Discapacidad'],
+ ['dep','Dependencia y cuidados'],['soc','Servicios sociales y pobreza'],['igu','Igualdad'],['ter','Territorio y España vaciada'],['ext','Política exterior']];
+const PARTIES=[
+ ['pp','PP','#1f6fc4','Feijóo'],['psoe','PSOE','#d8261c','Sánchez'],['vox','Vox','#5aa62b','Abascal'],['fa','Frente Amplio','#c2185b','Colau'],
+ ['pod','Podemos','#6b2c91','Montero'],['erc','ERC','#e8a200','Rufián'],['junts','Junts','#17b3a3','Nogueras'],['bildu','EH Bildu','#7cb342','Matute'],
+ ['pnv','PNV','#1e7b3c','Vaquero'],['bng','BNG','#5aa0d6','Rego'],['cc','CC','#d4b400','Valido'],['salf','SALF','#7a7a7a','Alvise'],['upn','UPN-PP','#2b4c9a','Navarra']];
+
+/* Observaciones críticas: misma pregunta para todos */
+const FLAGS={
+ ya:['Ya existe','¿Esto ya está en vigor o aprobado, total o parcialmente?'],
+ vago:['Sin concretar','¿Falta cifra, plazo o forma de hacerlo?'],
+ coste:['Sin coste','¿Se explica cuánto cuesta y cómo se paga? (solo cuando la fuente señala que no)'],
+ ccaa:['Depende de las CCAA','¿La competencia es de las comunidades autónomas, y el Gobierno central no puede hacerlo solo?'],
+ voto:['Su voto','¿Lo que votó el partido en el Congreso contrasta con lo que propone?'],
+ pend:['Sin cumplir o caída','¿Lo prometió antes y no salió, o decayó al disolverse las Cortes?'],
+ otro:['Otro ámbito','¿Procede de un programa autonómico, europeo o muy antiguo, no de las generales?'],
+ falso:['Dato desmentido','¿Una cifra que usa el partido choca con los datos oficiales? Misma regla para todos los partidos.'],
+ derechos:['Recorta derechos','¿Choca con derechos fundamentales, la Constitución, el derecho europeo o sentencias de los tribunales? Misma regla para todos los partidos.'],
+ inviable:['Inviable según las cifras','¿El ritmo que exige la propuesta supera varias veces el máximo reciente? Misma regla para todos los partidos.'],
+ ctx:['Contexto','Dato que ayuda a situar la propuesta, sin juicio.']
+};
+
+/* Votos de vivienda en el Congreso (se reutilizan en PP y Vox) */
+const VV=(a,b)=>[
+ ['voto','Votó en contra de la Ley de Vivienda el 27 de abril de 2023: 176 votos a favor y 167 en contra.','merca23'],
+ ['voto',`El 27 de enero de 2026, ${a}, no convalidó el decreto que prorrogaba la moratoria de desahucios (hasta 60.000 familias vulnerables, según el Observatori Desca) y subía las pensiones.`,'saltoM'],
+ ['voto',`El 28 de abril de 2026, ${a}, tumbó la prórroga de dos años de los alquileres y el tope del 2 % en la subida, que alcanzaba a unos 2,7 millones de personas según El Salto Diario.`,'saltoP'],
+ ['voto',`El 2 de octubre de 2026, ${b}, tumbó los dos decretos de vivienda: suspensión de desahucios de personas vulnerables, prórroga de contratos y tope a las subidas, entre otras medidas.`,'civio'],
+ ['voto',`El 12 de noviembre de 2026, ${a}, volvió a votar en contra del decreto de vivienda reaprobado: moratoria de desahucios hasta 2030, prórroga de dos años, tope del 2 % y deducción para inquilinos. Salió adelante por un voto (35 a 34).`,'dp1211']
+];
+
+const S={
+ pesum:['Política Electoral · Sumar (Frente Amplio)','https://www.politicaelectoral.com/es/espana/generales-2026/nacional/sumar'],
+ huelgaMad:['Demócrata, huelga universitaria en Madrid (nov 2026)','https://www.democrata.es/sociedad/huelga-universidades-publicas-madrid-4-5-noviembre-motivos/'],
+ rdUni:['Ministerio de Ciencia, 18 sep 2026','https://www.ciencia.gob.es/Noticias/2026/septiembre/pedro-sanchez-anuncia-RD-nuevos-requisitos-universidades.html'],
+ dp1211:['idealista, 12 nov 2026 (Diputación Permanente)','https://www.idealista.com/news/inmobiliario/vivienda/2026/11/12/923779-la-diputacion-permanente-convalida-el-decreto-de-vivienda-y-rechaza-el-de'],
+ pevox26:['Política Electoral · Vox 2026','https://www.politicaelectoral.com/es/espana/generales-2026/nacional/vox'],
+ merca23:['Merca2, 27 abr 2023','https://www.merca2.es/2023/04/27/ley-de-vivienda-mayoria-absoluta-1292494/'],
+ saltoM:['El Salto, moratoria de desahucios','https://www.elsaltodiario.com/vivienda/pp-vox-junts-rechazan-moratoria-desahucios-dejan-incertidumbre-60-000-familias-vulnerables'],
+ saltoP:['El Salto, prórroga del alquiler','https://www.elsaltodiario.com/vivienda/pp-vox-junts-tumban-prorroga-del-alquiler-beneficia-2-7-millones-inquilinos'],
+ civio:['Civio, 2 oct 2026','https://civio.es/el-boe-nuestro-de-cada-dia/2026/10/02/decretos-ley-vivienda-derogacion-congreso/'],
+ bde:['Banco de España, Informe Anual 2025 (vía El Debate)','https://www.eldebate.com/economia/20260618/banco-espana-cifra-750000-deficit-vivienda-doble-italia-pide-simplificar-regulacion_429981.html'],
+ cbk:['CaixaBank Research, 20 mar 2026','https://www.caixabankresearch.com/es/analisis-sectorial/inmobiliario/escasez-vivienda-nueva-sigue-tensionando-mercado-residencial-espana'],
+ dtar:['Diari de Tarragona, 12 ene 2026','https://www.diaridetarragona.com/espana/249413/feijoo-propone-vincular-financiacion-autonomica-impulso-politicas-vivienda.html'],
+ p23pp:['Programa PP 2023','https://s2.elespanol.com/2025/09/29/politica/programa_electoral_pp_23j_feijoo_2023.pdf'],
+ p23psoe:['Programa PSOE 2023','https://www.psoe.es/media-content/2023/07/PROGRAMA_ELECTORAL-GENERALES-2023.pdf'],
+ disc23:['Servimedia/Discapnet, 2023','https://www.discapnet.es/noticia/partidos-ofrecen-personas-discapacidad-mejoras-empleo-educacion-dependencia'],
+ contrato:['«Contrato con España», PP','https://www.pp.es/actualidad/articulos/feijoo-firma-el-contrato-para-gobernar-el-cambio-mi-mayor-ambicion-es-lograr-que-la-palabra-de-un-presidente-vuelva-a-tener-valor/'],
+ dc:['DatosClaros (comparador)','https://www.datosclaros.es/comparador-de-programas-29n/'],
+ pesan:['Política Electoral · sanidad','https://www.politicaelectoral.com/es/espana/generales-2026/nacional/comparar/sanidad'],
+ pepen:['Política Electoral · pensiones','https://www.politicaelectoral.com/es/espana/generales-2026/nacional/comparar/pensiones'],
+ peigu:['Política Electoral · igualdad','https://www.politicaelectoral.com/es/espana/generales-2026/nacional/comparar/igualdad'],
+ peest:['Política Electoral · Estado y CCAA','https://www.politicaelectoral.com/es/espana/generales-2026/nacional/comparar/estado-ccaa'],
+ pepp:['Política Electoral · PP','https://www.politicaelectoral.com/es/espana/generales-2026/nacional/pp'],
+ pepsoe:['Política Electoral · PSOE','https://www.politicaelectoral.com/es/espana/generales-2026/nacional/psoe'],
+ pevox:['Política Electoral · Vox','https://www.politicaelectoral.com/es/espana/generales-2026/nacional/vox'],
+ peerc:['Política Electoral · ERC','https://www.politicaelectoral.com/es/espana/generales-2026/nacional/erc'],
+ forbes:['Forbes, 6 oct 2026','https://forbes.es/actualidad/1036705/elecciones-2026-batallas-economicas-29-n/'],
+ vigo:['Demócrata, oct 2026','https://www.democrata.es/elecciones-generales-espana/feijoo-se-rodea-rueda-candidatos-gallegos-en-vigo-impulsar-pp-hacia-elecciones-29n/'],
+ salam:['Demócrata, oct 2026','https://www.democrata.es/politica/feijoo-presenta-su-equipo-29n-promete-proyecto-reformista-mas-ambicioso-transicion/'],
+ reform:['Ministerio de Derechos Sociales, 14 jul 2026','https://www.dsca.gob.es/comunicacion/notas-prensa/congreso-aprueba-reforma-ley-discapacidad-refundacion-sistema-dependencia'],
+ voxprog:['Programa económico y de vivienda de Vox (2025)','https://www.voxespana.es/wp-content/uploads/2025/10/Programa-WEB-021025.pdf'],
+ qppsoe:['Qué Proponen · PSOE','https://queproponen.es/partidos/psoe'],
+ qpvox:['Qué Proponen · Vox','https://queproponen.es/partidos/vox'],
+ qppod:['Qué Proponen · Podemos','https://queproponen.es/partidos/podemos'],
+ tpvox:['Tu Papeleta · Vox','https://tupapeleta.es/programa-electoral/vox/'],
+ politicheck:['Politicheck (programas 2023)','https://politicheck.es/29n-programas'],
+ ela:['Redacción Médica, 2024','https://www.redaccionmedica.com/politica/20240620/el-congreso-tumba-el-bloqueo-de-vox-las-leyes-ela-pp-psoe-junts/231282_0.amp.html'],
+ voxceuta:['El Faro de Ceuta, 2023','https://elfarodeceuta.es/vox-promete-residencias-mayores-ayudas-cuidadores/amp/'],
+ ondacero:['Onda Cero, oct 2026','https://www.shango.media/onda-cero-que-se-sabe-de-los-programas-electorales-para-el-29n-las-propuestas-de-psoe-pp-vox-frente-amplio-podemos-11968748'],
+ boe2121:['Ley 21/2021 (BOE)','https://www.boe.es/buscar/act.php?id=BOE-A-2021-21652'],
+ boe3906:['Ley 39/2006, art. 18 (BOE)','https://www.boe.es/buscar/act.php?id=BOE-A-2006-21990'],
+ boe518:['Ley 5/2018 (BOE)','https://www.boe.es/buscar/act.php?id=BOE-A-2018-7833'],
+ boe1039:['Real Decreto 1039/2011 (BOE)','https://www.boe.es/buscar/doc.php?id=BOE-A-2011-13043'],
+ boe718:['Real Decreto-ley 7/2018 (BOE)','https://www.boe.es/buscar/act.php?id=BOE-A-2018-10752'],
+ boelo4:['Ley Orgánica 4/2000, art. 57 (BOE)','https://www.boe.es/buscar/act.php?id=BOE-A-2000-544'],
+ boeet:['Estatuto de los Trabajadores, art. 27 (BOE)','https://www.boe.es/buscar/act.php?id=BOE-A-2015-11430'],
+ boe2711:['Ley 27/2011 (BOE)','https://www.boe.es/buscar/act.php?id=BOE-A-2011-13242'],
+ boe1223:['Ley 12/2023 por el derecho a la vivienda (BOE)','https://www.boe.es/buscar/act.php?id=BOE-A-2023-12203'],
+ art49:['Reforma del art. 49 CE (BOE, feb 2024)','https://www.boe.es/buscar/doc.php?id=BOE-A-2024-3099'],
+ ico:['Línea ICO Avales primera vivienda','https://www.ico.es/linea-de-avales-para-la-adquisicion-de-primera-vivienda'],
+ est2230:['Estrategia Española sobre Discapacidad 2022-2030','https://www.dsca.gob.es/es/derechos-sociales/discapacidad/estrategia-espanola-sobre-discapacidad-2022-2030'],
+ jornada:['Periódico de Ibiza, sep 2025','https://www.periodicodeibiza.es/noticias/nacional/2025/09/11/2467647/congreso-tumba-reduccion-jornada-laboral-prosperar-veto-vox-junts.html'],
+ decretos:['Diario de Avisos, oct 2026','https://diariodeavisos.elespanol.com/2026/10/congreso-tumba-decretos-vivienda-gobierno/']
+};
+
+/* Cada propuesta: [origen, texto, fuente, [[observación, texto, fuente?], ...]] */
+const D={jov:{},uni:{},ext:{},
+disc:{
+ pp:[['pa','Atención temprana, integración sociolaboral y apoyo a la vida independiente. Desarrollar la Estrategia Española sobre Discapacidad 2022-2030.','disc23',[['ya','La Estrategia 2022-2030 está aprobada desde 2022. La propuesta es aplicarla, no crearla.','est2230']]],
+     ['pa','Libertad de las familias para elegir centro ordinario o de educación especial.','disc23',[['ccaa','La escolarización la gestionan las comunidades.']]],
+     ['pa','Plan contra el desempleo femenino con acciones específicas para mujeres con discapacidad.','p23pp',[]],
+     ['pa','Rehabilitar y adaptar viviendas, reformar la Ley de Propiedad Horizontal, bucles magnéticos y protección de las lenguas de signos.','disc23',[]]],
+ psoe:[['pa','Reformar el artículo 49 de la Constitución para dejar de usar el término «disminuidos».','disc23',[['ya','Reforma aprobada y publicada en el BOE en febrero de 2024.','art49']]],
+     ['pa','Atención personalizada en los centros escolares, compatible con los centros de educación especial.','disc23',[['vago','No concreta recursos, plantillas ni plazos.'],['ccaa','Los centros y su personal dependen de las comunidades.']]],
+     ['pa','Extender a los menores de 18 años las exenciones de copago.','disc23',[]],
+     ['pa','Inclusión financiera de mayores y personas con discapacidad: atención presencial, cartillas y horarios garantizados.','p23psoe',[]]],
+ vox:[['pa','Una norma para fomentar y proteger los centros de educación especial.','disc23',[['ccaa','La escolarización la gestionan las comunidades.']]],
+     ['pa','Incentivar la contratación de personas con discapacidad y la conciliación de quienes las cuidan.','disc23',[['vago','No concreta incentivos ni cuantías.']]],
+     ['pa','Incluir un apartado de discapacidad en los informes de impacto familiar de cada ley.','disc23',[]],
+     ['pa','Eliminar la discapacidad como supuesto legal de aborto.','disc23',[]],
+     ['pa','No recogía la reforma del artículo 49.','disc23',[['voto','En 2021 presentó una enmienda a la totalidad a esa reforma.','disc23']]]],
+ fa:[['gob','El Ministerio de Derechos Sociales (Sumar) impulsó la reforma de las leyes de discapacidad y dependencia, aprobada el 14 de julio de 2026, con reconocimientos automáticos de discapacidad.','reform',[['ya','Ya aprobada. Su aplicación depende en buena parte de las comunidades.','reform']]],
+     ['pa','Vida independiente y fin de la institucionalización forzosa.','disc23',[['vago','No concreta plazas, presupuesto ni calendario.']]],
+     ['pa','Evitar la segregación escolar y eliminar barreras de acceso y permanencia en la universidad.','disc23',[['ccaa','Escuelas y universidades públicas dependen de las comunidades.']]],
+     ['pa','Fiscalidad favorable y elevar del 0,7 % al 1 % la casilla de interés social del IRPF.','disc23',[]]],
+ upn:[['pa','Eximir del IRPF las pensiones de incapacidad permanente total de los mayores de 55 años.','pepen',[['ctx','La absoluta y la gran invalidez ya están exentas; la total no.','pepen']]]]
+},
+dep:{
+ pp:[['pa','Evaluar la Ley de Dependencia y revisar su financiación con las comunidades.','p23pp',[['ya','La reforma de julio de 2026 ya revisó la ley y fijó la financiación estatal en el 50 %. Falta saber si el PP la mantendría.','reform']]],
+     ['pa','Que la dependencia de los enfermos de ELA se declare con el diagnóstico.','p23pp',[]],
+     ['pa','Nuevo sistema sociosanitario, tarjeta social y sanitaria unificada y atención domiciliaria.','p23pp',[['ccaa','Servicios sociales y sanidad los gestionan las comunidades.']]],
+     ['pa','Estrategia nacional contra la soledad no deseada y más fórmulas residenciales.','p23pp',[['vago','No concreta plazas ni presupuesto.']]]],
+ psoe:[['pa','Reformar el sistema de autonomía personal y dependencia y reforzar los servicios sociales.','p23psoe',[['ya','La reforma se aprobó en julio de 2026, impulsada desde el ministerio que dirigía Sumar.','reform']]],
+     ['pa','Subir el mínimo por descendientes y personas dependientes en el IRPF.','p23psoe',[['vago','Sin cuantía.']]]],
+ vox:[['pl','Prestación económica para cuidadores no profesionales de personas con gran dependencia (2024).','ela',[['ya','La Ley de Dependencia ya prevé desde 2006 una prestación por cuidados en el entorno familiar. La propuesta amplía su uso.','boe3906']]],
+     ['pa','Deducir fiscalmente lo que pagan las familias por contratar cuidadores, y más plazas en residencias.','voxceuta',[['vago','Sin cuantía ni número de plazas.']]]],
+ fa:[['gob','Reforma de la dependencia aprobada en julio de 2026: más servicios, menos burocracia y 6.200 millones extra para 2026-2027.','reform',[['ya','Ya aprobada. La ejecución corresponde a las comunidades.','reform']]],
+     ['pa','Que el Estado financie hasta el 50 % de la dependencia.','pepen',[['ya','La reforma de 2026 ya lo fija por ley.','reform']]],
+     ['pa','Ley del derecho universal al cuidado.','peigu',[['vago','Sin contenido ni calendario concretos.']]]],
+ pod:[['pa','Sistema Nacional de Cuidados con 400.000 empleos.','qppod',[['otro','Programa de 2019, su último programa propio para unas generales.']]]],
+ erc:[['pa','Integrar a las trabajadoras del hogar en el régimen general de la Seguridad Social.','peigu',[['ya','Desde 2012 cotizan en un sistema especial dentro del régimen general. La propuesta es la equiparación plena.','boe2711']]]],
+ pnv:[['dec','Garantizar derechos a los cuidadores familiares y a las personas dependientes.','peigu',[['vago','Declaración de precampaña sin medidas concretas.']]]],
+ bng:[['pa','Que el Estado pague el 50 % del coste de la dependencia y salde una deuda con Galicia que cifra en más de 2.000 millones.','pepen',[['ya','El 50 % ya lo fija la reforma de 2026. La deuda que reclama sigue abierta.','reform']]]],
+ cc:[['doc','Que el Estado cumpla su parte de la financiación de la dependencia en Canarias.','pepen',[['ya','La reforma de 2026 fija el 50 % estatal para todas las comunidades.','reform']]]],
+ salf:[['doc','Ampliar las deducciones por cuidado de ascendientes y dependientes, y ayudas para atenderlos en casa.','pepen',[['otro','Procede de su programa autonómico de Castilla y León (2026).']]]],
+ upn:[['pa','Rebajar el copago en residencias y plazas de respiro de hasta 15 días para las cuidadoras.','pepen',[['otro','Programa foral de Navarra.']]]]
+},
+soc:{
+ pp:[['pa','Mejorar el acceso al Ingreso Mínimo Vital y hacerlo más compatible con el empleo, ligado a itinerarios de inserción.','p23pp',[['ccaa','Los itinerarios de inserción los gestionan las comunidades.']]],
+     ['pa','Desplegar la Garantía Infantil Europea contra la pobreza infantil.','p23pp',[]]],
+ psoe:[['pa','Consolidar el Ingreso Mínimo Vital con el objetivo de «pobreza cero».','p23psoe',[['vago','Sin metas cuantificadas ni plazos.']]]],
+ vox:[['doc','«Prioridad nacional» en las ayudas públicas.','qpvox',[['vago','No detalla requisitos ni a qué ayudas se aplicaría.']]]],
+ fa:[['dec','Prestación universal por crianza de 200 € al mes por hijo hasta los 18 años, sin requisito de renta.','peigu',[['pend','Ya estaba en su programa de 2023 y no se aprobó en la legislatura.','peigu']]]],
+ pod:[['doc','Subir el Ingreso Mínimo Vital como paso hacia una renta básica.','pepen',[['vago','Sin cuantía ni calendario.']]]],
+ erc:[['pa','Prestación universal por crianza.','peigu',[['vago','Sin cuantía.']]]],
+ pnv:[['pa','Erradicar la pobreza infantil con la Garantía Infantil Europea.','peigu',[]]],
+ cc:[['doc','Hacer compatibles las pensiones no contributivas con el complemento autonómico canario.','pepen',[['ya','En mayo de 2026 ambos gobiernos acordaron que los beneficiarios no pierdan poder adquisitivo.','pepen']]]],
+ salf:[['doc','Prioridad de españoles y residentes legales en ayudas sociales y vivienda protegida.','peigu',[['otro','Programas autonómicos de Castilla y León y Andalucía (2026).']]]]
+},
+san:{
+ pp:[['doc','Un 15 % más de plantillas, oferta MIR creciente con prioridad para Familia y Pediatría, guardias más cortas y mejor pagadas.','pesan',[['ccaa','Las plantillas las contratan y pagan las comunidades. El Estado decide las plazas MIR.']]],
+     ['doc','Estrategia de salud mental con 10.000 profesionales más y plan de prevención del suicidio.','pesan',[['ccaa','La contratación depende de las comunidades.']]],
+     ['dec','Que las mutuas puedan dar el alta en determinadas bajas.','pesan',[['ctx','Los sindicatos lo rechazan por conflicto de intereses; las mutuas lo apoyan.','pesan']]]],
+ psoe:[['dec','Defensa de la sanidad pública («cero recortes») y más financiación autonómica para servicios públicos.','pesan',[['vago','No hay propuestas sanitarias concretas para el 29-N.','pesan']]],
+     ['pa','Ley de tiempos máximos: 120 días para operarse, 60 para el especialista, 30 para pruebas.','pesan',[['pend','Estaba en su programa de 2023 y no se aprobó.'],['ya','Un real decreto de 2011 ya fija tiempos máximos para algunas cirugías.','boe1039'],['ccaa','Las listas de espera las gestionan las comunidades.']]],
+     ['pa','Incluir dentista, salud mental, gafas y audífonos en la sanidad pública, empezando por los niños.','qppsoe',[]],
+     ['gob','Ley de gestión pública del Sistema Nacional de Salud, que limita los conciertos con la privada.','pepsoe',[['pend','Llegó al Congreso en mayo de 2026 y decayó con la disolución.','pepsoe']]]],
+ vox:[['pl','Limitar la atención a inmigrantes en situación irregular a urgencias.','pesan',[['ctx','Supondría volver a una regla parecida a la de 2012 a 2018. Desde 2018 el acceso es universal.','boe718']]],
+     ['pa','Devolver la sanidad al Estado, tarjeta sanitaria única y más conciertos privados para reducir listas de espera.','pesan',[['ccaa','Exige cambiar los Estatutos de Autonomía y, probablemente, la Constitución.']]],
+     ['pa','Ley de cuidados paliativos y derogar las leyes de eutanasia y aborto.','pesan',[]]],
+ fa:[['gob','Ley de gestión pública del Sistema Nacional de Salud: gestión pública directa como norma.','pesan',[['pend','Decayó al disolverse las Cortes.','pesan']]],
+     ['pa','Subir el gasto sanitario medio punto de PIB al año e incluir bucodental, óptica, audioprótesis y psicoterapia.','pesan',[]],
+     ['pa','Empresa farmacéutica pública.','pesan',[['vago','Sin presupuesto ni calendario.']]]],
+ pod:[['doc','Derogar la Ley 15/1997 que permite la gestión privada de centros públicos.','pesan',[['ctx','El proyecto del Gobierno que la derogaba decayó con la disolución.','pesan']]],
+     ['pa','Cobertura del 100 % de bucodental, oftalmología, audición y fisioterapia.','pesan',[['otro','Programa europeo de 2024.']]]],
+ erc:[['pa','IVA reducido para alimentos de dietas especiales, como los de celíacos.','pesan',[]]],
+ junts:[['dec','Enmienda a la totalidad contra la ley de gestión pública por invadir competencias.','pesan',[]],
+     ['pa','Más plazas MIR y más prestaciones para enfermos de ELA.','pesan',[]]],
+ bildu:[['pa','Derogar la Ley 15/1997 y multiplicar el presupuesto de salud mental.','pesan',[['vago','Sin cuantía.']]]],
+ pnv:[['pa','Traspaso del MIR a Euskadi y más investigación en enfermedades raras.','pesan',[]]],
+ bng:[['pa','Eliminar los copagos farmacéuticos y cubrir al 100 % dentista, podología, óptica y logopedia.','pesan',[]]],
+ cc:[['doc','Que la financiación valore el sobrecoste sanitario de la insularidad.','pesan',[]]],
+ salf:[['doc','Máximo de 30 días para el especialista y 90 para cirugía, con conciertos privados.','pesan',[['otro','Programas autonómicos de Castilla y León y Andalucía (2026).'],['ccaa','Las listas de espera las gestionan las comunidades.']]]],
+ upn:[['pa','Reducir un 65 % la lista de espera para la primera consulta del especialista.','pesan',[['otro','Programa foral de Navarra.']]]]
+},
+pen:{
+ pp:[['dec','Revalorizar con el IPC y crear un sistema público «viable» para los jóvenes.','pepen',[['ya','La revalorización con el IPC ya es ley desde 2021.','boe2121'],['vago','No explica cómo sería ni cómo se financiaría el nuevo sistema.','pepen'],['voto','Votó contra los decretos ómnibus de 2025 y 2026, que incluían la subida, y a favor cuando se votó sola.','pepen']]],
+     ['pl','Ley para garantizar la actualización aunque no haya presupuestos.','pepen',[]]],
+ psoe:[['dec','Cuatro años más de revalorización con el IPC y 20.000 millones en el Fondo de Reserva.','pepen',[['ya','La revalorización con el IPC ya es ley desde 2021.','boe2121']]],
+     ['pa','Blindar en la Constitución la revalorización con el IPC.','pepen',[['ctx','Exige reforma constitucional con tres quintos de cada cámara.'],['pend','Ya estaba en su programa de 2023.','pepen']]]],
+ vox:[['dec','Sistema mixto de reparto y capitalización individual.','pepen',[['vago','Mensajes distintos entre sus dirigentes y sin modelo publicado.','pepen'],['voto','Fue el único grupo que votó contra la revalorización de 2026.','tpvox']]],
+     ['pa','Eximir del IRPF las pensiones contributivas.','pepen',[]]],
+ fa:[['pa','IPC por ley y subir mínimas y no contributivas hasta el umbral de la pobreza.','pepen',[['ya','La parte del IPC ya es ley desde 2021.','boe2121']]]],
+ pod:[['doc','Que ninguna pensión sea inferior al salario mínimo.','pepen',[['coste','El partido no ha cuantificado su coste.','pepen']]]],
+ erc:[['pa','Jubilación ordinaria a los 65, elegir los 15 mejores años y ligar las mínimas al SMI.','pepen',[]]],
+ junts:[['pa','Mínimas convergentes con el SMI y planes complementarios de capitalización.','pepen',[['voto','Votó contra el decreto ómnibus de enero de 2026 con la subida, y a favor del decreto solo de pensiones.','pepen']]]],
+ bildu:[['pa','Pensiones mínimas de 1.080 € al mes y rechazo a retrasar la jubilación.','pepen',[]]],
+ pnv:[['pa','Traspaso a Euskadi de la gestión económica de la Seguridad Social, sin romper la caja única.','pepen',[]]],
+ bng:[['pa','Mínimas al 60 % del salario medio y jubilación a los 65.','pepen',[]]],
+ cc:[['doc','Volver al consenso del Pacto de Toledo.','pepen',[['vago','Sin medidas concretas.']]]],
+ salf:[['dec','Exención del IRPF para ingresos inferiores a 35.000 € al año.','pepen',[['ctx','Es una rebaja fiscal, no una reforma de pensiones. No hay propuesta sobre el sistema.','pepen']]]]
+},
+viv:{
+ pp:[['doc','Construir al menos un millón de viviendas en la legislatura.','contrato',[['coste','No detalla financiación ni cuántas serían públicas o protegidas.','salam'],['ccaa','Suelo y licencias dependen de comunidades y ayuntamientos.']]],
+     ['doc','Avales públicos de hasta el 95-100 % para la compra de vivienda de jóvenes.','forbes',[['ya','Desde 2023 existe una línea ICO de avales para jóvenes, hasta el 20 % del precio. La propuesta la amplía.','ico']]],
+     ['dec','Rebajar un 60 % el IVA y el ITP de la primera vivienda.','vigo',[['ccaa','El ITP es un impuesto cedido a las comunidades.']]],
+     ['dec','Ley contra la okupación con desalojo en 48 horas.','dc',[['ya','Desde 2018 existe un procedimiento rápido de desalojo de viviendas ocupadas.','boe518']]]],
+ psoe:[['gob','Decreto de vivienda en vigor: moratoria de desahucios de personas vulnerables hasta 2030, prórroga de dos años, subida máxima del 2 % hasta 2027 y deducción del 10 % para inquilinos con menos de 33.000 €.','dp1211',[['ya','Convalidado por la Diputación Permanente el 12 de noviembre de 2026, por 35 votos a 34. Votaron en contra PP, Vox y Junts.','dp1211'],['ctx','Es un decreto: el próximo Congreso puede cambiarlo o tramitarlo como ley.']]],
+     ['gob','Préstamos ICO al 0 % de hasta el 20 % del precio (máximo 50.000 €) para la primera vivienda, IVA del 10 % a los pisos turísticos y del 4 % a la vivienda protegida.','dp1211',[['ya','Incluido en el decreto convalidado el 12 de noviembre.','dp1211']]],
+     ['gob','Alquiler con prórroga casi indefinida: cinco o siete años encadenados e indemnización de 12 mensualidades si el casero no renueva sin causa.','dp1211',[['pend','Rechazado el 12 de noviembre por 35 votos a 34. El PNV votó en contra junto a PP, Vox y Junts.','dp1211']]],
+     ['gob','Casa 47, empresa estatal de vivienda, y Plan Estatal 2026-2030 de 7.000 millones, con la vivienda pagada con dinero público protegida para siempre.','pepsoe',[['pend','Su programa de 2023 prometía 183.000 viviendas públicas de alquiler. No hemos localizado un balance de cuántas se han entregado.','pepsoe']]],
+     ['pl','Impuesto del 100 % a la compra de vivienda por no residentes de fuera de la UE.','dc',[['pend','Proposición de 2025 que no se aprobó.']]],
+     ['dec','Empresa Estatal de Vivienda y vivienda protegida para siempre.','qppsoe',[['vago','Sin presupuesto ni número de viviendas.']]]],
+ vox:[['doc','Más suelo urbanizable, más altura y densidad.','voxprog',[['ccaa','El planeamiento es autonómico y municipal.']]],
+     ['doc','IVA cero en la primera vivienda y recuperar la deducción por vivienda habitual.','voxprog',[]],
+     ['doc','Prioridad en la vivienda protegida según arraigo y antigüedad en España.','voxprog',[['ccaa','La adjudicación de vivienda protegida la regulan las comunidades.']]],
+     ['doc','Derogar la intervención del mercado del alquiler.','voxprog',[['ctx','Se refiere sobre todo a la Ley de Vivienda de 2023.','boe1223'],...VV('con el PP y Junts','con el PP, Junts y UPN')]]],
+ fa:[['dec','Destinar cada año el 1 % del PIB al parque público de vivienda.','dc',[['coste','Sin coste detallado ni fuente de financiación.','dc']]],
+     ['dec','Contratos de alquiler indefinidos.','dc',[['vago','Sin detalle de cómo se regularía.']]],
+     ['pl','Prohibir que empresas y fondos compren viviendas.','dc',[['pend','Proposición de 2026 que decayó con la disolución.']]]],
+ pod:[['dec','Bajar por ley el precio del alquiler y expropiar viviendas a fondos para alquiler social.','dc',[['vago','Sin porcentaje de bajada.','dc']]],
+     ['dec','Prohibir la compra especulativa y los desahucios sin alternativa habitacional.','dc',[['vago','No define qué compra sería especulativa.']]]],
+ erc:[['dec','Prohibir desahucios, congelar rentas y que Cataluña regule por completo el alquiler.','peerc',[]]]
+},
+imp:{
+ pp:[['dec','Rebaja del IRPF en 2027 si gobierna.','vigo',[['vago','Sin tramos ni cuantía.']]],
+     ['dec','Bonificar el impuesto de Sucesiones en toda España.','pepp',[['ccaa','Sucesiones es un impuesto cedido; hoy lo bonifica cada comunidad.']]],
+     ['doc','Suprimir el impuesto a la generación eléctrica.','pepp',[]]],
+ psoe:[['dec','Más progresividad y más lucha contra el fraude fiscal.','qppsoe',[['vago','Sin medidas concretas.']]],
+     ['doc','Tipo del IRPF del 50 % para rentas de más de 300.000 €.','pepsoe',[['otro','Procede de la ponencia de su congreso de 2024, no de un programa electoral.']]]],
+ vox:[['doc','IRPF con 22.000 € exentos, 15 % hasta 70.000 € y 25 % por encima; cuatro puntos menos por hijo.','pevox',[['ctx','Parte del IRPF es tramo autonómico: cambiar la tarifa exige contar con las comunidades.']]],
+     ['doc','IVA general al 18 % e Impuesto de Sociedades al 15 %.','pevox',[]]],
+ fa:[['dec','Más aportación de las grandes herencias y patrimonios.','forbes',[['vago','Sin tipos ni umbrales.'],['ccaa','Sucesiones y Patrimonio están cedidos a las comunidades.']]],
+     ['pa','Impuesto permanente a las grandes fortunas y «herencia universal» de 20.000 € a los 23 años.','politicheck',[]]],
+ pod:[['dec','Impuesto extraordinario para que las grandes empresas del Ibex paguen el 50 % de sus beneficios.','qppod',[]]],
+ salf:[['dec','Exención del IRPF para ingresos inferiores a 35.000 €.','pepen',[]]]
+},
+emp:{
+ pp:[['dec','Ampliar el límite de horas extra.','dc',[]],
+     ['pa','Salario mínimo pactado en el diálogo social y tarifa cero para nuevos autónomos el primer año.','p23pp',[['ya','El SMI ya se fija tras consultar a sindicatos y patronal.','boeet']]]],
+ psoe:[['dec','Jornada de 36 horas antes de 2030 y salario mínimo en el 60 % del salario medio.','forbes',[['pend','Su ley de 37,5 horas fue rechazada en el Congreso en septiembre de 2025.','jornada']]],
+     ['dec','Estatuto del Becario y cotización de autónomos por ingresos reales.','qppsoe',[['ya','La cotización por ingresos reales se aplica desde 2023, de forma gradual.']]]],
+ vox:[['doc','No reducir la jornada por ley, bajar cotizaciones y cuota cero para autónomos que ganen menos del SMI.','qpvox',[['coste','No cuantifica el efecto en los ingresos de la Seguridad Social.']]]],
+ fa:[['dec','Reducción del tiempo de trabajo.','forbes',[['vago','Sin cifra ni calendario.','forbes']]]],
+ pod:[['dec','Jornada de 30 horas semanales y salario mínimo de 1.800 €.','qppod',[]]]
+},
+edu:{
+ pp:[['pa','Revisar la LOSU y financiar a las universidades también por graduados y empleabilidad.','p23pp',[['ccaa','La financiación universitaria la pagan sobre todo las comunidades.']]],
+     ['pa','Prueba de acceso a la universidad común en toda España.','p23pp',[['ccaa','Hoy la organiza cada comunidad.']]],
+     ['pa','Educación de 0 a 3 años universal y gratuita.','p23pp',[['ccaa','Cofinanciada con comunidades y ayuntamientos.']]]],
+ psoe:[['dec','Ratios de 22 alumnos en Primaria y 25 en ESO y menos horas lectivas.','pepsoe',[['pend','El proyecto de ley decayó con la disolución.','pepsoe']]],
+     ['pa','Matrícula gratis en universidad y FP superior para quien apruebe a la primera.','politicheck',[['ccaa','Las tasas universitarias las fijan las comunidades.']]]],
+ vox:[['pa','Devolver la educación al Estado y cheque escolar.','politicheck',[['ccaa','Exige cambiar los Estatutos de Autonomía.']]]],
+ fa:[['pa','Plazas públicas gratuitas de 0 a 3 años y menos alumnos por aula.','politicheck',[['ccaa','Depende de comunidades y ayuntamientos.']]]],
+ erc:[['dec','Destinar el 2 % del PIB a las universidades.','peerc',[['coste','Sin explicar cómo se financiaría.']]]],
+ salf:[['doc','Educación gratuita de 0 a 3 años.','peigu',[['otro','Programa autonómico de Castilla y León (2026).']]]]
+},
+inm:{
+ pp:[['doc','«Ordenar la inmigración».','ondacero',[['vago','Compromiso sin medidas concretas.']]],
+     ['pa','Inmigración legal cualificada con un sistema de puntos.','politicheck',[]]],
+ psoe:[['pa','Migración regular, segura y ordenada; reformas del arraigo y migración circular.','politicheck',[['vago','Sin medidas nuevas para el 29-N.','pepsoe']]],
+     ['gob','Regularización extraordinaria de 2026: permiso de un año para quien llevara cinco meses en España sin antecedentes penales.','pepsoe',[['ctx','Recibió 1.174.978 solicitudes. Vox la recurrió ante el Supremo, que no la suspendió.','pepsoe']]],
+     ['gob','Reparto obligatorio entre comunidades de los menores no acompañados cuando Canarias, Ceuta o Melilla están desbordadas.','pepsoe',[]]],
+ vox:[['doc','«Prioridad nacional», repatriar a inmigrantes en situación irregular y «remigración».','qpvox',[['vago','No define qué sería «remigración» ni cómo se haría.']]],
+     ['doc','Deportar a extranjeros que cometan delitos.','qpvox',[['ya','La Ley de Extranjería ya prevé la expulsión de extranjeros condenados.','boelo4']]]],
+ fa:[['pa','Procedimiento de regularización permanente y cierre de los CIE.','politicheck',[]]],
+ junts:[['dec','Traspaso a Cataluña de las competencias de inmigración.','peest',[['ctx','La inmigración es competencia exclusiva del Estado según la Constitución.']]]],
+ cc:[['doc','Financiación extraordinaria para la atención a migrantes que llegan a Canarias.','pesan',[]]],
+ salf:[['doc','Servicios y ayudas solo para ciudadanos y residentes legales.','pesan',[['otro','Programas autonómicos de 2026.']]]]
+},
+igu:{
+ pp:[['doc','Endurecer penas por violencia machista, ley contra la violencia vicaria y derogar la Ley Trans.','peigu',[['ctx','El Gobierno aprobó un proyecto de ley de violencia vicaria en julio de 2026, que decayó con la disolución.','peigu']]],
+     ['pa','Bonificar cotizaciones durante los permisos por nacimiento.','peigu',[]]],
+ psoe:[['gob','Incluir el aborto en la Constitución y ley de violencia vicaria.','peigu',[['pend','Ambas decayeron con la disolución.','peigu'],['ctx','La reforma constitucional exige tres quintos de cada cámara.']]],
+     ['pa','Ley abolicionista de la prostitución.','peigu',[['pend','Estaba en su programa de 2023 y no se aprobó.']]]],
+ vox:[['pa','Sustituir la Ley de Violencia de Género por una de violencia intrafamiliar y crear un Ministerio de Familia.','peigu',[]]],
+ fa:[['gob','Permiso por nacimiento de 19 semanas por progenitor (32 en familias monoparentales).','peigu',[['ya','Aprobado en 2025.','peigu']]]],
+ pod:[['doc','Aplicar íntegramente la ley del «solo sí es sí» y avanzar hacia la abolición de la prostitución.','peigu',[]]],
+ erc:[['pa','Permiso de maternidad de seis meses y juzgados de violencias machistas.','peigu',[]]],
+ bng:[['pa','Tipificar el feminicidio y ampliar la geolocalización de agresores.','peigu',[]]],
+ salf:[['doc','Cinco puntos menos de IRPF por hijo y cheque bebé de 2.500 €.','peigu',[['otro','Programa autonómico de Castilla y León (2026).']]]]
+},
+ter:{
+ pp:[['pa','Ley de Desarrollo Rural y plan para la España despoblada.','p23pp',[['vago','Sin presupuesto ni medidas cuantificadas.']]],
+     ['pa','Bonificar ITP e IBI en la compra de vivienda rural.','p23pp',[['ccaa','El ITP es autonómico y el IBI municipal.']]],
+     ['pa','Sacar al lobo al norte del Duero del régimen de protección especial.','p23pp',[['ya','Una ley aprobada en 2025 ya lo hizo.']]]],
+ psoe:[['dec','Nuevo modelo de financiación autonómica con unos 21.000 millones más en 2027.','pesan',[['pend','Necesita una ley que no llegó a aprobarse antes de la disolución.'],['ctx','Solo lo apoyaron Cataluña y Canarias. Las comunidades del PP pidieron retirarlo.','pepsoe'],['ctx','El Gobierno llega a las urnas sin presupuestos nuevos desde 2023.','pepsoe']]],
+     ['gob','Condonar 83.252 millones de deuda autonómica.','pepsoe',[['pend','Superó las enmiendas a la totalidad de PP y Vox en julio, pero decayó con la legislatura.','pepsoe']]],
+     ['pa','Servicios básicos a un máximo de 30 minutos en el medio rural.','p23psoe',[['vago','Sin calendario ni presupuesto.']]]],
+ vox:[['pa','Estado unitario: devolver al Estado educación, sanidad, seguridad y justicia.','politicheck',[['ccaa','Exige reformar la Constitución y los Estatutos.']]]],
+ fa:[['pa','España como realidad plurinacional y diálogo bilateral con Cataluña.','politicheck',[]]],
+ erc:[['dec','Financiación singular, traspaso de Rodalies y referéndum pactado.','peest',[['ctx','Un referéndum de autodeterminación no está previsto en la Constitución.']]]],
+ junts:[['dec','Aplicación plena de la amnistía, oficialidad del catalán en la UE y más competencias.','peest',[]]],
+ bildu:[['dec','Derecho a decidir y nuevo estatus para Euskadi.','peest',[]]],
+ bng:[['pa','Financiación sanitaria que pondere más la dispersión y el envejecimiento.','pesan',[]]]
+}};
+
+/* PP: programa «La reconstrucción nacional» (10 nov 2026). Sustituye a todo lo anterior del PP. */
+const PPU='https://www.pp.es/wp-content/uploads/2026/11/LA-RECONSTRUCCION-NACIONAL.pdf';
+const m=(n,pg)=>['PP 2026, medida '+n+' (p. '+pg+')',PPU];
+const PP26={
+ viv:[['p29','Construir un millón de viviendas, con nueva Ley del Suelo y licencias resueltas en tres meses.',m(144,53),[['inviable','No se cumplirá en una legislatura. Exige unas 250.000 viviendas al año, 2,7 veces las 92.000 terminadas en 2025. Además, el programa no fija plazo, dinero ni reparto entre vivienda pública y privada.','bde'],['ctx','CaixaBank Research prevé menos de 100.000 terminadas en 2026 y cita la falta de mano de obra, los retrasos de suministros y los límites de la red eléctrica.','cbk'],['ctx','En enero, Feijóo habló de «iniciar la construcción» de un millón. El programa habla de construir. Iniciar no es terminar.','dtar'],['coste','No dice cuántas serían públicas ni cuánto aportaría el Estado.'],['ccaa','El suelo y las licencias dependen de comunidades y ayuntamientos; el propio texto cuenta con ellos.']]],
+  ['p29','Derogar la Ley de Vivienda.',m(145,53),[['ctx','Ley 12/2023, en vigor desde 2023.','boe1223'],...VV('con Vox y Junts','con Vox, Junts y UPN')]],
+  ['p29','IVA de la primera vivienda del 10 % al 4 % para menores de 40, con pago fraccionado; ITP reducido en vivienda usada.',m(153,'54-55'),[['ccaa','El ITP es un impuesto cedido a las comunidades.']]],
+  ['p29','Aval público para la entrada a menores de 40 (ampliable hasta 50).',m(154,55),[['ya','Desde 2023 existe una línea ICO de avales para jóvenes, hasta el 20 % del precio. La propuesta la amplía.','ico']]],
+  ['p29','«Hucha Hogar Joven»: hasta 2.000 € al año, deducción del 20 % y tope de 40.000 €.',m(155,55),[['vago','El ahorro fiscal máximo es de 400 € al año (20 % de 2.000 €). Llegar al tope de 40.000 € exige veinte años de aportación completa.']]],
+  ['p29','Desalojo del «okupa» en 48 horas por orden judicial.',m(157,55),[['ya','Desde 2018 existe un procedimiento rápido de desalojo de viviendas ocupadas.','boe518']]]],
+ san:[['p29','Al menos 4.500 médicos más en Atención Primaria y guardias más cortas.',m(220,69),[['ccaa','Las plantillas las contratan y pagan las comunidades.'],['vago','No cuantifica la reducción de las guardias.']]],
+  ['p29','Pacto de Estado por la sanidad y plan urgente contra las listas de espera.',m(219,'68-69'),[['vago','Sin objetivo de días ni plazos.'],['ccaa','Las listas de espera las gestionan las comunidades.']]],
+  ['p29','Plan Nacional de Salud Mental 2027-2037 con financiación garantizada.',m(223,70),[['vago','No fija cuántos profesionales ni cuánto dinero.']]],
+  ['p29','Reforzar la Agencia Estatal de Salud Pública.',m(222,70),[['ya','La Agencia se creó por ley en 2025.','pesan']]],
+  ['p29','Historia clínica y social única, válida en toda España.',m(93,'38-39'),[['ya','La Historia Clínica Digital del SNS ya funciona entre comunidades; lo nuevo es añadir la parte social.']]],
+  ['p29','Deducción en el IRPF por gastos de tratamiento de cáncer, ELA u otra enfermedad grave.',m(225,71),[['vago','Sin porcentaje ni tope.']]]],
+ pen:[['p29','Subir las pensiones cada año con el IPC y rehacer el Pacto de Toledo; deducciones en el IRPF para la jubilación activa.',m(108,'42-43'),[['ya','La revalorización con el IPC es ley desde 2021.','boe2121'],['vago','No explica cómo se garantizarán las pensiones de los jóvenes.'],['voto','Votó contra los decretos ómnibus de 2025 y 2026, que incluían la subida, y a favor cuando se votó sola.','pepen']]]],
+ emp:[['p29','Nuevos autónomos sin cuota el primer año, y el segundo si ingresan menos del SMI.',m(170,59),[['ya','Desde 2023 existe una tarifa plana de 80 € al mes el primer año. La propuesta la deja en cero.']]],
+  ['p29','Autónomos que facturen menos de 85.000 € exentos de IVA; bonificar el 100 % de la cotización del primer empleado.',m(171,59),[['ctx','La normativa europea permite esta franquicia de IVA desde 2025.']]],
+  ['p29','Cheque de formación para cada trabajador.',m(169,58),[['vago','Sin cuantía.']]],
+  ['p29','Bancos de horas, horarios flexibles y teletrabajo para conciliar. No propone reducir la jornada.',m(162,57),[]],
+  ['p29','Reducir las cargas administrativas un 25 % antes de 2029 (35 % para pymes).',m(7,14),[]]],
+ imp:[['p29','Subir los mínimos personal y familiar del IRPF; quien cobre el SMI no pagará IRPF.',m(177,60),[['vago','No da la nueva cuantía de los mínimos.']]],
+  ['p29','Jóvenes de 18 a 35: reducción del IRPF del 100 %, 75 %, 50 % y 25 % en sus cuatro primeros años de trabajo.',m(179,60),[['coste','El programa no cuantifica la pérdida de recaudación.']]],
+  ['p29','Deflactar la tarifa del IRPF con la inflación.',m(178,60),[['ccaa','Afecta solo al tramo estatal; el autonómico depende de cada comunidad.']]],
+  ['p29','IVA del 0 % para alimentos básicos.',m(180,61),[['ctx','Se aplicó de forma temporal entre 2023 y 2024.']]],
+  ['p29','Deducción inmediata de la inversión empresarial.',m(181,61),[]]],
+ edu:[['p29','Prueba de acceso a la universidad común, con condiciones acordadas con las comunidades.',m(95,39),[['ccaa','Hoy la organiza cada comunidad; depende de que acepten.']]],
+  ['p29','Nuevo marco educativo que sustituya a la LOMLOE, con refuerzo de lectura y matemáticas.',m(209,67),[]],
+  ['p29','Escuela infantil de 0 a 3 años gratuita al final de la legislatura, pagada a medias por Estado y comunidades.',m(163,57),[['ccaa','Necesita que cada comunidad ponga su mitad.'],['pend','Ya estaba en su programa de 2023.','p23pp']]],
+  ['p29','Beca como derecho; sin matrícula en ciclos de FP de alta demanda. Autonomía universitaria a cambio de rendir cuentas.',m('217-218',68),[['ctx','No hay medidas sobre financiación ni tasas universitarias.']]],
+  ['p29','Garantizar la enseñanza en castellano en todas las etapas.',m(96,39),[['ccaa','La lengua vehicular la regulan las comunidades dentro de la ley estatal.']]]],
+ inm:[['p29','Identificar en una semana a quien entre de forma irregular y devolverlo cuanto antes.',m(37,21),[['ctx','Se apoya en el nuevo mecanismo europeo de retorno.']]],
+  ['p29','Cupos anuales de trabajadores según paro y puestos sin cubrir; visados por puntos.',m('40-41',22),[['ya','Ya existe la contratación colectiva en origen, con cupos por sectores.']]],
+  ['p29','Prohibir las regularizaciones masivas; el padrón solo no bastará para ayudas no urgentes.',m(42,'22-23'),[]],
+  ['p29','Español obligatorio para renovar la residencia; prohibir burka y niqab en espacios públicos.',m(43,23),[]],
+  ['p29','La expulsión será la regla para extranjeros condenados por delitos sexuales.',m(44,23),[['ya','La Ley de Extranjería ya prevé la expulsión de extranjeros condenados.','boelo4']]],
+  ['p29','Nueva Ley de Nacionalidad con residencia legal continuada y preferencia para países hispanos.',['okdiario, 10 nov 2026','https://okdiario.com/espana/20-medidas-principales-del-programa-del-pp-cura-que-sanar-espana-herida-20744444'],[]]],
+ disc:[['p29','Más apoyos a lo largo de la vida: atención temprana, asistencia personal, vivienda con apoyos, empleo inclusivo y accesibilidad.',m(112,44),[['vago','Sin presupuesto ni plazos.'],['ccaa','Atención temprana y asistencia personal las prestan las comunidades.']]],
+  ['p29','Hacer compatibles las pensiones de discapacidad con el empleo; jubilación anticipada para personas con síndrome de Down y apoyo específico al autismo.',m(112,44),[['vago','No dice qué pensiones ni con qué límites.']]],
+  ['p29','Combatir cualquier discriminación, también por discapacidad, y quitar barreras para estudiar y trabajar.',m(111,'43-44'),[['vago','Declaración general sin medidas propias.']]],
+  ['p29','Más ayuda presencial en los trámites para mayores y personas con discapacidad.',m(9,15),[]]],
+ dep:[['p29','Pacto de Estado por la Dependencia y aportación estatal del 50 % del coste público.',m(114,44),[['ya','La reforma de julio de 2026 ya fija por ley el 50 % estatal.','reform']]],
+  ['p29','Deducción del 40 % de lo que paguen las familias por atención profesional; el Estado cotizará por quien deje de trabajar para cuidar a un familiar.',m(114,44),[['ya','Desde 2019 el Estado ya paga la cotización de los cuidadores no profesionales. La deducción del 40 % es nueva.']]],
+  ['p29','Cuidados de proximidad en zonas despobladas: atención móvil, centros comarcales y transporte a demanda.',m(99,40),[['ccaa','Son servicios autonómicos y locales.']]],
+  ['p29','Estrategia contra la soledad no deseada con comunidades y ayuntamientos; atención presencial garantizada y modernizar el IMSERSO.',m('110 y 113','43-44'),[['vago','Sin presupuesto.']]]],
+ soc:[['p29','Prioridad en ayudas y prestaciones para quien tenga «arraigo real» (padrón y cotización), no solo por nacionalidad.',m(98,40),[['vago','No dice a qué ayudas se aplicaría.']]],
+  ['p29','Reconocer prestaciones de oficio, sin tener que pedirlas, con los datos que ya tiene la Administración.',m(10,15),[]],
+  ['p29','Actuación urgente contra la pobreza infantil y más ayuda a familias vulnerables.',m(166,57),[['vago','Sin cuantías.']]],
+  ['p29','No hay ninguna medida sobre el Ingreso Mínimo Vital.',['Programa PP 2026',PPU],[['ctx','Feijóo ha hablado de sustituirlo por una «renta de activación», pero no figura en el programa.','https://www.publico.es/politica/pp-escora-programa-aun-derecha-prioridad-nacional-retroceso-derechos-sociales.html']]]],
+ igu:[['p29','Revisar la Ley Trans, eliminar la libre autodeterminación registral del sexo y fijar el sexo biológico en el deporte femenino.',m(115,44),[]],
+  ['p29','Ampliar los permisos por nacimiento y flexibilizar su uso.',m(160,56),[['vago','No dice cuántas semanas.']]],
+  ['p29','Una única deducción familiar reembolsable, cobrada cada mes.',m(158,56),[['vago','Sin cuantía.']]],
+  ['p29','Ley integral contra la trata y fiabilidad de las pulseras de alejamiento.',m('28-29',19),[]]],
+ ter:[['p29','Nuevo modelo de financiación autonómica con fondo de nivelación transitorio; ninguna comunidad saldrá del régimen común.',m('100-101','40-41'),[['vago','Sin cifras.']]],
+  ['p29','Estatuto de los Pequeños Municipios y ayudas directas a los de menos de 250 habitantes.',m('104-105','41-42'),[['vago','Sin cuantía.']]],
+  ['p29','Jóvenes sin impuestos al comprar vivienda en municipios despoblados; incentivos para comprar o rehabilitar.',m('99 y 196','40 y 64'),[['ccaa','El ITP es autonómico.']]],
+  ['p29','Más de 300.000 millones en infraestructuras en 15 años, con capital privado.',['Infobae, 10 nov 2026','https://www.infobae.com/espana/2026/11/10/el-pp-presenta-su-programa-electoral-para-concurrir-al-29-n-el-proyecto-no-tiene-unicornios-dice-la-verdad/'],[['vago','No detalla qué parte sería pública.']]]]
+};
+Object.entries(PP26).forEach(([t,v])=>{D[t].pp=v});
+/* ERC y PNV: programas del 29-N conocidos por la prensa (sin PDF oficial accesible). Sustituyen a lo anterior en los temas que cubren. */
+const ERCs=['Demócrata, 5 nov 2026 (resumen del programa)','https://www.democrata.es/elecciones-generales-espana/programa-electoral-erc-29n-referendum/'];
+const ERCn=['NacióDigital, nov 2026 (resumen del programa)','https://naciodigital.cat/politica/els-compromisos-derc-per-al-29-n-pla-de-xoc-en-habitatge-i-blindar-lescola-catalana.html'];
+const PNVs=['Demócrata, 9 nov 2026 (presentación del programa)','https://www.democrata.es/politica/pnv-plantea-bajar-al-0-5-el-impuesto-electrico-y-acelerar-las-inversiones-en-redes/'];
+const ERC26={
+ viv:[['p29p','Ley de Arrendamientos Urbanos propia para Cataluña, por delegación del Estado.',ERCs,[['ctx','Hoy el alquiler se regula por una ley estatal; exige que el Estado delegue esa competencia.']]],
+  ['p29p','Traspaso gratuito e inmediato a Cataluña de las viviendas de la Sareb.',ERCs,[]],
+  ['p29p','IVA del 21 % al alquiler turístico; subir IVA e ITP a la compra para negocio y bajarlos en la primera vivienda.',ERCn,[['ccaa','El ITP es autonómico; en Cataluña lo fija la Generalitat.']]],
+  ['p29p','Al menos el 1,5 % del PIB estatal para vivienda.',ERCs,[['vago','No dice cuánto sería vivienda pública ni en qué plazo.']]]],
+ san:[['p29p','Atención bucodental completa (caries, endodoncias, prótesis), salud mental y psicología gratuitas, y gafas y lentillas financiadas.',ERCs,[]]],
+ pen:[['p29p','Actualizar las prestaciones con un IPC distinto en cada territorio.',ERCs,[['ctx','Hoy se revalorizan con el IPC estatal, por ley desde 2021.','boe2121']]]],
+ emp:[['p29p','Salario mínimo catalán de 1.460 € y SMI estatal hasta el 60 % del salario medio.',ERCs,[['ctx','El salario mínimo es hoy estatal; uno catalán exige traspasar la competencia.']]],
+  ['p29p','Jornada máxima de 37,5 horas sin bajar el sueldo.',ERCs,[['pend','La ley de 37,5 horas fue rechazada en el Congreso en septiembre de 2025.','jornada']]],
+  ['p29p','Despido improcedente de 45 días por año, con tope de 42 mensualidades.',ERCs,[['ctx','Hoy son 33 días con tope de 24 mensualidades desde la reforma de 2012.']]]],
+ imp:[['p29p','Hacer permanentes los impuestos extraordinarios a grandes fortunas, banca y energéticas; ganancias de capital del 30 % al 35 %.',ERCs,[]],
+  ['p29p','Bajar el IRPF a las rentas del trabajo de menos de 35.000 € y el IVA de los alimentos básicos.',ERCn,[['vago','Sin cuantía de la rebaja.']]],
+  ['p29p','Financiación singular (según ERC, 4.700 millones más al año) y condonar 17.100 millones de deuda del FLA.',ERCs,[['pend','La financiación singular pactada en enero de 2026 quedó pendiente al disolverse las Cortes.','peerc']]]],
+ edu:[['p29p','Inversión estatal en educación del 6 % del PIB y 0-3 gratuito de forma progresiva.',ERCs,[['coste','No explica cómo se financiaría.']]],
+  ['p29p','Blindar la inmersión lingüística y traspasar todas las competencias educativas.',ERCn,[]]],
+ inm:[['p29p','Traspasar a Cataluña toda la gestión de migración y asilo.',ERCs,[['ctx','La inmigración es competencia exclusiva del Estado según la Constitución.']]]],
+ soc:[['p29p','Prestación universal por crianza de 200 € al mes por familia.',ERCs,[['vago','Se presenta como «punto de partida», sin calendario.']]]],
+ igu:[['p29p','Equiparar familias monoparentales a numerosas, permiso por duelo gestacional, reconocer identidades no binarias y castigar las terapias de conversión.',ERCs,[]]],
+ ter:[['p29p','Referéndum de autodeterminación negociado, con la UE y el Consejo de Europa como facilitadores.',ERCs,[['ctx','No está previsto en la Constitución.']]],
+  ['p29p','Traspaso integral de Rodalies, gestión de los aeropuertos de Girona, Reus y Sabadell, y 180 plazas judiciales más.',ERCs,[]]]
+};
+const PNV26={
+ pen:[['p29p','Mantener el poder adquisitivo, reforzar las mínimas y no contributivas y quitar penalizaciones a quien cotizó más de 40 años.',PNVs,[['ya','La revalorización con el IPC es ley desde 2021.','boe2121'],['vago','Sin cuantías.']]],
+  ['p29p','Completar el traspaso a Euskadi de la Seguridad Social previsto en el Estatuto de Gernika.',PNVs,[]]],
+ emp:[['p29p','Que Euskadi pueda fijar un salario mínimo propio, por encima del estatal.',PNVs,[['ctx','El salario mínimo es hoy estatal; exige traspasar la competencia.']]],
+  ['p29p','Paro para autónomos que cierren su negocio sin quererlo y menos burocracia para pymes y cooperativas.',PNVs,[['ya','La prestación por cese de actividad de autónomos ya existe; no se concreta en qué cambiaría.']]]],
+ imp:[['p29p','Bajar el impuesto sobre la electricidad al 0,5 %.',PNVs,[['ctx','Ya se aplicó de forma temporal entre 2021 y 2023.']]]],
+ ter:[['p29p','Que el Estado ejecute las inversiones comprometidas (Y vasca, Cercanías, puertos) y más gestión vasca de los puertos de Bilbao y Pasaia.',PNVs,[['vago','Sin calendario.']]],
+  ['p29p','Que ayuntamientos, diputaciones y Gobierno vasco puedan gastar su superávit en educación, sanidad, transporte y vivienda.',PNVs,[['ctx','Exige cambiar las reglas fiscales estatales.']]]]
+};
+const VXU='vox-programa-29n.html';
+const v=(n,pg)=>['Vox 2026, medida '+n+' (p. '+pg+')',VXU+'#p'+String(pg).split('-')[0]];
+const VOX26={
+ viv:[['p29','«Las casas, en España, para los españoles»: prioridad nacional para acceder a vivienda protegida o social y a las ayudas al alquiler.',v(27,19),[['derechos','Excluir por nacionalidad a ciudadanos de otros países de la UE choca con la igualdad de trato del derecho europeo (art. 18 del Tratado de Funcionamiento de la UE).'],['vago','El propio programa admite que exige «modificar o derogar» normas, pero no dice cuáles ni a quién deja fuera.'],['ccaa','La adjudicación de vivienda protegida la regulan las comunidades.']]],
+  ['p29','«El punto de partida de todo programa de vivienda es el control férreo de las fronteras».',v(26,19),[['vago','El programa no aporta ningún dato que relacione inmigración y precio de la vivienda.']]],
+  ['p29','Más inversión pública y vivienda protegida «para las familias españolas». «Ningún español vulnerable quedará sin hogar».',v(29,19),[['vago','No fija cuántas viviendas, con qué presupuesto ni en qué plazo.'],['voto','El 27 de enero de 2026 votó, con el PP y Junts, contra el decreto que prorrogaba la moratoria de desahucios de familias vulnerables.','saltoM']]],
+  ['p29','Derogar la Ley de Vivienda; incentivos al alquiler de larga duración y deducciones para inquilinos españoles; regular los pisos turísticos.',v(30,'19-20'),[['ctx','Ley 12/2023, en vigor desde 2023.','boe1223'],...VV('con el PP y Junts','con el PP, Junts y UPN'),['vago','Sin cuantía de las deducciones ni de los incentivos.']]],
+  ['p29','Reformar la Ley del Suelo para «volver a ver grúas»: más suelo, menos trámites.',v(28,19),[['vago','No fija ningún objetivo de viviendas.'],['ccaa','Suelo y planeamiento son autonómicos y municipales.']]],
+  ['p29','IVA del 0 % en la primera vivienda nueva de una familia española, bonificación del 100 % del ITP en la usada y recuperar la deducción por vivienda habitual.',v(34,20),[['coste','No cuantifica la pérdida de recaudación.'],['ccaa','El ITP es un impuesto cedido a las comunidades.']]],
+  ['p29','Fiscalidad «agravada y disuasoria» para compradores de fuera de la UE y para fondos especulativos.',v(35,21),[['voto','Votó el 2 de octubre y otra vez el 12 de noviembre de 2026 contra el decreto que limita la compra de vivienda por grandes tenedores por debajo del 70 % de su valor.','dp1211'],['vago','Sin tipos ni cuantías.']]],
+  ['p29','Prohibir alquilar a inmigrantes en situación irregular: verificar la residencia legal antes de firmar cualquier contrato.',v(32,20),[['vago','No explica quién lo comprobaría ni qué pasa con los contratos en vigor.']]],
+  ['p29','Desalojo de la vivienda okupada en menos de 24 horas y la «inquiokupación» como delito de estafa.',v(31,20),[['ya','Desde 2018 existe un procedimiento rápido de desalojo de viviendas ocupadas.','boe518']]],
+  ['p29','Rebaja «drástica» de los impuestos de todo el proceso de construcción.',v(33,20),[['vago','Sin cifras.']]]],
+ san:[['p29','Excluir de la sanidad a los extranjeros en situación irregular, salvo urgencia grave, y auditar «el coste de la inmigración masiva».',v(20,16),[['ctx','Supondría volver a una regla parecida a la de 2012 a 2018. Desde 2018 el acceso es universal.','boe718']]],
+  ['p29','Tarjeta sanitaria única con historia clínica compartida en toda España.',v(60,32),[['ccaa','La sanidad la gestionan las comunidades.']]],
+  ['p29','Reforzar Atención Primaria y Pediatría y un plan nacional contra las listas de espera, con colaboración público-privada.',v('61-62',32),[['vago','Sin cifras de profesionales, plazos máximos ni presupuesto.'],['ccaa','Plantillas y listas de espera dependen de las comunidades.']]],
+  ['p29','Mejores sueldos y guardias para sanitarios, incentivos para plazas rurales y plan de retorno de los que emigraron.',v(63,'32-33'),[['vago','Sin cuantías.'],['ccaa','Los sueldos del personal los pagan las comunidades.']]],
+  ['p29','Defensa de la vida «desde la concepción hasta la muerte natural» y objeción de conciencia de sanitarios y farmacéuticos.',v(98,45),[['vago','No dice si derogaría las leyes del aborto y la eutanasia.'],['voto','En abril de 2026 presentó una enmienda a la totalidad contra incluir el aborto en la Constitución, rechazada por 177 votos a 171.','pevox26']]]],
+ pen:[['p29','«Garantizar la sostenibilidad» de las pensiones con más crecimiento, empleo, salarios y natalidad.',v(7,'8-9'),[['vago','Es la única medida de pensiones. No concreta edad de jubilación, cálculo ni revalorización.'],['ctx','El programa no lo recoge, pero su diputado José María Figaredo volvió a defender en octubre de 2026 un sistema mixto con capitalización individual y llamó «zombi» al actual. Abascal: «nos da igual el modelo y la fórmula».','pevox26'],['voto','Fue el único grupo que votó contra la revalorización de 2026.','tpvox']]],
+  ['p29','Que el Estado pague la cotización de quien se dedique a cuidar de sus hijos, para no penalizar su jubilación.',v(94,44),[['coste','Sin coste estimado.']]]],
+ emp:[['p29','Derogar «la legislación laboral de Sánchez».',v(8,11),[['ctx','Incluye la reforma laboral de 2021, que redujo la contratación temporal.'],['ctx','Su plan de desregulación de junio de 2026 añade eliminar el registro horario obligatorio y los planes de igualdad obligatorios en las empresas.','pevox26'],['vago','No dice qué la sustituiría.']]],
+  ['p29','Autónomos: cuota cero si no llegan al SMI y cuota progresiva desde 50 € por encima.',v(3,7),[['coste','No cuantifica el efecto en los ingresos de la Seguridad Social.']]],
+  ['p29','Plan nacional de reindustrialización, plan nuclear y derogar el calendario de cierre de las centrales.',v(8,'9-10'),[['vago','Sin presupuesto ni calendario.']]]],
+ imp:[['p29','«Rebaja masiva» del IRPF, el IVA y el Impuesto de Sociedades.',v(3,7),[['coste','Su responsable económico, José María Figaredo, cifró en unos 46.000 millones la pérdida de IRPF de su rebaja. Hacienda la eleva a 85.000 millones y calcula que quien cobra el salario mínimo no ahorraría nada.','pevox26'],['vago','Sin un solo tipo ni tramo. Su documento de 2025 sí los daba (22.000 € exentos, 15 % y 25 %).','pevox'],['coste','No cuantifica la pérdida de recaudación.']]],
+  ['p29','«Para compensar la bajada masiva de impuestos, se recortarán todos los gastos superfluos de la Administración hasta el mínimo imprescindible.»',v(43,25),[['vago','No dice qué gastos, servicios o plantillas son «superfluos» ni cuánto ahorraría.'],['coste','La rebaja fiscal se financia con recortes sin cuantificar.']]],
+  ['p29','Suprimir de forma progresiva las subvenciones a partidos, sindicatos, patronales, ONG y observatorios.',v(43,25),[]],
+  ['p29','Gravar las remesas que se envían al extranjero.',v(21,16),[['vago','Sin tipo ni recaudación prevista.']]],
+  ['p29','Bajada «masiva» de los impuestos de la electricidad y fiscalidad mínima en zonas despobladas.',v('6, 8','8-9'),[['vago','Sin cifras.']]]],
+ edu:[['p29','Derogar la LOMLOE, currículo e inspección únicos, reválidas y EVAU única.',v('66, 69',35),[['ccaa','La gestión educativa es de las comunidades.']]],
+  ['p29','Educación en español en todo el territorio y libre elección de centro.',v('66-67',35),[['ccaa','Choca con los modelos lingüísticos de las comunidades con lengua propia.']]],
+  ['p29','Número máximo por aula de alumnos «procedentes de otras culturas» y aulas de nivelación separadas.',v(70,36),[['derechos','Separar a alumnos por su origen cultural choca con la prohibición de discriminación del artículo 14 de la Constitución.'],['vago','No fija el máximo ni quién decide qué alumno es «de otra cultura».']]],
+  ['p29','Prioridad nacional para elegir centro, becas de comedor y transporte y plazas de guardería.',v(74,36),[['ccaa','Admisión, becas y guarderías dependen de comunidades y ayuntamientos.']]],
+  ['p29','Fin de los menús halal en comedores y del programa de Lengua Árabe y Cultura Marroquí.',v('72-73',36),[]],
+  ['p29','Fin de los móviles en clase y plan nacional contra el acoso escolar.',v(69,35),[]]],
+ inm:[['p29','«Ni uno más»: prohibir regularizaciones masivas; quien entre de forma ilegal «jamás» podrá regularizarse.',v(9,13),[['vago','Afirma que España recibió «5 millones de personas en 5 años» sin citar fuente.']]],
+  ['p29','Suprimir el arraigo y las vías rápidas a la nacionalidad.',v(11,13),[['ctx','El arraigo está regulado en el Reglamento de Extranjería.']]],
+  ['p29','«Remigración»: plan de retorno de los extranjeros «que no contribuyan o vivan de subsidios».',v(13,13),[['derechos','Alcanza también a extranjeros con residencia legal: basta con que, a juicio del Gobierno, «no contribuyan» o cobren subsidios.'],['vago','No dice a cuántas personas afectaría, con qué criterio ni cómo se haría.']]],
+  ['p29','Repatriar a quien esté en situación irregular y deportar a quien cometa delitos o «imponga costumbres ajenas a nuestro modo de vida».',v('12, 14',13),[['derechos','Deportar por «costumbres» y no por delitos introduce un criterio ideológico, no penal.'],['vago','«Costumbres ajenas a nuestro modo de vida» no es un criterio jurídico definido.']]],
+  ['p29','Devolver a los menores extranjeros no acompañados a sus familias o a la tutela de su país.',v(15,'13-14'),[['derechos','La Convención de la ONU sobre los Derechos del Niño, ratificada por España, obliga a anteponer la protección del menor a su devolución.'],['vago','No explica cómo, con qué países ni con qué garantías.']]],
+  ['p29','Ni un euro a ONG que «colaboren con el efecto llamada» y fin de la cooperación con países que no frenen la migración.',v('16-17',14),[]]],
+ disc:[['p29','Más bonificaciones y deducciones para personas con discapacidad, fin de las barreras arquitectónicas y menos burocracia para reconocer la discapacidad.',v(95,45),[['vago','Sin cuantías ni plazos.'],['ccaa','El reconocimiento del grado de discapacidad lo hacen las comunidades.']]]],
+ dep:[['p29','Más presupuesto para dependencia, ayudas al cuidado en casa, más plazas en residencias y programas contra la soledad no deseada.',v(95,45),[['vago','No dice cuánto dinero ni cuántas plazas.'],['ccaa','La dependencia y las residencias las gestionan las comunidades.']]],
+  ['p29','Eliminar las trabas para que las ayudas a la dependencia lleguen rápido y completas.',v(96,45),[['vago','No concreta plazos máximos.']]]],
+ soc:[['p29','«En España, los españoles primero»: acceso preferente de los españoles a vivienda pública, guarderías, comedor, transporte, ayudas y servicios sociales.',v(18,16),[['ctx','Ya está en los pactos de gobierno PP-Vox de 2026 en Extremadura y Andalucía: prioridad en ayudas y vivienda protegida por «arraigo», rechazo a acoger menores no acompañados y prohibición del burka.','pevox26'],['derechos','Excluir por nacionalidad a ciudadanos de otros países de la UE choca con la igualdad de trato del derecho europeo (art. 18 del Tratado de Funcionamiento de la UE).'],['vago','Admite que exige «modificar o derogar» normas, sin decir cuáles.'],['ccaa','La mayoría de estos servicios son de comunidades y ayuntamientos.']]],
+  ['p29','Ingreso Mínimo Vital solo para «los españoles con menos recursos» y promover el retorno de los inmigrantes que lo cobren.',v(22,16),[['falso','Abascal afirmó en «La Revuelta» que el 82 % de los beneficiarios del IMV en Baleares son extranjeros. Según la Seguridad Social, en junio eran el 29,7 % en Baleares y el 17,5 % en toda España (El País, 13 nov 2026).'],['ctx','En campaña ya no habla de «prioridad» sino de «exclusividad nacional»: solo los españoles podrían cobrarlo (El País, 13 nov 2026).'],['ctx','Las personas en situación irregular ya no pueden cobrarlo: exige residencia legal.']]],
+  ['p29','Suprimir toda ayuda social a los inmigrantes en situación irregular.',v(19,16),[]],
+  ['p29','Ventajas de familia numerosa desde el primer hijo y 0-3 gratuito.',v(94,44),[['coste','Sin coste estimado.']]]],
+ igu:[['p29','Derogar las leyes de género, que según Vox «han criminalizado a los hombres», y sustituirlas por normas de protección a mujeres víctimas.',v(47,26),[['ctx','La Ley integral contra la violencia de género de 2004 se aprobó por unanimidad en el Congreso.'],['vago','Habla de un «fenómeno creciente de denuncias falsas» sin aportar datos.']]],
+  ['p29','Prohibir el burka y el niqab en espacios públicos.',v(71,36),[]],
+  ['p29','Combatir la brecha maternal y reforzar la conciliación.',v(99,'45-46'),[['vago','Sin medidas cuantificadas.']]]],
+ ter:[['p29','Plan Nacional del Agua que conecte todas las cuencas.',v(115,'53-54'),[['vago','Sin coste ni calendario.'],['ccaa','Afecta a cuencas que cruzan varias comunidades.']]],
+  ['p29','Derogar tres normas por cada una nueva y silencio administrativo positivo como regla general, salvo en inmigración.',v('40-41',24),[]],
+  ['p29','Acabar con las Zonas de Bajas Emisiones y con las «imposiciones climáticas» como el Pacto Verde.',v(44,25),[['ctx','Las Zonas de Bajas Emisiones las exige la Ley de Cambio Climático de 2021 a municipios de más de 50.000 habitantes.'],['ctx','Su plan de desregulación de junio de 2026 propone derogar esa ley entera, además de la de movilidad sostenible y la de residuos.','pevox26']]],
+  ['p29','Ley de Unidad de Mercado: lo legal en una comunidad lo será en toda España.',v(42,24),[['ya','Ya existe una Ley de garantía de la unidad de mercado desde 2013.']]],
+  ['p29','Recuperar la sedición y prohibir indultos por corrupción o contra la integridad territorial; ilegalizar partidos que atenten contra la unidad de España.',v(103,'48-49'),[['derechos','Ilegalizar partidos por sus ideas choca con el Tribunal Constitucional: la Constitución no impone una «democracia militante» (STC 48/2003). Hoy solo se ilegaliza a partidos que apoyan la violencia (Ley de Partidos de 2002).']]],
+  ['p29','«Expulsión de todos los invasores» de Ceuta y militarización de la frontera.',v(1,5),[['vago','Llama «invasores» a personas sin decir a quién se refiere ni cómo se haría la expulsión.']]],
+  ['p29','Derogar la Ley de Memoria Democrática, por «imponer una verdad oficial».',v(46,26),[['ctx','La Ley 20/2022 reconoce a las víctimas de la Guerra Civil y de la dictadura franquista, financia la exhumación de fosas y anula las condenas de los tribunales franquistas.']]],
+  ['p29','Agravar las penas por ofensas y ultrajes a España, sus símbolos y la Corona.',v(105,49),[['derechos','En 2018 el Tribunal Europeo de Derechos Humanos condenó a España por castigar la quema de fotos del Rey: lo consideró libertad de expresión (caso Stern Taulats y Roura Capellera).']]],
+  ['p29','«Limpiar RTVE de comisarios políticos».',v(110,51),[['vago','No dice cómo se garantizaría la independencia ni quién decidiría quién es un «comisario político».']]]]
+};
+Object.entries(VOX26).forEach(([t,v])=>{D[t].vox=v});
+Object.entries(ERC26).forEach(([t,v])=>{D[t].erc=v});
+Object.entries(PNV26).forEach(([t,v])=>{D[t].pnv=v});
+/* Temas nuevos: universidades (separadas de educación), jóvenes y política exterior */
+Object.keys(D.edu).forEach(p=>{const keep=[],mv=[];D.edu[p].forEach(it=>(/universi/i.test(it[1])?mv:keep).push(it));D.edu[p]=keep;if(mv.length)D.uni[p]=(D.uni[p]||[]).concat(mv)});
+(D.uni.pp||[]).forEach(it=>{if(/Autonomía universitaria/.test(it[1]))it[3].push(['ctx','Donde gobierna, el PP no llega al 1 % del PIB regional para la universidad pública que fija la LOSU como objetivo. En Madrid, las seis universidades públicas fueron a la huelga el 4 y 5 de noviembre por infrafinanciación.','huelgaMad'])});
+const ADD={
+ jov:{
+  pp:[['p29','Jóvenes de 18 a 35: rebaja del IRPF del 100 %, 75 %, 50 % y 25 % en sus cuatro primeros años de trabajo.',m(179,60),[['coste','El programa no cuantifica la pérdida de recaudación.']]],
+   ['p29','IVA de la primera vivienda del 10 % al 4 % para menores de 40 y aval público para la entrada, ampliable hasta los 50 años.',m('153-154','54-55'),[['ya','Desde 2023 existe una línea ICO de avales para jóvenes, hasta el 20 % del precio.','ico'],['coste','No cuantifica la pérdida de recaudación.']]],
+   ['p29','«Hucha Hogar Joven»: hasta 2.000 € al año con deducción del 20 % y tope de 40.000 €.',m(155,55),[['vago','El ahorro fiscal máximo es de 400 € al año. Llegar al tope exige veinte años de aportación completa.']]],
+   ['p29','Nuevos autónomos sin cuota el primer año, y el segundo si no llegan al salario mínimo.',m(170,59),[['coste','No cuantifica el efecto en la Seguridad Social.']]],
+   ['p29','Ningún menor de 14 años con cuenta en redes sociales; hasta los 16, con autorización de los padres.',m(168,58),[['vago','No explica cómo se verificaría la edad.']]],
+   ['p29','Que las decisiones de vivienda, empleo, pensiones y fiscalidad amplíen las oportunidades de emanciparse.',m(107,'42-43'),[['vago','Es una declaración de intenciones, sin medida concreta.']]]],
+  psoe:[['gob','Préstamos ICO al 0 % de hasta el 20 % del precio (máximo 50.000 €) para la primera vivienda.','dp1211',[['ya','En vigor con el decreto convalidado el 12 de noviembre de 2026.','dp1211']]],
+   ['gob','Prórroga de dos años del alquiler, subida máxima del 2 % y deducción del 10 % para inquilinos con menos de 33.000 €.','dp1211',[['ya','En vigor con el decreto convalidado el 12 de noviembre de 2026. Votaron en contra PP, Vox y Junts.','dp1211']]],
+   ['gob','Abono único de transporte estatal: 60 € al mes, 30 € para menores de 26 años.','pepsoe',[['ya','En marcha desde enero de 2026.','pepsoe']]],
+   ['pa','183.000 viviendas públicas de alquiler, la mitad para jóvenes.','pepsoe',[['pend','Promesa de 2023. No hemos localizado un balance de cuántas se han entregado.','pepsoe']]],
+   ['dec','Estatuto del Becario.','qppsoe',[['vago','Sin texto ni calendario.']]]],
+  vox:[['p29','«Trabajo estable y salarios dignos» para que los jóvenes puedan emanciparse.',v(8,'10-11'),[['vago','No hay una sola medida concreta de empleo juvenil.']]],
+   ['p29','Derogar la «legislación laboral de Sánchez».',v(8,11),[['ctx','Incluye la reforma laboral de 2021, que redujo la contratación temporal, la que más afecta a los jóvenes.']]],
+   ['p29','IVA del 0 % en la primera vivienda nueva y bonificación total del ITP en la usada, solo para familias españolas.',v(34,20),[['ctx','No es una medida para jóvenes: vale para cualquier familia española.'],['coste','No cuantifica la pérdida de recaudación.']]],
+   ['p29','Plan de retorno para los españoles que emigraron por falta de oportunidades.',v(23,16),[['vago','Sin medidas ni presupuesto.']]],
+   ['p29','Relevo generacional en el campo con apoyo a los jóvenes agricultores.',v(58,30),[['vago','Sin cuantía.']]]]
+ },
+ uni:{
+  pp:[['p29','Que los investigadores que se fueron puedan volver; tributación del 20 % durante seis años para profesionales de grandes proyectos.',m(188,63),[]],
+   ['p29','Más deducción fiscal por I+D+i.',m(189,63),[['vago','Sin porcentaje.']]]],
+  psoe:[['gob','Real decreto contra las «universidades franquicia»: la mitad del profesorado doctor y el 40 % a tiempo completo en cada titulación.','rdUni',[['pend','Anunciado el 18 de septiembre de 2026; no está aprobado.','rdUni'],['ctx','En una década la matrícula en la universidad privada creció un 128 % y en la pública un 3 %, según el Gobierno.','rdUni']]],
+   ['gob','Becas: 2.559 millones para el curso 2026-2027, la novena subida seguida desde 2018.','pepsoe',[['ya','Convocatoria en vigor.','pepsoe']]],
+   ['gob','Ley de Universidades (LOSU, 2023), con el objetivo de dedicar el 1 % del PIB a la universidad pública.','pepsoe',[['ccaa','Ese dinero lo ponen sobre todo las comunidades, y varias no llegan.','huelgaMad']]]],
+  vox:[['p29','Mejorar las becas universitarias y preuniversitarias para que nadie se quede sin estudiar por falta de recursos.',v(68,35),[['vago','Sin cuantía ni umbrales.']]],
+   ['p29','EVAU única en toda España.',v(66,35),[['ccaa','Hoy la prueba la organizan las comunidades con sus universidades.']]],
+   ['p29','Universidad como «espacio de libertad» y libertad de cátedra «frente a la corrección política».',v(75,36),[['vago','No incluye ninguna medida de financiación, plantillas ni investigación.']]]],
+  erc:[['dec','Destinar el 2 % del PIB a las universidades.','peerc',[['coste','Sin explicar cómo se financiaría.']]]]
+ },
+ ext:{
+  pp:[['p29','Política exterior de Estado y Estrategia de Acción Exterior al inicio de la legislatura.',m(234,73),[]],
+   ['p29','Ceuta, Melilla y Canarias como territorio español y «equilibrio» con Marruecos y Argelia.',m(237,74),[['vago','No dice qué cambiaría en la relación con Marruecos.']]],
+   ['p29','Apoyo a la ONU para una solución en el Sáhara Occidental.',m(239,75),[['ctx','Desde 2022 el Gobierno respalda el plan de autonomía marroquí.']]],
+   ['p29','Apoyo a Ucrania y sanciones a Rusia mientras dure la agresión.',m(240,75),[]],
+   ['p29','Paz en Oriente Medio, protección de Gaza e Israel como socio.',m(246,76),[['vago','No dice si mantendría el embargo de armas a Israel aprobado en 2025.','pepsoe']]],
+   ['p29','Gibraltar como cuestión de Estado y revisar el acuerdo UE-Reino Unido.',m(241,75),[]],
+   ['p29','Auditar y redirigir la cooperación al desarrollo.',m(247,'76-77'),[['vago','No fija ningún objetivo de ayuda al desarrollo.']]]],
+  psoe:[['gob','Reconocimiento del Estado de Palestina (2024) y embargo de armas a Israel (2025).','pepsoe',[['ya','Ambos en vigor.','pepsoe']]],
+   ['dec','Gasto en defensa del 2,1 % del PIB, sin aceptar el 5 % pactado en la OTAN.','pepsoe',[['ctx','España fue el único aliado que no asumió el 5 %. Le ha valido críticas de Donald Trump.','pepsoe']]],
+   ['dec','Apoyo político y militar a Ucrania.','pepsoe',[]],
+   ['pa','Ayuda al desarrollo hacia el 0,7 % de la renta nacional en 2030.','pepsoe',[['vago','Objetivo de su programa de 2023, sin calendario intermedio.']]]],
+  vox:[['p29','Sanciones a Marruecos y suspender acuerdos internacionales hasta que «respete las fronteras».',v(1,5),[['ctx','Su iniciativa de septiembre de 2026 pide suspender el Tratado de Amistad de 1991, expulsar al embajador marroquí y negar visados a los marroquíes.','pevox26']]],
+   ['p29','Fin de la cooperación al desarrollo con los países que no frenen la inmigración.',v(17,14),[]],
+   ['p29','Suspender acuerdos internacionales que «impiden nuestro desarrollo» y revertir el Pacto Verde y la Agenda 2030.',v(8,9),[['ctx','Defiende la primacía de la Constitución sobre el derecho europeo «en asuntos de interés nacional», lo que choca con la primacía del derecho de la UE que España aceptó al entrar.','pevox26']]],
+   ['p29','«Toda la presión internacional necesaria» para recuperar Gibraltar.',v(93,42),[]],
+   ['p29','Defender la soberanía «ante injerencias extranjeras».',v(92,41),[['ctx','Abascal preside desde 2024 el partido europeo Patriots, con Orbán y Le Pen.','pevox26'],['vago','El programa no menciona Ucrania, Rusia ni Oriente Medio.']]]]
+ }
+};
+Object.entries(ADD).forEach(([t,ps])=>Object.entries(ps).forEach(([p,its])=>{D[t][p]=(D[t][p]||[]).concat(its)}));
+/* Frente Amplio (Sumar, IU, Más Madrid, Comuns): sin programa 29-N publicado; posiciones 2026 y programa 2023 */
+const FA26={
+ viv:[['dec','Prórroga y renovación automática de los alquileres, freno a los desahucios y tope a las rentas, en la línea de los decretos de 2026.','pesum',[['ya','El decreto principal se convalidó el 12 de noviembre (35 a 34). La renovación automática, la medida que más empujó Sumar, cayó el mismo día.','dp1211']]],
+  ['dec','Prohibir que empresas y fondos compren vivienda y derogar la ley de las socimis.','pesum',[['pend','Lo defendió en el Congreso en mayo de 2026. El PSOE lo sustituyó por impuestos a pisos vacíos y a compras de no residentes.','pesum']]],
+  ['dec','Expropiar viviendas de grandes propietarios en casos de desahucio.','pesum',[['ctx','La Constitución permite expropiar por interés social, con indemnización (art. 33).'],['vago','No concreta supuestos ni cuantía de la indemnización.']]],
+  ['pa','Parque público de dos millones de viviendas de alquiler asequible en diez años, invirtiendo el 1 % del PIB al año.','pesum',[['inviable','Supondría unas 200.000 viviendas al año, más del doble de todas las viviendas terminadas en España en 2025 (unas 92.000).','bde'],['pend','Promesa de su programa de 2023.']]],
+  ['gob','Desde Consumo obligó en 2025 a Airbnb a retirar más de 65.000 anuncios de pisos turísticos sin licencia.','pesum',[['ya','Medida ya aplicada.']]]],
+ san:[['gob','Ley de gestión pública del Sistema Nacional de Salud: gestión pública directa como norma y la privada como excepción evaluada.','pesum',[['pend','Aprobada como proyecto el 12 de mayo de 2026; decayó con la disolución.','pesum']]],
+  ['pa','Subir el gasto sanitario público medio punto del PIB cada año, con prioridad para Atención Primaria.','pesum',[['coste','No explica cómo se financiaría.'],['ccaa','La sanidad la gestionan las comunidades.']]],
+  ['pa','Dentista, óptica, audífonos, psicoterapia y fisioterapia en la sanidad pública.','pesum',[['coste','Sin coste estimado.']]],
+  ['pa','Empresa farmacéutica pública que fabrique medicamentos y vacunas.','pesum',[['vago','Sin presupuesto ni calendario.']]],
+  ['gob','Estatuto Marco del personal sanitario: guardias de 17 horas como máximo.','pesum',[['pend','No se aprobó. Los sindicatos médicos lo rechazaron con una huelga indefinida.','pesum']]]],
+ pen:[['pa','IPC por ley y subir las mínimas y no contributivas por encima de la inflación hasta el umbral de la pobreza.','pesum',[['ya','La parte del IPC ya es ley desde 2021.','boe2121'],['coste','Sin coste estimado.']]],
+  ['pa','Blindar en la Constitución la Seguridad Social pública, de reparto y sin ánimo de lucro.','pesum',[['ctx','Exige reforma constitucional con tres quintos de cada cámara.']]]],
+ emp:[['dec','Jornada de 37,5 horas sin bajar el sueldo y registro horario digital obligatorio.','pesum',[['pend','La ley de 37,5 horas cayó en el Congreso el 10 de septiembre de 2025 con los votos de PP, Vox y Junts.','jornada']]],
+  ['gob','Salario mínimo de al menos el 60 % del salario medio y sin perder poder adquisitivo.','pesum',[['ctx','En 2026 es de 1.221 € en 14 pagas, frente a 736 € en 2018.','pesum']]]],
+ imp:[['pl','Impuesto estatal sobre herencias y donaciones de más de un millón de euros, contra el «dumping fiscal» autonómico.','pesum',[['pend','Proposición de ley registrada con IU en mayo de 2026; decayó con la disolución.','pesum'],['ccaa','Sucesiones está cedido a las comunidades; sería un impuesto complementario.']]],
+  ['pa','Impuesto permanente a las grandes fortunas, más tramos del IRPF por encima de 120.000 € y mantener los gravámenes a banca y energéticas.','pesum',[['vago','Sin tipos ni recaudación prevista.']]]],
+ edu:[['pl','Máximo de 20 alumnos por aula en Infantil, Primaria, ESO y FP; el alumnado vulnerable cuenta doble.','pesum',[['pend','Admitida a trámite en diciembre de 2025; decayó con la disolución.','pesum'],['ccaa','Plantillas y centros dependen de las comunidades.']]],
+  ['pa','Gasto educativo del 5 % del PIB de inmediato y camino del 7 %.','pesum',[['coste','No explica cómo se financiaría.']]],
+  ['pa','Gratuidad de 0 a 3 años, de la FP y de los comedores escolares públicos.','pesum',[['coste','Sin coste estimado.'],['ccaa','Depende de comunidades y ayuntamientos.']]]],
+ inm:[['gob','Regularización extraordinaria de 2026 (Real Decreto 316/2026), tras la ILP de más de 700.000 firmas.','pesum',[['ya','Aprobada en abril de 2026; recibió 1.174.978 solicitudes.','pepsoe']]],
+  ['pa','Regularización permanente, cierre de los CIE, asilo en embajadas y fin de las devoluciones en caliente.','pesum',[['vago','Sin calendario.']]],
+  ['pa','Ley integral contra el racismo.','pesum',[['pend','Promesa de su programa de 2023.']]]],
+ soc:[['dec','Prestación universal por crianza de 200 € al mes por hijo hasta los 18 años, sin requisito de renta.','pesum',[['pend','Ya estaba en su programa de 2023 y no llegó a los presupuestos de 2026.','pesum'],['coste','Sin coste estimado.']]]],
+ igu:[['gob','Permiso por nacimiento de 19 semanas por progenitor y 32 en familias monoparentales, al 100 %.','pesum',[['ya','Real Decreto-ley 9/2025, convalidado en septiembre de 2025.','pesum']]],
+  ['pa','Aborto garantizado en la sanidad pública de todo el territorio y ley integral contra la trata.','pesum',[['pend','Promesas de su programa de 2023.']]],
+  ['pa','Desarrollar la ley trans de 2023 y red de acogida para víctimas de LGTBIfobia.','pesum',[]]],
+ ter:[['pa','España como «país de países»: nuevo pacto territorial plurinacional y acuerdo con Cataluña votado por los catalanes.','pesum',[['ctx','Una votación vinculante en Cataluña no cabe en la Constitución actual.']]],
+  ['dec','Financiación autonómica con suelo fiscal, para que el dinero extra no sirva para bajar impuestos a los más ricos.','pesum',[]],
+  ['dec','Cerrar todas las nucleares en 2035, sin prórrogas.','pesum',[['ctx','El Gobierno del que forma parte prorrogó Almaraz hasta 2030 en agosto de 2026; Sumar lo llamó «error estratégico».','pesum']]]],
+ jov:[['pa','Herencia universal de 20.000 € para cada joven al cumplir 23 años.','pesum',[['pend','Promesa de su programa de 2023.'],['coste','Sin coste estimado ni financiación.']]],
+  ['gob','Ley de protección de menores en entornos digitales: limitar las redes sociales a menores de 16 años.','pesum',[['pend','No llegó a aprobarse.','pesum']]]],
+ uni:[['pa','Rebajar las tasas universitarias hasta la gratuidad, empezando por primer curso y quitando el recargo de segundas matrículas.','pesum',[['ccaa','Las tasas las fijan las comunidades.'],['vago','Sin calendario.']]],
+  ['pa','Más becas según la renta.','pesum',[['vago','Sin cuantía.']]]],
+ ext:[['gob','Embargo de armas a Israel.','pesum',[['ya','Real Decreto-ley 10/2025, convalidado el 8 de octubre de 2025. Pide eliminar las excepciones.','pesum']]],
+  ['dec','No aumentar el gasto militar ni aceptar el 5 % del PIB de la OTAN.','pesum',[]],
+  ['pa','Revertir el giro de 2022 sobre el Sáhara Occidental y apoyar la autodeterminación saharaui.','pesum',[['ctx','En 2022 el Gobierno del que formaba parte pasó a respaldar el plan de autonomía marroquí.','pesum']]],
+  ['pa','Autonomía estratégica europea frente a la OTAN y 0,7 % de la renta a cooperación en 2030.','pesum',[['vago','Sin calendario intermedio.']]]]
+};
+Object.entries(FA26).forEach(([t,v])=>{D[t].fa=v});
+
+
+
+
+/* Claves de cada tema: qué existe ya y quién decide */
+const CLAVES={
+ viv:['El Banco de España cifra el déficit en 750.000 viviendas y recomienda simplificar la regulación y dar más capacidad a los ayuntamientos.','Anunciado en enero y no localizado en el programa del PP: financiación autonómica ligada al número de viviendas y alquileres un 30 % más baratos en suelo público.','La Ley por el derecho a la vivienda está en vigor desde 2023.','Suelo, urbanismo y vivienda protegida son competencia de comunidades y ayuntamientos. El Estado legisla sobre alquiler e impuestos estatales.','El Congreso derogó el 2 de octubre los decretos de vivienda del Gobierno; fue el detonante del adelanto electoral.','El 12 de noviembre la Diputación Permanente convalidó el decreto principal por un voto (35 a 34), con PP, Vox y Junts en contra. El de los alquileres indefinidos cayó con el voto del PNV.'],
+ san:['Desde 2002 todas las comunidades gestionan su sanidad. El Estado decide la cartera común, el MIR y la financiación general.','Varias leyes sanitarias (gestión pública, Estatuto Marco, medicamentos) decayeron con la disolución de las Cortes.'],
+ pen:['La revalorización con el IPC es ley desde 2021. Prometerla no cambia nada; lo nuevo sería blindarla o cambiar el sistema.','En 2026 las contributivas subieron un 2,7 %, las mínimas algo más del 7 % y las no contributivas un 11,4 %.'],
+ emp:['El salario mínimo lo fija el Gobierno cada año, tras consultar a sindicatos y patronal.','La ley de reducción de jornada a 37,5 horas fue rechazada en el Congreso en septiembre de 2025.'],
+ imp:['Parte del IRPF es autonómico, y Sucesiones y Patrimonio están cedidos a las comunidades. Prometer bajarlos «en toda España» exige acuerdo con ellas o cambiar la ley de financiación.'],
+ edu:['La educación la gestionan las comunidades. El Estado fija leyes básicas como la LOMLOE (2020) y las becas.'],
+ uni:['Las universidades públicas las financian sobre todo las comunidades. El Estado fija la LOSU (2023), las becas y la acreditación de títulos.','La LOSU fija el objetivo de dedicar el 1 % del PIB a la universidad pública.'],
+ jov:['Muchas medidas para jóvenes son de vivienda y empleo: compáralas también en esos temas.'],
+ ext:['La política exterior y la defensa son competencia exclusiva del Estado.','En 2025 España fue el único aliado de la OTAN que no asumió el objetivo del 5 % del PIB en defensa.'],
+ inm:['La inmigración es competencia exclusiva del Estado.','Desde 2018 la atención sanitaria es universal, también para personas en situación irregular.'],
+ disc:['El artículo 49 de la Constitución se reformó en 2024.','La reforma de las leyes de discapacidad y dependencia se aprobó el 14 de julio de 2026. La pregunta ahora es quién la mantiene, la amplía o la cambia.','CERMI y COCEMFE (106 propuestas en 12 prioridades) han enviado sus documentos a los partidos.'],
+ dep:['La reforma de julio de 2026 obliga al Estado a financiar el 50 % de la dependencia y añade 6.200 millones entre 2026 y 2027.','La valoración y los servicios los gestionan las comunidades.'],
+ soc:['El Ingreso Mínimo Vital es estatal desde 2020. Los servicios sociales y las rentas autonómicas dependen de cada comunidad.'],
+ igu:['El Pacto de Estado contra la Violencia de Género se renovó en febrero de 2025.','El permiso por nacimiento es de 19 semanas por progenitor desde 2025.'],
+ ter:['El modelo de financiación autonómica requiere ley orgánica y suele negociarse con las comunidades.']
+};
+
+let topic='viv', sel=['pp','psoe','vox','fa'], crit=true, only=null, q='';
+try{const s=JSON.parse(localStorage.getItem('c29n2')||'null');if(s&&D[s.t]){topic=s.t;sel=s.p.filter(p=>PARTIES.some(x=>x[0]===p)).slice(0,4);crit=s.c!==false}}catch(e){}
+const $=id=>document.getElementById(id);
+const LBL={p29:'Programa 29-N',p29p:'Programa 29-N · vía prensa',pa:'Programa anterior',doc:'Documento 2026',dec:'Declaración 2026',pl:'Proposición de ley',gob:'Gobierno / ley'};
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const norm=s=>s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'');
+const tname=k=>TOPICS.find(t=>t[0]===k)[1];
+function save(){try{localStorage.setItem('c29n2',JSON.stringify({t:topic,p:sel,c:crit}))}catch(e){}}
+
+function drawTopics(){
+ $('topics').innerHTML=TOPICS.map(([k,n])=>`<button class="topic" id="tp-${k}" data-k="${k}" aria-pressed="${k===topic&&!q}">${ICON[k]}<span>${n}</span></button>`).join('');
+ $('tsel').innerHTML=TOPICS.map(([k,n])=>`<option value="${k}"${k===topic?' selected':''}>${n}</option>`).join('');
+}
+function drawParties(){
+ $('parties').innerHTML=PARTIES.map(([k,n,c])=>`<button class="party" id="pa-${k}" data-k="${k}" style="--pc:${c}" aria-pressed="${sel.includes(k)}"><i></i>${n}</button>`).join('');
+}
+/* items visibles para un partido: por tema o por búsqueda */
+function itemsFor(p){
+ let out=[];
+ if(q){const nq=norm(q);TOPICS.forEach(([t])=>((D[t]||{})[p]||[]).forEach(it=>{
+   const hay=norm(it[1]+' '+it[3].map(n=>n[1]).join(' ')+' '+tname(t));
+   if(hay.includes(nq))out.push([t,it])}));}
+ else out=((D[topic]||{})[p]||[]).map(it=>[topic,it]);
+ if(only&&crit)out=out.filter(([,it])=>it[3].some(n=>n[0]===only));
+ return out;
+}
+function drawFlags(){
+ const counts={};Object.keys(FLAGS).forEach(f=>counts[f]=0);
+ sel.forEach(p=>{const save=only;only=null;itemsFor(p).forEach(([,it])=>it[3].forEach(n=>counts[n[0]]++));only=save});
+ $('flags').hidden=!crit;
+ $('flags').innerHTML=Object.entries(FLAGS).filter(([f])=>counts[f]).map(([f,[l,d]])=>`<button class="flag" data-f="${f}" title="${esc(d)}" aria-pressed="${only===f}">${l} <b>${counts[f]}</b></button>`).join('');
+}
+function drawContext(){
+ const c=!q&&CLAVES[topic];$('context').hidden=!c;
+ if(c)$('context').innerHTML=`<h3>Antes de comparar: ${esc(tname(topic))}</h3><ul>${c.map(x=>`<li>${esc(x)}</li>`).join('')}</ul>`;
+}
+function drawCols(){
+ const cols=$('cols');cols.style.setProperty('--k',Math.max(sel.length,1));
+ if(!sel.length){cols.innerHTML='<div class="none"><b>Elige al menos un partido</b>En el paso 2.</div>';return}
+ cols.innerHTML=sel.map(k=>{
+  const p=PARTIES.find(x=>x[0]===k);const list=itemsFor(k);
+  const tally={};list.forEach(([,it])=>it[3].forEach(n=>{if(n[0]!=='ctx')tally[n[0]]=(tally[n[0]]||0)+1}));
+  const tl=crit&&list.length?`<div class="tally"><span>${list.length} propuesta${list.length>1?'s':''}</span>${Object.entries(tally).map(([f,c])=>`<span><b>${c}</b> ${FLAGS[f][0]}</span>`).join('')}</div>`:'';
+  const body=list.length?list.map(([t,[o,txt,s,notes]])=>{
+    const src=Array.isArray(s)?s:S[s];
+    const nt=crit?notes.map(([f,nx,ns])=>`<div class="note"><span class="k">${FLAGS[f][0]}</span><span>${esc(nx)}</span>${ns?(S[ns]?`<a href="${S[ns][1]}" target="_blank" rel="noopener">${esc(S[ns][0])} ↗</a>`:(/^https?:/.test(ns)?`<a href="${ns}" target="_blank" rel="noopener">Fuente ↗</a>`:'')):''}</div>`).join(''):'';
+    return `<div class="item o-${o}"><div class="tline"><span class="tag">${LBL[o]}</span>${q?`<span class="ttopic">${esc(tname(t))}</span>`:''}</div><p>${esc(txt)}</p>${src?`<a class="src" href="${src[1]}" target="_blank" rel="noopener">${esc(src[0])} ↗</a>`:''}${nt}</div>`}).join('')
+   :`<div class="none"><b>Sin propuesta localizada</b>${q?`Nada que coincida con «${esc(q)}».`:only?'Ninguna con esta observación.':`No se ha encontrado nada de este partido sobre ${esc(tname(topic).toLowerCase())} hasta hoy.`}</div>`;
+  return `<article class="col" style="--pc:${p[2]}"><h3>${p[1]}<small>${p[3]}</small></h3>${tl}${body}</article>`}).join('');
+}
+function drawMap(){
+ let h='<thead><tr><th></th>'+PARTIES.map(p=>`<th scope="col">${p[1]}</th>`).join('')+'</tr></thead><tbody>';
+ TOPICS.forEach(([k,n])=>{h+=`<tr><th scope="row">${n}</th>`+PARTIES.map(p=>{const c=((D[k]||{})[p[0]]||[]).length;const l=c===0?'z':c<2?'l1':c<4?'l2':'l3';return `<td class="${l}" data-t="${k}" data-p="${p[0]}" title="${n} · ${p[1]}: ${c}">${c||'·'}</td>`}).join('')+'</tr>'});
+ $('map').innerHTML=h+'</tbody>';
+}
+function drawMethod(){$('method').innerHTML=Object.values(FLAGS).map(([l,d])=>`<dt>${l}</dt><dd>${esc(d)}</dd>`).join('')}
+function refresh(){drawTopics();drawContext();drawFlags();drawCols();save()}
+function showRes(){
+ const r=$('res').getBoundingClientRect();
+ if(r.top>innerHeight*0.6||r.top<-50)$('res').scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'start'});
+ const c=$('cols');c.classList.remove('flash');void c.offsetWidth;c.classList.add('flash');
+}
+function setTopic(k){topic=k;q='';$('q').value='';only=null;refresh();showRes()}
+
+$('topics').addEventListener('click',e=>{const b=e.target.closest('.topic');if(b)setTopic(b.dataset.k)});
+$('tsel').addEventListener('change',e=>setTopic(e.target.value));
+$('parties').addEventListener('click',e=>{const b=e.target.closest('.party');if(!b)return;const k=b.dataset.k;
+ if(sel.includes(k)){sel=sel.filter(x=>x!==k);$('hint').textContent=''}
+ else if(sel.length>=4){$('hint').textContent='Ya hay cuatro partidos. Quita uno para añadir otro.';return}
+ else{sel.push(k);$('hint').textContent=''}
+ drawParties();drawFlags();drawCols();save()});
+$('q').addEventListener('input',e=>{q=e.target.value.trim();only=null;refresh()});
+$('crit').addEventListener('change',e=>{crit=e.target.checked;only=null;drawFlags();drawCols();save()});
+$('flags').addEventListener('click',e=>{const b=e.target.closest('.flag');if(!b)return;only=only===b.dataset.f?null:b.dataset.f;drawFlags();drawCols()});
+$('map').addEventListener('click',e=>{const td=e.target.closest('td');if(!td)return;const p=td.dataset.p;
+ if(!sel.includes(p)){if(sel.length>=4)sel.pop();sel.push(p)}drawParties();setTopic(td.dataset.t)});
+$('crit').checked=crit;
+drawParties();drawMap();drawMethod();refresh();
+</script>
+</body>
+</html>
