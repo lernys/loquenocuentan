@@ -1,0 +1,590 @@
+{
+ "/pp": {
+  "hash": "90280e1d24f6",
+  "date": "2026-11-13"
+ },
+ "/pp/vivienda": {
+  "hash": "bcdad11771fb",
+  "date": "2026-11-13"
+ },
+ "/pp/jovenes": {
+  "hash": "09997dc9155c",
+  "date": "2026-11-13"
+ },
+ "/pp/sanidad": {
+  "hash": "9501851a5455",
+  "date": "2026-11-13"
+ },
+ "/pp/pensiones": {
+  "hash": "ec188cc7f741",
+  "date": "2026-11-13"
+ },
+ "/pp/empleo": {
+  "hash": "0d757d19373a",
+  "date": "2026-11-13"
+ },
+ "/pp/impuestos": {
+  "hash": "82f51ac0cd3c",
+  "date": "2026-11-13"
+ },
+ "/pp/educacion": {
+  "hash": "2244a64aa6c8",
+  "date": "2026-11-13"
+ },
+ "/pp/universidades": {
+  "hash": "e7534790734e",
+  "date": "2026-11-13"
+ },
+ "/pp/inmigracion": {
+  "hash": "273fea36fe6d",
+  "date": "2026-11-13"
+ },
+ "/pp/discapacidad": {
+  "hash": "9580c338f22f",
+  "date": "2026-11-13"
+ },
+ "/pp/dependencia": {
+  "hash": "998a88e61445",
+  "date": "2026-11-13"
+ },
+ "/pp/servicios-sociales": {
+  "hash": "d2f4580dee7a",
+  "date": "2026-11-13"
+ },
+ "/pp/igualdad": {
+  "hash": "58092e358056",
+  "date": "2026-11-13"
+ },
+ "/pp/territorio": {
+  "hash": "2324f6b4e581",
+  "date": "2026-11-13"
+ },
+ "/pp/politica-exterior": {
+  "hash": "da40463efbd0",
+  "date": "2026-11-13"
+ },
+ "/psoe": {
+  "hash": "dce027b8255a",
+  "date": "2026-11-13"
+ },
+ "/psoe/vivienda": {
+  "hash": "a25c9024ba9f",
+  "date": "2026-11-13"
+ },
+ "/psoe/jovenes": {
+  "hash": "94cd38db76d4",
+  "date": "2026-11-13"
+ },
+ "/psoe/sanidad": {
+  "hash": "c3c251dea896",
+  "date": "2026-11-13"
+ },
+ "/psoe/pensiones": {
+  "hash": "1e50d0256a83",
+  "date": "2026-11-13"
+ },
+ "/psoe/empleo": {
+  "hash": "0e5c3e80bebb",
+  "date": "2026-11-13"
+ },
+ "/psoe/impuestos": {
+  "hash": "8931bea7d35c",
+  "date": "2026-11-13"
+ },
+ "/psoe/educacion": {
+  "hash": "e6b0021986aa",
+  "date": "2026-11-13"
+ },
+ "/psoe/universidades": {
+  "hash": "caec451b04bd",
+  "date": "2026-11-13"
+ },
+ "/psoe/inmigracion": {
+  "hash": "2d7eb9d89c84",
+  "date": "2026-11-13"
+ },
+ "/psoe/discapacidad": {
+  "hash": "4f4b9b22f15b",
+  "date": "2026-11-13"
+ },
+ "/psoe/dependencia": {
+  "hash": "cf8b0c75cfdd",
+  "date": "2026-11-13"
+ },
+ "/psoe/servicios-sociales": {
+  "hash": "b383ee500950",
+  "date": "2026-11-13"
+ },
+ "/psoe/igualdad": {
+  "hash": "92ea0401e871",
+  "date": "2026-11-13"
+ },
+ "/psoe/territorio": {
+  "hash": "8e7ac5b453a2",
+  "date": "2026-11-13"
+ },
+ "/psoe/politica-exterior": {
+  "hash": "a6a4bb2b9bdb",
+  "date": "2026-11-13"
+ },
+ "/vox": {
+  "hash": "cdfa3d207c19",
+  "date": "2026-11-13"
+ },
+ "/vox/vivienda": {
+  "hash": "d0bd6137fbdd",
+  "date": "2026-11-13"
+ },
+ "/vox/jovenes": {
+  "hash": "c0548d1ebb77",
+  "date": "2026-11-13"
+ },
+ "/vox/sanidad": {
+  "hash": "dd1d71a33a59",
+  "date": "2026-11-13"
+ },
+ "/vox/pensiones": {
+  "hash": "dace42d0ee5c",
+  "date": "2026-11-13"
+ },
+ "/vox/empleo": {
+  "hash": "2addf9f62fb4",
+  "date": "2026-11-13"
+ },
+ "/vox/impuestos": {
+  "hash": "d6f33df920c1",
+  "date": "2026-11-13"
+ },
+ "/vox/educacion": {
+  "hash": "0fea5f9b681d",
+  "date": "2026-11-13"
+ },
+ "/vox/universidades": {
+  "hash": "f30f101c2dff",
+  "date": "2026-11-13"
+ },
+ "/vox/inmigracion": {
+  "hash": "c06e6e0baa82",
+  "date": "2026-11-13"
+ },
+ "/vox/discapacidad": {
+  "hash": "cc76cd493c38",
+  "date": "2026-11-13"
+ },
+ "/vox/dependencia": {
+  "hash": "bed281b5841c",
+  "date": "2026-11-13"
+ },
+ "/vox/servicios-sociales": {
+  "hash": "994abb9c8595",
+  "date": "2026-11-13"
+ },
+ "/vox/igualdad": {
+  "hash": "55d3eb804b11",
+  "date": "2026-11-13"
+ },
+ "/vox/territorio": {
+  "hash": "ad42ec7410b9",
+  "date": "2026-11-13"
+ },
+ "/vox/politica-exterior": {
+  "hash": "43eaa8e706ca",
+  "date": "2026-11-13"
+ },
+ "/frente-amplio": {
+  "hash": "5e087ce3695b",
+  "date": "2026-11-13"
+ },
+ "/frente-amplio/vivienda": {
+  "hash": "ad4ea3a50a07",
+  "date": "2026-11-13"
+ },
+ "/frente-amplio/jovenes": {
+  "hash": "e41bded0e34d",
+  "date": "2026-11-13"
+ },
+ "/frente-amplio/sanidad": {
+  "hash": "7446b9f6c38d",
+  "date": "2026-11-13"
+ },
+ "/frente-amplio/pensiones": {
+  "hash": "481178f01406",
+  "date": "2026-11-13"
+ },
+ "/frente-amplio/empleo": {
+  "hash": "d86e9a421373",
+  "date": "2026-11-13"
+ },
+ "/frente-amplio/impuestos": {
+  "hash": "981586d51323",
+  "date": "2026-11-13"
+ },
+ "/frente-amplio/educacion": {
+  "hash": "c7eb7dd5a86e",
+  "date": "2026-11-13"
+ },
+ "/frente-amplio/universidades": {
+  "hash": "26ac0387c983",
+  "date": "2026-11-13"
+ },
+ "/frente-amplio/inmigracion": {
+  "hash": "c9d68f912e01",
+  "date": "2026-11-13"
+ },
+ "/frente-amplio/discapacidad": {
+  "hash": "4e5d54a1eb1b",
+  "date": "2026-11-13"
+ },
+ "/frente-amplio/dependencia": {
+  "hash": "8877a186c0fb",
+  "date": "2026-11-13"
+ },
+ "/frente-amplio/servicios-sociales": {
+  "hash": "2a562ead952b",
+  "date": "2026-11-13"
+ },
+ "/frente-amplio/igualdad": {
+  "hash": "27fedb90277c",
+  "date": "2026-11-13"
+ },
+ "/frente-amplio/territorio": {
+  "hash": "dc59cb4e820f",
+  "date": "2026-11-13"
+ },
+ "/frente-amplio/politica-exterior": {
+  "hash": "2d0226fd5cff",
+  "date": "2026-11-13"
+ },
+ "/podemos": {
+  "hash": "d0516211b2db",
+  "date": "2026-11-13"
+ },
+ "/podemos/vivienda": {
+  "hash": "ad0c36c2e130",
+  "date": "2026-11-13"
+ },
+ "/podemos/sanidad": {
+  "hash": "f138094d0a1e",
+  "date": "2026-11-13"
+ },
+ "/podemos/pensiones": {
+  "hash": "c33e71d96c56",
+  "date": "2026-11-13"
+ },
+ "/podemos/empleo": {
+  "hash": "6a93fcbebd37",
+  "date": "2026-11-13"
+ },
+ "/podemos/impuestos": {
+  "hash": "bba5b53a2ef8",
+  "date": "2026-11-13"
+ },
+ "/podemos/dependencia": {
+  "hash": "ade96599dccf",
+  "date": "2026-11-13"
+ },
+ "/podemos/servicios-sociales": {
+  "hash": "33c13f653498",
+  "date": "2026-11-13"
+ },
+ "/podemos/igualdad": {
+  "hash": "e3c6fc5a3e0b",
+  "date": "2026-11-13"
+ },
+ "/erc": {
+  "hash": "c93998e0e5fc",
+  "date": "2026-11-13"
+ },
+ "/erc/vivienda": {
+  "hash": "abfafad31571",
+  "date": "2026-11-13"
+ },
+ "/erc/sanidad": {
+  "hash": "7021792cd83c",
+  "date": "2026-11-13"
+ },
+ "/erc/pensiones": {
+  "hash": "1f9380e8a0aa",
+  "date": "2026-11-13"
+ },
+ "/erc/empleo": {
+  "hash": "b1106a80ce7a",
+  "date": "2026-11-13"
+ },
+ "/erc/impuestos": {
+  "hash": "a5b892f0e0bd",
+  "date": "2026-11-13"
+ },
+ "/erc/educacion": {
+  "hash": "4607c3caf5d4",
+  "date": "2026-11-13"
+ },
+ "/erc/universidades": {
+  "hash": "c2fa6b070455",
+  "date": "2026-11-13"
+ },
+ "/erc/inmigracion": {
+  "hash": "b75f81123fef",
+  "date": "2026-11-13"
+ },
+ "/erc/dependencia": {
+  "hash": "2aab6c8fb89d",
+  "date": "2026-11-13"
+ },
+ "/erc/servicios-sociales": {
+  "hash": "65c8faaadbfe",
+  "date": "2026-11-13"
+ },
+ "/erc/igualdad": {
+  "hash": "9d69d12132ce",
+  "date": "2026-11-13"
+ },
+ "/erc/territorio": {
+  "hash": "a5868f29203c",
+  "date": "2026-11-13"
+ },
+ "/junts": {
+  "hash": "c3f0bcaef4f7",
+  "date": "2026-11-13"
+ },
+ "/junts/sanidad": {
+  "hash": "da61efa9a58f",
+  "date": "2026-11-13"
+ },
+ "/junts/pensiones": {
+  "hash": "ccbf212d197d",
+  "date": "2026-11-13"
+ },
+ "/junts/inmigracion": {
+  "hash": "3866f65e88de",
+  "date": "2026-11-13"
+ },
+ "/junts/territorio": {
+  "hash": "4a922e2948e5",
+  "date": "2026-11-13"
+ },
+ "/eh-bildu": {
+  "hash": "0e746554be76",
+  "date": "2026-11-13"
+ },
+ "/eh-bildu/sanidad": {
+  "hash": "b2d5059095da",
+  "date": "2026-11-13"
+ },
+ "/eh-bildu/pensiones": {
+  "hash": "2c87b8dd20ea",
+  "date": "2026-11-13"
+ },
+ "/eh-bildu/territorio": {
+  "hash": "3d81e88a88fb",
+  "date": "2026-11-13"
+ },
+ "/pnv": {
+  "hash": "345127272a88",
+  "date": "2026-11-13"
+ },
+ "/pnv/sanidad": {
+  "hash": "130c13ec4232",
+  "date": "2026-11-13"
+ },
+ "/pnv/pensiones": {
+  "hash": "4b50bab4a5d6",
+  "date": "2026-11-13"
+ },
+ "/pnv/empleo": {
+  "hash": "ff17f9b1ff8a",
+  "date": "2026-11-13"
+ },
+ "/pnv/impuestos": {
+  "hash": "33665e53b7fc",
+  "date": "2026-11-13"
+ },
+ "/pnv/dependencia": {
+  "hash": "bb209683a71f",
+  "date": "2026-11-13"
+ },
+ "/pnv/servicios-sociales": {
+  "hash": "4447b1c629a0",
+  "date": "2026-11-13"
+ },
+ "/pnv/territorio": {
+  "hash": "e817b8f2d725",
+  "date": "2026-11-13"
+ },
+ "/bng": {
+  "hash": "3f2172682a77",
+  "date": "2026-11-13"
+ },
+ "/bng/sanidad": {
+  "hash": "fde1b7200923",
+  "date": "2026-11-13"
+ },
+ "/bng/pensiones": {
+  "hash": "1ed53c640760",
+  "date": "2026-11-13"
+ },
+ "/bng/dependencia": {
+  "hash": "14323697c322",
+  "date": "2026-11-13"
+ },
+ "/bng/igualdad": {
+  "hash": "83adb217b454",
+  "date": "2026-11-13"
+ },
+ "/bng/territorio": {
+  "hash": "b874dafd0df6",
+  "date": "2026-11-13"
+ },
+ "/coalicion-canaria": {
+  "hash": "dd5d2ae22e84",
+  "date": "2026-11-13"
+ },
+ "/coalicion-canaria/sanidad": {
+  "hash": "1cdc800947d7",
+  "date": "2026-11-13"
+ },
+ "/coalicion-canaria/pensiones": {
+  "hash": "1166c89458d9",
+  "date": "2026-11-13"
+ },
+ "/coalicion-canaria/inmigracion": {
+  "hash": "b113aaf45938",
+  "date": "2026-11-13"
+ },
+ "/coalicion-canaria/dependencia": {
+  "hash": "42e0abe5dc78",
+  "date": "2026-11-13"
+ },
+ "/coalicion-canaria/servicios-sociales": {
+  "hash": "99edbd3d33aa",
+  "date": "2026-11-13"
+ },
+ "/salf": {
+  "hash": "08a8b43d0be5",
+  "date": "2026-11-13"
+ },
+ "/salf/sanidad": {
+  "hash": "2c71835a476e",
+  "date": "2026-11-13"
+ },
+ "/salf/pensiones": {
+  "hash": "15972a9a4b43",
+  "date": "2026-11-13"
+ },
+ "/salf/impuestos": {
+  "hash": "bb1e68ee6bcc",
+  "date": "2026-11-13"
+ },
+ "/salf/educacion": {
+  "hash": "b31b7678275a",
+  "date": "2026-11-13"
+ },
+ "/salf/inmigracion": {
+  "hash": "0572f7124573",
+  "date": "2026-11-13"
+ },
+ "/salf/dependencia": {
+  "hash": "b8bc70cced63",
+  "date": "2026-11-13"
+ },
+ "/salf/servicios-sociales": {
+  "hash": "5baf7a7f68da",
+  "date": "2026-11-13"
+ },
+ "/salf/igualdad": {
+  "hash": "4e03894cf234",
+  "date": "2026-11-13"
+ },
+ "/upn": {
+  "hash": "eaebe10fcd11",
+  "date": "2026-11-13"
+ },
+ "/upn/sanidad": {
+  "hash": "5f0656496e77",
+  "date": "2026-11-13"
+ },
+ "/upn/discapacidad": {
+  "hash": "626190ac4d98",
+  "date": "2026-11-13"
+ },
+ "/upn/dependencia": {
+  "hash": "9451a1f30c0c",
+  "date": "2026-11-13"
+ },
+ "/tema/vivienda": {
+  "hash": "ddf41ba8b224",
+  "date": "2026-11-13"
+ },
+ "/tema/jovenes": {
+  "hash": "80314b830fd1",
+  "date": "2026-11-13"
+ },
+ "/tema/sanidad": {
+  "hash": "f836b929783d",
+  "date": "2026-11-13"
+ },
+ "/tema/pensiones": {
+  "hash": "2e4d34372d47",
+  "date": "2026-11-13"
+ },
+ "/tema/empleo": {
+  "hash": "40693f36b9e2",
+  "date": "2026-11-13"
+ },
+ "/tema/impuestos": {
+  "hash": "72860656deea",
+  "date": "2026-11-13"
+ },
+ "/tema/educacion": {
+  "hash": "03fe8d6aea75",
+  "date": "2026-11-13"
+ },
+ "/tema/universidades": {
+  "hash": "19804e91b48d",
+  "date": "2026-11-13"
+ },
+ "/tema/inmigracion": {
+  "hash": "4eeb8b35974c",
+  "date": "2026-11-13"
+ },
+ "/tema/discapacidad": {
+  "hash": "58cec863b118",
+  "date": "2026-11-13"
+ },
+ "/tema/dependencia": {
+  "hash": "2d90b45f5819",
+  "date": "2026-11-13"
+ },
+ "/tema/servicios-sociales": {
+  "hash": "b966549f1c21",
+  "date": "2026-11-13"
+ },
+ "/tema/igualdad": {
+  "hash": "48119339f961",
+  "date": "2026-11-13"
+ },
+ "/tema/territorio": {
+  "hash": "4365f0987c60",
+  "date": "2026-11-13"
+ },
+ "/tema/politica-exterior": {
+  "hash": "5e7e427d4524",
+  "date": "2026-11-13"
+ },
+ "/metodologia": {
+  "hash": "2d1ce2e395cc",
+  "date": "2026-11-13"
+ },
+ "/datos/medidas.json": {
+  "hash": "c35c23e212c7",
+  "date": "2026-11-13"
+ },
+ "/datos": {
+  "hash": "a20633998cc9",
+  "date": "2026-11-13"
+ },
+ "/": {
+  "hash": "c35c23e212c7",
+  "date": "2026-11-13"
+ }
+}

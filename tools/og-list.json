@@ -1,0 +1,226 @@
+[
+ {
+  "file": "og/pp.png",
+  "kicker": "ELECCIONES GENERALES · 29 DE NOVIEMBRE",
+  "l1": "Qué propone el PP",
+  "l2": "y qué no cuenta",
+  "color": "#1f6fc4",
+  "foot": "74 propuestas. Cada una, con su fuente."
+ },
+ {
+  "file": "og/psoe.png",
+  "kicker": "ELECCIONES GENERALES · 29 DE NOVIEMBRE",
+  "l1": "Qué propone el PSOE",
+  "l2": "y qué no cuenta",
+  "color": "#d8261c",
+  "foot": "45 propuestas. Cada una, con su fuente."
+ },
+ {
+  "file": "og/vox.png",
+  "kicker": "ELECCIONES GENERALES · 29 DE NOVIEMBRE",
+  "l1": "Qué propone Vox",
+  "l2": "y qué no cuenta",
+  "color": "#5aa62b",
+  "foot": "69 propuestas. Cada una, con su fuente."
+ },
+ {
+  "file": "og/frente-amplio.png",
+  "kicker": "ELECCIONES GENERALES · 29 DE NOVIEMBRE",
+  "l1": "Qué propone el Frente Amplio",
+  "l2": "y qué no cuenta",
+  "color": "#c2185b",
+  "foot": "44 propuestas. Cada una, con su fuente."
+ },
+ {
+  "file": "og/podemos.png",
+  "kicker": "ELECCIONES GENERALES · 29 DE NOVIEMBRE",
+  "l1": "Qué propone Podemos",
+  "l2": "y qué no cuenta",
+  "color": "#6b2c91",
+  "foot": "10 propuestas. Cada una, con su fuente."
+ },
+ {
+  "file": "og/erc.png",
+  "kicker": "ELECCIONES GENERALES · 29 DE NOVIEMBRE",
+  "l1": "Qué propone ERC",
+  "l2": "y qué no cuenta",
+  "color": "#e8a200",
+  "foot": "21 propuestas. Cada una, con su fuente."
+ },
+ {
+  "file": "og/junts.png",
+  "kicker": "ELECCIONES GENERALES · 29 DE NOVIEMBRE",
+  "l1": "Qué propone Junts",
+  "l2": "y qué no cuenta",
+  "color": "#17b3a3",
+  "foot": "5 propuestas. Cada una, con su fuente."
+ },
+ {
+  "file": "og/eh-bildu.png",
+  "kicker": "ELECCIONES GENERALES · 29 DE NOVIEMBRE",
+  "l1": "Qué propone EH Bildu",
+  "l2": "y qué no cuenta",
+  "color": "#7cb342",
+  "foot": "3 propuestas. Cada una, con su fuente."
+ },
+ {
+  "file": "og/pnv.png",
+  "kicker": "ELECCIONES GENERALES · 29 DE NOVIEMBRE",
+  "l1": "Qué propone el PNV",
+  "l2": "y qué no cuenta",
+  "color": "#1e7b3c",
+  "foot": "10 propuestas. Cada una, con su fuente."
+ },
+ {
+  "file": "og/bng.png",
+  "kicker": "ELECCIONES GENERALES · 29 DE NOVIEMBRE",
+  "l1": "Qué propone el BNG",
+  "l2": "y qué no cuenta",
+  "color": "#5aa0d6",
+  "foot": "5 propuestas. Cada una, con su fuente."
+ },
+ {
+  "file": "og/coalicion-canaria.png",
+  "kicker": "ELECCIONES GENERALES · 29 DE NOVIEMBRE",
+  "l1": "Qué propone Coalición Canaria",
+  "l2": "y qué no cuenta",
+  "color": "#d4b400",
+  "foot": "5 propuestas. Cada una, con su fuente."
+ },
+ {
+  "file": "og/salf.png",
+  "kicker": "ELECCIONES GENERALES · 29 DE NOVIEMBRE",
+  "l1": "Qué propone Se Acabó La Fiesta",
+  "l2": "y qué no cuenta",
+  "color": "#7a7a7a",
+  "foot": "8 propuestas. Cada una, con su fuente."
+ },
+ {
+  "file": "og/upn.png",
+  "kicker": "ELECCIONES GENERALES · 29 DE NOVIEMBRE",
+  "l1": "Qué propone UPN",
+  "l2": "y qué no cuenta",
+  "color": "#2b4c9a",
+  "foot": "3 propuestas. Cada una, con su fuente."
+ },
+ {
+  "file": "og/tema-vivienda.png",
+  "kicker": "ELECCIONES GENERALES · 29 DE NOVIEMBRE",
+  "l1": "Vivienda",
+  "l2": "qué propone cada partido",
+  "color": "#ffd23f",
+  "foot": "6 partidos comparados. Cada dato, con su fuente."
+ },
+ {
+  "file": "og/tema-jovenes.png",
+  "kicker": "ELECCIONES GENERALES · 29 DE NOVIEMBRE",
+  "l1": "Jóvenes",
+  "l2": "qué propone cada partido",
+  "color": "#ffd23f",
+  "foot": "4 partidos comparados. Cada dato, con su fuente."
+ },
+ {
+  "file": "og/tema-sanidad.png",
+  "kicker": "ELECCIONES GENERALES · 29 DE NOVIEMBRE",
+  "l1": "Sanidad",
+  "l2": "qué propone cada partido",
+  "color": "#ffd23f",
+  "foot": "13 partidos comparados. Cada dato, con su fuente."
+ },
+ {
+  "file": "og/tema-pensiones.png",
+  "kicker": "ELECCIONES GENERALES · 29 DE NOVIEMBRE",
+  "l1": "Pensiones",
+  "l2": "qué propone cada partido",
+  "color": "#ffd23f",
+  "foot": "12 partidos comparados. Cada dato, con su fuente."
+ },
+ {
+  "file": "og/tema-empleo.png",
+  "kicker": "ELECCIONES GENERALES · 29 DE NOVIEMBRE",
+  "l1": "Empleo y autónomos",
+  "l2": "qué propone cada partido",
+  "color": "#ffd23f",
+  "foot": "7 partidos comparados. Cada dato, con su fuente."
+ },
+ {
+  "file": "og/tema-impuestos.png",
+  "kicker": "ELECCIONES GENERALES · 29 DE NOVIEMBRE",
+  "l1": "Impuestos",
+  "l2": "qué propone cada partido",
+  "color": "#ffd23f",
+  "foot": "8 partidos comparados. Cada dato, con su fuente."
+ },
+ {
+  "file": "og/tema-educacion.png",
+  "kicker": "ELECCIONES GENERALES · 29 DE NOVIEMBRE",
+  "l1": "Educación",
+  "l2": "qué propone cada partido",
+  "color": "#ffd23f",
+  "foot": "6 partidos comparados. Cada dato, con su fuente."
+ },
+ {
+  "file": "og/tema-universidades.png",
+  "kicker": "ELECCIONES GENERALES · 29 DE NOVIEMBRE",
+  "l1": "Universidades",
+  "l2": "qué propone cada partido",
+  "color": "#ffd23f",
+  "foot": "5 partidos comparados. Cada dato, con su fuente."
+ },
+ {
+  "file": "og/tema-inmigracion.png",
+  "kicker": "ELECCIONES GENERALES · 29 DE NOVIEMBRE",
+  "l1": "Inmigración",
+  "l2": "qué propone cada partido",
+  "color": "#ffd23f",
+  "foot": "8 partidos comparados. Cada dato, con su fuente."
+ },
+ {
+  "file": "og/tema-discapacidad.png",
+  "kicker": "ELECCIONES GENERALES · 29 DE NOVIEMBRE",
+  "l1": "Discapacidad",
+  "l2": "qué propone cada partido",
+  "color": "#ffd23f",
+  "foot": "5 partidos comparados. Cada dato, con su fuente."
+ },
+ {
+  "file": "og/tema-dependencia.png",
+  "kicker": "ELECCIONES GENERALES · 29 DE NOVIEMBRE",
+  "l1": "Dependencia y cuidados",
+  "l2": "qué propone cada partido",
+  "color": "#ffd23f",
+  "foot": "11 partidos comparados. Cada dato, con su fuente."
+ },
+ {
+  "file": "og/tema-servicios-sociales.png",
+  "kicker": "ELECCIONES GENERALES · 29 DE NOVIEMBRE",
+  "l1": "Servicios sociales y pobreza",
+  "l2": "qué propone cada partido",
+  "color": "#ffd23f",
+  "foot": "9 partidos comparados. Cada dato, con su fuente."
+ },
+ {
+  "file": "og/tema-igualdad.png",
+  "kicker": "ELECCIONES GENERALES · 29 DE NOVIEMBRE",
+  "l1": "Igualdad",
+  "l2": "qué propone cada partido",
+  "color": "#ffd23f",
+  "foot": "8 partidos comparados. Cada dato, con su fuente."
+ },
+ {
+  "file": "og/tema-territorio.png",
+  "kicker": "ELECCIONES GENERALES · 29 DE NOVIEMBRE",
+  "l1": "Territorio y España vaciada",
+  "l2": "qué propone cada partido",
+  "color": "#ffd23f",
+  "foot": "9 partidos comparados. Cada dato, con su fuente."
+ },
+ {
+  "file": "og/tema-politica-exterior.png",
+  "kicker": "ELECCIONES GENERALES · 29 DE NOVIEMBRE",
+  "l1": "Política exterior",
+  "l2": "qué propone cada partido",
+  "color": "#ffd23f",
+  "foot": "4 partidos comparados. Cada dato, con su fuente."
+ }
+]
