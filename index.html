@@ -215,12 +215,13 @@ footer{font-size:.8rem;color:var(--muted)}
     <article class="qc" style="--pc:#5aa62b">
       <span class="who">Vox · programa completo</span>
       <h3>Mucho titular, pocas cifras</h3>
-      <div class="qb"><span>Medidas del programa</span><b>115</b><div class="bar k" style="width:100%"></div></div>
-      <div class="qb"><span>Con alguna cifra comprobable</span><b>5</b><div class="bar" style="width:4.3%;min-width:6px"></div></div>
+      <div class="qb"><span>Medidas con alguna cifra, plazo o porcentaje</span></div>
+      <div class="qb"><span>PP: 53 de 241</span><b>22 %</b><div class="bar k" style="width:22%"></div></div>
+      <div class="qb"><span>Vox: 5 de 115</span><b>4 %</b><div class="bar" style="width:4.3%;min-width:6px"></div></div>
       <span class="big">0 con coste · 0 con fecha</span>
       <p>Las únicas cifras: cuota de 50 € para autónomos, desalojo en 24 horas, IVA del 0 % en la primera vivienda, tres normas derogadas por cada nueva y 100 % de bonificación de la ayuda en el hogar. El resto son titulares como «trabajo estable y salarios dignos» o «reindustrialización radical».</p>
       <span class="stamp">SIN CONCRETAR</span>
-      <a href="vox-programa-29n.html">Recuento propio sobre el programa oficial (medidas 3, 31, 34, 40 y 94). Aplicaremos el mismo recuento a cada programa oficial ↗</a>
+      <a href="vox-programa-29n.html">Recuento propio, con la misma regla, sobre los programas oficiales de PP y Vox. Lo aplicaremos a cada programa que se publique ↗</a>
     </article>
   </div>
 </section>
@@ -585,7 +586,8 @@ ter:{
 
 /* PP: programa «La reconstrucción nacional» (10 nov 2026). Sustituye a todo lo anterior del PP. */
 const PPU='https://www.pp.es/wp-content/uploads/2026/11/LA-RECONSTRUCCION-NACIONAL.pdf';
-const m=(n,pg)=>['PP 2026, medida '+n+' (p. '+pg+')',PPU];
+const PPPG={"1":12,"2":13,"3":13,"4":13,"5":13,"6":13,"7":13,"8":14,"9":14,"10":14,"11":14,"12":14,"13":14,"14":15,"15":15,"16":15,"17":15,"18":15,"19":15,"20":16,"21":16,"22":16,"23":16,"24":16,"25":16,"26":16,"27":17,"28":17,"29":17,"30":17,"31":17,"32":17,"33":17,"34":18,"35":18,"36":18,"37":18,"38":18,"39":18,"40":19,"41":19,"42":19,"43":19,"44":19,"45":19,"46":20,"47":20,"48":20,"49":20,"50":21,"51":21,"52":21,"53":21,"54":21,"55":22,"56":24,"57":25,"58":25,"59":25,"60":25,"61":25,"62":25,"63":25,"64":25,"65":26,"66":26,"67":26,"68":26,"69":26,"70":26,"71":27,"72":27,"73":27,"74":27,"75":27,"76":27,"77":27,"78":27,"79":28,"80":28,"81":28,"82":28,"83":28,"84":28,"85":28,"86":29,"87":29,"88":29,"89":29,"90":29,"91":29,"92":31,"93":31,"94":32,"95":32,"96":32,"97":32,"98":32,"99":32,"100":33,"101":33,"102":33,"103":33,"104":33,"105":34,"106":34,"107":34,"108":34,"109":34,"110":35,"111":35,"112":35,"113":35,"114":35,"115":35,"116":36,"117":36,"118":36,"119":36,"120":36,"121":36,"122":36,"123":36,"124":37,"125":37,"126":37,"127":37,"128":37,"129":37,"130":37,"131":37,"132":38,"133":38,"134":38,"135":38,"136":38,"137":38,"138":38,"139":39,"140":39,"141":39,"142":39,"143":39,"144":41,"145":42,"146":42,"147":42,"148":42,"149":42,"150":42,"151":42,"152":42,"153":43,"154":43,"155":43,"156":43,"157":43,"158":43,"159":44,"160":44,"161":44,"162":44,"163":44,"164":44,"165":45,"166":45,"167":45,"168":45,"169":45,"170":46,"171":46,"172":46,"173":46,"174":46,"175":46,"176":46,"177":47,"178":47,"179":47,"180":47,"181":47,"182":47,"183":47,"184":47,"185":47,"186":48,"187":48,"188":48,"189":48,"190":48,"191":48,"192":48,"193":49,"194":49,"195":49,"196":49,"197":49,"198":49,"199":50,"200":50,"201":50,"202":50,"203":50,"204":50,"205":50,"206":50,"207":51,"208":51,"209":51,"210":51,"211":51,"212":51,"213":51,"214":52,"215":52,"216":52,"217":52,"218":52,"219":52,"220":52,"221":53,"222":53,"223":53,"224":53,"225":53,"226":53,"227":54,"228":54,"229":54,"230":54,"231":54,"232":55,"233":55,"234":55,"235":55,"236":56,"237":56,"238":56,"239":56,"240":56,"241":56,"242":56,"243":56,"244":57,"245":57,"246":57,"247":57,"248":57,"249":57};
+const m=(n,pg)=>{const p=PPPG[String(n).split(/[-, ]/)[0]]||String(pg).split('-')[0];return ['PP 2026, medida '+n+' (p. '+p+')',PPU+'#page='+p]};
 const PP26={
  viv:[['p29','Construir un millón de viviendas, con nueva Ley del Suelo y licencias resueltas en tres meses.',m(144,53),[['inviable','No se cumplirá en una legislatura. Exige unas 250.000 viviendas al año, 2,7 veces las 92.000 terminadas en 2025. Además, el programa no fija plazo, dinero ni reparto entre vivienda pública y privada.','bde'],['ctx','CaixaBank Research prevé menos de 100.000 terminadas en 2026 y cita la falta de mano de obra, los retrasos de suministros y los límites de la red eléctrica.','cbk'],['ctx','En enero, Feijóo habló de «iniciar la construcción» de un millón. El programa habla de construir. Iniciar no es terminar.','dtar'],['coste','No dice cuántas serían públicas ni cuánto aportaría el Estado.'],['ccaa','El suelo y las licencias dependen de comunidades y ayuntamientos; el propio texto cuenta con ellos.']]],
   ['p29','Derogar la Ley de Vivienda.',m(145,53),[['ctx','Ley 12/2023, en vigor desde 2023.','boe1223'],...VV('con Vox y Junts','con Vox, Junts y UPN')]],
@@ -834,6 +836,17 @@ const FA26={
   ['pa','Autonomía estratégica europea frente a la OTAN y 0,7 % de la renta a cooperación en 2030.','pesum',[['vago','Sin calendario intermedio.']]]]
 };
 Object.entries(FA26).forEach(([t,v])=>{D[t].fa=v});
+/* PP: medidas del programa oficial sobre derechos y declaraciones de Feijóo */
+const SALTOF='https://www.elsaltodiario.com/elecciones/cerrar-ministerio-igualdad-paso-atras-derecho-al-aborto-programa-feijoo-29n';
+[
+ ['igu',['dec','Suprimir el Ministerio de Igualdad como ministerio propio y repartir sus competencias: «No voy a mantener 22 ministerios».',['Feijóo en la Cadena SER, 23 oct 2026 (El Salto)',SALTOF],[['vago','El programa solo dice «habrá menos ministerios» (medida 3), sin nombrar cuáles.'],['ctx','Vox también promete suprimirlo.']]]],
+ ['igu',['dec','Volver a exigir permiso de los padres para que las chicas de 16 y 17 años puedan abortar: «Ese debate procede y volveré a darlo».',['Feijóo en la Cadena SER, 23 oct 2026 (El Salto)',SALTOF],[['derechos','Recorta un derecho que la ley reconoce a las jóvenes de 16 y 17 años desde 2023.'],['ctx','No figura en el programa oficial.']]]],
+ ['san',['dec','Reformar la Ley de Eutanasia y paralizar los procesos ya en tramitación.',['Feijóo en la Cadena SER, 23 oct 2026 (El Salto)',SALTOF],[['derechos','Paralizar solicitudes en curso afecta a personas que ya ejercen un derecho reconocido por la ley de 2021.'],['ctx','No figura en el programa oficial.']]]],
+ ['ter',['p29','Derogar la Ley de Memoria Democrática y sustituirla por una «ley de concordia», manteniendo «con carácter humanitario» la búsqueda de desaparecidos.',m(129),[['ctx','La Ley 20/2022 reconoce a las víctimas de la Guerra Civil y de la dictadura franquista, financia la exhumación de fosas y anula las condenas de los tribunales franquistas.'],['ctx','Coincide con Vox, que también promete derogarla (medida 46).']]]],
+ ['ter',['p29','«Habrá menos ministerios, altos cargos y asesores» y se fusionarán organismos duplicados.',m(3),[['vago','No dice qué ministerios ni qué organismos. Feijóo sí ha nombrado el de Igualdad.',SALTOF]]]]
+].forEach(([t,it])=>{D[t].pp=(D[t].pp||[]).concat([it])});
+D.igu.pp.forEach(it=>{if(/Ley Trans/.test(it[1])&&!it[3].some(n=>n[0]==='derechos'))it[3].unshift(['derechos','Suprime un derecho reconocido por la Ley 4/2023: cambiar el sexo en el Registro Civil sin informes médicos.'])});
+
 
 
 
