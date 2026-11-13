@@ -6,7 +6,6 @@
 <title>Lo que no cuentan · Comparador crítico 29-N</title>
 <meta name="description" content="Qué prometen PP, PSOE, Vox, Frente Amplio y el resto para el 29-N, y qué no cuentan: coste, plazos, lo que ya existe, lo que han votado. Cada dato, con su fuente.">
 <link rel="canonical" href="https://loquenocuentan.com/">
-<link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="es_ES">
 <meta property="og:site_name" content="Lo que no cuentan">
@@ -20,7 +19,7 @@
 <meta name="twitter:title" content="Qué prometen los partidos el 29-N y qué no cuentan">
 <meta name="twitter:description" content="Qué prometen PP, PSOE, Vox, Frente Amplio y el resto para el 29-N, y qué no cuentan: coste, plazos, lo que ya existe, lo que han votado. Cada dato, con su fuente.">
 <meta name="twitter:image" content="https://loquenocuentan.com/og.png">
-<meta name="theme-color" content="#0f6e74">
+<meta name="theme-color" content="#19212b">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&display=swap">
 <style>
@@ -210,24 +209,67 @@ details.context ul{margin:8px 0 2px}
  .cols>.col{flex:0 0 calc(100% - 8px);scroll-snap-align:center}
  .cols>.none{flex:1}
 }
+
+/* Rediseño con identidad: secciones, directorios y pasos del comparador */
+.wrap{gap:44px}
+.cmp>h2.lq-h,.quim>h2.lq-h,.mapbox>h2.lq-h{font-size:inherit}
+.plab b{display:inline-grid;place-items:center;width:20px;height:20px;border-radius:50%;background:var(--accent);color:var(--paper);font-size:.72rem;margin-right:4px}
+.plab{width:96px}
+.pagelink{margin:0;font-size:.9rem}.pagelink:empty{display:none}
+.col h3 a{color:inherit;text-decoration:none}.col h3 a:hover{text-decoration:underline}
+.dir{display:flex;flex-direction:column;gap:12px}
+.dirgrid{display:grid;gap:10px}
+.dirgrid a{background:var(--paper);border-radius:14px;padding:14px;text-decoration:none;color:var(--ink);display:flex;flex-direction:column;gap:3px;border:1.5px solid transparent}
+.dirgrid a:hover{border-color:var(--accent)}
+.dirgrid b{font-family:var(--f-disp);font-size:1.05rem;line-height:1.15}
+.dirgrid span{font-size:.8rem;color:var(--muted)}
+.tgrid{grid-template-columns:repeat(auto-fill,minmax(190px,1fr))}
+.tgrid .ti{width:38px;height:38px;border-radius:11px;background:var(--accent-soft);color:var(--accent);display:grid;place-items:center;margin-bottom:6px}
+.tgrid .ti svg{width:22px;height:22px}
+.pgrid{grid-template-columns:repeat(auto-fill,minmax(160px,1fr))}
+.pgrid a{border-top:7px solid var(--pc)}
+.pgrid em{font-style:normal;font-size:.62rem;white-space:nowrap;font-weight:700;letter-spacing:.05em;text-transform:uppercase;margin-top:6px;align-self:flex-start;padding:2px 8px;border-radius:999px}
+.s-of{background:var(--o-p29-bg);color:var(--o-p29)}.s-pr{border:1px dashed var(--o-p29);color:var(--o-p29)}.s-no{background:var(--empty);color:var(--muted)}
+.method{display:flex;flex-direction:column;gap:12px}
+.quim .qc .stamp{background:var(--o-p29);transform:rotate(-2deg)}
+.state{border-left:8px solid var(--accent)}
+@media (max-width:700px){.wrap{gap:34px}.tgrid{grid-template-columns:1fr 1fr}.pgrid{grid-template-columns:1fr 1fr}}
 </style>
 <!-- build:ld -->
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","@id":"https://loquenocuentan.com/#web","name":"Lo que no cuentan","alternateName":"loquenocuentan.com","url":"https://loquenocuentan.com/","inLanguage":"es","description":"Comparador crítico de los programas electorales de las elecciones generales del 29 de noviembre de 2026.","author":{"@type":"Person","@id":"https://loquenocuentan.com/metodologia#autor","name":"Fernando Santamaría González","url":"https://fernandosantamaria.com","sameAs":["https://x.com/lernys","https://www.linkedin.com/in/fernandosantamaria/"]},"dateModified":"2026-11-13"}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Dataset","@id":"https://loquenocuentan.com/datos#dataset","name":"Medidas de los partidos para las elecciones generales del 29-N de 2026","description":"302 propuestas de 13 partidos en 15 temas, con su fuente y 326 observaciones críticas (coste, plazos, lo que ya existe, votaciones).","url":"https://loquenocuentan.com/datos","inLanguage":"es","license":"https://creativecommons.org/licenses/by/4.0/","isAccessibleForFree":true,"creator":{"@type":"Person","@id":"https://loquenocuentan.com/metodologia#autor","name":"Fernando Santamaría González","url":"https://fernandosantamaria.com","sameAs":["https://x.com/lernys","https://www.linkedin.com/in/fernandosantamaria/"]},"dateModified":"2026-11-13","temporalCoverage":"2026","spatialCoverage":{"@type":"Place","name":"España"},"keywords":["elecciones generales 2026","29-N","programas electorales","España"],"distribution":[{"@type":"DataDownload","encodingFormat":"application/json","contentUrl":"https://loquenocuentan.com/datos/medidas.json"},{"@type":"DataDownload","encodingFormat":"text/csv","contentUrl":"https://loquenocuentan.com/datos/medidas.csv"},{"@type":"DataDownload","encodingFormat":"text/csv","contentUrl":"https://loquenocuentan.com/datos/observaciones.csv"}]}</script>
 <!-- /build:ld -->
 <!-- build:css -->
-<style>.dir{display:flex;flex-direction:column;gap:10px}.dir>h2{font-family:var(--f-disp);font-size:1.45rem;margin:0}.dirgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:8px}.dirgrid a{background:var(--paper);border-radius:12px;border-left:6px solid var(--pc,var(--accent));padding:10px 12px;text-decoration:none;color:var(--ink);display:flex;flex-direction:column;gap:2px}.dirgrid a:hover{outline:2px solid var(--accent)}.dirgrid b{font-family:var(--f-disp)}.dirgrid span{font-size:.78rem;color:var(--muted)}.dirfoot{font-size:.85rem;color:var(--muted);margin:0}</style>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/icon-180.png">
+<link rel="stylesheet" href="/assets/chrome.css">
 <!-- /build:css -->
 </head>
 <body>
-<div class="wrap">
-<header class="top">
-  <div>
-    <h1>Qué prometen los partidos el 29-N y qué no cuentan</h1>
-    <p>Coste, plazos, lo que ya existe y lo que votaron. Cada dato, con su fuente.</p>
-  </div>
-</header>
-
+<!-- build:header -->
+<a class="lq-skip" href="#contenido">Saltar al contenido</a>
+<header class="lq-top"><div class="lq-in">
+<a class="lq-brand" href="/" aria-label="Lo que no cuentan, inicio"><svg viewBox="0 0 1092 1092" aria-hidden="true"><rect width="1092" height="1092" rx="236" fill="#0f6e74"/><g fill="#fff"><rect x="251" y="272" width="590" height="98" rx="49"/><rect x="251" y="465" width="404" height="98" rx="49"/><rect x="251" y="688" width="263" height="98" rx="49"/></g><circle cx="678" cy="737" r="82" fill="#ffd23f"/></svg><span class="lq-word">lo que <b>no cuentan</b></span></a>
+<nav class="lq-nav" aria-label="Principal"><a href="/#res">Comparar</a><a href="/#temas">Temas</a><a href="/#partidos">Partidos</a><a href="/#cuentas">Las cuentas que no salen</a><a href="/metodologia">Metodología</a><a href="/datos">Datos</a></nav>
+</div></header>
+<section class="lq-hero"><div class="lq-in lq-hgrid">
+<div>
+<p class="lq-kick">Elecciones generales · 29 de noviembre de 2026</p>
+<h1>Qué prometen los partidos y qué <span class="lq-hl">no cuentan</span></h1>
+<p class="lq-sub">Coste, plazos, lo que ya existe y lo que votaron. Cada dato, con su fuente. La misma regla para todos.</p>
+<form class="lq-search" role="search" id="hform"><input id="hq" type="search" placeholder="Busca una propuesta: alquiler, IRPF, pensiones…" aria-label="Buscar en todas las propuestas"><button class="lq-btn" type="submit">Buscar</button></form>
+<p class="lq-go"><a class="lq-btn ghost" href="#res">Comparar por tema</a><a class="lq-btn ghost" href="#partidos">Partido a partido</a><a class="lq-btn ghost" href="#cuentas">Las cuentas que no salen</a></p>
+<ul class="lq-stats"><li><b>302</b>propuestas</li><li><b>13</b>partidos</li><li><b>15</b>temas</li><li><b>326</b>observaciones con su porqué</li></ul>
+</div>
+<figure class="lq-anat" aria-label="Cómo se lee cada propuesta">
+<span class="a-tag">Así se lee cada propuesta</span>
+<p class="a-t">La promesa, tal como la escribe el partido</p>
+<span class="a-src">Su fuente: programa, medida y página</span>
+<div class="a-note"><span>Lo que no cuenta</span><ul><li>¿Cuánto cuesta?</li><li>¿En qué plazo?</li><li>¿Ya existe?</li><li>¿Qué votó el partido?</li></ul></div>
+</figure>
+</div></section>
+<!-- /build:header -->
+<main class="wrap" id="contenido">
 <div class="state" role="note">
   <span class="st-k">Programas 29-N <b>4 / 13</b></span>
   <span class="st-i"><i class="d d1"></i>Texto oficial: <b>PP, Vox</b></span>
@@ -237,8 +279,36 @@ details.context ul{margin:8px 0 2px}
   <p><b>Actualizado el 13 de noviembre de 2026.</b> PP (10 de noviembre, «La reconstrucción nacional», 249 medidas) y Vox (12 de noviembre, «Es sentido común», 115 medidas) tienen su columna sacada del texto oficial, con número de medida y página enlazada al documento. ERC (5 de noviembre, 258 propuestas) y PNV (9 de noviembre) han presentado el suyo, pero no hemos encontrado un documento oficial accesible: sus propuestas proceden de resúmenes de prensa y se marcan con recuadro discontinuo. PSOE, Frente Amplio, Podemos y el resto aún no lo han publicado: mostramos sus compromisos públicos y su acción de gobierno, con la misma lectura crítica, y añadiremos cada programa el día que salga.</p></details>
 </div>
 
-<section class="quim" aria-labelledby="qt">
-  <h2 id="qt">Las cuentas que no salen</h2>
+<section id="res" class="cmp" aria-labelledby="t3">
+  <h2 class="lq-h" id="t3"><small>Comparador</small><span>Elige un tema y hasta cuatro partidos</span></h2>
+  <div class="panel">
+    <div class="prow"><span class="plab"><b>1</b> Tema</span><div class="chips" id="topics" role="toolbar" aria-label="Tema"></div></div>
+    <div class="prow"><span class="plab"><b>2</b> Partidos <small>máx. 4</small></span><div class="chips" id="parties" role="toolbar" aria-label="Partidos"></div></div>
+    <p class="hint" id="hint" aria-live="polite"></p>
+  </div>
+  <div class="tools">
+    <input type="search" id="q" placeholder="Buscar en todos los temas: «alquiler», «IRPF», «dentista»…" aria-label="Buscar en todas las propuestas">
+    <label class="switch"><input type="checkbox" id="crit" checked> Lectura crítica</label>
+    <div class="flags" id="flags" aria-label="Ver solo propuestas con esta observación"></div>
+  </div>
+  <details class="context" id="context" hidden></details>
+  <p class="pagelink" id="pagelink"></p>
+  <div class="ptabs" id="ptabs" role="tablist" aria-label="Partido visible"></div>
+  <div class="cols" id="cols" aria-live="polite"></div>
+  <details class="legendbox"><summary>Qué significa cada color</summary>
+  <div class="legend">
+    <span class="o-p29"><span class="sw"></span>Programa 29-N (texto oficial)</span>
+    <span class="o-p29"><span class="sw"></span>Programa 29-N vía prensa (recuadro discontinuo)</span>
+    <span class="o-doc"><span class="sw"></span>Documento del partido 2026</span>
+    <span class="o-dec"><span class="sw"></span>Declaración 2026</span>
+    <span class="o-pl"><span class="sw"></span>Proposición de ley</span>
+    <span class="o-gob"><span class="sw"></span>Acción de gobierno / ley</span>
+    <span class="o-pa"><span class="sw"></span>Programa anterior (2023 o antes)</span>
+  </div></details>
+</section>
+
+<section class="quim" aria-labelledby="qt" id="cuentas">
+  <h2 class="lq-h" id="qt"><small>Con las cifras oficiales en la mano</small><span>Las cuentas que no salen</span></h2>
   <p>Promesas que, con las cifras oficiales en la mano, no pueden cumplirse en una legislatura. Misma regla para todos los partidos: cuando el ritmo exigido multiplica el máximo reciente, se marca como quimera.</p>
   <div class="qgrid">
     <article class="qc" style="--pc:#1f6fc4">
@@ -285,40 +355,26 @@ details.context ul{margin:8px 0 2px}
   </div>
 </section>
 
-
-<section id="res" class="cmp" aria-labelledby="t3">
-  <h2 id="t3">Compara</h2>
-  <div class="panel">
-    <div class="prow"><span class="plab">Tema</span><div class="chips" id="topics" role="toolbar" aria-label="Tema"></div></div>
-    <div class="prow"><span class="plab">Partidos <small>máx. 4</small></span><div class="chips" id="parties" role="toolbar" aria-label="Partidos"></div></div>
-    <p class="hint" id="hint" aria-live="polite"></p>
-  </div>
-  <div class="tools">
-    <input type="search" id="q" placeholder="Buscar en todos los temas: «alquiler», «IRPF», «dentista»…" aria-label="Buscar en todas las propuestas">
-    <label class="switch"><input type="checkbox" id="crit" checked> Lectura crítica</label>
-    <div class="flags" id="flags" aria-label="Ver solo propuestas con esta observación"></div>
-  </div>
-  <details class="context" id="context" hidden></details>
-  <div class="ptabs" id="ptabs" role="tablist" aria-label="Partido visible"></div>
-  <div class="cols" id="cols" aria-live="polite"></div>
-  <details class="legendbox"><summary>Qué significa cada color</summary>
-  <div class="legend">
-    <span class="o-p29"><span class="sw"></span>Programa 29-N (texto oficial)</span>
-    <span class="o-p29"><span class="sw"></span>Programa 29-N vía prensa (recuadro discontinuo)</span>
-    <span class="o-doc"><span class="sw"></span>Documento del partido 2026</span>
-    <span class="o-dec"><span class="sw"></span>Declaración 2026</span>
-    <span class="o-pl"><span class="sw"></span>Proposición de ley</span>
-    <span class="o-gob"><span class="sw"></span>Acción de gobierno / ley</span>
-    <span class="o-pa"><span class="sw"></span>Programa anterior (2023 o antes)</span>
-  </div></details>
+<!-- build:nav -->
+<section class="dir" aria-labelledby="dt" id="temas">
+  <h2 class="lq-h" id="dt"><small>15 temas</small><span>Tema a tema</span></h2>
+  <p class="lq-lead">Cada tema tiene su página, con una tabla que compara a todos los partidos.</p>
+  <div class="dirgrid tgrid"><a href="/tema/vivienda"><i class="ti" data-ico="viv"></i><b>Vivienda</b><span>33 propuestas · 6 partidos</span></a><a href="/tema/jovenes"><i class="ti" data-ico="jov"></i><b>Jóvenes</b><span>18 propuestas · 4 partidos</span></a><a href="/tema/sanidad"><i class="ti" data-ico="san"></i><b>Sanidad</b><span>32 propuestas · 13 partidos</span></a><a href="/tema/pensiones"><i class="ti" data-ico="pen"></i><b>Pensiones</b><span>16 propuestas · 12 partidos</span></a><a href="/tema/empleo"><i class="ti" data-ico="emp"></i><b>Empleo y autónomos</b><span>18 propuestas · 7 partidos</span></a><a href="/tema/impuestos"><i class="ti" data-ico="imp"></i><b>Impuestos</b><span>20 propuestas · 8 partidos</span></a><a href="/tema/educacion"><i class="ti" data-ico="edu"></i><b>Educación</b><span>16 propuestas · 6 partidos</span></a><a href="/tema/universidades"><i class="ti" data-ico="uni"></i><b>Universidades</b><span>14 propuestas · 5 partidos</span></a><a href="/tema/inmigracion"><i class="ti" data-ico="inm"></i><b>Inmigración</b><span>22 propuestas · 8 partidos</span></a><a href="/tema/discapacidad"><i class="ti" data-ico="disc"></i><b>Discapacidad</b><span>14 propuestas · 5 partidos</span></a><a href="/tema/dependencia"><i class="ti" data-ico="dep"></i><b>Dependencia y cuidados</b><span>18 propuestas · 11 partidos</span></a><a href="/tema/servicios-sociales"><i class="ti" data-ico="soc"></i><b>Servicios sociales y pobreza</b><span>15 propuestas · 9 partidos</span></a><a href="/tema/igualdad"><i class="ti" data-ico="igu"></i><b>Igualdad</b><span>18 propuestas · 8 partidos</span></a><a href="/tema/territorio"><i class="ti" data-ico="ter"></i><b>Territorio y España vaciada</b><span>28 propuestas · 9 partidos</span></a><a href="/tema/politica-exterior"><i class="ti" data-ico="ext"></i><b>Política exterior</b><span>20 propuestas · 4 partidos</span></a></div>
 </section>
-
-<section class="mapbox" aria-labelledby="t4">
-  <h2 id="t4">Quién habla de qué</h2>
+<section class="dir" aria-labelledby="dp" id="partidos">
+  <h2 class="lq-h" id="dp"><small>13 partidos</small><span>Partido a partido</span></h2>
+  <p class="lq-lead">Todo lo localizado de cada partido, medida a medida. El orden es el de los escaños de 2023, no una clasificación.</p>
+  <div class="dirgrid pgrid"><a href="/pp" style="--pc:#1f6fc4"><b>PP</b><span>74 propuestas</span><em class="s-of">Texto oficial</em></a><a href="/psoe" style="--pc:#d8261c"><b>PSOE</b><span>45 propuestas</span><em class="s-no">Sin programa aún</em></a><a href="/vox" style="--pc:#5aa62b"><b>Vox</b><span>69 propuestas</span><em class="s-of">Texto oficial</em></a><a href="/frente-amplio" style="--pc:#c2185b"><b>Frente Amplio</b><span>44 propuestas</span><em class="s-no">Sin programa aún</em></a><a href="/podemos" style="--pc:#6b2c91"><b>Podemos</b><span>10 propuestas</span><em class="s-no">Sin programa aún</em></a><a href="/erc" style="--pc:#e8a200"><b>ERC</b><span>21 propuestas</span><em class="s-pr">Vía prensa</em></a><a href="/junts" style="--pc:#17b3a3"><b>Junts</b><span>5 propuestas</span><em class="s-no">Sin programa aún</em></a><a href="/eh-bildu" style="--pc:#7cb342"><b>EH Bildu</b><span>3 propuestas</span><em class="s-no">Sin programa aún</em></a><a href="/pnv" style="--pc:#1e7b3c"><b>PNV</b><span>10 propuestas</span><em class="s-pr">Vía prensa</em></a><a href="/bng" style="--pc:#5aa0d6"><b>BNG</b><span>5 propuestas</span><em class="s-no">Sin programa aún</em></a><a href="/coalicion-canaria" style="--pc:#d4b400"><b>CC</b><span>5 propuestas</span><em class="s-no">Sin programa aún</em></a><a href="/salf" style="--pc:#7a7a7a"><b>SALF</b><span>8 propuestas</span><em class="s-no">Sin programa aún</em></a><a href="/upn" style="--pc:#2b4c9a"><b>UPN-PP</b><span>3 propuestas</span><em class="s-no">Sin programa aún</em></a></div>
+</section>
+<!-- /build:nav -->
+<section class="mapbox" aria-labelledby="t4" id="mapa">
+  <h2 class="lq-h" id="t4"><small>Mapa de silencios</small><span>Quién habla de qué</span></h2>
   <p>Número de propuestas localizadas por tema y partido. Las casillas rayadas son silencios: no se ha encontrado nada. Pulsa una casilla para abrirla arriba.</p>
   <div class="scroll"><table id="map"></table></div>
 </section>
 
+<section class="method" id="metodo" aria-labelledby="tm">
+  <h2 class="lq-h" id="tm"><small>Método</small><span>Cómo se hace y con qué límites</span></h2>
 <details>
   <summary>Cómo se hace la lectura crítica</summary>
   <p>Nos fijamos en lo que los programas prometen y en lo que no cuentan: cuánto cuesta, quién lo paga, en qué plazo, si ya existe, si depende de otra administración y si choca con lo que el partido votó o con las cifras oficiales. Una promesa solo se marca como «quimera» cuando las cifras lo muestran, con la cuenta a la vista. Si encuentras un error, <a href="/metodologia#errores">avísanos</a> y lo corregimos en público.</p>
@@ -326,7 +382,6 @@ details.context ul{margin:8px 0 2px}
   <dl id="method"></dl>
   <p>Solo se pone una observación cuando hay un hecho que la respalde (una ley, una votación, una fecha o lo que dice la propia fuente). Si falta, no se pone. Que un partido tenga más observaciones suele indicar que hay más documentación suya, no que sea peor.</p>
 </details>
-
 <details>
   <summary>Fuentes y límites</summary>
   <ul>
@@ -337,19 +392,19 @@ details.context ul{margin:8px 0 2px}
     <li>Los partidos se ordenan por escaños de 2023, que no es una clasificación. Al abrir aparecen los cuatro con más escaños; se puede cambiar cualquiera.</li>
   </ul>
 </details>
-<!-- build:nav -->
-<section class="dir" aria-labelledby="dp" id="partidos">
-  <h2 id="dp">Partido a partido</h2>
-  <div class="dirgrid"><a href="/pp" style="--pc:#1f6fc4"><b>PP</b><span>74 propuestas · Texto oficial</span></a><a href="/psoe" style="--pc:#d8261c"><b>PSOE</b><span>45 propuestas · Sin programa aún</span></a><a href="/vox" style="--pc:#5aa62b"><b>Vox</b><span>69 propuestas · Texto oficial</span></a><a href="/frente-amplio" style="--pc:#c2185b"><b>Frente Amplio</b><span>44 propuestas · Sin programa aún</span></a><a href="/podemos" style="--pc:#6b2c91"><b>Podemos</b><span>10 propuestas · Sin programa aún</span></a><a href="/erc" style="--pc:#e8a200"><b>ERC</b><span>21 propuestas · Vía prensa</span></a><a href="/junts" style="--pc:#17b3a3"><b>Junts</b><span>5 propuestas · Sin programa aún</span></a><a href="/eh-bildu" style="--pc:#7cb342"><b>EH Bildu</b><span>3 propuestas · Sin programa aún</span></a><a href="/pnv" style="--pc:#1e7b3c"><b>PNV</b><span>10 propuestas · Vía prensa</span></a><a href="/bng" style="--pc:#5aa0d6"><b>BNG</b><span>5 propuestas · Sin programa aún</span></a><a href="/coalicion-canaria" style="--pc:#d4b400"><b>CC</b><span>5 propuestas · Sin programa aún</span></a><a href="/salf" style="--pc:#7a7a7a"><b>SALF</b><span>8 propuestas · Sin programa aún</span></a><a href="/upn" style="--pc:#2b4c9a"><b>UPN-PP</b><span>3 propuestas · Sin programa aún</span></a></div>
+  <p class="lq-lead"><a href="/metodologia">Metodología completa</a> · <a href="/datos">Descargar los datos</a> · <a href="/metodologia#errores">Comunicar un error</a></p>
 </section>
-<section class="dir" aria-labelledby="dt" id="temas">
-  <h2 id="dt">Tema a tema</h2>
-  <div class="dirgrid"><a href="/tema/vivienda"><b>Vivienda</b><span>33 propuestas de 6 partidos</span></a><a href="/tema/jovenes"><b>Jóvenes</b><span>18 propuestas de 4 partidos</span></a><a href="/tema/sanidad"><b>Sanidad</b><span>32 propuestas de 13 partidos</span></a><a href="/tema/pensiones"><b>Pensiones</b><span>16 propuestas de 12 partidos</span></a><a href="/tema/empleo"><b>Empleo y autónomos</b><span>18 propuestas de 7 partidos</span></a><a href="/tema/impuestos"><b>Impuestos</b><span>20 propuestas de 8 partidos</span></a><a href="/tema/educacion"><b>Educación</b><span>16 propuestas de 6 partidos</span></a><a href="/tema/universidades"><b>Universidades</b><span>14 propuestas de 5 partidos</span></a><a href="/tema/inmigracion"><b>Inmigración</b><span>22 propuestas de 8 partidos</span></a><a href="/tema/discapacidad"><b>Discapacidad</b><span>14 propuestas de 5 partidos</span></a><a href="/tema/dependencia"><b>Dependencia y cuidados</b><span>18 propuestas de 11 partidos</span></a><a href="/tema/servicios-sociales"><b>Servicios sociales y pobreza</b><span>15 propuestas de 9 partidos</span></a><a href="/tema/igualdad"><b>Igualdad</b><span>18 propuestas de 8 partidos</span></a><a href="/tema/territorio"><b>Territorio y España vaciada</b><span>28 propuestas de 9 partidos</span></a><a href="/tema/politica-exterior"><b>Política exterior</b><span>20 propuestas de 4 partidos</span></a></div>
-</section>
-<p class="dirfoot"><a href="/metodologia">Metodología y fuentes</a> · <a href="/datos">Datos abiertos (CSV y JSON, CC BY 4.0)</a> · <a href="/metodologia#errores">Comunicar un error</a> · Autor: Fernando Santamaría González</p>
-<!-- /build:nav -->
-<footer>Herramienta informativa sin afiliación. Actualizado el 13 de noviembre de 2026.</footer>
-</div>
+</main>
+<!-- build:footer -->
+<footer class="lq-foot"><div class="lq-in lq-fgrid">
+<div><a class="lq-brand" href="/"><svg viewBox="0 0 1092 1092" aria-hidden="true"><rect width="1092" height="1092" rx="236" fill="#0f6e74"/><g fill="#fff"><rect x="251" y="272" width="590" height="98" rx="49"/><rect x="251" y="465" width="404" height="98" rx="49"/><rect x="251" y="688" width="263" height="98" rx="49"/></g><circle cx="678" cy="737" r="82" fill="#ffd23f"/></svg><span class="lq-word">lo que <b>no cuentan</b></span></a>
+<p class="lq-tag">Qué prometen los partidos · Cada dato con su fuente</p>
+<p>Comparador informativo de los programas de las elecciones generales del 29 de noviembre de 2026. Sin afiliación a ningún partido y sin publicidad.</p></div>
+<div><h2>Temas</h2><ul class="two"><li><a href="/tema/vivienda">Vivienda</a></li><li><a href="/tema/jovenes">Jóvenes</a></li><li><a href="/tema/sanidad">Sanidad</a></li><li><a href="/tema/pensiones">Pensiones</a></li><li><a href="/tema/empleo">Empleo y autónomos</a></li><li><a href="/tema/impuestos">Impuestos</a></li><li><a href="/tema/educacion">Educación</a></li><li><a href="/tema/universidades">Universidades</a></li><li><a href="/tema/inmigracion">Inmigración</a></li><li><a href="/tema/discapacidad">Discapacidad</a></li><li><a href="/tema/dependencia">Dependencia y cuidados</a></li><li><a href="/tema/servicios-sociales">Servicios sociales y pobreza</a></li><li><a href="/tema/igualdad">Igualdad</a></li><li><a href="/tema/territorio">Territorio y España vaciada</a></li><li><a href="/tema/politica-exterior">Política exterior</a></li></ul></div>
+<div><h2>Partidos</h2><ul class="two"><li><a href="/pp">PP</a></li><li><a href="/psoe">PSOE</a></li><li><a href="/vox">Vox</a></li><li><a href="/frente-amplio">Frente Amplio</a></li><li><a href="/podemos">Podemos</a></li><li><a href="/erc">ERC</a></li><li><a href="/junts">Junts</a></li><li><a href="/eh-bildu">EH Bildu</a></li><li><a href="/pnv">PNV</a></li><li><a href="/bng">BNG</a></li><li><a href="/coalicion-canaria">CC</a></li><li><a href="/salf">SALF</a></li><li><a href="/upn">UPN-PP</a></li></ul></div>
+<div><h2>Proyecto</h2><ul><li><a href="/metodologia">Metodología y fuentes</a></li><li><a href="/datos">Datos abiertos</a></li><li><a href="/metodologia#errores">Comunicar un error</a></li><li><a href="mailto:loquenocuentan@proton.me">loquenocuentan@proton.me</a></li><li><a href="https://github.com/lernys/loquenocuentan" rel="noopener">Código en GitHub</a></li></ul></div>
+</div><div class="lq-in lq-legal"><span>Autor: Fernando Santamaría González</span><span>Datos con licencia <a href="https://creativecommons.org/licenses/by/4.0/deed.es" rel="license noopener">CC BY 4.0</a></span><span>Actualizado el <time datetime="2026-11-13">13 de noviembre de 2026</time></span></div></footer>
+<!-- /build:footer -->
 
 <script>
 const ICON = {
@@ -377,6 +432,9 @@ const PARTIES=[
  ['pp','PP','#1f6fc4','Feijóo'],['psoe','PSOE','#d8261c','Sánchez'],['vox','Vox','#5aa62b','Abascal'],['fa','Frente Amplio','#c2185b','Colau'],
  ['pod','Podemos','#6b2c91','Montero'],['erc','ERC','#e8a200','Rufián'],['junts','Junts','#17b3a3','Nogueras'],['bildu','EH Bildu','#7cb342','Matute'],
  ['pnv','PNV','#1e7b3c','Vaquero'],['bng','BNG','#5aa0d6','Rego'],['cc','CC','#d4b400','Valido'],['salf','SALF','#7a7a7a','Alvise'],['upn','UPN-PP','#2b4c9a','Navarra']];
+
+const TSLUG={viv:'vivienda',jov:'jovenes',san:'sanidad',pen:'pensiones',emp:'empleo',imp:'impuestos',edu:'educacion',uni:'universidades',inm:'inmigracion',disc:'discapacidad',dep:'dependencia',soc:'servicios-sociales',igu:'igualdad',ter:'territorio',ext:'politica-exterior'};
+const PSLUG={pp:'pp',psoe:'psoe',vox:'vox',fa:'frente-amplio',pod:'podemos',erc:'erc',junts:'junts',bildu:'eh-bildu',pnv:'pnv',bng:'bng',cc:'coalicion-canaria',salf:'salf',upn:'upn'};
 
 /* Observaciones críticas: misma pregunta para todos */
 const FLAGS={
@@ -949,12 +1007,19 @@ const CLAVES={
 
 let topic='viv', sel=['pp','psoe','vox','fa'], crit=true, only=null, q='';
 try{const s=JSON.parse(localStorage.getItem('c29n2')||'null');if(s&&D[s.t]){topic=s.t;sel=s.p.filter(p=>PARTIES.some(x=>x[0]===p)).slice(0,4);crit=s.c!==false}}catch(e){}
+/* enlace compartible: ?tema=vivienda&partidos=pp,vox */
+const inv=o=>Object.fromEntries(Object.entries(o).map(([k,v])=>[v,k]));
+let fromURL=false;
+try{const u=new URLSearchParams(location.search),ut=inv(TSLUG)[u.get('tema')],up=(u.get('partidos')||'').split(',').map(x=>inv(PSLUG)[x]).filter(Boolean).slice(0,4);
+ if(ut){topic=ut;fromURL=true}if(up.length){sel=up;fromURL=true}}catch(e){}
+let touched=false;
 const $=id=>document.getElementById(id);
 const LBL={p29:'Programa 29-N',p29p:'Programa 29-N · vía prensa',pa:'Programa anterior',doc:'Documento 2026',dec:'Declaración 2026',pl:'Proposición de ley',gob:'Gobierno / ley'};
 const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const norm=s=>s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'');
 const tname=k=>TOPICS.find(t=>t[0]===k)[1];
-function save(){try{localStorage.setItem('c29n2',JSON.stringify({t:topic,p:sel,c:crit}))}catch(e){}}
+function save(){try{localStorage.setItem('c29n2',JSON.stringify({t:topic,p:sel,c:crit}))}catch(e){}
+ if(touched)try{history.replaceState(null,'','?tema='+TSLUG[topic]+'&partidos='+sel.map(p=>PSLUG[p]).join(',')+'#res')}catch(e){}}
 
 function drawTopics(){
  $('topics').innerHTML=TOPICS.map(([k,n])=>`<button class="topic" id="tp-${k}" data-k="${k}" aria-pressed="${k===topic&&!q}">${ICON[k]}<span>${n}</span></button>`).join('');
@@ -981,6 +1046,7 @@ function drawFlags(){
 }
 function drawContext(){
  const c=!q&&CLAVES[topic];$('context').hidden=!c;
+ $('pagelink').innerHTML=q?'':`<a href="/tema/${TSLUG[topic]}">Página de ${esc(tname(topic).toLowerCase())} con todos los partidos y tabla comparativa →</a>`;
  if(c)$('context').innerHTML=`<summary>Contexto: ${esc(tname(topic))} (${c.length} dato${c.length>1?'s':''})</summary><ul>${c.map(x=>`<li>${esc(x)}</li>`).join('')}</ul>`;
 }
 function drawCols(){
@@ -996,7 +1062,7 @@ function drawCols(){
     const nt=crit?notes.map(([f,nx,ns])=>`<div class="note"><span class="k">${FLAGS[f][0]}</span><span>${esc(nx)}</span>${[].concat(ns||[]).map(k=>S[k]?`<a href="${S[k][1]}" target="_blank" rel="noopener">${esc(S[k][0])} ↗</a>`:(/^https?:/.test(k)?`<a href="${k}" target="_blank" rel="noopener">Fuente ↗</a>`:'')).join('')}</div>`).join(''):'';
     return `<div class="item o-${o}"><div class="tline"><span class="tag">${LBL[o]}</span>${q?`<span class="ttopic">${esc(tname(t))}</span>`:''}</div><p>${esc(txt)}</p>${src?`<a class="src" href="${src[1]}" target="_blank" rel="noopener">${esc(src[0])} ↗</a>`:''}${nt}</div>`}).join('')
    :`<div class="none"><b>Sin propuesta localizada</b>${q?`Nada que coincida con «${esc(q)}».`:only?'Ninguna con esta observación.':`No se ha encontrado nada de este partido sobre ${esc(tname(topic).toLowerCase())} hasta hoy.`}</div>`;
-  return `<article class="col" style="--pc:${p[2]}"><h3>${p[1]}<small>${p[3]}</small></h3>${tl}${body}</article>`}).join('');
+  return `<article class="col" style="--pc:${p[2]}"><h3><a href="/${PSLUG[k]}${q||!list.length?'':'/'+TSLUG[topic]}" title="Abrir la página de ${p[1]}">${p[1]}</a><small>${p[3]}</small></h3>${tl}${body}</article>`}).join('');
 }
 function drawMap(){
  let h='<thead><tr><th></th>'+PARTIES.map(p=>`<th scope="col">${p[1]}</th>`).join('')+'</tr></thead><tbody>';
@@ -1010,15 +1076,18 @@ function showRes(){
  if(r.top>innerHeight*0.7||r.top<0)$('res').scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'start'});
  const c=$('cols');c.classList.remove('flash');void c.offsetWidth;c.classList.add('flash');
 }
-function setTopic(k){topic=k;q='';$('q').value='';only=null;refresh();showRes()}
+function setTopic(k){touched=true;topic=k;q='';$('q').value='';if($('hq'))$('hq').value='';only=null;refresh();showRes()}
 
 $('topics').addEventListener('click',e=>{const b=e.target.closest('.topic');if(b)setTopic(b.dataset.k)});
-$('parties').addEventListener('click',e=>{const b=e.target.closest('.party');if(!b)return;const k=b.dataset.k;
+$('parties').addEventListener('click',e=>{const b=e.target.closest('.party');if(!b)return;const k=b.dataset.k;touched=true;
  if(sel.includes(k)){sel=sel.filter(x=>x!==k);$('hint').textContent=''}
  else if(sel.length>=4){$('hint').textContent='Ya hay cuatro partidos. Quita uno para añadir otro.';return}
  else{sel.push(k);$('hint').textContent=''}
  drawParties();drawFlags();drawCols();save()});
-$('q').addEventListener('input',e=>{q=e.target.value.trim();only=null;refresh()});
+$('q').addEventListener('input',e=>{q=e.target.value.trim();only=null;if($('hq'))$('hq').value=e.target.value;refresh()});
+if($('hform'))$('hform').addEventListener('submit',e=>{e.preventDefault();q=$('hq').value.trim();$('q').value=$('hq').value;only=null;refresh();$('res').scrollIntoView({behavior:'smooth',block:'start'})});
+document.querySelectorAll('.ti[data-ico]').forEach(e=>{e.innerHTML=ICON[e.dataset.ico]||''});
+if(fromURL)setTimeout(()=>$('res').scrollIntoView({block:'start'}),50);
 $('crit').addEventListener('change',e=>{crit=e.target.checked;only=null;drawFlags();drawCols();save()});
 $('flags').addEventListener('click',e=>{const b=e.target.closest('.flag');if(!b)return;only=only===b.dataset.f?null:b.dataset.f;drawFlags();drawCols()});
 $('map').addEventListener('click',e=>{const td=e.target.closest('td');if(!td)return;const p=td.dataset.p;

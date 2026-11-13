@@ -15,12 +15,10 @@ const INDEXNOW_KEY = fs.existsSync('indexnow-key.txt') ? fs.readFileSync('indexn
 let index = fs.readFileSync('index.html', 'utf8');
 const script = index.slice(index.indexOf('<script>') + 8, index.indexOf('let topic='));
 const ctx = {}; vm.createContext(ctx);
-vm.runInContext(script + ';globalThis.__o={TOPICS,PARTIES,FLAGS,S,D,CLAVES}', ctx);
-const { TOPICS, PARTIES, FLAGS, S, D, CLAVES } = ctx.__o;
+vm.runInContext(script + ';globalThis.__o={TOPICS,PARTIES,FLAGS,S,D,CLAVES,TSLUG,PSLUG}', ctx);
+const { TOPICS, PARTIES, FLAGS, S, D, CLAVES, TSLUG, PSLUG } = ctx.__o;
 
 const LBL = { p29: 'Programa 29-N', p29p: 'Programa 29-N · vía prensa', pa: 'Programa anterior', doc: 'Documento 2026', dec: 'Declaración 2026', pl: 'Proposición de ley', gob: 'Gobierno / ley' };
-const TSLUG = { viv: 'vivienda', jov: 'jovenes', san: 'sanidad', pen: 'pensiones', emp: 'empleo', imp: 'impuestos', edu: 'educacion', uni: 'universidades', inm: 'inmigracion', disc: 'discapacidad', dep: 'dependencia', soc: 'servicios-sociales', igu: 'igualdad', ter: 'territorio', ext: 'politica-exterior' };
-const PSLUG = { pp: 'pp', psoe: 'psoe', vox: 'vox', fa: 'frente-amplio', pod: 'podemos', erc: 'erc', junts: 'junts', bildu: 'eh-bildu', pnv: 'pnv', bng: 'bng', cc: 'coalicion-canaria', salf: 'salf', upn: 'upn' };
 const ART = { pp: 'el PP', psoe: 'el PSOE', vox: 'Vox', fa: 'el Frente Amplio', pod: 'Podemos', erc: 'ERC', junts: 'Junts', bildu: 'EH Bildu', pnv: 'el PNV', bng: 'el BNG', cc: 'Coalición Canaria', salf: 'Se Acabó La Fiesta (SALF)', upn: 'UPN' };
 const de = p => ART[p].startsWith('el ') ? 'del ' + ART[p].slice(3) : 'de ' + ART[p];
 const low = s => s[0].toLowerCase() + s.slice(1);
@@ -72,7 +70,7 @@ const stamp = (url, content) => {
 };
 
 /* ---------- 3. Piezas HTML ---------- */
-const itemHTML = (it, { who = true, link = false } = {}) => `<article class="item o-${it.origin}" id="${it.id}" style="--pc:${P[it.party].color}">
+const itemHTML = (it, { who = true, link = false } = {}) => `<article class="item o-${it.origin}" id="${it.id}" data-f="${[...new Set(it.notes.map(n => n.flag))].join(' ')}" style="--pc:${P[it.party].color}">
 <div class="tline"><span class="tag">${LBL[it.origin]}</span><a class="perma" href="/${P[it.party].slug}#${it.id}" title="Enlace a esta medida">${link ? 'Ver en la página ' + esc(de(it.party)) : '#' + it.id}</a></div>
 <p>${who ? `<b class="who">${esc(P[it.party].name)}.</b> ` : ''}${esc(it.text)}</p>
 ${it.source ? `<a class="src" href="${esc(it.source.url)}"${/^https?:/.test(it.source.url) ? ' rel="noopener"' : ''}>Fuente: ${esc(it.source.label)}</a>` : ''}
@@ -84,12 +82,31 @@ const tally = items => {
   return Object.entries(c).sort((a, b) => b[1] - a[1]);
 };
 const tallyHTML = items => tally(items).map(([f, c]) => `<span class="chip"><b>${c}</b> ${esc(FLAGS[f][0])}</span>`).join('');
+const filterHTML = items => tally(items).length ? `<div class="filt" data-filter hidden><span class="fl">Ver solo</span>${tally(items).map(([f, c]) => `<button type="button" class="chip" data-f="${f}" aria-pressed="false"><b>${c}</b> ${esc(FLAGS[f][0])}</button>`).join('')}</div>` : '';
 
 const person = { '@type': 'Person', '@id': SITE + '/metodologia#autor', name: AUTHOR, url: 'https://fernandosantamaria.com', sameAs: ['https://x.com/lernys', 'https://www.linkedin.com/in/fernandosantamaria/'] };
 const crumbsLD = list => ({ '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: list.map(([n, u], i) => ({ '@type': 'ListItem', position: i + 1, name: n, item: SITE + u })) });
 
+const MAIL = 'loquenocuentan@proton.me';
+const nNotesAll = ITEMS.reduce((a, i) => a + i.notes.length, 0);
+const ICON_SVG = '<svg viewBox="0 0 1092 1092" aria-hidden="true"><rect width="1092" height="1092" rx="236" fill="#0f6e74"/><g fill="#fff"><rect x="251" y="272" width="590" height="98" rx="49"/><rect x="251" y="465" width="404" height="98" rx="49"/><rect x="251" y="688" width="263" height="98" rx="49"/></g><circle cx="678" cy="737" r="82" fill="#ffd23f"/></svg>';
+const headerHTML = (cur = '') => `<a class="lq-skip" href="#contenido">Saltar al contenido</a>
+<header class="lq-top"><div class="lq-in">
+<a class="lq-brand" href="/" aria-label="${NAME}, inicio">${ICON_SVG}<span class="lq-word">lo que <b>no cuentan</b></span></a>
+<nav class="lq-nav" aria-label="Principal">${[['/#res', 'Comparar', 'comparar'], ['/#temas', 'Temas', 'temas'], ['/#partidos', 'Partidos', 'partidos'], ['/#cuentas', 'Las cuentas que no salen', 'cuentas'], ['/metodologia', 'Metodología', 'metodologia'], ['/datos', 'Datos', 'datos']].map(([h, n, k]) => `<a href="${h}"${k === cur ? ' aria-current="page"' : ''}>${n}</a>`).join('')}</nav>
+</div></header>`;
+const footerHTML = (date) => `<footer class="lq-foot"><div class="lq-in lq-fgrid">
+<div><a class="lq-brand" href="/">${ICON_SVG}<span class="lq-word">lo que <b>no cuentan</b></span></a>
+<p class="lq-tag">Qué prometen los partidos · Cada dato con su fuente</p>
+<p>Comparador informativo de los programas de las elecciones generales del 29 de noviembre de 2026. Sin afiliación a ningún partido y sin publicidad.</p></div>
+<div><h2>Temas</h2><ul class="two">${TOPICS.map(([k]) => `<li><a href="/tema/${T[k].slug}">${esc(T[k].name)}</a></li>`).join('')}</ul></div>
+<div><h2>Partidos</h2><ul class="two">${PARTIES.map(([k]) => `<li><a href="/${P[k].slug}">${esc(P[k].name)}</a></li>`).join('')}</ul></div>
+<div><h2>Proyecto</h2><ul><li><a href="/metodologia">Metodología y fuentes</a></li><li><a href="/datos">Datos abiertos</a></li><li><a href="/metodologia#errores">Comunicar un error</a></li><li><a href="mailto:${MAIL}">${MAIL}</a></li><li><a href="${REPO}" rel="noopener">Código en GitHub</a></li></ul></div>
+</div><div class="lq-in lq-legal"><span>Autor: ${AUTHOR}</span><span>Datos con licencia <a href="https://creativecommons.org/licenses/by/4.0/deed.es" rel="license noopener">CC BY 4.0</a></span><span>Actualizado el <time datetime="${date}">${fecha(date)}</time></span></div></footer>`;
+const HEAD_COMMON = `<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/icon-180.png">`;
 const pages = [];
-function page({ url, title, desc, crumbs = [], body, ld = [], og = 'og.png', content }) {
+function page({ url, title, desc, crumbs = [], body, ld = [], og = 'og.png', content, nav = '' }) {
   const date = stamp(url, content ?? body);
   const canonical = SITE + (url === '/' ? '/' : url);
   const all = [...(crumbs.length ? [crumbsLD([['Inicio', '/'], ...crumbs])] : []), ...ld];
@@ -101,7 +118,7 @@ function page({ url, title, desc, crumbs = [], body, ld = [], og = 'og.png', con
 <title>${esc(title)}</title>
 <meta name="description" content="${esc(desc)}">
 <link rel="canonical" href="${canonical}">
-<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+${HEAD_COMMON}
 <meta property="og:type" content="article">
 <meta property="og:locale" content="es_ES">
 <meta property="og:site_name" content="${NAME}">
@@ -114,25 +131,21 @@ function page({ url, title, desc, crumbs = [], body, ld = [], og = 'og.png', con
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="${SITE}/${og}">
 <meta name="author" content="${AUTHOR}">
-<meta name="theme-color" content="#0f6e74">
+<meta name="theme-color" content="#19212b">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&display=swap">
+<link rel="stylesheet" href="/assets/chrome.css">
 <link rel="stylesheet" href="/assets/site.css">
+<script src="/assets/page.js" defer></script>
 ${all.map(o => `<script type="application/ld+json">${JSON.stringify(o).replace(/</g, '\\u003c').replace(/__DATE__/g, date)}</script>`).join('\n')}
 </head>
 <body>
-<div class="wrap">
-<nav class="site" aria-label="Principal">
-<a class="brand" href="/">${NAME}</a>
-<a href="/#res">Comparador</a><a href="/#partidos">Partidos</a><a href="/#temas">Temas</a><a href="/metodologia">Metodología</a><a href="/datos">Datos</a>
-</nav>
+${headerHTML(nav)}
+<main class="wrap" id="contenido">
 ${crumbs.length ? `<p class="crumbs"><a href="/">Inicio</a>${crumbs.map(([n, u], i) => i === crumbs.length - 1 ? ` › <span>${esc(n)}</span>` : ` › <a href="${u}">${esc(n)}</a>`).join('')}</p>` : ''}
 ${body}
-<footer>
-<p>Herramienta informativa sin afiliación a ningún partido. Elecciones generales del 29 de noviembre de 2026. Página actualizada el <time datetime="${date}">${fecha(date)}</time>.</p>
-<p>Autor: ${AUTHOR}. <a href="/metodologia">Metodología y fuentes</a> · <a href="/datos">Datos abiertos (CC BY 4.0)</a> · <a href="/metodologia#errores">Comunicar un error</a></p>
-</footer>
-</div>
+</main>
+${footerHTML(date)}
 </body>
 </html>
 `;
@@ -154,6 +167,7 @@ for (const p of Object.values(P)) {
   page({
     url: '/' + p.slug, og: `og/${p.slug}.png`,
     title: `Qué propone ${ART[p.k]} para las elecciones del 29-N · ${NAME}`, desc,
+    nav: 'partidos',
     crumbs: [[p.name, '/' + p.slug]],
     ld: [{ '@context': 'https://schema.org', '@type': 'Article', headline: `Qué propone ${ART[p.k]} para las elecciones del 29-N`, description: desc, inLanguage: 'es', author: person, publisher: { '@type': 'Organization', name: NAME, url: SITE }, mainEntityOfPage: SITE + '/' + p.slug, dateModified: '__DATE__', about: { '@type': 'Organization', name: p.name } }],
     content: p.items,
@@ -162,12 +176,11 @@ for (const p of Object.values(P)) {
 <h1>Qué propone ${esc(ART[p.k])} para el 29-N y qué no cuenta</h1>
 <p class="lead">${esc(p.status)}.</p>
 <div class="tiles"><div class="tile"><b>${p.items.length}</b><span>propuestas localizadas</span></div><div class="tile"><b>${flagged}</b><span>con alguna observación</span></div><div class="tile"><b>${topics.length}</b><span>temas de 15</span></div></div>
-${p.items.length ? `<div class="chips tally">${tallyHTML(p.items)}</div>` : ''}
 </header>
-<section><h2 class="sec">Otros partidos</h2>${partyNav(p.k)}</section>
-${topics.length ? `<section><h2 class="sec">Por tema</h2>${topicNav(null, `/${p.slug}/`, topics)}</section>` : '<div class="none"><b>Sin propuestas localizadas</b>No se ha encontrado nada de este partido hasta hoy.</div>'}
+${topics.length ? `<nav class="jump" aria-label="Temas de esta página"><div class="jrow"><span class="fl">Ir a</span>${topics.map(t => `<a href="#${T[t].slug}">${esc(T[t].name)} <b>${p.items.filter(i => i.topic === t).length}</b></a>`).join('')}</div>${filterHTML(p.items)}</nav>` : '<div class="none"><b>Sin propuestas localizadas</b>No se ha encontrado nada de este partido hasta hoy.</div>'}
 ${topics.map(t => { const its = p.items.filter(i => i.topic === t); return `<section class="block" id="${T[t].slug}"><h2><a href="/${p.slug}/${T[t].slug}">${esc(T[t].name)}</a> <small>${plural(its.length, 'propuesta', 'propuestas')} · <a href="/tema/${T[t].slug}">comparar con el resto</a></small></h2><div class="grid">${its.map(i => itemHTML(i, { who: false })).join('\n')}</div></section>`; }).join('\n')}
-<p class="back">Que un partido tenga más observaciones suele indicar que hay más documentación suya, no que sea peor. <a href="/metodologia">Cómo se hace la lectura crítica</a>.</p>`
+<p class="back">Que un partido tenga más observaciones suele indicar que hay más documentación suya, no que sea peor. <a href="/metodologia">Cómo se hace la lectura crítica</a>.</p>
+<section class="more"><h2 class="sec">Ver otro partido</h2>${partyNav(p.k)}</section>`
   });
 
   /* partido × tema */
@@ -178,6 +191,7 @@ ${topics.map(t => { const its = p.items.filter(i => i.topic === t); return `<sec
     page({
       url: `/${p.slug}/${T[t].slug}`, og: `og/${p.slug}.png`,
       title: `Qué propone ${ART[p.k]} sobre ${T[t].lname} en las elecciones del 29-N · ${NAME}`, desc: d2,
+      nav: 'partidos',
       crumbs: [[p.name, '/' + p.slug], [T[t].name, `/${p.slug}/${T[t].slug}`]],
       ld: [{ '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: [{ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: its.map(i => `${LBL[i.origin]}: ${i.text}`).join(' ') + ` Fuentes y lectura crítica en ${SITE}/${p.slug}/${T[t].slug}` } }] }],
       content: [its, CLAVES[t]],
@@ -189,8 +203,8 @@ ${tally(its).length ? `<div class="chips tally">${tallyHTML(its)}</div>` : ''}
 </header>
 <div class="grid">${its.map(i => itemHTML(i, { who: true })).join('\n')}</div>
 ${clavesHTML(t)}
-<section><h2 class="sec">${esc(T[t].name)} en otros partidos</h2><div class="chips">${PARTIES.filter(([k]) => k !== p.k && P[k].items.some(i => i.topic === t)).map(([k]) => `<a class="party" href="/${P[k].slug}/${T[t].slug}" style="--pc:${P[k].color}"><i></i>${esc(P[k].name)}</a>`).join('')}<a class="topic on" href="/tema/${T[t].slug}">Comparar todos</a></div></section>
-<section><h2 class="sec">Más temas ${esc(de(p.k))}</h2>${topicNav(t, `/${p.slug}/`, topics)}</section>`
+<section class="more"><h2 class="sec">${esc(T[t].name)} en otros partidos</h2><div class="chips">${PARTIES.filter(([k]) => k !== p.k && P[k].items.some(i => i.topic === t)).map(([k]) => `<a class="party" href="/${P[k].slug}/${T[t].slug}" style="--pc:${P[k].color}"><i></i>${esc(P[k].name)}</a>`).join('')}<a class="topic on" href="/tema/${T[t].slug}">Comparar todos</a></div></section>
+<section class="more"><h2 class="sec">Más temas ${esc(de(p.k))}</h2>${topicNav(t, `/${p.slug}/`, topics)}</section>`
     });
   }
 }
@@ -203,6 +217,7 @@ for (const t of Object.values(T)) {
   page({
     url: '/tema/' + t.slug, og: `og/tema-${t.slug}.png`,
     title: `${t.name}: qué propone cada partido para el 29-N · ${NAME}`, desc,
+    nav: 'temas',
     crumbs: [['Temas', '/#temas'], [t.name, '/tema/' + t.slug]],
     ld: faq.length ? [{ '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faq }] : [],
     content: [t.items, CLAVES[t.k]],
@@ -211,6 +226,7 @@ for (const t of Object.values(T)) {
 <h1>${esc(t.name)}: qué propone cada partido para el 29-N y qué no cuenta</h1>
 <p class="lead">${plural(t.items.length, 'propuesta', 'propuestas')} de ${plural(withItems.length, 'partido', 'partidos')}. Cada una lleva su fuente. La misma regla para todos.</p>
 </header>
+<nav class="jump" aria-label="Partidos de esta página"><div class="jrow"><span class="fl">Ir a</span>${withItems.map(k => `<a href="#${P[k].slug}" style="--pc:${P[k].color}"><i></i>${esc(P[k].name)} <b>${t.items.filter(i => i.party === k).length}</b></a>`).join('')}</div>${filterHTML(t.items)}</nav>
 <section class="tablebox"><h2 class="sec">Comparativa rápida</h2>
 <div class="scroll"><table class="tbl"><thead><tr><th scope="col">Partido</th><th scope="col">Propuestas</th><th scope="col">Origen</th><th scope="col">Observaciones más frecuentes</th></tr></thead><tbody>
 ${PARTIES.map(([k]) => { const its = t.items.filter(i => i.party === k); const tl = tally(its).slice(0, 3).map(([f, c]) => `${FLAGS[f][0]} (${c})`).join(', '); return `<tr><th scope="row"><a href="${its.length ? '#' + P[k].slug : '/' + P[k].slug}"><i style="background:${P[k].color}"></i>${esc(P[k].name)}</a></th><td>${its.length || '<span class="mut">Sin propuesta localizada</span>'}</td><td>${its.length ? esc(P[k].short) : ''}</td><td>${esc(tl) || (its.length ? '<span class="mut">Ninguna</span>' : '')}</td></tr>`; }).join('\n')}
@@ -218,7 +234,7 @@ ${PARTIES.map(([k]) => { const its = t.items.filter(i => i.party === k); const t
 <p class="mut">Los partidos se ordenan por escaños de 2023, que no es una clasificación. Que un partido tenga más observaciones suele indicar que hay más documentación suya.</p></section>
 ${clavesHTML(t.k)}
 ${withItems.map(k => { const its = t.items.filter(i => i.party === k); return `<section class="block" id="${P[k].slug}" style="--pc:${P[k].color}"><h2 class="ph">¿Qué propone ${esc(ART[k])} sobre ${esc(t.lname)}? <small>${esc(P[k].short)} · <a href="/${P[k].slug}/${t.slug}">página propia</a></small></h2><div class="grid">${its.map(i => itemHTML(i, { who: true, link: true })).join('\n')}</div></section>`; }).join('\n')}
-<section><h2 class="sec">Otros temas</h2>${topicNav(t.k)}</section>`
+<section class="more"><h2 class="sec">Otros temas</h2>${topicNav(t.k)}</section>`
   });
 }
 
@@ -227,6 +243,7 @@ page({
   url: '/metodologia',
   title: `Metodología y fuentes · ${NAME}`,
   desc: 'Quién hace el comparador de programas del 29-N, con qué criterios, qué significa cada etiqueta, qué fuentes se usan y cómo comunicar un error.',
+  nav: 'metodologia',
   crumbs: [['Metodología', '/metodologia']],
   ld: [{ '@context': 'https://schema.org', '@type': 'AboutPage', name: 'Metodología y fuentes', url: SITE + '/metodologia', author: person, inLanguage: 'es' }],
   body: `<header class="hero"><p class="kicker">Cómo se hace</p><h1>Metodología y fuentes</h1>
@@ -258,7 +275,8 @@ page({
 <li>Los partidos se ordenan por escaños de 2023, que no es una clasificación.</li>
 <li>Estado actual: ${PARTIES.filter(([k]) => P[k].short === 'Texto oficial').map(([k]) => P[k].name).join(' y ')} con texto oficial. ${PARTIES.filter(([k]) => P[k].short === 'Vía prensa').map(([k]) => P[k].name).join(' y ')} vía prensa. El resto se añadirá el día que publique su programa, con el mismo recuento.</li></ul></section>
 <section class="block prose" id="errores"><h2>Cómo comunicar un error</h2>
-<p>Si encuentras un error, una fuente rota o una medida que falta, abre un aviso en <a href="${REPO}/issues/new">el registro público del proyecto en GitHub</a>. Indica la medida (cada una tiene su enlace propio) y la fuente que lo corrige. Las correcciones se hacen en público y quedan en el historial del repositorio.</p></section>`
+<p>Si encuentras un error, una fuente rota o una medida que falta, escribe a <a href="mailto:${MAIL}">${MAIL}</a> o abre un aviso en <a href="${REPO}/issues/new">el registro público del proyecto en GitHub</a>. Indica la medida (cada una tiene su enlace propio) y la fuente que lo corrige.</p>
+<p>Las correcciones se hacen en público y quedan en el historial del repositorio.</p></section>`
 });
 
 const dataDate = stamp('/datos/medidas.json', ITEMS);
@@ -267,12 +285,13 @@ fs.writeFileSync('datos/medidas.json', JSON.stringify({ titulo: 'Medidas de los 
 const csv = rows => rows.map(r => r.map(c => `"${String(c).replace(/"/g, '""')}"`).join(',')).join('\n') + '\n';
 fs.writeFileSync('datos/medidas.csv', '\ufeff' + csv([['id', 'url', 'partido', 'tema', 'origen', 'texto', 'fuente', 'fuente_url', 'num_observaciones'], ...records.map(r => [r.id, r.url, r.partido, r.tema, r.origen, r.texto, r.fuente, r.fuente_url, r.observaciones.length])]));
 fs.writeFileSync('datos/observaciones.csv', '\ufeff' + csv([['medida_id', 'partido', 'tema', 'etiqueta', 'texto', 'fuentes'], ...records.flatMap(r => r.observaciones.map(o => [r.id, r.partido, r.tema, o.etiqueta, o.texto, o.fuentes.join(' ')]))]));
-const nNotes = ITEMS.reduce((a, i) => a + i.notes.length, 0);
+const nNotes = nNotesAll;
 const dataset = { '@context': 'https://schema.org', '@type': 'Dataset', '@id': SITE + '/datos#dataset', name: 'Medidas de los partidos para las elecciones generales del 29-N de 2026', description: `${ITEMS.length} propuestas de ${PARTIES.length} partidos en ${TOPICS.length} temas, con su fuente y ${nNotes} observaciones críticas (coste, plazos, lo que ya existe, votaciones).`, url: SITE + '/datos', inLanguage: 'es', license: 'https://creativecommons.org/licenses/by/4.0/', isAccessibleForFree: true, creator: person, dateModified: dataDate, temporalCoverage: '2026', spatialCoverage: { '@type': 'Place', name: 'España' }, keywords: ['elecciones generales 2026', '29-N', 'programas electorales', 'España'], distribution: [{ '@type': 'DataDownload', encodingFormat: 'application/json', contentUrl: SITE + '/datos/medidas.json' }, { '@type': 'DataDownload', encodingFormat: 'text/csv', contentUrl: SITE + '/datos/medidas.csv' }, { '@type': 'DataDownload', encodingFormat: 'text/csv', contentUrl: SITE + '/datos/observaciones.csv' }] };
 page({
   url: '/datos',
   title: `Datos abiertos del comparador del 29-N · ${NAME}`,
   desc: `Descarga en CSV y JSON las ${ITEMS.length} propuestas de los partidos para el 29-N con sus fuentes y observaciones. Licencia CC BY 4.0.`,
+  nav: 'datos',
   crumbs: [['Datos', '/datos']], ld: [dataset], content: dataDate,
   body: `<header class="hero"><p class="kicker">Datos abiertos · CC BY 4.0</p><h1>Descarga los datos del comparador</h1>
 <p class="lead">Todo lo que se ve en el sitio, en formatos que se pueden reutilizar. Se pide citar la fuente y enlazar.</p>
@@ -301,17 +320,36 @@ const homeLD = [
   dataset
 ];
 index = between(index, 'ld', homeLD.map(o => `<script type="application/ld+json">${JSON.stringify(o).replace(/</g, '\\u003c')}</script>`).join('\n'), '</head>', true);
-index = between(index, 'nav', `<section class="dir" aria-labelledby="dp" id="partidos">
-  <h2 id="dp">Partido a partido</h2>
-  <div class="dirgrid">${PARTIES.map(([k]) => `<a href="/${P[k].slug}" style="--pc:${P[k].color}"><b>${esc(P[k].name)}</b><span>${plural(P[k].items.length, 'propuesta', 'propuestas')} · ${esc(P[k].short)}</span></a>`).join('')}</div>
+index = between(index, 'header', `${headerHTML()}
+<section class="lq-hero"><div class="lq-in lq-hgrid">
+<div>
+<p class="lq-kick">Elecciones generales · 29 de noviembre de 2026</p>
+<h1>Qué prometen los partidos y qué <span class="lq-hl">no cuentan</span></h1>
+<p class="lq-sub">Coste, plazos, lo que ya existe y lo que votaron. Cada dato, con su fuente. La misma regla para todos.</p>
+<form class="lq-search" role="search" id="hform"><input id="hq" type="search" placeholder="Busca una propuesta: alquiler, IRPF, pensiones…" aria-label="Buscar en todas las propuestas"><button class="lq-btn" type="submit">Buscar</button></form>
+<p class="lq-go"><a class="lq-btn ghost" href="#res">Comparar por tema</a><a class="lq-btn ghost" href="#partidos">Partido a partido</a><a class="lq-btn ghost" href="#cuentas">Las cuentas que no salen</a></p>
+<ul class="lq-stats"><li><b>${ITEMS.length}</b>propuestas</li><li><b>${PARTIES.length}</b>partidos</li><li><b>${TOPICS.length}</b>temas</li><li><b>${nNotesAll}</b>observaciones con su porqué</li></ul>
+</div>
+<figure class="lq-anat" aria-label="Cómo se lee cada propuesta">
+<span class="a-tag">Así se lee cada propuesta</span>
+<p class="a-t">La promesa, tal como la escribe el partido</p>
+<span class="a-src">Su fuente: programa, medida y página</span>
+<div class="a-note"><span>Lo que no cuenta</span><ul><li>¿Cuánto cuesta?</li><li>¿En qué plazo?</li><li>¿Ya existe?</li><li>¿Qué votó el partido?</li></ul></div>
+</figure>
+</div></section>`, '<main class="wrap"', true);
+index = between(index, 'nav', `<section class="dir" aria-labelledby="dt" id="temas">
+  <h2 class="lq-h" id="dt"><small>${TOPICS.length} temas</small><span>Tema a tema</span></h2>
+  <p class="lq-lead">Cada tema tiene su página, con una tabla que compara a todos los partidos.</p>
+  <div class="dirgrid tgrid">${TOPICS.map(([k]) => `<a href="/tema/${T[k].slug}"><i class="ti" data-ico="${k}"></i><b>${esc(T[k].name)}</b><span>${plural(T[k].items.length, 'propuesta', 'propuestas')} · ${plural(new Set(T[k].items.map(i => i.party)).size, 'partido', 'partidos')}</span></a>`).join('')}</div>
 </section>
-<section class="dir" aria-labelledby="dt" id="temas">
-  <h2 id="dt">Tema a tema</h2>
-  <div class="dirgrid">${TOPICS.map(([k]) => `<a href="/tema/${T[k].slug}"><b>${esc(T[k].name)}</b><span>${plural(T[k].items.length, 'propuesta', 'propuestas')} de ${plural(new Set(T[k].items.map(i => i.party)).size, 'partido', 'partidos')}</span></a>`).join('')}</div>
-</section>
-<p class="dirfoot"><a href="/metodologia">Metodología y fuentes</a> · <a href="/datos">Datos abiertos (CSV y JSON, CC BY 4.0)</a> · <a href="/metodologia#errores">Comunicar un error</a> · Autor: ${AUTHOR}</p>`, '<footer>Herramienta informativa', true);
-index = between(index, 'css', `<style>.dir{display:flex;flex-direction:column;gap:10px}.dir>h2{font-family:var(--f-disp);font-size:1.45rem;margin:0}.dirgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:8px}.dirgrid a{background:var(--paper);border-radius:12px;border-left:6px solid var(--pc,var(--accent));padding:10px 12px;text-decoration:none;color:var(--ink);display:flex;flex-direction:column;gap:2px}.dirgrid a:hover{outline:2px solid var(--accent)}.dirgrid b{font-family:var(--f-disp)}.dirgrid span{font-size:.78rem;color:var(--muted)}.dirfoot{font-size:.85rem;color:var(--muted);margin:0}</style>`, '</head>', true);
-index = index.replace('Si encuentras un error, escríbenos y lo corregimos en público.', 'Si encuentras un error, <a href="/metodologia#errores">avísanos</a> y lo corregimos en público.');
+<section class="dir" aria-labelledby="dp" id="partidos">
+  <h2 class="lq-h" id="dp"><small>${PARTIES.length} partidos</small><span>Partido a partido</span></h2>
+  <p class="lq-lead">Todo lo localizado de cada partido, medida a medida. El orden es el de los escaños de 2023, no una clasificación.</p>
+  <div class="dirgrid pgrid">${PARTIES.map(([k]) => `<a href="/${P[k].slug}" style="--pc:${P[k].color}"><b>${esc(P[k].name)}</b><span>${plural(P[k].items.length, 'propuesta', 'propuestas')}</span><em class="s-${P[k].short === 'Texto oficial' ? 'of' : P[k].short === 'Vía prensa' ? 'pr' : 'no'}">${esc(P[k].short)}</em></a>`).join('')}</div>
+</section>`, '<section class="mapbox"', true);
+index = between(index, 'footer', footerHTML(homeDate), '</main>', false);
+index = between(index, 'css', `${HEAD_COMMON}
+<link rel="stylesheet" href="/assets/chrome.css">`, '</head>', true);
 fs.writeFileSync('index.html', index);
 pages.push({ url: '/', date: homeDate });
 
@@ -320,21 +358,32 @@ const vars = index.slice(index.indexOf(':root{'), index.indexOf('*{box-sizing'))
 fs.mkdirSync('assets', { recursive: true });
 fs.writeFileSync('assets/site.css', `/* Generado por build.mjs. Las variables de color se copian de index.html */
 ${vars}*{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:16px;line-height:1.5;padding:16px max(16px,env(safe-area-inset-right,0px)) 48px max(16px,env(safe-area-inset-left,0px))}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:16px;line-height:1.5}
 .wrap{max-width:1080px;margin:0 auto;display:flex;flex-direction:column;gap:22px}
 h1,h2,h3{font-family:var(--f-disp);margin:0;text-wrap:balance;letter-spacing:-.01em}
 a{color:var(--accent)}
-nav.site{display:flex;flex-wrap:wrap;gap:6px 18px;align-items:baseline;font-size:.92rem;border-bottom:1px solid var(--line);padding-bottom:12px}
-nav.site a{text-decoration:none;color:var(--muted)}nav.site a:hover{color:var(--ink)}
-nav.site .brand{font-family:var(--f-disp);font-weight:800;font-size:1.15rem;color:var(--ink);margin-right:auto;box-shadow:inset 0 -.45em 0 color-mix(in srgb,var(--o-p29) 35%,transparent)}
 .crumbs{margin:0;font-size:.82rem;color:var(--muted)}
-.hero{background:var(--paper);border-radius:16px;border-top:8px solid var(--pc,var(--accent));padding:22px 22px 20px;display:flex;flex-direction:column;gap:12px}
-.kicker{margin:0;font-size:.74rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--accent)}
-h1{font-size:clamp(1.6rem,4.2vw,2.5rem);font-weight:800;line-height:1.08}
-.lead{margin:0;color:var(--muted);font-size:1.04rem;max-width:70ch}
+.hero{background:var(--navy);color:#fff;border-radius:18px;border-left:14px solid var(--pc,var(--teal-l));padding:26px 26px 24px;display:flex;flex-direction:column;gap:14px;background-image:repeating-linear-gradient(115deg,rgba(255,255,255,.022) 0 2px,transparent 2px 44px)}
+.kicker{margin:0;font-size:.74rem;font-weight:700;letter-spacing:.13em;text-transform:uppercase;color:var(--teal-l)}
+h1{font-size:clamp(1.7rem,4.4vw,2.7rem);font-weight:800;line-height:1.06;letter-spacing:-.02em}
+.lead{margin:0;color:#c9d3dc;font-size:1.05rem;max-width:70ch}
 .tiles{display:flex;flex-wrap:wrap;gap:10px}
-.tile{background:var(--accent-soft);border-radius:12px;padding:10px 16px;min-width:120px}
-.tile b{display:block;font:800 1.9rem/1 var(--f-disp);color:var(--accent)}.tile span{font-size:.8rem;color:var(--muted)}
+.tile{background:var(--navy2);border-radius:12px;padding:10px 16px;min-width:120px;border-top:4px solid var(--teal-l)}
+.tile b{display:block;font:800 1.9rem/1 var(--f-disp);color:#fff}.tile span{font-size:.8rem;color:#aeb9c4}
+.hero .chip{background:transparent;border-color:#46566a;color:#e6ecf1}.hero .chip b{color:var(--yellow)}
+.jump{position:sticky;top:0;z-index:6;background:var(--bg);border-bottom:1px solid var(--line);padding:8px 0;display:flex;flex-direction:column;gap:6px;margin-top:-8px}
+.jrow,.filt{display:flex;gap:6px;align-items:center;overflow-x:auto;scrollbar-width:none;padding:2px}
+.jrow::-webkit-scrollbar,.filt::-webkit-scrollbar{display:none}
+.fl{flex:none;font-size:.7rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);width:62px}
+.jump a{flex:none;display:inline-flex;align-items:center;gap:7px;background:var(--paper);border:1.5px solid var(--line);border-radius:999px;padding:5px 12px;font-size:.86rem;color:var(--ink);text-decoration:none;white-space:nowrap}
+.jump a:hover{border-color:var(--accent)}.jump a b{color:var(--muted);font-weight:400;font-size:.78rem}
+.jump a i{width:11px;height:11px;border-radius:50%;background:var(--pc)}
+.filt[hidden]{display:none}
+.filt .chip{flex:none;font:inherit;font-size:.8rem;cursor:pointer;white-space:nowrap;background:var(--paper)}
+.filt .chip[aria-pressed="true"]{background:var(--crit);border-color:var(--crit);color:var(--paper)}
+.filt .clear{flex:none;font:inherit;font-size:.8rem;background:none;border:0;color:var(--accent);text-decoration:underline;cursor:pointer}
+.item[hidden],.block[hidden]{display:none}
+.more{border-top:1px solid var(--line);padding-top:16px}
 .chips{display:flex;flex-wrap:wrap;gap:6px}
 .chip{font-size:.8rem;border:1.5px solid var(--crit-line);background:var(--crit-bg);color:var(--crit);border-radius:999px;padding:3px 10px}
 .party,.topic{background:var(--paper);border:1.5px solid var(--line);border-radius:999px;padding:6px 12px;display:inline-flex;align-items:center;gap:8px;font-size:.88rem;color:var(--ink);text-decoration:none}
@@ -342,13 +391,13 @@ h1{font-size:clamp(1.6rem,4.2vw,2.5rem);font-weight:800;line-height:1.08}
 .party:hover,.topic:hover{border-color:var(--accent)}
 .party.on{border-color:var(--ink);font-weight:700}.topic.on{background:var(--accent);border-color:var(--accent);color:var(--paper)}
 .sec{font-size:.78rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin-bottom:8px;font-family:var(--f-body)}
-.block{display:flex;flex-direction:column;gap:10px;scroll-margin-top:12px}
+.block{display:flex;flex-direction:column;gap:10px;scroll-margin-top:110px}
 .block>h2{font-size:1.35rem;display:flex;flex-wrap:wrap;gap:6px 12px;align-items:baseline}
 .block>h2 a{color:inherit;text-decoration-color:var(--line)}
 .block>h2 small{font:400 .82rem var(--f-body);color:var(--muted)}.block>h2 small a{color:var(--accent)}
 .block>h2.ph{border-left:8px solid var(--pc);padding-left:12px}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,330px),1fr));gap:10px;align-items:start}
-.item{border-radius:12px;padding:12px 14px;background:var(--obg);display:flex;flex-direction:column;gap:7px;scroll-margin-top:12px;border-left:5px solid var(--pc,transparent)}
+.item{border-radius:12px;padding:12px 14px;background:var(--obg);display:flex;flex-direction:column;gap:7px;scroll-margin-top:110px;border-left:5px solid var(--pc,transparent)}
 .item:target{outline:3px solid var(--accent);outline-offset:2px}
 .item p{margin:0;font-size:.97rem}
 .tline{display:flex;justify-content:space-between;gap:8px;align-items:baseline}
@@ -359,7 +408,7 @@ h1{font-size:clamp(1.6rem,4.2vw,2.5rem);font-weight:800;line-height:1.08}
 .note .k{font-size:.66rem;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--crit)}
 .note a{font-size:.74rem}
 .o-pa{--oc:var(--o-pa);--obg:var(--o-pa-bg)}.o-doc{--oc:var(--o-doc);--obg:var(--o-doc-bg)}.o-dec{--oc:var(--o-dec);--obg:var(--o-dec-bg)}.o-pl{--oc:var(--o-pl);--obg:var(--o-pl-bg)}.o-gob{--oc:var(--o-gob);--obg:var(--o-gob-bg)}.o-p29,.o-p29p{--oc:var(--o-p29);--obg:var(--o-p29-bg)}.o-p29p{outline:1px dashed var(--o-p29);outline-offset:-1px}
-.context{background:var(--accent-soft);border-radius:14px;padding:16px 20px}
+.context{background:var(--accent-soft);border-radius:14px;padding:16px 20px;border-left:8px solid var(--accent)}
 .context h2{font:700 .8rem var(--f-body);text-transform:uppercase;letter-spacing:.08em;color:var(--accent);margin-bottom:8px}
 .context ul{margin:0;padding-left:18px;display:flex;flex-direction:column;gap:5px;max-width:90ch}
 .tablebox{background:var(--paper);border-radius:14px;padding:16px 18px}
@@ -370,11 +419,10 @@ h1{font-size:clamp(1.6rem,4.2vw,2.5rem);font-weight:800;line-height:1.08}
 .tbl th a{color:var(--ink);text-decoration:none;display:inline-flex;gap:8px;align-items:center;white-space:nowrap}.tbl th i{width:12px;height:12px;border-radius:50%}
 .mut{color:var(--muted);font-size:.85rem}
 .none{border-radius:12px;padding:18px;background:repeating-linear-gradient(135deg,var(--empty) 0 10px,var(--hatch) 10px 20px);color:var(--muted);text-align:center}.none b{display:block;color:var(--ink);font-family:var(--f-disp)}
-.prose{background:var(--paper);border-radius:14px;padding:18px 22px}.prose p,.prose li{max-width:75ch}.prose p{margin:0}.prose ul{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:6px}
+.prose{background:var(--paper);border-radius:14px;padding:20px 24px}.prose>h2{font-size:1.3rem}.prose p,.prose li{max-width:75ch}.prose p{margin:0}.prose ul{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:6px}
 .flags{display:grid;grid-template-columns:max-content 1fr;gap:8px 16px;margin:0;font-size:.95rem}.flags dt{font-weight:700;color:var(--crit)}.flags dd{margin:0;color:var(--muted)}
 .back{color:var(--muted);font-size:.9rem;margin:0}
-footer{font-size:.82rem;color:var(--muted);border-top:1px solid var(--line);padding-top:12px}footer p{margin:0 0 4px}
-@media (max-width:560px){.flags{grid-template-columns:1fr}.hero{padding:16px}}
+@media (max-width:560px){.flags{grid-template-columns:1fr}.hero{padding:18px 16px;border-left-width:9px}.fl{display:none}}
 `);
 
 /* ---------- 9. sitemap, robots, llms.txt, IndexNow ---------- */
