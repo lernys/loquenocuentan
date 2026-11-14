@@ -95,7 +95,7 @@ const ICON_SVG = '<svg viewBox="0 0 1092 1092" aria-hidden="true"><rect width="1
 const headerHTML = (cur = '') => `<a class="lq-skip" href="#contenido">Saltar al contenido</a>
 <header class="lq-top"><div class="lq-in">
 <a class="lq-brand" href="/" aria-label="${NAME}, inicio">${ICON_SVG}<span class="lq-word">lo que <b>no cuentan</b></span></a>
-<nav class="lq-nav" aria-label="Principal">${[['/#res', 'Comparar', 'comparar'], ['/#temas', 'Temas', 'temas'], ['/#partidos', 'Partidos', 'partidos'], ['/#cuentas', 'Las cuentas que no salen', 'cuentas'], ['/metodologia', 'Metodología', 'metodologia'], ['/datos', 'Datos', 'datos']].map(([h, n, k]) => `<a href="${h}"${k === cur ? ' aria-current="page"' : ''}>${n}</a>`).join('')}</nav>
+<nav class="lq-nav" aria-label="Principal">${[['/#res', 'Comparar', 'comparar'], ['/#temas', 'Temas', 'temas'], ['/#partidos', 'Partidos', 'partidos'], ['/#cuentas', 'Las cuentas que no salen', 'cuentas'], ['/metodologia', 'Metodología', 'metodologia'], ['/datos', 'Datos', 'datos'], ['/dossier', 'Dossier', 'dossier']].map(([h, n, k]) => `<a href="${h}"${k === cur ? ' aria-current="page"' : ''}>${n}</a>`).join('')}</nav>
 </div></header>`;
 const footerHTML = (date) => `<footer class="lq-foot"><div class="lq-in lq-fgrid">
 <div><a class="lq-brand" href="/">${ICON_SVG}<span class="lq-word">lo que <b>no cuentan</b></span></a>
@@ -165,10 +165,10 @@ const camarasHTML = t => CAMARAS.temas.includes(t) ? `<div class="camaras"><h3>Q
 const clavesHTML = t => CLAVES[t] ? `<aside class="context"><h2>Contexto: qué existe ya y quién decide</h2><ul>${CLAVES[t].map(claveLi).join('')}</ul>${camarasHTML(t)}</aside>` : '';
 
 /* Recuento de concreción sobre los programas oficiales (misma regla para todos: medida con alguna cifra, plazo o porcentaje). */
-const CONCR = { pp: { c: 53, n: 241 }, vox: { c: 5, n: 115, extra: 'Ninguna dice cuánto cuesta ni cuándo se haría.' } };
+const CONCR = { pp: { c: 62, n: 249, ids: [1, 5, 7, 9, 15, 19, 24, 28, 33, 35, 37, 41, 46, 65, 66, 67, 68, 70, 72, 75, 76, 79, 89, 105, 108, 114, 117, 126, 130, 139, 144, 148, 153, 154, 155, 156, 157, 158, 161, 168, 170, 171, 172, 174, 175, 179, 180, 181, 187, 188, 190, 191, 192, 203, 212, 220, 225, 228, 229, 230, 231, 249] }, vox: { c: 5, n: 115, ids: [2, 31, 34, 40, 94], extra: 'Ninguna dice cuánto cuesta ni cuándo se haría.' } };
 const pct = k => Math.round(CONCR[k].c / CONCR[k].n * 100);
 const concrTile = k => CONCR[k] ? `<div class="tile"><b>${pct(k)} %</b><span>medidas con alguna cifra o plazo</span></div>` : '';
-const concrHTML = k => CONCR[k] ? `<aside class="context" id="concrecion"><h2>Cuánto concreta el programa</h2><ul><li><b>${esc(P[k].name)}: ${CONCR[k].c} de ${CONCR[k].n} medidas (${pct(k)} %) llevan alguna cifra, plazo o porcentaje.</b>${CONCR[k].extra ? ' ' + esc(CONCR[k].extra) : ''}</li>${Object.keys(CONCR).filter(x => x !== k).map(x => `<li>Con la misma regla, ${esc(ART[x])}: ${CONCR[x].c} de ${CONCR[x].n} (${pct(x)} %).</li>`).join('')}<li>Recuento propio sobre el texto oficial, que se aplicará a cada programa que se publique. <a href="/vox-programa-29n">Ver el programa de Vox página a página</a>.</li></ul></aside>` : '';
+const concrHTML = k => CONCR[k] ? `<aside class="context" id="concrecion"><h2>Cuánto concreta el programa</h2><ul><li><b>${esc(P[k].name)}: ${CONCR[k].c} de ${CONCR[k].n} medidas (${pct(k)} %) llevan alguna cifra, plazo o porcentaje.</b>${CONCR[k].extra ? ' ' + esc(CONCR[k].extra) : ''}</li>${Object.keys(CONCR).filter(x => x !== k).map(x => `<li>Con la misma regla, ${esc(ART[x])}: ${CONCR[x].c} de ${CONCR[x].n} (${pct(x)} %).</li>`).join('')}<li>Recuento propio sobre el texto oficial, que se aplicará a cada programa que se publique. <a href="/metodologia#concrecion">Regla y lista de medidas contadas</a>. <a href="/vox-programa-29n">Ver el programa de Vox página a página</a>.</li></ul></aside>` : '';
 
 /* ---------- 4. Páginas de partido ---------- */
 for (const p of Object.values(P)) {
@@ -285,6 +285,12 @@ page({
 <li>Los partidos con menos documentación aparecen con más silencios. Eso refleja lo localizado hasta hoy, no necesariamente lo que piensan.</li>
 <li>Los partidos se ordenan por escaños de 2023, que no es una clasificación.</li>
 <li>Estado actual: ${PARTIES.filter(([k]) => P[k].short === 'Texto oficial').map(([k]) => P[k].name).join(' y ')} con texto oficial. ${PARTIES.filter(([k]) => P[k].short === 'Vía prensa').map(([k]) => P[k].name).join(' y ')} vía prensa. El resto se añadirá el día que publique su programa, con el mismo recuento.</li></ul></section>
+<section class="block prose" id="concrecion"><h2>Cómo se cuenta la concreción de un programa</h2>
+<p>Una medida cuenta como concreta si su texto compromete al menos una de estas cosas: un importe, una cantidad, un porcentaje, un plazo o fecha para hacerlo, una periodicidad («cada año», «cada trimestre») o un umbral numérico de aplicación (una edad, un número de habitantes, la duración de un mandato).</p>
+<p>No cuentan las cifras que solo describen el pasado o la situación actual, los nombres de planes con años («Agenda 2030», «presupuesto 2028-2034») ni las fórmulas vagas como «en la legislatura», «al inicio» o «desde el primer momento». Tampoco cuenta el número de la propia medida.</p>
+<p>Que una medida cuente como concreta no significa que diga cuánto cuesta. Solo significa que deja algo que se puede comprobar.</p>
+<ul>${Object.keys(CONCR).map(k => `<li><b>${esc(P[k].name)}: ${CONCR[k].c} de ${CONCR[k].n} medidas (${pct(k)} %).</b> Medidas contadas: ${CONCR[k].ids.join(', ')}.</li>`).join('')}</ul>
+<p>Es un recuento propio y hay casos discutibles. Si crees que una medida está mal clasificada, escríbenos con su número.</p></section>
 <section class="block prose" id="errores"><h2>Cómo comunicar un error</h2>
 <p>Si encuentras un error, una fuente rota o una medida que falta, escribe a <a href="mailto:${MAIL}">${MAIL}</a> o abre un aviso en <a href="${REPO}/issues/new">el registro público del proyecto en GitHub</a>. Indica la medida (cada una tiene su enlace propio) y la fuente que lo corrige.</p>
 <p>Las correcciones se hacen en público y quedan en el historial del repositorio.</p></section>`
@@ -439,6 +445,96 @@ h1{font-size:clamp(1.7rem,4.4vw,2.7rem);font-weight:800;line-height:1.06;letter-
 .back{color:var(--muted);font-size:.9rem;margin:0}
 @media (max-width:560px){.flags{grid-template-columns:1fr}.hero{padding:18px 16px;border-left-width:9px}.fl{display:none}}
 `);
+
+
+/* ---------- 8b. Dossier de presentación ---------- */
+page({
+  url: '/dossier',
+  title: `Dossier: qué es ${NAME}, el comparador de programas electorales del 29N · ${NAME}`,
+  desc: `Dossier de presentación de ${NAME}: qué es, cómo funciona, qué ha encontrado en los programas electorales de las elecciones generales del 29 de noviembre de 2026 y quién lo hace.`,
+  nav: 'dossier',
+  crumbs: [['Dossier', '/dossier']],
+  ld: [{ '@context': 'https://schema.org', '@type': 'AboutPage', name: 'Dossier de presentación', url: SITE + '/dossier', author: person, publisher: org, inLanguage: 'es' }],
+  body: `<style>
+.ds{display:flex;flex-direction:column;gap:22px}
+.ds h2{font:800 clamp(1.5rem,3.4vw,2.1rem)/1.08 var(--f-disp);letter-spacing:-.015em;margin:0}
+.ds-hero{background:var(--navy);color:#fff;border-radius:22px 22px 22px 8px;padding:34px 30px;display:flex;flex-direction:column;gap:18px}
+.ds-hero h1{font:800 clamp(2rem,6vw,3.6rem)/.98 var(--f-disp);letter-spacing:-.025em;margin:0;color:#fff}
+.ds-hero h1 em{font-style:normal;color:var(--yellow)}
+.ds-hero p{margin:0;color:#d5dde5;font-size:1.12rem;max-width:64ch}
+.ds-stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+.ds-stat{border-radius:16px;padding:14px 16px;display:flex;flex-direction:column;gap:2px}
+.ds-stat b{font:800 clamp(1.8rem,5vw,2.8rem)/1 var(--f-disp);letter-spacing:-.03em}
+.ds-stat span{font-size:.95rem}
+.ds-btns{display:flex;flex-wrap:wrap;gap:10px}
+.ds-btn{display:inline-block;background:var(--yellow);color:var(--navy);font:800 1rem var(--f-disp);text-decoration:none;padding:12px 20px;border-radius:12px}
+.ds-btn.g{background:transparent;color:#fff;box-shadow:inset 0 0 0 2px #46566a}
+.ds-sec{border-radius:22px 22px 22px 8px;padding:28px 26px;display:flex;flex-direction:column;gap:16px}
+.ds-paper{background:#eef2f5;color:var(--navy)}
+.ds-yellow{background:var(--yellow);color:var(--navy)}
+.ds-navy{background:var(--navy);color:#fff}
+.ds-teal{background:var(--teal);color:#fff}
+.ds-grid3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.ds-grid2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.ds-card{background:#fff;color:var(--navy);border-radius:18px 18px 18px 6px;padding:18px;display:flex;flex-direction:column;gap:8px}
+.ds-card .n{font:800 2.6rem/.9 var(--f-disp);color:var(--red)}
+.ds-card h3{font:800 1.2rem var(--f-disp);margin:0}
+.ds-card p{margin:0;font-size:.98rem;color:#3d4955}
+.ds-num{border-radius:18px 18px 18px 6px;padding:18px;display:flex;flex-direction:column;gap:8px}
+.ds-num b{font:800 clamp(2.4rem,7vw,3.8rem)/.86 var(--f-disp);letter-spacing:-.04em}
+.ds-num p{margin:0;font-size:1rem;line-height:1.3}
+.ds-tag{align-self:flex-start;font-size:.7rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:4px 12px;border-radius:999px;color:#fff;background:var(--teal)}
+.ds-dash{border:3px dashed var(--red);border-radius:16px;padding:14px 18px;background:#fff6f4;color:var(--navy);display:flex;flex-direction:column;gap:8px}
+.ds-dash p{margin:0;font-weight:700}
+.ds-tags{list-style:none;margin:0;padding:18px;background:#fff;border-radius:18px;display:grid;gap:8px}
+.ds-tags li{display:grid;grid-template-columns:210px 1fr;gap:14px;align-items:center}
+.ds-tags b{text-align:center;color:#fff;background:var(--teal);border-radius:999px;padding:5px 10px;font-size:.88rem}
+.ds-tags b.r{background:var(--red)}.ds-tags b.k{background:var(--navy)}
+.ds-bar{display:flex;flex-direction:column;gap:5px}
+.ds-bar div:first-child{display:flex;justify-content:space-between;gap:10px}
+.ds-bar i{display:block;height:16px;border-radius:6px;background:#2f3b49}
+.ds-bar i i{background:var(--yellow)}
+.ds-rules{list-style:none;margin:0;padding:0;display:grid;gap:14px;counter-reset:r}
+.ds-rules li{counter-increment:r;display:grid;grid-template-columns:44px 1fr;gap:14px;align-items:start}
+.ds-rules li::before{content:counter(r);width:44px;height:44px;border-radius:50%;background:var(--yellow);color:var(--navy);font:800 1.3rem var(--f-disp);display:flex;align-items:center;justify-content:center}
+.ds-rules b{display:block;font:800 1.15rem var(--f-disp)}
+.ds-rules span{color:#d5dde5}
+.ds a.in{color:inherit;font-weight:700}
+@media (max-width:760px){.ds-stats{grid-template-columns:repeat(2,minmax(0,1fr))}.ds-grid3,.ds-grid2{grid-template-columns:minmax(0,1fr)}.ds-tags li{grid-template-columns:minmax(0,1fr);gap:4px}.ds-tags b{justify-self:start}.ds-sec,.ds-hero{padding:22px 18px}}
+</style>
+<div class="ds">
+<header class="ds-hero"><p class="kicker">Dossier de presentación · Elecciones generales del 29 de noviembre de 2026</p>
+<h1>Los programas se escriben para no leerse. <em>Nosotros los hemos leído.</em></h1>
+<p>${NAME} es un comparador público que pone al lado de cada promesa lo que el programa calla: cuánto cuesta, quién lo decide, si ya existe y qué votó ese partido cuando pudo.</p>
+<div class="ds-stats"><div class="ds-stat" style="background:var(--teal)"><b>${PARTIES.length}</b><span>partidos</span></div><div class="ds-stat" style="background:#fff;color:var(--navy)"><b>${TOPICS.length}</b><span>temas</span></div><div class="ds-stat" style="background:var(--yellow);color:var(--navy)"><b>${ITEMS.length}</b><span>propuestas</span></div><div class="ds-stat" style="background:var(--red)"><b>${nNotesAll}</b><span>observaciones con fuente</span></div></div>
+<div class="ds-btns"><a class="ds-btn" href="/assets/dossier-lo-que-no-cuentan.pdf">Descargar el dossier en PDF</a><a class="ds-btn g" href="/#res">Abrir el comparador</a><a class="ds-btn g" href="/datos">Datos abiertos</a></div></header>
+
+<section class="ds-sec ds-paper"><h2>No decimos si una promesa es buena. Decimos lo que le falta.</h2>
+<div class="ds-grid3"><div class="ds-card"><span class="n">1</span><h3>La promesa</h3><p>El texto del programa, resumido y sin adjetivos.</p></div><div class="ds-card"><span class="n">2</span><h3>La fuente</h3><p>Documento, número de medida y página, con enlace.</p></div><div class="ds-card"><span class="n">3</span><h3>Lo que no cuenta</h3><p>Una etiqueta y el hecho que la respalda.</p></div></div>
+<div class="ds-card"><span class="ds-tag">Un ejemplo real · Programa del PP, medida 144</span><h3>Construir un millón de viviendas.</h3><p><a href="/pp#pp-144">Ver la medida con su fuente</a></p>
+<div class="ds-dash"><span class="ds-tag" style="background:var(--red)">Lo que no cuenta · Quimera</span><p>Exige 250.000 viviendas al año. En 2025 se terminaron 92.000. No fija plazo ni dinero.</p></div></div></section>
+
+<section class="ds-sec ds-yellow"><h2>Once etiquetas. Once preguntas que cualquiera puede comprobar.</h2>
+<ul class="ds-tags"><li><b>Ya existe</b><span>¿Está ya en vigor o aprobado?</span></li><li><b>Sin concretar</b><span>¿Falta cifra, plazo o forma de hacerlo?</span></li><li><b>Sin coste</b><span>¿Dice cuánto cuesta y cómo se paga?</span></li><li><b>Depende de las CCAA</b><span>¿Puede hacerlo el Gobierno solo?</span></li><li><b>Su voto</b><span>¿Qué votó el partido en el Congreso?</span></li><li><b>Sin cumplir o caída</b><span>¿Lo prometió antes y no salió?</span></li><li><b>Otro ámbito</b><span>¿Viene de otro programa, no de las generales?</span></li><li><b class="r">Dato desmentido</b><span>¿La cifra choca con los datos oficiales?</span></li><li><b class="r">Recorta derechos</b><span>¿Choca con la Constitución o los tribunales?</span></li><li><b class="r">Quimera</b><span>¿Exige un ritmo que nunca se ha alcanzado?</span></li><li><b class="k">Contexto</b><span>Un dato que sitúa la propuesta, sin juicio.</span></li></ul>
+<div class="ds-dash"><span class="ds-tag" style="background:var(--red)">La regla de fondo</span><p>Si no hay una ley, una votación, una fecha o un dato oficial que la respalde, no hay observación.</p></div>
+<p style="margin:0">Las tres etiquetas en rojo exigen más prueba. <a class="in" href="/metodologia">Método completo</a>.</p></section>
+
+<section class="ds-sec" style="background:#fff;border:2px solid #dfe6ec"><h2>Lo que ya hemos encontrado</h2><p style="margin:0;color:#3d4955">Con la misma vara de medir para todos los partidos.</p>
+<div class="ds-sec ds-navy" style="padding:20px"><b>Medidas del programa con alguna cifra, plazo o porcentaje</b>
+${Object.keys(CONCR).map(k => `<div class="ds-bar"><div><span>${esc(P[k].name)} · ${CONCR[k].c} de ${CONCR[k].n} medidas</span><b>${pct(k)} %</b></div><i><i style="width:${Math.max(pct(k), 2)}%"></i></i></div>`).join('')}
+<span style="color:#aeb9c4;font-size:.92rem">El resto de partidos entrará en el recuento el día que publique programa. <a class="in" href="/metodologia#concrecion">Regla y lista de medidas</a>.</span></div>
+<div class="ds-grid3"><div class="ds-num" style="background:var(--red);color:#fff"><b>5</b><p>veces votaron PP y Vox contra normas de vivienda desde 2023. Los dos prometen derogar la Ley de Vivienda. <a class="in" href="/tema/vivienda">Ver</a></p></div><div class="ds-num" style="background:var(--yellow);color:var(--navy)"><b>18</b><p>propuestas del PP llevan la etiqueta «ya existe». <a class="in" href="/pp">Ver</a></p></div><div class="ds-num" style="background:var(--teal);color:#fff"><b>18</b><p>promesas y leyes del PSOE llevan la etiqueta «sin cumplir o caída». <a class="in" href="/psoe">Ver</a></p></div></div>
+<div class="ds-dash"><span class="ds-tag" style="background:var(--red)">Cómo leer estas cifras</span><p>Más observaciones no significa peor partido. Suele significar que hay más documentación suya.</p></div></section>
+
+<section class="ds-sec ds-navy"><h2>Seis reglas que protegen la neutralidad</h2>
+<ol class="ds-rules"><li><div><b>Misma regla para todos</b><span>La pregunta que se hace a un partido se hace igual a los demás.</span></div></li><li><div><b>Cada observación, con su fuente</b><span>Programa, BOE, Diario de Sesiones o sentencia.</span></div></li><li><div><b>Programa y declaraciones, separados</b><span>Lo dicho en la radio pesa menos que un documento firmado.</span></div></li><li><div><b>Solo medidas, votos y cifras</b><span>Nada de pasado personal ni de retórica de mitin.</span></div></li><li><div><b>Lo cierto se dice, favorezca a quien favorezca</b><span>También cuando da la razón al partido criticado.</span></div></li><li><div><b>Los errores se corrigen en público</b><span>Cada cambio queda en el historial del repositorio.</span></div></li></ol></section>
+
+<section class="ds-sec ds-teal"><h2>Quién lo hace y cómo contactar</h2>
+<div class="ds-grid2"><div class="ds-card"><span class="ds-tag">Quién lo hace</span><h3>${esc(AUTHOR)}</h3><p>Profesor universitario, León. Proyecto personal: sin partido, sin financiación externa y sin publicidad.</p></div><div class="ds-card"><span class="ds-tag" style="background:var(--red)">Datos abiertos</span><h3>CSV y JSON · CC BY 4.0</h3><p><a href="/datos">Descargar los datos</a>. <a href="${REPO}" rel="noopener">Código público en GitHub</a>.</p></div>
+<div class="ds-card"><span class="ds-tag">Contacto y prensa</span><h3><a href="mailto:${MAIL}">${MAIL}</a></h3><p>Para entrevistas, datos a medida o correcciones.</p></div><div class="ds-card"><span class="ds-tag">Redes</span><h3>${SOCIAL.map(([n, u]) => `<a href="${u}" rel="me noopener">${n}</a>`).join(' · ')}</h3><p>Una pieza al día, alternando partidos y temas.</p></div></div>
+<p style="margin:0">Después del 29-N, el comparador pasa a seguir el cumplimiento: cada promesa del nuevo Gobierno, con su estado.</p></section>
+</div>`
+});
 
 /* ---------- 9. sitemap, robots, llms.txt, IndexNow ---------- */
 pages.sort((a, b) => a.url.length - b.url.length || a.url.localeCompare(b.url));

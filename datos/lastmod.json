@@ -572,7 +572,7 @@
   "date": "2026-11-14"
  },
  "/metodologia": {
-  "hash": "d545fa1b9384",
+  "hash": "810b4a4b7be8",
   "date": "2026-11-14"
  },
  "/datos/medidas.json": {
@@ -753,6 +753,10 @@
  },
  "/tema/energia-medio-ambiente": {
   "hash": "c94bdbac7d3c",
+  "date": "2026-11-14"
+ },
+ "/dossier": {
+  "hash": "915f0c0b75f6",
   "date": "2026-11-14"
  }
 }
