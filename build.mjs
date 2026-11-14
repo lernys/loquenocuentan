@@ -87,7 +87,9 @@ const filterHTML = items => tally(items).length ? `<div class="filt" data-filter
 const person = { '@type': 'Person', '@id': SITE + '/metodologia#autor', name: AUTHOR, url: 'https://fernandosantamaria.com', sameAs: ['https://x.com/lernys', 'https://www.linkedin.com/in/fernandosantamaria/'] };
 const crumbsLD = list => ({ '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: list.map(([n, u], i) => ({ '@type': 'ListItem', position: i + 1, name: n, item: SITE + u })) });
 
-const MAIL = 'loquenocuentan@proton.me';
+const MAIL = 'loquenotecuentann29@gmail.com';
+const SOCIAL = [['TikTok', 'https://www.tiktok.com/@loquenocuentan2026'], ['Instagram', 'https://www.instagram.com/loquenocuentann29/'], ['X', 'https://x.com/loquenotecuen29']];
+const org = { '@type': 'Organization', '@id': SITE + '/#org', name: NAME, url: SITE + '/', email: MAIL, founder: person, sameAs: SOCIAL.map(s => s[1]) };
 const nNotesAll = ITEMS.reduce((a, i) => a + i.notes.length, 0);
 const ICON_SVG = '<svg viewBox="0 0 1092 1092" aria-hidden="true"><rect width="1092" height="1092" rx="236" fill="#0f6e74"/><g fill="#fff"><rect x="251" y="272" width="590" height="98" rx="49"/><rect x="251" y="465" width="404" height="98" rx="49"/><rect x="251" y="688" width="263" height="98" rx="49"/></g><circle cx="678" cy="737" r="82" fill="#ffd23f"/></svg>';
 const headerHTML = (cur = '') => `<a class="lq-skip" href="#contenido">Saltar al contenido</a>
@@ -101,7 +103,7 @@ const footerHTML = (date) => `<footer class="lq-foot"><div class="lq-in lq-fgrid
 <p>Comparador informativo de los programas de las elecciones generales del 29 de noviembre de 2026. Sin afiliación a ningún partido y sin publicidad.</p></div>
 <div><h2>Temas</h2><ul class="two">${TOPICS.map(([k]) => `<li><a href="/tema/${T[k].slug}">${esc(T[k].name)}</a></li>`).join('')}</ul></div>
 <div><h2>Partidos</h2><ul class="two">${PARTIES.map(([k]) => `<li><a href="/${P[k].slug}">${esc(P[k].name)}</a></li>`).join('')}</ul></div>
-<div><h2>Proyecto</h2><ul><li><a href="/metodologia">Metodología y fuentes</a></li><li><a href="/datos">Datos abiertos</a></li><li><a href="/metodologia#errores">Comunicar un error</a></li><li><a href="mailto:${MAIL}">${MAIL}</a></li><li><a href="${REPO}" rel="noopener">Código en GitHub</a></li></ul></div>
+<div><h2>Proyecto</h2><ul><li><a href="/metodologia">Metodología y fuentes</a></li><li><a href="/datos">Datos abiertos</a></li><li><a href="/metodologia#errores">Comunicar un error</a></li><li><a href="mailto:${MAIL}">${MAIL}</a></li><li><a href="${REPO}" rel="noopener">Código en GitHub</a></li>${SOCIAL.map(([n, u]) => `<li><a href="${u}" rel="me noopener">${n}</a></li>`).join('')}</ul></div>
 </div><div class="lq-in lq-legal"><span>Autor: ${AUTHOR}</span><span>Datos con licencia <a href="https://creativecommons.org/licenses/by/4.0/deed.es" rel="license noopener">CC BY 4.0</a></span><span>Actualizado el <time datetime="${date}">${fecha(date)}</time></span></div></footer>`;
 const HEAD_COMMON = `<link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/assets/icon-180.png">`;
@@ -175,10 +177,10 @@ for (const p of Object.values(P)) {
   const desc = `${plural(p.items.length, 'propuesta', 'propuestas')} ${de(p.k)} para las elecciones generales del 29 de noviembre de 2026, cada una con su fuente y con lo que no cuenta: coste, plazos, lo que ya existe y lo que votó.`;
   page({
     url: '/' + p.slug, og: `og/${p.slug}.png`,
-    title: `Qué propone ${ART[p.k]} para las elecciones del 29-N · ${NAME}`, desc,
+    title: `Qué propone ${ART[p.k]} para el 29-N: programa electoral 2026 y lo que no cuenta · ${NAME}`, desc,
     nav: 'partidos',
     crumbs: [[p.name, '/' + p.slug]],
-    ld: [{ '@context': 'https://schema.org', '@type': 'Article', headline: `Qué propone ${ART[p.k]} para las elecciones del 29-N`, description: desc, inLanguage: 'es', author: person, publisher: { '@type': 'Organization', name: NAME, url: SITE }, mainEntityOfPage: SITE + '/' + p.slug, dateModified: '__DATE__', about: { '@type': 'Organization', name: p.name } }],
+    ld: [{ '@context': 'https://schema.org', '@type': 'Article', headline: `Qué propone ${ART[p.k]} para las elecciones del 29-N`, description: desc, inLanguage: 'es', author: person, publisher: org, mainEntityOfPage: SITE + '/' + p.slug, dateModified: '__DATE__', about: { '@type': 'Organization', name: p.name } }],
     content: p.items,
     body: `<header class="hero" style="--pc:${p.color}">
 <p class="kicker">Elecciones generales · 29 de noviembre de 2026</p>
@@ -199,7 +201,7 @@ ${topics.map(t => { const its = p.items.filter(i => i.topic === t); return `<sec
     const q = `¿Qué propone ${ART[p.k]} sobre ${T[t].lname} para las elecciones del 29-N?`;
     page({
       url: `/${p.slug}/${T[t].slug}`, og: `og/${p.slug}.png`,
-      title: `Qué propone ${ART[p.k]} sobre ${T[t].lname} en las elecciones del 29-N · ${NAME}`, desc: d2,
+      title: `Qué propone ${ART[p.k]} sobre ${T[t].lname}: programa electoral 2026 (29-N) · ${NAME}`, desc: d2,
       nav: 'partidos',
       crumbs: [[p.name, '/' + p.slug], [T[t].name, `/${p.slug}/${T[t].slug}`]],
       ld: [{ '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: [{ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: its.map(i => `${LBL[i.origin]}: ${i.text}`).join(' ') + ` Fuentes y lectura crítica en ${SITE}/${p.slug}/${T[t].slug}` } }] }],
@@ -225,7 +227,7 @@ for (const t of Object.values(T)) {
   const faq = withItems.map(k => ({ '@type': 'Question', name: `¿Qué propone ${ART[k]} sobre ${t.lname} para las elecciones del 29-N?`, acceptedAnswer: { '@type': 'Answer', text: t.items.filter(i => i.party === k).map(i => `${LBL[i.origin]}: ${i.text}`).join(' ') + ` Fuentes y lectura crítica en ${SITE}/tema/${t.slug}#${P[k].slug}` } }));
   page({
     url: '/tema/' + t.slug, og: `og/tema-${t.slug}.png`,
-    title: `${t.name}: qué propone cada partido para el 29-N · ${NAME}`, desc,
+    title: `${t.name}: qué propone cada partido en su programa electoral 2026 (29-N) · ${NAME}`, desc,
     nav: 'temas',
     crumbs: [['Temas', '/#temas'], [t.name, '/tema/' + t.slug]],
     ld: faq.length ? [{ '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faq }] : [],
@@ -325,7 +327,7 @@ const between = (html, tag, inner, anchor, before) => {
 };
 const homeDate = stamp('/', ITEMS);
 const homeLD = [
-  { '@context': 'https://schema.org', '@type': 'WebSite', '@id': SITE + '/#web', name: NAME, alternateName: 'loquenocuentan.com', url: SITE + '/', inLanguage: 'es', description: 'Comparador crítico de los programas electorales de las elecciones generales del 29 de noviembre de 2026.', author: person, dateModified: homeDate },
+  { '@context': 'https://schema.org', '@type': 'WebSite', '@id': SITE + '/#web', name: NAME, alternateName: 'loquenocuentan.com', url: SITE + '/', inLanguage: 'es', description: 'Comparador crítico de los programas electorales de las elecciones generales del 29 de noviembre de 2026.', author: person, publisher: org, sameAs: SOCIAL.map(s => s[1]), dateModified: homeDate },
   dataset
 ];
 index = between(index, 'ld', homeLD.map(o => `<script type="application/ld+json">${JSON.stringify(o).replace(/</g, '\\u003c')}</script>`).join('\n'), '</head>', true);
