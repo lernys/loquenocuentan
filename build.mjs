@@ -174,10 +174,10 @@ const concrHTML = k => CONCR[k] ? `<aside class="context" id="concrecion"><h2>Cu
 for (const p of Object.values(P)) {
   const topics = TOPICS.map(([k]) => k).filter(k => p.items.some(i => i.topic === k));
   const flagged = p.items.filter(i => i.notes.some(n => n.flag !== 'ctx')).length;
-  const desc = `${plural(p.items.length, 'propuesta', 'propuestas')} ${de(p.k)} para las elecciones generales del 29 de noviembre de 2026, cada una con su fuente y con lo que no cuenta: coste, plazos, lo que ya existe y lo que votó.`;
+  const desc = `${plural(p.items.length, 'propuesta', 'propuestas')} ${de(p.k)} para las elecciones generales del 29 de noviembre de 2026 (29N), cada una con su fuente y con lo que no cuenta: coste, plazos, lo que ya existe y lo que votó.`;
   page({
     url: '/' + p.slug, og: `og/${p.slug}.png`,
-    title: `Qué propone ${ART[p.k]} para el 29-N: programa electoral 2026 y lo que no cuenta · ${NAME}`, desc,
+    title: `Qué propone ${ART[p.k]} en las elecciones generales del 29N: programa electoral 2026 · ${NAME}`, desc,
     nav: 'partidos',
     crumbs: [[p.name, '/' + p.slug]],
     ld: [{ '@context': 'https://schema.org', '@type': 'Article', headline: `Qué propone ${ART[p.k]} para las elecciones del 29-N`, description: desc, inLanguage: 'es', author: person, publisher: org, mainEntityOfPage: SITE + '/' + p.slug, dateModified: '__DATE__', about: { '@type': 'Organization', name: p.name } }],
@@ -201,7 +201,7 @@ ${topics.map(t => { const its = p.items.filter(i => i.topic === t); return `<sec
     const q = `¿Qué propone ${ART[p.k]} sobre ${T[t].lname} para las elecciones del 29-N?`;
     page({
       url: `/${p.slug}/${T[t].slug}`, og: `og/${p.slug}.png`,
-      title: `Qué propone ${ART[p.k]} sobre ${T[t].lname}: programa electoral 2026 (29-N) · ${NAME}`, desc: d2,
+      title: `Qué propone ${ART[p.k]} sobre ${T[t].lname} en las elecciones del 29N: programa electoral 2026 · ${NAME}`, desc: d2,
       nav: 'partidos',
       crumbs: [[p.name, '/' + p.slug], [T[t].name, `/${p.slug}/${T[t].slug}`]],
       ld: [{ '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: [{ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: its.map(i => `${LBL[i.origin]}: ${i.text}`).join(' ') + ` Fuentes y lectura crítica en ${SITE}/${p.slug}/${T[t].slug}` } }] }],
@@ -223,11 +223,11 @@ ${clavesHTML(t)}
 /* ---------- 5. Páginas de tema ---------- */
 for (const t of Object.values(T)) {
   const withItems = PARTIES.map(([k]) => k).filter(k => t.items.some(i => i.party === k));
-  const desc = `Qué propone cada partido sobre ${t.lname} para las elecciones generales del 29 de noviembre de 2026: ${withItems.slice(0, 6).map(k => P[k].name).join(', ')}${withItems.length > 6 ? ' y más' : ''}. Tabla comparativa, fuente de cada medida y lo que no cuentan.`;
+  const desc = `Qué propone cada partido sobre ${t.lname} para las elecciones generales del 29 de noviembre de 2026 (29N): ${withItems.slice(0, 6).map(k => P[k].name).join(', ')}${withItems.length > 6 ? ' y más' : ''}. Tabla comparativa, fuente de cada medida y lo que no cuentan.`;
   const faq = withItems.map(k => ({ '@type': 'Question', name: `¿Qué propone ${ART[k]} sobre ${t.lname} para las elecciones del 29-N?`, acceptedAnswer: { '@type': 'Answer', text: t.items.filter(i => i.party === k).map(i => `${LBL[i.origin]}: ${i.text}`).join(' ') + ` Fuentes y lectura crítica en ${SITE}/tema/${t.slug}#${P[k].slug}` } }));
   page({
     url: '/tema/' + t.slug, og: `og/tema-${t.slug}.png`,
-    title: `${t.name}: qué propone cada partido en su programa electoral 2026 (29-N) · ${NAME}`, desc,
+    title: `${t.name} en las elecciones generales del 29N: qué propone cada partido (programas electorales 2026) · ${NAME}`, desc,
     nav: 'temas',
     crumbs: [['Temas', '/#temas'], [t.name, '/tema/' + t.slug]],
     ld: faq.length ? [{ '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faq }] : [],
@@ -297,7 +297,7 @@ const csv = rows => rows.map(r => r.map(c => `"${String(c).replace(/"/g, '""')}"
 fs.writeFileSync('datos/medidas.csv', '\ufeff' + csv([['id', 'url', 'partido', 'tema', 'origen', 'texto', 'fuente', 'fuente_url', 'num_observaciones'], ...records.map(r => [r.id, r.url, r.partido, r.tema, r.origen, r.texto, r.fuente, r.fuente_url, r.observaciones.length])]));
 fs.writeFileSync('datos/observaciones.csv', '\ufeff' + csv([['medida_id', 'partido', 'tema', 'etiqueta', 'texto', 'fuentes'], ...records.flatMap(r => r.observaciones.map(o => [r.id, r.partido, r.tema, o.etiqueta, o.texto, o.fuentes.join(' ')]))]));
 const nNotes = nNotesAll;
-const dataset = { '@context': 'https://schema.org', '@type': 'Dataset', '@id': SITE + '/datos#dataset', name: 'Medidas de los partidos para las elecciones generales del 29-N de 2026', description: `${ITEMS.length} propuestas de ${PARTIES.length} partidos en ${TOPICS.length} temas, con su fuente y ${nNotes} observaciones críticas (coste, plazos, lo que ya existe, votaciones).`, url: SITE + '/datos', inLanguage: 'es', license: 'https://creativecommons.org/licenses/by/4.0/', isAccessibleForFree: true, creator: person, dateModified: dataDate, temporalCoverage: '2026', spatialCoverage: { '@type': 'Place', name: 'España' }, keywords: ['elecciones generales 2026', '29-N', 'programas electorales', 'España'], distribution: [{ '@type': 'DataDownload', encodingFormat: 'application/json', contentUrl: SITE + '/datos/medidas.json' }, { '@type': 'DataDownload', encodingFormat: 'text/csv', contentUrl: SITE + '/datos/medidas.csv' }, { '@type': 'DataDownload', encodingFormat: 'text/csv', contentUrl: SITE + '/datos/observaciones.csv' }] };
+const dataset = { '@context': 'https://schema.org', '@type': 'Dataset', '@id': SITE + '/datos#dataset', name: 'Medidas de los partidos para las elecciones generales del 29-N de 2026', description: `${ITEMS.length} propuestas de ${PARTIES.length} partidos en ${TOPICS.length} temas, con su fuente y ${nNotes} observaciones críticas (coste, plazos, lo que ya existe, votaciones).`, url: SITE + '/datos', inLanguage: 'es', license: 'https://creativecommons.org/licenses/by/4.0/', isAccessibleForFree: true, creator: person, dateModified: dataDate, temporalCoverage: '2026', spatialCoverage: { '@type': 'Place', name: 'España' }, keywords: ['elecciones generales 2026', 'elecciones 29N', '29-N', 'programas electorales 2026', 'España'], distribution: [{ '@type': 'DataDownload', encodingFormat: 'application/json', contentUrl: SITE + '/datos/medidas.json' }, { '@type': 'DataDownload', encodingFormat: 'text/csv', contentUrl: SITE + '/datos/medidas.csv' }, { '@type': 'DataDownload', encodingFormat: 'text/csv', contentUrl: SITE + '/datos/observaciones.csv' }] };
 page({
   url: '/datos',
   title: `Datos abiertos del comparador del 29-N · ${NAME}`,
@@ -327,7 +327,7 @@ const between = (html, tag, inner, anchor, before) => {
 };
 const homeDate = stamp('/', ITEMS);
 const homeLD = [
-  { '@context': 'https://schema.org', '@type': 'WebSite', '@id': SITE + '/#web', name: NAME, alternateName: 'loquenocuentan.com', url: SITE + '/', inLanguage: 'es', description: 'Comparador crítico de los programas electorales de las elecciones generales del 29 de noviembre de 2026.', author: person, publisher: org, sameAs: SOCIAL.map(s => s[1]), dateModified: homeDate },
+  { '@context': 'https://schema.org', '@type': 'WebSite', '@id': SITE + '/#web', name: NAME, alternateName: 'loquenocuentan.com', url: SITE + '/', inLanguage: 'es', description: 'Comparador crítico de los programas electorales de las elecciones generales del 29 de noviembre de 2026.', author: person, publisher: org, sameAs: SOCIAL.map(s => s[1]), keywords: ['elecciones generales 2026', 'elecciones 29N', '29-N', 'programas electorales 2026', 'comparador de programas electorales', 'qué propone cada partido'], dateModified: homeDate },
   dataset
 ];
 index = between(index, 'ld', homeLD.map(o => `<script type="application/ld+json">${JSON.stringify(o).replace(/</g, '\\u003c')}</script>`).join('\n'), '</head>', true);
@@ -447,7 +447,7 @@ const BOTS = ['Googlebot', 'Bingbot', 'Applebot', 'OAI-SearchBot', 'GPTBot', 'Ch
 fs.writeFileSync('robots.txt', `# ${NAME}: todo el contenido es público y se puede rastrear, citar y reutilizar (CC BY 4.0).\n${BOTS.map(b => `User-agent: ${b}\nAllow: /\n`).join('\n')}\nUser-agent: *\nAllow: /\n\nSitemap: ${SITE}/sitemap.xml\n`);
 fs.writeFileSync('llms.txt', `# ${NAME}
 
-> Comparador crítico de los programas electorales de las elecciones generales de España del 29 de noviembre de 2026. Recoge ${ITEMS.length} propuestas de ${PARTIES.length} partidos en ${TOPICS.length} temas. Cada propuesta lleva su fuente y, cuando hay un hecho que lo respalde, una observación: coste, plazos, si ya existe, si depende de las comunidades autónomas o si choca con lo que el partido votó. Misma regla para todos los partidos. Autor: ${AUTHOR}. Sin afiliación. Datos con licencia CC BY 4.0. Actualizado el ${fecha(homeDate)}.
+> Comparador crítico de los programas electorales de las elecciones generales de España del 29 de noviembre de 2026 (29N, 29-N). Recoge ${ITEMS.length} propuestas de ${PARTIES.length} partidos en ${TOPICS.length} temas. Cada propuesta lleva su fuente y, cuando hay un hecho que lo respalde, una observación: coste, plazos, si ya existe, si depende de las comunidades autónomas o si choca con lo que el partido votó. Misma regla para todos los partidos. Autor: ${AUTHOR}. Sin afiliación. Datos con licencia CC BY 4.0. Actualizado el ${fecha(homeDate)}.
 
 Cada medida tiene un enlace estable con ancla, por ejemplo ${SITE}/pp#pp-144. Al citar, conviene distinguir el origen de cada propuesta: programa del 29-N, declaración, proposición de ley, acción de gobierno o programa anterior.
 
