@@ -175,6 +175,25 @@
    ]
   },
   {
+   "id": "pp-vivienda-7",
+   "url": "https://loquenocuentan.com/pp#pp-vivienda-7",
+   "partido": "PP",
+   "tema": "Vivienda",
+   "origen": "Declaración 2026",
+   "texto": "«No va a haber un Ministerio de Vivienda» en un Gobierno de 14 o 15 ministerios.",
+   "fuente": "Feijóo en The Wild Project nº 392, nov 2026 (min. 17:09)",
+   "fuente_url": "https://www.youtube.com/watch?v=1YlGArMx_N4&t=1029s",
+   "observaciones": [
+    {
+     "etiqueta": "Contexto",
+     "texto": "En la misma respuesta dijo que la vivienda «es la primera prioridad» para la mayoría de la gente, sobre todo para los menores de 40 años.",
+     "fuentes": [
+      "https://www.youtube.com/watch?v=1YlGArMx_N4&t=1029s"
+     ]
+    }
+   ]
+  },
+  {
    "id": "psoe-vivienda-1",
    "url": "https://loquenocuentan.com/psoe#psoe-vivienda-1",
    "partido": "PSOE",
@@ -1734,6 +1753,21 @@
      ]
     },
     {
+     "etiqueta": "Ya existe",
+     "texto": "La jubilación activa ya existe: desde abril de 2025 permite cobrar entre el 45 % y el 100 % de la pensión mientras se trabaja. Lo nuevo serían las deducciones en el IRPF.",
+     "fuentes": [
+      "https://revista.seg-social.es/-/congreso-convalida-mejora-de-jubilaci%C3%B3n-salida-progresiva-del-mercado-de-trabajo-cambios-en-jubilacion-activa-jubilacion-demorada-jubilacion-parcial"
+     ]
+    },
+    {
+     "etiqueta": "Contexto",
+     "texto": "El PP votó a favor de esa reforma de la jubilación activa el 22 de enero de 2025.",
+     "fuentes": [
+      "https://www.congreso.es/public_oficiales/L15/CONG/DS/PL/DSCD-15-PL-92.PDF",
+      "https://www.infobae.com/espana/agencias/2025/01/22/congreso-rechaza-el-gravamen-energetico-el-alza-de-pensiones-y-las-ayudas-al-transporte/"
+     ]
+    },
+    {
      "etiqueta": "Sin concretar",
      "texto": "No explica cómo se garantizarán las pensiones de los jóvenes.",
      "fuentes": []
@@ -1743,6 +1777,90 @@
      "texto": "Votó contra los decretos ómnibus de 2025 y 2026, que incluían la subida, y a favor cuando se votó sola.",
      "fuentes": [
       "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/comparar/pensiones"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "pp-pensiones-2",
+   "url": "https://loquenocuentan.com/pp#pp-pensiones-2",
+   "partido": "PP",
+   "tema": "Pensiones",
+   "origen": "Declaración 2026",
+   "texto": "Que quien quiera seguir trabajando después de los 67 cobre parte de la pensión a la vez que el sueldo, de forma voluntaria.",
+   "fuente": "Feijóo en The Wild Project nº 392, nov 2026 (min. 23:35)",
+   "fuente_url": "https://www.youtube.com/watch?v=1YlGArMx_N4&t=1415s",
+   "observaciones": [
+    {
+     "etiqueta": "Ya existe",
+     "texto": "Ya existe. La jubilación activa permite desde abril de 2025 cobrar entre el 45 % y el 100 % de la pensión mientras se trabaja, según los años de retraso.",
+     "fuentes": [
+      "https://revista.seg-social.es/-/congreso-convalida-mejora-de-jubilaci%C3%B3n-salida-progresiva-del-mercado-de-trabajo-cambios-en-jubilacion-activa-jubilacion-demorada-jubilacion-parcial"
+     ]
+    },
+    {
+     "etiqueta": "Ya existe",
+     "texto": "Desde el 28 de agosto de 2026, la nueva jubilación flexible permite volver a trabajar entre el 33 % y el 80 % de la jornada y cobrar el resto de la pensión, con un plus del 15 % o del 25 %.",
+     "fuentes": [
+      "https://www.legaltoday.com/?p=193703"
+     ]
+    },
+    {
+     "etiqueta": "Contexto",
+     "texto": "El PP votó a favor de la reforma de la jubilación activa el 22 de enero de 2025.",
+     "fuentes": [
+      "https://www.congreso.es/public_oficiales/L15/CONG/DS/PL/DSCD-15-PL-92.PDF",
+      "https://www.infobae.com/espana/agencias/2025/01/22/congreso-rechaza-el-gravamen-energetico-el-alza-de-pensiones-y-las-ayudas-al-transporte/"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "pp-pensiones-3",
+   "url": "https://loquenocuentan.com/pp#pp-pensiones-3",
+   "partido": "PP",
+   "tema": "Pensiones",
+   "origen": "Declaración 2026",
+   "texto": "Mantener la jubilación a los 67: «No tenemos previsto ampliar obligatoriamente la edad de jubilación después de los 67».",
+   "fuente": "Feijóo en The Wild Project nº 392, nov 2026 (min. 24:46)",
+   "fuente_url": "https://www.youtube.com/watch?v=1YlGArMx_N4&t=1486s",
+   "observaciones": [
+    {
+     "etiqueta": "Sin concretar",
+     "texto": "Dice que no lo tiene previsto, no que lo descarte, y lo condiciona a «los datos que tenemos». Minutos antes afirmó que no se cree las cuentas públicas actuales.",
+     "fuentes": [
+      "https://www.youtube.com/watch?v=1YlGArMx_N4&t=1486s"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "pp-pensiones-4",
+   "url": "https://loquenocuentan.com/pp#pp-pensiones-4",
+   "partido": "PP",
+   "tema": "Pensiones",
+   "origen": "Declaración 2026",
+   "texto": "Pagar parte del déficit de las pensiones con la lucha contra el absentismo laboral: «Ahí tenemos 10.000 o 12.000 millones».",
+   "fuente": "Feijóo en The Wild Project nº 392, nov 2026 (min. 25:33)",
+   "fuente_url": "https://www.youtube.com/watch?v=1YlGArMx_N4&t=1533s",
+   "observaciones": [
+    {
+     "etiqueta": "Sin concretar",
+     "texto": "No explica cómo calcula ese ahorro ni cómo separaría las bajas falsas de las reales.",
+     "fuentes": []
+    },
+    {
+     "etiqueta": "Contexto",
+     "texto": "El absentismo llegó en 2025 al 7,1 % de las horas pactadas: unos 1,6 millones de personas al día, de ellas más de 1,2 millones de baja médica. Feijóo habló de «más de un millón».",
+     "fuentes": [
+      "https://www.bolsamania.com/noticias_amp/economia/absentismo-laboral-roza-maximos-historicos-espana-71-2025--22160214.html"
+     ]
+    },
+    {
+     "etiqueta": "Contexto",
+     "texto": "Cifró en unos 50.000 millones lo que pasa de los impuestos a las pensiones. Según Fedea, las transferencias del Estado a la Seguridad Social superan ya los 60.000 millones al año.",
+     "fuentes": [
+      "https://www.vozpopuli.com/economia/macroeconomia/el-estado-acumula-ya-600000-millones-en-ayudas-a-la-seguridad-social-para-pagar-las-pensiones.html"
      ]
     }
    ]
@@ -1786,6 +1904,35 @@
      "texto": "Ya estaba en su programa de 2023.",
      "fuentes": [
       "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/comparar/pensiones"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "psoe-pensiones-3",
+   "url": "https://loquenocuentan.com/psoe#psoe-pensiones-3",
+   "partido": "PSOE",
+   "tema": "Pensiones",
+   "origen": "Gobierno / ley",
+   "texto": "Trabajar y cobrar a la vez parte de la pensión: jubilación activa reformada, en vigor desde abril de 2025, y nueva jubilación flexible, en vigor desde el 28 de agosto de 2026.",
+   "fuente": "Seguridad Social, 22 ene 2025 (Real Decreto-ley 11/2024)",
+   "fuente_url": "https://revista.seg-social.es/-/congreso-convalida-mejora-de-jubilaci%C3%B3n-salida-progresiva-del-mercado-de-trabajo-cambios-en-jubilacion-activa-jubilacion-demorada-jubilacion-parcial",
+   "observaciones": [
+    {
+     "etiqueta": "Ya existe",
+     "texto": "En vigor. Con la activa se cobra del 45 % al 100 % de la pensión según los años que se retrase la jubilación. Con la flexible se trabaja entre el 33 % y el 80 % de la jornada y se cobra el resto de la pensión, con un plus del 15 % o del 25 % si se vuelve al trabajo al menos seis meses después de jubilarse.",
+     "fuentes": [
+      "https://revista.seg-social.es/-/congreso-convalida-mejora-de-jubilaci%C3%B3n-salida-progresiva-del-mercado-de-trabajo-cambios-en-jubilacion-activa-jubilacion-demorada-jubilacion-parcial",
+      "https://www.legaltoday.com/?p=193703"
+     ]
+    },
+    {
+     "etiqueta": "Contexto",
+     "texto": "Sale del acuerdo de diálogo social de septiembre de 2024 con CEOE, Cepyme, CCOO y UGT. El decreto se convalidó el 22 de enero de 2025 por 298 votos a favor y 51 en contra, con el apoyo del PP.",
+     "fuentes": [
+      "https://www.cuatrecasas.com/es/spain/laboral/art/jubilacion-trabajo-nuevas-opciones",
+      "https://www.congreso.es/public_oficiales/L15/CONG/DS/PL/DSCD-15-PL-92.PDF",
+      "https://www.infobae.com/espana/agencias/2025/01/22/congreso-rechaza-el-gravamen-energetico-el-alza-de-pensiones-y-las-ayudas-al-transporte/"
      ]
     }
    ]
@@ -2058,8 +2205,10 @@
    "observaciones": [
     {
      "etiqueta": "Contexto",
-     "texto": "La normativa europea permite esta franquicia de IVA desde 2025.",
-     "fuentes": []
+     "texto": "La directiva europea de 2020 permite, pero no obliga, eximir del IVA a quien facture menos de 85.000 €. España es el único país de la UE que no la ha transpuesto y la Comisión Europea la ha llevado al Tribunal de Justicia de la UE.",
+     "fuentes": [
+      "https://maldita.es/desinfo/20260316/bruselas-lleva-a-espana-a-los-tribunales-por-ser-el-unico-pais-de-la-ue-que-no-exime-de-iva-a-los-autonomos/"
+     ]
     }
    ]
   },
@@ -2101,6 +2250,42 @@
    "fuente": "PP 2026, medida 7 (p. 13)",
    "fuente_url": "https://www.pp.es/wp-content/uploads/2026/11/LA-RECONSTRUCCION-NACIONAL.pdf#page=13",
    "observaciones": []
+  },
+  {
+   "id": "pp-empleo-6",
+   "url": "https://loquenocuentan.com/pp#pp-empleo-6",
+   "partido": "PP",
+   "tema": "Empleo y autónomos",
+   "origen": "Declaración 2026",
+   "texto": "Que la autónoma de baja por maternidad «no tenga que pagar la cuota».",
+   "fuente": "Feijóo en The Wild Project nº 392, nov 2026 (min. 30:13)",
+   "fuente_url": "https://www.youtube.com/watch?v=1YlGArMx_N4&t=1813s",
+   "observaciones": [
+    {
+     "etiqueta": "Ya existe",
+     "texto": "Ya ocurre: desde 2017 la cuota de contingencias comunes está bonificada al 100 % durante el descanso por nacimiento.",
+     "fuentes": [
+      "https://www.seg-social.es/descarga/es/229432"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "pp-empleo-7",
+   "url": "https://loquenocuentan.com/pp#pp-empleo-7",
+   "partido": "PP",
+   "tema": "Empleo y autónomos",
+   "origen": "Declaración 2026",
+   "texto": "Cobrar el 100 % durante la baja en enfermedades graves que ponen en riesgo la vida, como el cáncer, y a la vez luchar contra el «fraude laboral».",
+   "fuente": "Feijóo en The Wild Project nº 392, nov 2026 (min. 32:13)",
+   "fuente_url": "https://www.youtube.com/watch?v=1YlGArMx_N4&t=1933s",
+   "observaciones": [
+    {
+     "etiqueta": "Sin concretar",
+     "texto": "No dice qué enfermedades entrarían ni cuánto costaría.",
+     "fuentes": []
+    }
+   ]
   },
   {
    "id": "psoe-empleo-1",
@@ -4359,6 +4544,60 @@
    ]
   },
   {
+   "id": "pp-servicios-sociales-5",
+   "url": "https://loquenocuentan.com/pp#pp-servicios-sociales-5",
+   "partido": "PP",
+   "tema": "Servicios sociales y pobreza",
+   "origen": "Declaración 2026",
+   "texto": "Obligar a quien cobre el Ingreso Mínimo Vital a seguir un itinerario hacia el empleo y bajar la ayuda hasta cero si rechaza trabajos de forma reiterada.",
+   "fuente": "Feijóo en The Wild Project nº 392, nov 2026 (min. 52:04)",
+   "fuente_url": "https://www.youtube.com/watch?v=1YlGArMx_N4&t=3124s",
+   "observaciones": [
+    {
+     "etiqueta": "Ya existe",
+     "texto": "La ley del IMV ya obliga a los beneficiarios que no trabajan a inscribirse como demandantes de empleo.",
+     "fuentes": [
+      "https://www.boe.es/buscar/act.php?id=BOE-A-2021-21007"
+     ]
+    },
+    {
+     "etiqueta": "Contexto",
+     "texto": "Habló de «medio millón de inmigrantes» que cobran el IMV «sin haber trabajado una sola hora en el último año» y lo atribuyó a «la información que nos han trasladado». No hemos encontrado ese dato publicado. El CES estimó en febrero de 2026 que 422.400 de los 2,44 millones de beneficiarios eran inmigrantes, menores incluidos. Los extranjeros en situación irregular no pueden cobrarlo.",
+     "fuentes": [
+      "https://www.elespanol.com/espana/politica/20260223/inmigrantes-ocupan-nuevos-empleos-creados-cobran-ingreso-minimo-vital/1003744140822_0.html",
+      "https://maldita.es/prebunking/20260710/ingreso-minimo-vital-espa%C3%B1oles-extranjeros/"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "pp-servicios-sociales-6",
+   "url": "https://loquenocuentan.com/pp#pp-servicios-sociales-6",
+   "partido": "PP",
+   "tema": "Servicios sociales y pobreza",
+   "origen": "Declaración 2026",
+   "texto": "«Prioridad nacional» por arraigo, no por pasaporte: exigir la nacionalidad para una ayuda «es ilegal» en la UE, pero se puntuarían los años de padrón y las cotizaciones.",
+   "fuente": "Feijóo en The Wild Project nº 392, nov 2026 (min. 50:26)",
+   "fuente_url": "https://www.youtube.com/watch?v=1YlGArMx_N4&t=3026s",
+   "observaciones": [
+    {
+     "etiqueta": "Contexto",
+     "texto": "Preguntado si tendría prioridad un español que nunca ha cotizado o un extranjero con 20 años cotizados, respondió primero: «La prioridad nacional es cambiar al Gobierno».",
+     "fuentes": [
+      "https://www.youtube.com/watch?v=1YlGArMx_N4&t=3026s"
+     ]
+    },
+    {
+     "etiqueta": "Contexto",
+     "texto": "En mayo de 2026, PP y Vox aprobaron en la Asamblea de Madrid pedir al Gobierno una «prioridad nacional» limitada al «arraigo real, duradero y verificable». En el Congreso, en abril, el PP votó contra la moción de Vox sobre el mismo asunto.",
+     "fuentes": [
+      "https://www.ultimahora.es/noticias/comunidades/2026/05/07/2624989/vox-acuerdan-asamblea-exigir-sanchez-prioridad-nacional-acotada-arraigo-real-duradero-verificable.html",
+      "https://naciodigital.cat/politica/el-pp-rebutja-finalment-la-mocio-de-vox-per-establir-una-prioritat-nacional-a-lhora-de-rebre-ajudes.html"
+     ]
+    }
+   ]
+  },
+  {
    "id": "psoe-servicios-sociales-1",
    "url": "https://loquenocuentan.com/psoe#psoe-servicios-sociales-1",
    "partido": "PSOE",
@@ -4688,6 +4927,13 @@
      "etiqueta": "Contexto",
      "texto": "Vox también promete suprimirlo.",
      "fuentes": []
+    },
+    {
+     "etiqueta": "Contexto",
+     "texto": "En The Wild Project lo repitió: un Gobierno de 14 o 15 ministerios, sin Igualdad ni Vivienda. Las políticas de igualdad, dijo, «van a seguir».",
+     "fuentes": [
+      "https://www.youtube.com/watch?v=1YlGArMx_N4&t=1029s"
+     ]
     }
    ]
   },
@@ -5863,6 +6109,30 @@
      "etiqueta": "Sin concretar",
      "texto": "No fija ningún objetivo de ayuda al desarrollo.",
      "fuentes": []
+    }
+   ]
+  },
+  {
+   "id": "pp-politica-exterior-8",
+   "url": "https://loquenocuentan.com/pp#pp-politica-exterior-8",
+   "partido": "PP",
+   "tema": "Política exterior",
+   "origen": "Declaración 2026",
+   "texto": "No comprometerse ahora con el 3,5 % del PIB en defensa: auditar el gasto, pedir más plazo a la OTAN y llegar hasta donde se pueda. «Si no puedo llegar al 2,4, pues me quedaré en el 2,3».",
+   "fuente": "Feijóo en The Wild Project nº 392, nov 2026 (min. 39:03)",
+   "fuente_url": "https://www.youtube.com/watch?v=1YlGArMx_N4&t=2343s",
+   "observaciones": [
+    {
+     "etiqueta": "Sin concretar",
+     "texto": "No da cifra ni plazo.",
+     "fuentes": []
+    },
+    {
+     "etiqueta": "Contexto",
+     "texto": "Según la OTAN, España alcanzó el 2 % del PIB en defensa en 2025.",
+     "fuentes": [
+      "https://www.publico.es/internacional/europa/otan-estima-espana-llegado-2-gasto-pib-defensa.html"
+     ]
     }
    ]
   },

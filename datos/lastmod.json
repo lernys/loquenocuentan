@@ -1,11 +1,11 @@
 {
  "/pp": {
-  "hash": "90280e1d24f6",
-  "date": "2026-11-13"
+  "hash": "233bca2434e0",
+  "date": "2026-11-14"
  },
  "/pp/vivienda": {
-  "hash": "bcdad11771fb",
-  "date": "2026-11-13"
+  "hash": "1c91974c1fd5",
+  "date": "2026-11-14"
  },
  "/pp/jovenes": {
   "hash": "09997dc9155c",
@@ -16,12 +16,12 @@
   "date": "2026-11-13"
  },
  "/pp/pensiones": {
-  "hash": "ec188cc7f741",
-  "date": "2026-11-13"
+  "hash": "9ba765146dc5",
+  "date": "2026-11-14"
  },
  "/pp/empleo": {
-  "hash": "0d757d19373a",
-  "date": "2026-11-13"
+  "hash": "e28f5b3cff2d",
+  "date": "2026-11-14"
  },
  "/pp/impuestos": {
   "hash": "82f51ac0cd3c",
@@ -48,24 +48,24 @@
   "date": "2026-11-13"
  },
  "/pp/servicios-sociales": {
-  "hash": "d2f4580dee7a",
-  "date": "2026-11-13"
+  "hash": "7590fd764913",
+  "date": "2026-11-14"
  },
  "/pp/igualdad": {
-  "hash": "58092e358056",
-  "date": "2026-11-13"
+  "hash": "d9db1ead1014",
+  "date": "2026-11-14"
  },
  "/pp/territorio": {
   "hash": "2324f6b4e581",
   "date": "2026-11-13"
  },
  "/pp/politica-exterior": {
-  "hash": "da40463efbd0",
-  "date": "2026-11-13"
+  "hash": "0d3be2830104",
+  "date": "2026-11-14"
  },
  "/psoe": {
-  "hash": "dce027b8255a",
-  "date": "2026-11-13"
+  "hash": "f4fc0373e1d6",
+  "date": "2026-11-14"
  },
  "/psoe/vivienda": {
   "hash": "a25c9024ba9f",
@@ -80,8 +80,8 @@
   "date": "2026-11-13"
  },
  "/psoe/pensiones": {
-  "hash": "1e50d0256a83",
-  "date": "2026-11-13"
+  "hash": "64290cbf2717",
+  "date": "2026-11-14"
  },
  "/psoe/empleo": {
   "hash": "0e5c3e80bebb",
@@ -512,8 +512,8 @@
   "date": "2026-11-13"
  },
  "/tema/vivienda": {
-  "hash": "ddf41ba8b224",
-  "date": "2026-11-13"
+  "hash": "b7bceb39a629",
+  "date": "2026-11-14"
  },
  "/tema/jovenes": {
   "hash": "80314b830fd1",
@@ -524,11 +524,11 @@
   "date": "2026-11-14"
  },
  "/tema/pensiones": {
-  "hash": "2e4d34372d47",
-  "date": "2026-11-13"
+  "hash": "fcb08f345508",
+  "date": "2026-11-14"
  },
  "/tema/empleo": {
-  "hash": "c2117c682e7f",
+  "hash": "3c12c676b47b",
   "date": "2026-11-14"
  },
  "/tema/impuestos": {
@@ -556,11 +556,11 @@
   "date": "2026-11-13"
  },
  "/tema/servicios-sociales": {
-  "hash": "0f9e28635a2a",
+  "hash": "b991236b5b52",
   "date": "2026-11-14"
  },
  "/tema/igualdad": {
-  "hash": "25cee196509b",
+  "hash": "73fde359253c",
   "date": "2026-11-14"
  },
  "/tema/territorio": {
@@ -568,7 +568,7 @@
   "date": "2026-11-14"
  },
  "/tema/politica-exterior": {
-  "hash": "f820e67c68c0",
+  "hash": "e0f09ddad488",
   "date": "2026-11-14"
  },
  "/metodologia": {
@@ -576,7 +576,7 @@
   "date": "2026-11-14"
  },
  "/datos/medidas.json": {
-  "hash": "9c0a71f24442",
+  "hash": "32968526b836",
   "date": "2026-11-14"
  },
  "/datos": {
@@ -584,7 +584,7 @@
   "date": "2026-11-14"
  },
  "/": {
-  "hash": "9c0a71f24442",
+  "hash": "32968526b836",
   "date": "2026-11-14"
  }
 }
