@@ -3,7 +3,7 @@
  "autor": "Fernando Santamaría González",
  "licencia": "CC BY 4.0",
  "web": "https://loquenocuentan.com",
- "actualizado": "2026-11-13",
+ "actualizado": "2026-11-14",
  "medidas": [
   {
    "id": "pp-144",
@@ -1392,6 +1392,79 @@
    ]
   },
   {
+   "id": "vox-60-sanidad",
+   "url": "https://loquenocuentan.com/vox#vox-60-sanidad",
+   "partido": "Vox",
+   "tema": "Sanidad",
+   "origen": "Programa 29-N",
+   "texto": "Que no saber la lengua de la comunidad no impida opositar a plazas sanitarias.",
+   "fuente": "Vox 2026, medida 60 (p. 32)",
+   "fuente_url": "https://loquenocuentan.com/vox-programa-29n.html#p32",
+   "observaciones": [
+    {
+     "etiqueta": "Depende de las CCAA",
+     "texto": "Los requisitos de las plazas los fijan los servicios de salud autonómicos.",
+     "fuentes": []
+    }
+   ]
+  },
+  {
+   "id": "vox-65",
+   "url": "https://loquenocuentan.com/vox#vox-65",
+   "partido": "Vox",
+   "tema": "Sanidad",
+   "origen": "Programa 29-N",
+   "texto": "Mapa de infraestructuras sanitarias urgentes con inversión directa, una red de centros nacionales de oncología y refuerzo de la estrategia de salud mental.",
+   "fuente": "Vox 2026, medida 65 (p. 33)",
+   "fuente_url": "https://loquenocuentan.com/vox-programa-29n.html#p33",
+   "observaciones": [
+    {
+     "etiqueta": "Sin concretar",
+     "texto": "Sin presupuesto, número de centros ni calendario.",
+     "fuentes": []
+    },
+    {
+     "etiqueta": "Sin coste",
+     "texto": "Es gasto nuevo que el programa no cuantifica.",
+     "fuentes": []
+    }
+   ]
+  },
+  {
+   "id": "vox-64",
+   "url": "https://loquenocuentan.com/vox#vox-64",
+   "partido": "Vox",
+   "tema": "Sanidad",
+   "origen": "Programa 29-N",
+   "texto": "Atención específica a la salud de las mujeres: cáncer de mama y ginecológico, embarazo, parto y posparto.",
+   "fuente": "Vox 2026, medida 64 (p. 33)",
+   "fuente_url": "https://loquenocuentan.com/vox-programa-29n.html#p33",
+   "observaciones": [
+    {
+     "etiqueta": "Sin concretar",
+     "texto": "No concreta ninguna medida nueva ni presupuesto.",
+     "fuentes": []
+    }
+   ]
+  },
+  {
+   "id": "vox-63-sanidad",
+   "url": "https://loquenocuentan.com/vox#vox-63-sanidad",
+   "partido": "Vox",
+   "tema": "Sanidad",
+   "origen": "Programa 29-N",
+   "texto": "«Fin del turismo sanitario».",
+   "fuente": "Vox 2026, medida 63 (p. 33)",
+   "fuente_url": "https://loquenocuentan.com/vox-programa-29n.html#p33",
+   "observaciones": [
+    {
+     "etiqueta": "Sin concretar",
+     "texto": "No aporta datos de su alcance ni dice cómo se haría.",
+     "fuentes": []
+    }
+   ]
+  },
+  {
    "id": "fa-sanidad-1",
    "url": "https://loquenocuentan.com/frente-amplio#fa-sanidad-1",
    "partido": "Frente Amplio",
@@ -2097,13 +2170,13 @@
    ]
   },
   {
-   "id": "vox-3",
-   "url": "https://loquenocuentan.com/vox#vox-3",
+   "id": "vox-2",
+   "url": "https://loquenocuentan.com/vox#vox-2",
    "partido": "Vox",
    "tema": "Empleo y autónomos",
    "origen": "Programa 29-N",
    "texto": "Autónomos: cuota cero si no llegan al SMI y cuota progresiva desde 50 € por encima.",
-   "fuente": "Vox 2026, medida 3 (p. 7)",
+   "fuente": "Vox 2026, medida 2 (p. 7)",
    "fuente_url": "https://loquenocuentan.com/vox-programa-29n.html#p7",
    "observaciones": [
     {
@@ -2126,6 +2199,40 @@
     {
      "etiqueta": "Sin concretar",
      "texto": "Sin presupuesto ni calendario.",
+     "fuentes": []
+    }
+   ]
+  },
+  {
+   "id": "vox-37",
+   "url": "https://loquenocuentan.com/vox#vox-37",
+   "partido": "Vox",
+   "tema": "Empleo y autónomos",
+   "origen": "Programa 29-N",
+   "texto": "Sumar a España a «la carrera de la inteligencia artificial» en empresas, formación y administraciones.",
+   "fuente": "Vox 2026, medida 37 (p. 23)",
+   "fuente_url": "https://loquenocuentan.com/vox-programa-29n.html#p23",
+   "observaciones": [
+    {
+     "etiqueta": "Sin concretar",
+     "texto": "Sin presupuesto ni una sola medida concreta.",
+     "fuentes": []
+    }
+   ]
+  },
+  {
+   "id": "vox-8-empleo-3",
+   "url": "https://loquenocuentan.com/vox#vox-8-empleo-3",
+   "partido": "Vox",
+   "tema": "Empleo y autónomos",
+   "origen": "Programa 29-N",
+   "texto": "Fomentar el turismo con «empleos de calidad» y medidas fiscales y de promoción.",
+   "fuente": "Vox 2026, medida 8 (p. 11)",
+   "fuente_url": "https://loquenocuentan.com/vox-programa-29n.html#p11",
+   "observaciones": [
+    {
+     "etiqueta": "Sin concretar",
+     "texto": "No dice qué medidas fiscales.",
      "fuentes": []
     }
    ]
@@ -2380,13 +2487,13 @@
    ]
   },
   {
-   "id": "vox-3-impuestos",
-   "url": "https://loquenocuentan.com/vox#vox-3-impuestos",
+   "id": "vox-2-impuestos",
+   "url": "https://loquenocuentan.com/vox#vox-2-impuestos",
    "partido": "Vox",
    "tema": "Impuestos",
    "origen": "Programa 29-N",
    "texto": "«Rebaja masiva» del IRPF, el IVA y el Impuesto de Sociedades.",
-   "fuente": "Vox 2026, medida 3 (p. 7)",
+   "fuente": "Vox 2026, medida 2 (p. 7)",
    "fuente_url": "https://loquenocuentan.com/vox-programa-29n.html#p7",
    "observaciones": [
     {
@@ -2428,6 +2535,64 @@
     {
      "etiqueta": "Sin coste",
      "texto": "La rebaja fiscal se financia con recortes sin cuantificar.",
+     "fuentes": []
+    }
+   ]
+  },
+  {
+   "id": "vox-3",
+   "url": "https://loquenocuentan.com/vox#vox-3",
+   "partido": "Vox",
+   "tema": "Impuestos",
+   "origen": "Programa 29-N",
+   "texto": "Reducir la deuda pública a la vez que se bajan los impuestos, con «control del déficit» y eliminando el «gasto superfluo e ideológico».",
+   "fuente": "Vox 2026, medida 3 (p. 7-8)",
+   "fuente_url": "https://loquenocuentan.com/vox-programa-29n.html#p7",
+   "observaciones": [
+    {
+     "etiqueta": "Sin concretar",
+     "texto": "No fija objetivo de deuda ni de déficit, ni plazo.",
+     "fuentes": []
+    },
+    {
+     "etiqueta": "Sin coste",
+     "texto": "Al menos 20 de sus 115 medidas prometen más gasto o inversión: defensa, policía y prisiones, sanidad, dependencia, vivienda protegida, justicia, infraestructuras y un fondo agrario. Ninguna lleva cifra.",
+     "fuentes": []
+    },
+    {
+     "etiqueta": "Sin coste",
+     "texto": "Solo la rebaja del IRPF costaría entre 46.000 millones, según su responsable económico, y 85.000, según Hacienda.",
+     "fuentes": [
+      "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/vox"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "vox-4",
+   "url": "https://loquenocuentan.com/vox#vox-4",
+   "partido": "Vox",
+   "tema": "Impuestos",
+   "origen": "Programa 29-N",
+   "texto": "Baleares y Canarias: actualizar el complemento de insularidad de los empleados públicos estatales, bajar el IGIC y suprimir el AIEM.",
+   "fuente": "Vox 2026, medida 4 (p. 8)",
+   "fuente_url": "https://loquenocuentan.com/vox-programa-29n.html#p8",
+   "observaciones": [
+    {
+     "etiqueta": "Depende de las CCAA",
+     "texto": "El IGIC y el AIEM son tributos canarios: los recauda y en buena parte los regula Canarias.",
+     "fuentes": []
+    },
+    {
+     "etiqueta": "Contexto",
+     "texto": "El AIEM grava la entrada de ciertos productos para proteger la industria local. La UE lo autoriza hasta 2027.",
+     "fuentes": [
+      "https://thediplomatinspain.com/2020/12/06/bruselas-amplia-hasta-2027-la-autorizacion-del-regimen-fiscal-especial-de-canarias"
+     ]
+    },
+    {
+     "etiqueta": "Sin concretar",
+     "texto": "Sin cuantías.",
      "fuentes": []
     }
    ]
@@ -3030,6 +3195,23 @@
    ]
   },
   {
+   "id": "vox-5",
+   "url": "https://loquenocuentan.com/vox#vox-5",
+   "partido": "Vox",
+   "tema": "Universidades",
+   "origen": "Programa 29-N",
+   "texto": "Reforzar la inversión en I+D+i y los incentivos fiscales a la innovación, con un plan para recuperar el talento que se fue.",
+   "fuente": "Vox 2026, medida 5 (p. 8)",
+   "fuente_url": "https://loquenocuentan.com/vox-programa-29n.html#p8",
+   "observaciones": [
+    {
+     "etiqueta": "Sin concretar",
+     "texto": "No fija porcentaje del PIB, presupuesto ni plazo.",
+     "fuentes": []
+    }
+   ]
+  },
+  {
    "id": "vox-68",
    "url": "https://loquenocuentan.com/vox#vox-68",
    "partido": "Vox",
@@ -3285,6 +3467,13 @@
      "etiqueta": "Sin concretar",
      "texto": "Afirma que España recibió «5 millones de personas en 5 años» sin citar fuente.",
      "fuentes": []
+    },
+    {
+     "etiqueta": "Contexto",
+     "texto": "El INE contó 4,7 millones de llegadas del extranjero entre 2021 y 2024, incluidos los españoles que volvían. Descontadas las salidas, el saldo fue de 2,2 millones.",
+     "fuentes": [
+      "https://ine.es/dyngs/Prensa/EMCR2024.htm"
+     ]
     }
    ]
   },
@@ -3381,6 +3570,54 @@
    "fuente": "Vox 2026, medida 16-17 (p. 14)",
    "fuente_url": "https://loquenocuentan.com/vox-programa-29n.html#p14",
    "observaciones": []
+  },
+  {
+   "id": "vox-10",
+   "url": "https://loquenocuentan.com/vox#vox-10",
+   "partido": "Vox",
+   "tema": "Inmigración",
+   "origen": "Programa 29-N",
+   "texto": "Endurecer el acceso a la nacionalidad, revisar las concesiones fraudulentas y retirarla a los españoles no de origen por delitos graves o reiterados.",
+   "fuente": "Vox 2026, medida 10 (p. 13)",
+   "fuente_url": "https://loquenocuentan.com/vox-programa-29n.html#p13",
+   "observaciones": [
+    {
+     "etiqueta": "Ya existe",
+     "texto": "El Código Civil ya anula la nacionalidad obtenida con falsedad, ocultación o fraude (art. 25).",
+     "fuentes": [
+      "https://www.boe.es/buscar/act.php?id=BOE-A-1889-4763"
+     ]
+    },
+    {
+     "etiqueta": "Contexto",
+     "texto": "La Constitución prohíbe quitar la nacionalidad a los españoles de origen (art. 11). Por eso la medida solo alcanza a quien la adquirió después.",
+     "fuentes": [
+      "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229"
+     ]
+    },
+    {
+     "etiqueta": "Sin concretar",
+     "texto": "No dice qué requisitos cambiaría ni qué delitos contarían.",
+     "fuentes": []
+    }
+   ]
+  },
+  {
+   "id": "vox-88",
+   "url": "https://loquenocuentan.com/vox#vox-88",
+   "partido": "Vox",
+   "tema": "Inmigración",
+   "origen": "Programa 29-N",
+   "texto": "Protección permanente de las fronteras terrestres, marítimas y aéreas con participación de las Fuerzas Armadas.",
+   "fuente": "Vox 2026, medida 88 (p. 40-41)",
+   "fuente_url": "https://loquenocuentan.com/vox-programa-29n.html#p40",
+   "observaciones": [
+    {
+     "etiqueta": "Sin concretar",
+     "texto": "No dice cuántos efectivos ni con qué coste.",
+     "fuentes": []
+    }
+   ]
   },
   {
    "id": "fa-inmigracion-1",
@@ -4232,6 +4469,40 @@
    ]
   },
   {
+   "id": "vox-24",
+   "url": "https://loquenocuentan.com/vox#vox-24",
+   "partido": "Vox",
+   "tema": "Servicios sociales y pobreza",
+   "origen": "Programa 29-N",
+   "texto": "Plan de inversiones para recuperar barrios, municipios y provincias «abandonadas durante décadas».",
+   "fuente": "Vox 2026, medida 24 (p. 17)",
+   "fuente_url": "https://loquenocuentan.com/vox-programa-29n.html#p17",
+   "observaciones": [
+    {
+     "etiqueta": "Sin concretar",
+     "texto": "No dice cuánto dinero ni qué zonas.",
+     "fuentes": []
+    }
+   ]
+  },
+  {
+   "id": "vox-97",
+   "url": "https://loquenocuentan.com/vox#vox-97",
+   "partido": "Vox",
+   "tema": "Servicios sociales y pobreza",
+   "origen": "Programa 29-N",
+   "texto": "Proteger a los menores en el entorno digital frente al juego, la pornografía y ciertos delitos.",
+   "fuente": "Vox 2026, medida 97 (p. 45)",
+   "fuente_url": "https://loquenocuentan.com/vox-programa-29n.html#p45",
+   "observaciones": [
+    {
+     "etiqueta": "Sin concretar",
+     "texto": "Ninguna medida concreta: ni verificación de edad ni límites de acceso.",
+     "fuentes": []
+    }
+   ]
+  },
+  {
    "id": "fa-servicios-sociales-1",
    "url": "https://loquenocuentan.com/frente-amplio#fa-servicios-sociales-1",
    "partido": "Frente Amplio",
@@ -4505,6 +4776,21 @@
      "etiqueta": "Sin concretar",
      "texto": "Habla de un «fenómeno creciente de denuncias falsas» sin aportar datos.",
      "fuentes": []
+    },
+    {
+     "etiqueta": "Contexto",
+     "texto": "Según la Fiscalía, de 913.118 denuncias por violencia de género entre 2009 y 2015, un 0,0079 % tuvo visos de falsedad.",
+     "fuentes": [
+      "https://www.legaltoday.com/?p=20433"
+     ]
+    },
+    {
+     "etiqueta": "Contexto",
+     "texto": "Dos hechos que cita sí ocurrieron. La ley del «solo sí es sí» llevó a más de 1.200 rebajas de condena y 121 excarcelaciones, según el CGPJ en septiembre de 2023. Se reformó en abril de ese año. Y la Fiscalía reconoció absoluciones por fallos en los datos de las pulseras de alejamiento tras cambiar la empresa que las gestiona.",
+     "fuentes": [
+      "https://theobjective.com/espana/tribunales/2023-09-18/rebajas-penas-excarcelaciones-si-es-si/",
+      "https://maldita.es/malditobulo/20250925/fallos-pulseras-telematicas-maltratadores/"
+     ]
     }
    ]
   },
@@ -4532,6 +4818,28 @@
     {
      "etiqueta": "Sin concretar",
      "texto": "Sin medidas cuantificadas.",
+     "fuentes": []
+    }
+   ]
+  },
+  {
+   "id": "vox-87",
+   "url": "https://loquenocuentan.com/vox#vox-87",
+   "partido": "Vox",
+   "tema": "Igualdad",
+   "origen": "Programa 29-N",
+   "texto": "Protección efectiva de las mujeres frente a la violencia y las agresiones sexuales.",
+   "fuente": "Vox 2026, medida 87 (p. 40)",
+   "fuente_url": "https://loquenocuentan.com/vox-programa-29n.html#p40",
+   "observaciones": [
+    {
+     "etiqueta": "Sin concretar",
+     "texto": "No dice cómo.",
+     "fuentes": []
+    },
+    {
+     "etiqueta": "Contexto",
+     "texto": "En el mismo programa propone derogar las leyes de violencia de género (medida 47).",
      "fuentes": []
     }
    ]
@@ -4981,6 +5289,339 @@
    ]
   },
   {
+   "id": "vox-1-territorio",
+   "url": "https://loquenocuentan.com/vox#vox-1-territorio",
+   "partido": "Vox",
+   "tema": "Territorio y España vaciada",
+   "origen": "Programa 29-N",
+   "texto": "Promover ante la Justicia el procesamiento de Pedro Sánchez y su Gobierno por «traición» por su actuación en la crisis de Ceuta.",
+   "fuente": "Vox 2026, medida 1 (p. 5)",
+   "fuente_url": "https://loquenocuentan.com/vox-programa-29n.html#p5",
+   "observaciones": [
+    {
+     "etiqueta": "Sin concretar",
+     "texto": "No aporta hechos concretos. Procesar a alguien lo deciden los tribunales, no el Gobierno.",
+     "fuentes": []
+    }
+   ]
+  },
+  {
+   "id": "vox-48",
+   "url": "https://loquenocuentan.com/vox#vox-48",
+   "partido": "Vox",
+   "tema": "Territorio y España vaciada",
+   "origen": "Programa 29-N",
+   "texto": "Rechazar el acuerdo UE-Mercosur y todo acuerdo comercial que obligue a competir «en desigualdad», con cláusulas espejo y preferencia comunitaria.",
+   "fuente": "Vox 2026, medida 48 (p. 28)",
+   "fuente_url": "https://loquenocuentan.com/vox-programa-29n.html#p28",
+   "observaciones": [
+    {
+     "etiqueta": "Contexto",
+     "texto": "El acuerdo se aplica de forma provisional desde el 1 de mayo de 2026, a la espera del Tribunal de Justicia de la UE y del Parlamento Europeo.",
+     "fuentes": [
+      "https://es.euronews.com/2026/05/01/el-polemico-acuerdo-comercial-ue-mercosur-entra-en-vigor-de-forma-provisional"
+     ]
+    },
+    {
+     "etiqueta": "Sin concretar",
+     "texto": "No explica cómo lo frenaría: la política comercial es competencia exclusiva de la UE.",
+     "fuentes": []
+    }
+   ]
+  },
+  {
+   "id": "vox-49",
+   "url": "https://loquenocuentan.com/vox#vox-49",
+   "partido": "Vox",
+   "tema": "Territorio y España vaciada",
+   "origen": "Programa 29-N",
+   "texto": "Derogar «cualquier normativa» que imponga cargas a agricultores, ganaderos y pescadores, y crear un fondo para compensar las «imposiciones de Bruselas».",
+   "fuente": "Vox 2026, medida 49-50 (p. 28)",
+   "fuente_url": "https://loquenocuentan.com/vox-programa-29n.html#p28",
+   "observaciones": [
+    {
+     "etiqueta": "Sin concretar",
+     "texto": "No dice qué normas ni con cuánto dinero contaría el fondo.",
+     "fuentes": []
+    },
+    {
+     "etiqueta": "Sin coste",
+     "texto": "Gasto nuevo sin cuantificar.",
+     "fuentes": []
+    }
+   ]
+  },
+  {
+   "id": "vox-52",
+   "url": "https://loquenocuentan.com/vox#vox-52",
+   "partido": "Vox",
+   "tema": "Territorio y España vaciada",
+   "origen": "Programa 29-N",
+   "texto": "Rechazar el recorte del presupuesto de la PAC y repartir sus fondos según la despoblación.",
+   "fuente": "Vox 2026, medida 52 (p. 29)",
+   "fuente_url": "https://loquenocuentan.com/vox-programa-29n.html#p29",
+   "observaciones": [
+    {
+     "etiqueta": "Contexto",
+     "texto": "El presupuesto de la PAC se decide en la UE, en el marco financiero que pactan los Estados y el Parlamento Europeo.",
+     "fuentes": []
+    }
+   ]
+  },
+  {
+   "id": "vox-54",
+   "url": "https://loquenocuentan.com/vox#vox-54",
+   "partido": "Vox",
+   "tema": "Territorio y España vaciada",
+   "origen": "Programa 29-N",
+   "texto": "Frenar las «macroplantas» solares y eólicas que destruyan riqueza agrícola.",
+   "fuente": "Vox 2026, medida 54 (p. 29)",
+   "fuente_url": "https://loquenocuentan.com/vox-programa-29n.html#p29",
+   "observaciones": [
+    {
+     "etiqueta": "Sin concretar",
+     "texto": "No define qué sería una instalación «descontrolada».",
+     "fuentes": []
+    }
+   ]
+  },
+  {
+   "id": "vox-55",
+   "url": "https://loquenocuentan.com/vox#vox-55",
+   "partido": "Vox",
+   "tema": "Territorio y España vaciada",
+   "origen": "Programa 29-N",
+   "texto": "Limpiar los montes, revisar las restricciones ambientales y endurecer las penas a los incendiarios.",
+   "fuente": "Vox 2026, medida 55 (p. 29)",
+   "fuente_url": "https://loquenocuentan.com/vox-programa-29n.html#p29",
+   "observaciones": [
+    {
+     "etiqueta": "Depende de las CCAA",
+     "texto": "La prevención y extinción de incendios forestales es sobre todo autonómica.",
+     "fuentes": []
+    },
+    {
+     "etiqueta": "Sin concretar",
+     "texto": "Sin medios ni presupuesto.",
+     "fuentes": []
+    }
+   ]
+  },
+  {
+   "id": "vox-112",
+   "url": "https://loquenocuentan.com/vox#vox-112",
+   "partido": "Vox",
+   "tema": "Territorio y España vaciada",
+   "origen": "Programa 29-N",
+   "texto": "Plan nacional de infraestructuras: más inversión en carreteras, tren, obras hidráulicas y puertos, con prioridad para Cercanías y Media Distancia.",
+   "fuente": "Vox 2026, medida 112-113 (p. 53)",
+   "fuente_url": "https://loquenocuentan.com/vox-programa-29n.html#p53",
+   "observaciones": [
+    {
+     "etiqueta": "Sin concretar",
+     "texto": "No dice cuánto ni qué obras.",
+     "fuentes": []
+    }
+   ]
+  },
+  {
+   "id": "vox-39",
+   "url": "https://loquenocuentan.com/vox#vox-39",
+   "partido": "Vox",
+   "tema": "Territorio y España vaciada",
+   "origen": "Programa 29-N",
+   "texto": "Fin de la cita previa: derecho a ser atendido en el momento en cualquier oficina pública.",
+   "fuente": "Vox 2026, medida 39 (p. 23)",
+   "fuente_url": "https://loquenocuentan.com/vox-programa-29n.html#p23",
+   "observaciones": [
+    {
+     "etiqueta": "Sin concretar",
+     "texto": "Lo promete a la vez que reducir la Administración «al mínimo estrictamente necesario» (medida 43). No explica con qué personal.",
+     "fuentes": []
+    }
+   ]
+  },
+  {
+   "id": "vox-45",
+   "url": "https://loquenocuentan.com/vox#vox-45",
+   "partido": "Vox",
+   "tema": "Territorio y España vaciada",
+   "origen": "Programa 29-N",
+   "texto": "Limitar las multas de tráfico y aparcamiento que no afecten gravemente a la seguridad vial.",
+   "fuente": "Vox 2026, medida 45 (p. 25-26)",
+   "fuente_url": "https://loquenocuentan.com/vox-programa-29n.html#p25",
+   "observaciones": [
+    {
+     "etiqueta": "Sin concretar",
+     "texto": "Sin cuantías.",
+     "fuentes": []
+    },
+    {
+     "etiqueta": "Depende de las CCAA",
+     "texto": "Las multas de aparcamiento son municipales.",
+     "fuentes": []
+    }
+   ]
+  },
+  {
+   "id": "vox-80",
+   "url": "https://loquenocuentan.com/vox#vox-80",
+   "partido": "Vox",
+   "tema": "Territorio y España vaciada",
+   "origen": "Programa 29-N",
+   "texto": "Rebajar la edad de responsabilidad penal de los menores y plantear que no haya inimputabilidad en homicidios y agresiones sexuales.",
+   "fuente": "Vox 2026, medida 80 (p. 39)",
+   "fuente_url": "https://loquenocuentan.com/vox-programa-29n.html#p39",
+   "observaciones": [
+    {
+     "etiqueta": "Contexto",
+     "texto": "Hoy la ley penal del menor se aplica desde los 14 años.",
+     "fuentes": [
+      "https://www.boe.es/buscar/act.php?id=BOE-A-2000-641"
+     ]
+    },
+    {
+     "etiqueta": "Sin concretar",
+     "texto": "No dice a qué edad.",
+     "fuentes": []
+    }
+   ]
+  },
+  {
+   "id": "vox-81",
+   "url": "https://loquenocuentan.com/vox#vox-81",
+   "partido": "Vox",
+   "tema": "Territorio y España vaciada",
+   "origen": "Programa 29-N",
+   "texto": "Ampliar la prisión permanente revisable.",
+   "fuente": "Vox 2026, medida 81 (p. 39)",
+   "fuente_url": "https://loquenocuentan.com/vox-programa-29n.html#p39",
+   "observaciones": [
+    {
+     "etiqueta": "Ya existe",
+     "texto": "Existe desde 2015 para los asesinatos más graves, el terrorismo con muerte y otros delitos.",
+     "fuentes": [
+      "https://www.boe.es/buscar/act.php?id=BOE-A-2015-3439"
+     ]
+    },
+    {
+     "etiqueta": "Sin concretar",
+     "texto": "No dice a qué delitos se ampliaría.",
+     "fuentes": []
+    }
+   ]
+  },
+  {
+   "id": "vox-86",
+   "url": "https://loquenocuentan.com/vox#vox-86",
+   "partido": "Vox",
+   "tema": "Territorio y España vaciada",
+   "origen": "Programa 29-N",
+   "texto": "Restablecer de inmediato el OCON-Sur contra el narcotráfico.",
+   "fuente": "Vox 2026, medida 86 (p. 40)",
+   "fuente_url": "https://loquenocuentan.com/vox-programa-29n.html#p40",
+   "observaciones": [
+    {
+     "etiqueta": "Contexto",
+     "texto": "Interior lo creó en 2018 y lo disolvió en 2022. El fiscal general lo calificó de error. Interior sostiene que integró a sus agentes y no restó medios.",
+     "fuentes": [
+      "https://theobjective.com/espana/tribunales/2024-02-13/fiscalia-gobierno-operativo-antidroga-cadiz/",
+      "https://theobjective.com/espana/politica/2024-02-21/marlaska-unidad-ocon-sur-lucha-narcotrafico/"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "vox-100",
+   "url": "https://loquenocuentan.com/vox#vox-100",
+   "partido": "Vox",
+   "tema": "Territorio y España vaciada",
+   "origen": "Programa 29-N",
+   "texto": "Que los propios jueces elijan a los doce vocales judiciales del CGPJ.",
+   "fuente": "Vox 2026, medida 100 (p. 48)",
+   "fuente_url": "https://loquenocuentan.com/vox-programa-29n.html#p48",
+   "observaciones": [
+    {
+     "etiqueta": "Contexto",
+     "texto": "La reforma de 2024, pactada por PP y PSOE, obligó al CGPJ a proponer un nuevo sistema. En febrero de 2025 lo envió a las Cortes con varios modelos, sin consenso.",
+     "fuentes": [
+      "https://www.legaltoday.com/actualidad-juridica/noticias-de-derecho/el-cgpj-cumple-en-plazo-el-mandato-del-legislador-y-acuerda-por-unanimidad-remitir-al-gobierno-y-a-las-cortes-una-propuesta-sobre-la-reforma-del-sistema-de-eleccion-de-los-vocales-de-procedencia-judic-2025-02-05/"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "vox-101",
+   "url": "https://loquenocuentan.com/vox#vox-101",
+   "partido": "Vox",
+   "tema": "Territorio y España vaciada",
+   "origen": "Programa 29-N",
+   "texto": "«Liberar el Tribunal Constitucional de las manos de los políticos».",
+   "fuente": "Vox 2026, medida 101 (p. 48)",
+   "fuente_url": "https://loquenocuentan.com/vox-programa-29n.html#p48",
+   "observaciones": [
+    {
+     "etiqueta": "Sin concretar",
+     "texto": "No dice cómo se elegirían sus magistrados.",
+     "fuentes": []
+    },
+    {
+     "etiqueta": "Contexto",
+     "texto": "La Constitución fija que los proponen Congreso, Senado, Gobierno y CGPJ (art. 159). Cambiarlo exige reformarla.",
+     "fuentes": [
+      "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "vox-107",
+   "url": "https://loquenocuentan.com/vox#vox-107",
+   "partido": "Vox",
+   "tema": "Territorio y España vaciada",
+   "origen": "Programa 29-N",
+   "texto": "Que los condenados por corrupción respondan con todos sus bienes presentes y futuros hasta devolver lo desviado.",
+   "fuente": "Vox 2026, medida 107 (p. 50)",
+   "fuente_url": "https://loquenocuentan.com/vox-programa-29n.html#p50",
+   "observaciones": [
+    {
+     "etiqueta": "Ya existe",
+     "texto": "Ya es así: quien debe responde «con todos sus bienes presentes y futuros» (art. 1911 del Código Civil), y el Código Penal obliga a reparar el daño (arts. 109 a 116).",
+     "fuentes": [
+      "https://www.boe.es/buscar/act.php?id=BOE-A-1889-4763",
+      "https://www.boe.es/buscar/act.php?id=BOE-A-1995-25444"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "vox-109",
+   "url": "https://loquenocuentan.com/vox#vox-109",
+   "partido": "Vox",
+   "tema": "Territorio y España vaciada",
+   "origen": "Programa 29-N",
+   "texto": "Considerar de lesa humanidad todos los crímenes de ETA para que no prescriban, e imprescriptibilidad de todos los delitos de terrorismo.",
+   "fuente": "Vox 2026, medida 109 (p. 50)",
+   "fuente_url": "https://loquenocuentan.com/vox-programa-29n.html#p50",
+   "observaciones": [
+    {
+     "etiqueta": "Ya existe",
+     "texto": "Desde 2010 no prescriben los delitos de terrorismo con resultado de muerte. Y la Audiencia Nacional ya juzga a la cúpula de ETA por lesa humanidad en los asesinatos desde 2004.",
+     "fuentes": [
+      "https://www.boe.es/buscar/act.php?id=BOE-A-1995-25444",
+      "https://www.noticiasdenavarra.com/politica/2022/04/04/audiencia-nacional-impulsa-causa-eta-2086966.amp.html"
+     ]
+    },
+    {
+     "etiqueta": "Contexto",
+     "texto": "El delito de lesa humanidad entró en el Código Penal en octubre de 2004. Aplicar hacia atrás normas penales más duras choca con la irretroactividad (arts. 9.3 y 25 de la Constitución). Por ese principio, la Audiencia Nacional archivó en 2024 por prescripción la causa contra «Anboto» por el asesinato de Miguel Ángel Blanco (1997).",
+     "fuentes": [
+      "https://www.poderjudicial.es/cgpj/es/Poder-Judicial/Audiencia-Nacional/Oficina-de-Comunicacion/Archivo-de-notas-de-prensa/La-Audiencia-Nacional-archiva-la-causa-contra-la-jefa-de-ETA--Anboto--por-el-secuestro-y-asesinato-de-Miguel-Angel-Blanco"
+     ]
+    }
+   ]
+  },
+  {
    "id": "fa-territorio-1",
    "url": "https://loquenocuentan.com/frente-amplio#fa-territorio-1",
    "partido": "Frente Amplio",
@@ -5288,6 +5929,25 @@
      "etiqueta": "Sin concretar",
      "texto": "Objetivo de su programa de 2023, sin calendario intermedio.",
      "fuentes": []
+    }
+   ]
+  },
+  {
+   "id": "vox-89",
+   "url": "https://loquenocuentan.com/vox#vox-89",
+   "partido": "Vox",
+   "tema": "Política exterior",
+   "origen": "Programa 29-N",
+   "texto": "Más inversión en Defensa, sueldos dignos y ayudas a la vivienda y la movilidad de los militares.",
+   "fuente": "Vox 2026, medida 89 (p. 41)",
+   "fuente_url": "https://loquenocuentan.com/vox-programa-29n.html#p41",
+   "observaciones": [
+    {
+     "etiqueta": "Sin concretar",
+     "texto": "No fija cuánto, ni en porcentaje del PIB ni en plazo, en pleno debate entre el 2,1 % del Gobierno y el 5 % pactado en la OTAN.",
+     "fuentes": [
+      "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/psoe"
+     ]
     }
    ]
   },

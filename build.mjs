@@ -159,6 +159,12 @@ const partyNav = (cur) => `<div class="chips">${PARTIES.map(([k]) => `<a class="
 const topicNav = (cur, prefix = '/tema/', only) => `<div class="chips">${TOPICS.filter(([k]) => !only || only.includes(k)).map(([k]) => `<a class="topic${k === cur ? ' on' : ''}" href="${prefix}${T[k].slug}">${esc(T[k].name)}</a>`).join('')}</div>`;
 const clavesHTML = t => CLAVES[t] ? `<aside class="context"><h2>Contexto: qué existe ya y quién decide</h2><ul>${CLAVES[t].map(x => `<li>${esc(x)}</li>`).join('')}</ul></aside>` : '';
 
+/* Recuento de concreción sobre los programas oficiales (misma regla para todos: medida con alguna cifra, plazo o porcentaje). */
+const CONCR = { pp: { c: 53, n: 241 }, vox: { c: 5, n: 115, extra: 'Ninguna dice cuánto cuesta ni cuándo se haría.' } };
+const pct = k => Math.round(CONCR[k].c / CONCR[k].n * 100);
+const concrTile = k => CONCR[k] ? `<div class="tile"><b>${pct(k)} %</b><span>medidas con alguna cifra o plazo</span></div>` : '';
+const concrHTML = k => CONCR[k] ? `<aside class="context" id="concrecion"><h2>Cuánto concreta el programa</h2><ul><li><b>${esc(P[k].name)}: ${CONCR[k].c} de ${CONCR[k].n} medidas (${pct(k)} %) llevan alguna cifra, plazo o porcentaje.</b>${CONCR[k].extra ? ' ' + esc(CONCR[k].extra) : ''}</li>${Object.keys(CONCR).filter(x => x !== k).map(x => `<li>Con la misma regla, ${esc(ART[x])}: ${CONCR[x].c} de ${CONCR[x].n} (${pct(x)} %).</li>`).join('')}<li>Recuento propio sobre el texto oficial, que se aplicará a cada programa que se publique. <a href="/vox-programa-29n">Ver el programa de Vox página a página</a>.</li></ul></aside>` : '';
+
 /* ---------- 4. Páginas de partido ---------- */
 for (const p of Object.values(P)) {
   const topics = TOPICS.map(([k]) => k).filter(k => p.items.some(i => i.topic === k));
@@ -175,8 +181,8 @@ for (const p of Object.values(P)) {
 <p class="kicker">Elecciones generales · 29 de noviembre de 2026</p>
 <h1>Qué propone ${esc(ART[p.k])} para el 29-N y qué no cuenta</h1>
 <p class="lead">${esc(p.status)}.</p>
-<div class="tiles"><div class="tile"><b>${p.items.length}</b><span>propuestas localizadas</span></div><div class="tile"><b>${flagged}</b><span>con alguna observación</span></div><div class="tile"><b>${topics.length}</b><span>temas de 15</span></div></div>
-</header>
+<div class="tiles"><div class="tile"><b>${p.items.length}</b><span>propuestas localizadas</span></div><div class="tile"><b>${flagged}</b><span>con alguna observación</span></div><div class="tile"><b>${topics.length}</b><span>temas de 15</span></div>${concrTile(p.k)}</div>
+</header>${concrHTML(p.k)}
 ${topics.length ? `<nav class="jump" aria-label="Temas de esta página"><div class="jrow"><span class="fl">Ir a</span>${topics.map(t => `<a href="#${T[t].slug}">${esc(T[t].name)} <b>${p.items.filter(i => i.topic === t).length}</b></a>`).join('')}</div>${filterHTML(p.items)}</nav>` : '<div class="none"><b>Sin propuestas localizadas</b>No se ha encontrado nada de este partido hasta hoy.</div>'}
 ${topics.map(t => { const its = p.items.filter(i => i.topic === t); return `<section class="block" id="${T[t].slug}"><h2><a href="/${p.slug}/${T[t].slug}">${esc(T[t].name)}</a> <small>${plural(its.length, 'propuesta', 'propuestas')} · <a href="/tema/${T[t].slug}">comparar con el resto</a></small></h2><div class="grid">${its.map(i => itemHTML(i, { who: false })).join('\n')}</div></section>`; }).join('\n')}
 <p class="back">Que un partido tenga más observaciones suele indicar que hay más documentación suya, no que sea peor. <a href="/metodologia">Cómo se hace la lectura crítica</a>.</p>
