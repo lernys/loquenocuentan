@@ -81,6 +81,10 @@ h1{font-size:clamp(1.7rem,4.4vw,2.7rem);font-weight:800;line-height:1.06;letter-
 .scroll{overflow-x:auto}
 .tbl{border-collapse:collapse;width:100%;font-size:.92rem}
 .tbl th,.tbl td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+.camaras{margin-top:14px;background:var(--paper);border-radius:12px;padding:12px 14px}
+.camaras h3{font:700 .78rem var(--f-body);text-transform:uppercase;letter-spacing:.08em;color:var(--accent);margin:0 0 6px}
+.camaras td:last-child{font-weight:600}
+.context .src{font-size:.82rem;color:var(--muted)}
 .tbl thead th{font-size:.72rem;text-transform:uppercase;letter-spacing:.07em;color:var(--muted)}
 .tbl th a{color:var(--ink);text-decoration:none;display:inline-flex;gap:8px;align-items:center;white-space:nowrap}.tbl th i{width:12px;height:12px;border-radius:50%}
 .mut{color:var(--muted);font-size:.85rem}

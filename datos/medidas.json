@@ -2372,23 +2372,6 @@
    ]
   },
   {
-   "id": "vox-8-empleo-2",
-   "url": "https://loquenocuentan.com/vox#vox-8-empleo-2",
-   "partido": "Vox",
-   "tema": "Empleo y autónomos",
-   "origen": "Programa 29-N",
-   "texto": "Plan nacional de reindustrialización, plan nuclear y derogar el calendario de cierre de las centrales.",
-   "fuente": "Vox 2026, medida 8 (p. 9-10)",
-   "fuente_url": "https://loquenocuentan.com/vox-programa-29n.html#p9",
-   "observaciones": [
-    {
-     "etiqueta": "Sin concretar",
-     "texto": "Sin presupuesto ni calendario.",
-     "fuentes": []
-    }
-   ]
-  },
-  {
    "id": "vox-37",
    "url": "https://loquenocuentan.com/vox#vox-37",
    "partido": "Vox",
@@ -2406,8 +2389,8 @@
    ]
   },
   {
-   "id": "vox-8-empleo-3",
-   "url": "https://loquenocuentan.com/vox#vox-8-empleo-3",
+   "id": "vox-8-empleo-2",
+   "url": "https://loquenocuentan.com/vox#vox-8-empleo-2",
    "partido": "Vox",
    "tema": "Empleo y autónomos",
    "origen": "Programa 29-N",
@@ -3920,6 +3903,931 @@
    ]
   },
   {
+   "id": "pp-72",
+   "url": "https://loquenocuentan.com/pp#pp-72",
+   "partido": "PP",
+   "tema": "Justicia",
+   "origen": "Programa 29-N",
+   "texto": "Que los jueces elijan a los doce vocales judiciales del CGPJ.",
+   "fuente": "PP 2026, medida 72 (p. 27)",
+   "fuente_url": "https://www.pp.es/wp-content/uploads/2026/11/LA-RECONSTRUCCION-NACIONAL.pdf#page=27",
+   "observaciones": [
+    {
+     "etiqueta": "Contexto",
+     "texto": "La renovación de 2024, pactada por PP y PSOE, obligó al CGPJ a proponer un nuevo sistema. Lo envió a las Cortes en febrero de 2025 con varios modelos y sin consenso.",
+     "fuentes": [
+      "https://www.legaltoday.com/actualidad-juridica/noticias-de-derecho/el-cgpj-cumple-en-plazo-el-mandato-del-legislador-y-acuerda-por-unanimidad-remitir-al-gobierno-y-a-las-cortes-una-propuesta-sobre-la-reforma-del-sistema-de-eleccion-de-los-vocales-de-procedencia-judic-2025-02-05/"
+     ]
+    },
+    {
+     "etiqueta": "Contexto",
+     "texto": "Vox propone lo mismo (medida 100).",
+     "fuentes": []
+    }
+   ]
+  },
+  {
+   "id": "pp-70",
+   "url": "https://loquenocuentan.com/pp#pp-70",
+   "partido": "PP",
+   "tema": "Justicia",
+   "origen": "Programa 29-N",
+   "texto": "Fiscal general con un mandato de cinco años que no termine cuando cae el Gobierno.",
+   "fuente": "PP 2026, medida 70 (p. 26)",
+   "fuente_url": "https://www.pp.es/wp-content/uploads/2026/11/LA-RECONSTRUCCION-NACIONAL.pdf#page=26",
+   "observaciones": [
+    {
+     "etiqueta": "Contexto",
+     "texto": "Hoy el mandato es de cuatro años y cesa cuando cesa el Gobierno que lo propuso.",
+     "fuentes": [
+      "https://www.boe.es/buscar/act.php?id=BOE-A-1982-837"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "pp-60",
+   "url": "https://loquenocuentan.com/pp#pp-60",
+   "partido": "PP",
+   "tema": "Justicia",
+   "origen": "Programa 29-N",
+   "texto": "Derogar la Ley de Amnistía y regular el indulto.",
+   "fuente": "PP 2026, medida 60 (p. 25)",
+   "fuente_url": "https://www.pp.es/wp-content/uploads/2026/11/LA-RECONSTRUCCION-NACIONAL.pdf#page=25",
+   "observaciones": [
+    {
+     "etiqueta": "Contexto",
+     "texto": "En octubre de 2026 el Tribunal Constitucional amparó que la amnistía cubre la malversación.",
+     "fuentes": [
+      "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/comparar/justicia"
+     ]
+    },
+    {
+     "etiqueta": "Contexto",
+     "texto": "El secretario general del PP, Miguel Tellado, admitió que derogarla no deshará todos sus efectos.",
+     "fuentes": [
+      "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/comparar/justicia"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "pp-17",
+   "url": "https://loquenocuentan.com/pp#pp-17",
+   "partido": "PP",
+   "tema": "Justicia",
+   "origen": "Programa 29-N",
+   "texto": "Recuperar el delito de sedición y endurecer las penas por malversación.",
+   "fuente": "PP 2026, medida 17 y 82 (p. 15)",
+   "fuente_url": "https://www.pp.es/wp-content/uploads/2026/11/LA-RECONSTRUCCION-NACIONAL.pdf#page=15",
+   "observaciones": [
+    {
+     "etiqueta": "Contexto",
+     "texto": "La sedición se suprimió del Código Penal en 2022 y se sustituyó por desórdenes públicos agravados.",
+     "fuentes": [
+      "https://www.boe.es/buscar/act.php?id=BOE-A-1995-25444"
+     ]
+    },
+    {
+     "etiqueta": "Contexto",
+     "texto": "Vox propone lo mismo (medida 103).",
+     "fuentes": []
+    }
+   ]
+  },
+  {
+   "id": "pp-61",
+   "url": "https://loquenocuentan.com/pp#pp-61",
+   "partido": "PP",
+   "tema": "Justicia",
+   "origen": "Programa 29-N",
+   "texto": "Reformar el suplicatorio y revisar los aforamientos.",
+   "fuente": "PP 2026, medida 61 (p. 25)",
+   "fuente_url": "https://www.pp.es/wp-content/uploads/2026/11/LA-RECONSTRUCCION-NACIONAL.pdf#page=25",
+   "observaciones": [
+    {
+     "etiqueta": "Sin concretar",
+     "texto": "No dice qué aforamientos quitaría.",
+     "fuentes": []
+    },
+    {
+     "etiqueta": "Contexto",
+     "texto": "Los de diputados, senadores y miembros del Gobierno están en la Constitución (arts. 71 y 102). Quitarlos exige reformarla, con tres quintos del Congreso y del Senado.",
+     "fuentes": [
+      "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "psoe-justicia-1",
+   "url": "https://loquenocuentan.com/psoe#psoe-justicia-1",
+   "partido": "PSOE",
+   "tema": "Justicia",
+   "origen": "Gobierno / ley",
+   "texto": "Nueva Ley de Enjuiciamiento Criminal: que investiguen los fiscales y un juez vigile las garantías.",
+   "fuente": "Política Electoral · justicia",
+   "fuente_url": "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/comparar/justicia",
+   "observaciones": [
+    {
+     "etiqueta": "Sin cumplir o caída",
+     "texto": "Decayó con la disolución de las Cortes.",
+     "fuentes": [
+      "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/comparar/justicia"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "psoe-justicia-2",
+   "url": "https://loquenocuentan.com/psoe#psoe-justicia-2",
+   "partido": "PSOE",
+   "tema": "Justicia",
+   "origen": "Gobierno / ley",
+   "texto": "Reforma del acceso a las carreras judicial y fiscal.",
+   "fuente": "Política Electoral · justicia",
+   "fuente_url": "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/comparar/justicia",
+   "observaciones": [
+    {
+     "etiqueta": "Sin cumplir o caída",
+     "texto": "Decayó con la disolución.",
+     "fuentes": [
+      "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/comparar/justicia"
+     ]
+    },
+    {
+     "etiqueta": "Contexto",
+     "texto": "Las asociaciones de jueces y fiscales hicieron huelga contra ella en julio de 2025.",
+     "fuentes": [
+      "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/comparar/justicia"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "psoe-justicia-3",
+   "url": "https://loquenocuentan.com/psoe#psoe-justicia-3",
+   "partido": "PSOE",
+   "tema": "Justicia",
+   "origen": "Gobierno / ley",
+   "texto": "Ley de Integridad Pública, con una agencia anticorrupción.",
+   "fuente": "Política Electoral · justicia",
+   "fuente_url": "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/comparar/justicia",
+   "observaciones": [
+    {
+     "etiqueta": "Sin cumplir o caída",
+     "texto": "Decayó con la disolución.",
+     "fuentes": [
+      "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/comparar/justicia"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "psoe-justicia-4",
+   "url": "https://loquenocuentan.com/psoe#psoe-justicia-4",
+   "partido": "PSOE",
+   "tema": "Justicia",
+   "origen": "Gobierno / ley",
+   "texto": "Ley de Amnistía, aprobada en mayo de 2024 por 177 votos a 172.",
+   "fuente": "Política Electoral · justicia",
+   "fuente_url": "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/comparar/justicia",
+   "observaciones": [
+    {
+     "etiqueta": "Ya existe",
+     "texto": "En vigor. En octubre de 2026 el Tribunal Constitucional amparó que cubre la malversación.",
+     "fuentes": [
+      "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/comparar/justicia"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "vox-103",
+   "url": "https://loquenocuentan.com/vox#vox-103",
+   "partido": "Vox",
+   "tema": "Justicia",
+   "origen": "Programa 29-N",
+   "texto": "Recuperar la sedición, endurecer la malversación, prohibir los indultos por corrupción o contra la unidad de España e ilegalizar a los partidos que atenten contra ella.",
+   "fuente": "Vox 2026, medida 103 (p. 48-49)",
+   "fuente_url": "https://loquenocuentan.com/vox-programa-29n.html#p48",
+   "observaciones": [
+    {
+     "etiqueta": "Contexto",
+     "texto": "La Ley de Partidos ya permite ilegalizar a los que apoyen la violencia o el terrorismo o vulneren de forma grave y reiterada los derechos fundamentales.",
+     "fuentes": [
+      "https://www.boe.es/buscar/act.php?id=BOE-A-2002-12756"
+     ]
+    },
+    {
+     "etiqueta": "Contexto",
+     "texto": "La sedición se suprimió del Código Penal en 2022.",
+     "fuentes": [
+      "https://www.boe.es/buscar/act.php?id=BOE-A-1995-25444"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "vox-1",
+   "url": "https://loquenocuentan.com/vox#vox-1",
+   "partido": "Vox",
+   "tema": "Justicia",
+   "origen": "Programa 29-N",
+   "texto": "Promover ante la Justicia el procesamiento de Pedro Sánchez y su Gobierno por «traición» por su actuación en la crisis de Ceuta.",
+   "fuente": "Vox 2026, medida 1 (p. 5)",
+   "fuente_url": "https://loquenocuentan.com/vox-programa-29n.html#p5",
+   "observaciones": [
+    {
+     "etiqueta": "Sin concretar",
+     "texto": "No aporta hechos concretos. Procesar a alguien lo deciden los tribunales, no el Gobierno.",
+     "fuentes": []
+    }
+   ]
+  },
+  {
+   "id": "vox-100",
+   "url": "https://loquenocuentan.com/vox#vox-100",
+   "partido": "Vox",
+   "tema": "Justicia",
+   "origen": "Programa 29-N",
+   "texto": "Que los propios jueces elijan a los doce vocales judiciales del CGPJ.",
+   "fuente": "Vox 2026, medida 100 (p. 48)",
+   "fuente_url": "https://loquenocuentan.com/vox-programa-29n.html#p48",
+   "observaciones": [
+    {
+     "etiqueta": "Contexto",
+     "texto": "La reforma de 2024, pactada por PP y PSOE, obligó al CGPJ a proponer un nuevo sistema. En febrero de 2025 lo envió a las Cortes con varios modelos, sin consenso.",
+     "fuentes": [
+      "https://www.legaltoday.com/actualidad-juridica/noticias-de-derecho/el-cgpj-cumple-en-plazo-el-mandato-del-legislador-y-acuerda-por-unanimidad-remitir-al-gobierno-y-a-las-cortes-una-propuesta-sobre-la-reforma-del-sistema-de-eleccion-de-los-vocales-de-procedencia-judic-2025-02-05/"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "vox-101",
+   "url": "https://loquenocuentan.com/vox#vox-101",
+   "partido": "Vox",
+   "tema": "Justicia",
+   "origen": "Programa 29-N",
+   "texto": "«Liberar el Tribunal Constitucional de las manos de los políticos».",
+   "fuente": "Vox 2026, medida 101 (p. 48)",
+   "fuente_url": "https://loquenocuentan.com/vox-programa-29n.html#p48",
+   "observaciones": [
+    {
+     "etiqueta": "Sin concretar",
+     "texto": "No dice cómo se elegirían sus magistrados.",
+     "fuentes": []
+    },
+    {
+     "etiqueta": "Contexto",
+     "texto": "La Constitución fija que los proponen Congreso, Senado, Gobierno y CGPJ (art. 159). Cambiarlo exige reformarla.",
+     "fuentes": [
+      "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "vox-107",
+   "url": "https://loquenocuentan.com/vox#vox-107",
+   "partido": "Vox",
+   "tema": "Justicia",
+   "origen": "Programa 29-N",
+   "texto": "Que los condenados por corrupción respondan con todos sus bienes presentes y futuros hasta devolver lo desviado.",
+   "fuente": "Vox 2026, medida 107 (p. 50)",
+   "fuente_url": "https://loquenocuentan.com/vox-programa-29n.html#p50",
+   "observaciones": [
+    {
+     "etiqueta": "Ya existe",
+     "texto": "Ya es así: quien debe responde «con todos sus bienes presentes y futuros» (art. 1911 del Código Civil), y el Código Penal obliga a reparar el daño (arts. 109 a 116).",
+     "fuentes": [
+      "https://www.boe.es/buscar/act.php?id=BOE-A-1889-4763",
+      "https://www.boe.es/buscar/act.php?id=BOE-A-1995-25444"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "vox-109",
+   "url": "https://loquenocuentan.com/vox#vox-109",
+   "partido": "Vox",
+   "tema": "Justicia",
+   "origen": "Programa 29-N",
+   "texto": "Considerar de lesa humanidad todos los crímenes de ETA para que no prescriban, e imprescriptibilidad de todos los delitos de terrorismo.",
+   "fuente": "Vox 2026, medida 109 (p. 50)",
+   "fuente_url": "https://loquenocuentan.com/vox-programa-29n.html#p50",
+   "observaciones": [
+    {
+     "etiqueta": "Ya existe",
+     "texto": "Desde 2010 no prescriben los delitos de terrorismo con resultado de muerte. Y la Audiencia Nacional ya juzga a la cúpula de ETA por lesa humanidad en los asesinatos desde 2004.",
+     "fuentes": [
+      "https://www.boe.es/buscar/act.php?id=BOE-A-1995-25444",
+      "https://www.noticiasdenavarra.com/politica/2022/04/04/audiencia-nacional-impulsa-causa-eta-2086966.amp.html"
+     ]
+    },
+    {
+     "etiqueta": "Contexto",
+     "texto": "El delito de lesa humanidad entró en el Código Penal en octubre de 2004. Aplicar hacia atrás normas penales más duras choca con la irretroactividad (arts. 9.3 y 25 de la Constitución). Por ese principio, la Audiencia Nacional archivó en 2024 por prescripción la causa contra «Anboto» por el asesinato de Miguel Ángel Blanco (1997).",
+     "fuentes": [
+      "https://www.poderjudicial.es/cgpj/es/Poder-Judicial/Audiencia-Nacional/Oficina-de-Comunicacion/Archivo-de-notas-de-prensa/La-Audiencia-Nacional-archiva-la-causa-contra-la-jefa-de-ETA--Anboto--por-el-secuestro-y-asesinato-de-Miguel-Angel-Blanco"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "fa-justicia-1",
+   "url": "https://loquenocuentan.com/frente-amplio#fa-justicia-1",
+   "partido": "Frente Amplio",
+   "tema": "Justicia",
+   "origen": "Programa anterior",
+   "texto": "Que investiguen los fiscales con un juez de garantías, nueva ley de indultos y vocales del CGPJ avalados por los propios jueces.",
+   "fuente": "Política Electoral · justicia",
+   "fuente_url": "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/comparar/justicia",
+   "observaciones": [
+    {
+     "etiqueta": "Contexto",
+     "texto": "Es su programa de 2023: no ha publicado propuestas de justicia para el 29-N.",
+     "fuentes": [
+      "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/comparar/justicia"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "pod-justicia-1",
+   "url": "https://loquenocuentan.com/podemos#pod-justicia-1",
+   "partido": "Podemos",
+   "tema": "Justicia",
+   "origen": "Declaración 2026",
+   "texto": "«Democratizar» el poder judicial y cambiar el acceso a la carrera de juez, al que atribuye un sesgo económico.",
+   "fuente": "Política Electoral · justicia",
+   "fuente_url": "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/comparar/justicia",
+   "observaciones": [
+    {
+     "etiqueta": "Sin concretar",
+     "texto": "Sin propuesta articulada.",
+     "fuentes": []
+    }
+   ]
+  },
+  {
+   "id": "erc-justicia-1",
+   "url": "https://loquenocuentan.com/erc#erc-justicia-1",
+   "partido": "ERC",
+   "tema": "Justicia",
+   "origen": "Programa 29-N · vía prensa",
+   "texto": "Consejo de Justicia de Cataluña, 180 plazas de jueces en Cataluña en 2026 y 2027 y suprimir los delitos de injurias a la Corona y ofensa religiosa.",
+   "fuente": "Política Electoral · justicia",
+   "fuente_url": "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/comparar/justicia",
+   "observaciones": []
+  },
+  {
+   "id": "junts-justicia-1",
+   "url": "https://loquenocuentan.com/junts#junts-justicia-1",
+   "partido": "Junts",
+   "tema": "Justicia",
+   "origen": "Declaración 2026",
+   "texto": "Que la amnistía se aplique a todos, también a Carles Puigdemont.",
+   "fuente": "Política Electoral · justicia",
+   "fuente_url": "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/comparar/justicia",
+   "observaciones": [
+    {
+     "etiqueta": "Contexto",
+     "texto": "El juez Llarena dejó en suspenso las órdenes de detención, pero sin aplicarle la amnistía.",
+     "fuentes": [
+      "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/comparar/justicia"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "bildu-justicia-1",
+   "url": "https://loquenocuentan.com/eh-bildu#bildu-justicia-1",
+   "partido": "EH Bildu",
+   "tema": "Justicia",
+   "origen": "Programa anterior",
+   "texto": "Sustituir la Ley de Secretos Oficiales de 1968 y ampliar la Ley de Memoria Democrática.",
+   "fuente": "Política Electoral · justicia",
+   "fuente_url": "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/comparar/justicia",
+   "observaciones": [
+    {
+     "etiqueta": "Contexto",
+     "texto": "Es su programa de 2023: no ha publicado programa para el 29-N.",
+     "fuentes": [
+      "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/comparar/justicia"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "pnv-justicia-1",
+   "url": "https://loquenocuentan.com/pnv#pnv-justicia-1",
+   "partido": "PNV",
+   "tema": "Justicia",
+   "origen": "Programa 29-N · vía prensa",
+   "texto": "Nueva Ley de Secretos Oficiales con desclasificación automática, y que los juicios terminen en el Tribunal Superior del País Vasco, salvo los del Supremo.",
+   "fuente": "Política Electoral · justicia",
+   "fuente_url": "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/comparar/justicia",
+   "observaciones": []
+  },
+  {
+   "id": "bng-justicia-1",
+   "url": "https://loquenocuentan.com/bng#bng-justicia-1",
+   "partido": "BNG",
+   "tema": "Justicia",
+   "origen": "Programa 29-N · vía prensa",
+   "texto": "Hacer efectivo el gallego en los juzgados y derogar la prisión permanente revisable y las injurias a la Corona.",
+   "fuente": "Política Electoral · justicia",
+   "fuente_url": "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/comparar/justicia",
+   "observaciones": []
+  },
+  {
+   "id": "cc-justicia-1",
+   "url": "https://loquenocuentan.com/coalicion-canaria#cc-justicia-1",
+   "partido": "CC",
+   "tema": "Justicia",
+   "origen": "Declaración 2026",
+   "texto": "Que la Policía Canaria pueda actuar como policía judicial.",
+   "fuente": "Política Electoral · justicia",
+   "fuente_url": "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/comparar/justicia",
+   "observaciones": [
+    {
+     "etiqueta": "Contexto",
+     "texto": "Votó contra la Ley de Amnistía en 2024. No ha publicado propuestas de justicia para el 29-N.",
+     "fuentes": [
+      "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/comparar/justicia"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "salf-justicia-1",
+   "url": "https://loquenocuentan.com/salf#salf-justicia-1",
+   "partido": "SALF",
+   "tema": "Justicia",
+   "origen": "Declaración 2026",
+   "texto": "Que la corrupción no prescriba y que quien no devuelva lo robado no pueda salir en tercer grado.",
+   "fuente": "Política Electoral · justicia",
+   "fuente_url": "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/comparar/justicia",
+   "observaciones": []
+  },
+  {
+   "id": "upn-justicia-1",
+   "url": "https://loquenocuentan.com/upn#upn-justicia-1",
+   "partido": "UPN-PP",
+   "tema": "Justicia",
+   "origen": "Programa anterior",
+   "texto": "Reformar la Constitución para que CGPJ, Tribunal Constitucional, Fiscalía y Tribunal de Cuentas no dependan del Gobierno ni de los partidos.",
+   "fuente": "Política Electoral · justicia",
+   "fuente_url": "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/comparar/justicia",
+   "observaciones": [
+    {
+     "etiqueta": "Contexto",
+     "texto": "Exige tres quintos del Congreso y del Senado.",
+     "fuentes": [
+      "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "pp-20",
+   "url": "https://loquenocuentan.com/pp#pp-20",
+   "partido": "PP",
+   "tema": "Seguridad",
+   "origen": "Programa 29-N",
+   "texto": "Multirreincidencia: juicios rápidos y una respuesta penal más dura.",
+   "fuente": "PP 2026, medida 20 (p. 16)",
+   "fuente_url": "https://www.pp.es/wp-content/uploads/2026/11/LA-RECONSTRUCCION-NACIONAL.pdf#page=16",
+   "observaciones": [
+    {
+     "etiqueta": "Ya existe",
+     "texto": "La ley de multirreincidencia está en vigor desde el 10 de abril de 2026. El PP votó a favor.",
+     "fuentes": [
+      "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/comparar/seguridad"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "pp-21",
+   "url": "https://loquenocuentan.com/pp#pp-21",
+   "partido": "PP",
+   "tema": "Seguridad",
+   "origen": "Programa 29-N",
+   "texto": "Más castigo por desórdenes violentos: agravante por taparse la cara, multa mínima por vandalismo y responsabilidad de los tutores de menores.",
+   "fuente": "PP 2026, medida 21-25 (p. 16)",
+   "fuente_url": "https://www.pp.es/wp-content/uploads/2026/11/LA-RECONSTRUCCION-NACIONAL.pdf#page=16",
+   "observaciones": []
+  },
+  {
+   "id": "pp-26",
+   "url": "https://loquenocuentan.com/pp#pp-26",
+   "partido": "PP",
+   "tema": "Seguridad",
+   "origen": "Programa 29-N",
+   "texto": "Nuevo delito para quien use a menores para delinquir y reforma de la Ley del Menor.",
+   "fuente": "PP 2026, medida 26 (p. 16)",
+   "fuente_url": "https://www.pp.es/wp-content/uploads/2026/11/LA-RECONSTRUCCION-NACIONAL.pdf#page=16",
+   "observaciones": []
+  },
+  {
+   "id": "pp-30",
+   "url": "https://loquenocuentan.com/pp#pp-30",
+   "partido": "PP",
+   "tema": "Seguridad",
+   "origen": "Programa 29-N",
+   "texto": "Prisión permanente revisable también para quien haga desaparecer a su víctima.",
+   "fuente": "PP 2026, medida 30 (p. 17)",
+   "fuente_url": "https://www.pp.es/wp-content/uploads/2026/11/LA-RECONSTRUCCION-NACIONAL.pdf#page=17",
+   "observaciones": [
+    {
+     "etiqueta": "Ya existe",
+     "texto": "Existe desde 2015 para los asesinatos más graves.",
+     "fuentes": [
+      "https://www.boe.es/buscar/act.php?id=BOE-A-2015-3439"
+     ]
+    },
+    {
+     "etiqueta": "Contexto",
+     "texto": "En 2026 el Congreso rechazó una ampliación por 174 votos a 172.",
+     "fuentes": [
+      "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/comparar/seguridad"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "pp-32",
+   "url": "https://loquenocuentan.com/pp#pp-32",
+   "partido": "PP",
+   "tema": "Seguridad",
+   "origen": "Programa 29-N",
+   "texto": "Policías y guardias civiles como profesión de riesgo.",
+   "fuente": "PP 2026, medida 32 (p. 17)",
+   "fuente_url": "https://www.pp.es/wp-content/uploads/2026/11/LA-RECONSTRUCCION-NACIONAL.pdf#page=17",
+   "observaciones": [
+    {
+     "etiqueta": "Contexto",
+     "texto": "Vox propone lo mismo (medida 84).",
+     "fuentes": []
+    }
+   ]
+  },
+  {
+   "id": "pp-49",
+   "url": "https://loquenocuentan.com/pp#pp-49",
+   "partido": "PP",
+   "tema": "Seguridad",
+   "origen": "Programa 29-N",
+   "texto": "Mando único de emergencias: el Gobierno central actuará desde el primer momento, sin esperar a que se lo pidan.",
+   "fuente": "PP 2026, medida 49 (p. 20)",
+   "fuente_url": "https://www.pp.es/wp-content/uploads/2026/11/LA-RECONSTRUCCION-NACIONAL.pdf#page=20",
+   "observaciones": [
+    {
+     "etiqueta": "Depende de las CCAA",
+     "texto": "Hoy las comunidades dirigen las emergencias, salvo que el Gobierno las declare de interés nacional.",
+     "fuentes": []
+    }
+   ]
+  },
+  {
+   "id": "psoe-seguridad-1",
+   "url": "https://loquenocuentan.com/psoe#psoe-seguridad-1",
+   "partido": "PSOE",
+   "tema": "Seguridad",
+   "origen": "Gobierno / ley",
+   "texto": "Plan Especial de Seguridad del Campo de Gibraltar, en marcha desde 2018.",
+   "fuente": "Política Electoral · seguridad",
+   "fuente_url": "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/comparar/seguridad",
+   "observaciones": [
+    {
+     "etiqueta": "Contexto",
+     "texto": "Interior lo cifra en más de 250 millones. PP y Vox le reprochan haber disuelto el OCON-Sur en 2022.",
+     "fuentes": [
+      "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/comparar/seguridad"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "psoe-seguridad-2",
+   "url": "https://loquenocuentan.com/psoe#psoe-seguridad-2",
+   "partido": "PSOE",
+   "tema": "Seguridad",
+   "origen": "Gobierno / ley",
+   "texto": "Reforma de la «ley mordaza», pactada con Sumar y EH Bildu.",
+   "fuente": "Política Electoral · seguridad",
+   "fuente_url": "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/comparar/seguridad",
+   "observaciones": [
+    {
+     "etiqueta": "Sin cumplir o caída",
+     "texto": "Se quedó atascada en el Congreso y decayó con la disolución.",
+     "fuentes": [
+      "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/comparar/seguridad"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "psoe-seguridad-3",
+   "url": "https://loquenocuentan.com/psoe#psoe-seguridad-3",
+   "partido": "PSOE",
+   "tema": "Seguridad",
+   "origen": "Programa anterior",
+   "texto": "Más agentes de Policía Nacional y Guardia Civil y más medios contra la violencia de género (VioGén).",
+   "fuente": "Política Electoral · seguridad",
+   "fuente_url": "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/comparar/seguridad",
+   "observaciones": [
+    {
+     "etiqueta": "Contexto",
+     "texto": "Es su programa de 2023: no ha presentado propuestas nuevas de seguridad.",
+     "fuentes": [
+      "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/comparar/seguridad"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "vox-84",
+   "url": "https://loquenocuentan.com/vox#vox-84",
+   "partido": "Vox",
+   "tema": "Seguridad",
+   "origen": "Programa 29-N",
+   "texto": "Equiparación salarial de policías y guardias civiles y reconocimiento como profesión de riesgo.",
+   "fuente": "Vox 2026, medida 84 (p. 40)",
+   "fuente_url": "https://loquenocuentan.com/vox-programa-29n.html#p40",
+   "observaciones": [
+    {
+     "etiqueta": "Sin concretar",
+     "texto": "No dice cuánto costaría.",
+     "fuentes": []
+    }
+   ]
+  },
+  {
+   "id": "vox-80",
+   "url": "https://loquenocuentan.com/vox#vox-80",
+   "partido": "Vox",
+   "tema": "Seguridad",
+   "origen": "Programa 29-N",
+   "texto": "Rebajar la edad de responsabilidad penal de los menores y plantear que no haya inimputabilidad en homicidios y agresiones sexuales.",
+   "fuente": "Vox 2026, medida 80 (p. 39)",
+   "fuente_url": "https://loquenocuentan.com/vox-programa-29n.html#p39",
+   "observaciones": [
+    {
+     "etiqueta": "Contexto",
+     "texto": "Hoy la ley penal del menor se aplica desde los 14 años.",
+     "fuentes": [
+      "https://www.boe.es/buscar/act.php?id=BOE-A-2000-641"
+     ]
+    },
+    {
+     "etiqueta": "Sin concretar",
+     "texto": "No dice a qué edad.",
+     "fuentes": []
+    }
+   ]
+  },
+  {
+   "id": "vox-81",
+   "url": "https://loquenocuentan.com/vox#vox-81",
+   "partido": "Vox",
+   "tema": "Seguridad",
+   "origen": "Programa 29-N",
+   "texto": "Ampliar la prisión permanente revisable.",
+   "fuente": "Vox 2026, medida 81 (p. 39)",
+   "fuente_url": "https://loquenocuentan.com/vox-programa-29n.html#p39",
+   "observaciones": [
+    {
+     "etiqueta": "Ya existe",
+     "texto": "Existe desde 2015 para los asesinatos más graves, el terrorismo con muerte y otros delitos.",
+     "fuentes": [
+      "https://www.boe.es/buscar/act.php?id=BOE-A-2015-3439"
+     ]
+    },
+    {
+     "etiqueta": "Sin concretar",
+     "texto": "No dice a qué delitos se ampliaría.",
+     "fuentes": []
+    }
+   ]
+  },
+  {
+   "id": "vox-86",
+   "url": "https://loquenocuentan.com/vox#vox-86",
+   "partido": "Vox",
+   "tema": "Seguridad",
+   "origen": "Programa 29-N",
+   "texto": "Restablecer de inmediato el OCON-Sur contra el narcotráfico.",
+   "fuente": "Vox 2026, medida 86 (p. 40)",
+   "fuente_url": "https://loquenocuentan.com/vox-programa-29n.html#p40",
+   "observaciones": [
+    {
+     "etiqueta": "Contexto",
+     "texto": "Interior lo creó en 2018 y lo disolvió en 2022. El fiscal general lo calificó de error. Interior sostiene que integró a sus agentes y no restó medios.",
+     "fuentes": [
+      "https://theobjective.com/espana/tribunales/2024-02-13/fiscalia-gobierno-operativo-antidroga-cadiz/",
+      "https://theobjective.com/espana/politica/2024-02-21/marlaska-unidad-ocon-sur-lucha-narcotrafico/"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "fa-seguridad-1",
+   "url": "https://loquenocuentan.com/frente-amplio#fa-seguridad-1",
+   "partido": "Frente Amplio",
+   "tema": "Seguridad",
+   "origen": "Declaración 2026",
+   "texto": "Reformar la «ley mordaza»: acotar las multas por desobediencia y falta de respeto y prohibir las pelotas de goma.",
+   "fuente": "Política Electoral · seguridad",
+   "fuente_url": "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/comparar/seguridad",
+   "observaciones": [
+    {
+     "etiqueta": "Sin cumplir o caída",
+     "texto": "Pactada con el Gobierno, decayó con la disolución sin aprobarse.",
+     "fuentes": [
+      "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/comparar/seguridad"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "pod-seguridad-1",
+   "url": "https://loquenocuentan.com/podemos#pod-seguridad-1",
+   "partido": "Podemos",
+   "tema": "Seguridad",
+   "origen": "Documento 2026",
+   "texto": "Derogar la «ley mordaza» y disolver Desokupa.",
+   "fuente": "Política Electoral · seguridad",
+   "fuente_url": "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/comparar/seguridad",
+   "observaciones": [
+    {
+     "etiqueta": "Contexto",
+     "texto": "Documento político de abril de 2025: no tiene programa para el 29-N.",
+     "fuentes": [
+      "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/comparar/seguridad"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "erc-seguridad-1",
+   "url": "https://loquenocuentan.com/erc#erc-seguridad-1",
+   "partido": "ERC",
+   "tema": "Seguridad",
+   "origen": "Programa 29-N · vía prensa",
+   "texto": "Mossos como policía integral en toda Cataluña, también en puertos y aeropuertos, y competencias plenas de tráfico.",
+   "fuente": "Política Electoral · seguridad",
+   "fuente_url": "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/comparar/seguridad",
+   "observaciones": [
+    {
+     "etiqueta": "Su voto",
+     "texto": "Se abstuvo en la ley de multirreincidencia, mientras el resto de socios de izquierda votó en contra.",
+     "fuentes": [
+      "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/comparar/seguridad"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "junts-seguridad-1",
+   "url": "https://loquenocuentan.com/junts#junts-seguridad-1",
+   "partido": "Junts",
+   "tema": "Seguridad",
+   "origen": "Proposición de ley",
+   "texto": "Ley de multirreincidencia: cárcel a partir de la tercera condena por hurto aunque sea de menos de 400 €, y más pena por robar móviles.",
+   "fuente": "Política Electoral · seguridad",
+   "fuente_url": "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/comparar/seguridad",
+   "observaciones": [
+    {
+     "etiqueta": "Ya existe",
+     "texto": "En vigor desde el 10 de abril de 2026 (Ley Orgánica 1/2026). Salió con 302 votos a favor.",
+     "fuentes": [
+      "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/comparar/seguridad"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "junts-seguridad-2",
+   "url": "https://loquenocuentan.com/junts#junts-seguridad-2",
+   "partido": "Junts",
+   "tema": "Seguridad",
+   "origen": "Declaración 2026",
+   "texto": "Mossos como policía integral: que Policía Nacional y Guardia Civil dejen de actuar en Cataluña.",
+   "fuente": "Política Electoral · seguridad",
+   "fuente_url": "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/comparar/seguridad",
+   "observaciones": []
+  },
+  {
+   "id": "bildu-seguridad-1",
+   "url": "https://loquenocuentan.com/eh-bildu#bildu-seguridad-1",
+   "partido": "EH Bildu",
+   "tema": "Seguridad",
+   "origen": "Programa anterior",
+   "texto": "Prohibir las pelotas de goma y las devoluciones en caliente, y crear un órgano externo que supervise a la policía.",
+   "fuente": "Política Electoral · seguridad",
+   "fuente_url": "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/comparar/seguridad",
+   "observaciones": [
+    {
+     "etiqueta": "Contexto",
+     "texto": "Es su compromiso de 2023.",
+     "fuentes": [
+      "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/comparar/seguridad"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "pnv-seguridad-1",
+   "url": "https://loquenocuentan.com/pnv#pnv-seguridad-1",
+   "partido": "PNV",
+   "tema": "Seguridad",
+   "origen": "Programa 29-N · vía prensa",
+   "texto": "Ertzaintza como policía integral, con acceso pleno a las bases de datos europeas y respuesta judicial rápida a la multirreincidencia.",
+   "fuente": "Política Electoral · seguridad",
+   "fuente_url": "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/comparar/seguridad",
+   "observaciones": [
+    {
+     "etiqueta": "Contexto",
+     "texto": "Votó a favor de la ley de multirreincidencia.",
+     "fuentes": [
+      "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/comparar/seguridad"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "bng-seguridad-1",
+   "url": "https://loquenocuentan.com/bng#bng-seguridad-1",
+   "partido": "BNG",
+   "tema": "Seguridad",
+   "origen": "Programa 29-N · vía prensa",
+   "texto": "Traspasar a Galicia la seguridad pública y el tráfico para crear una Policía Galega, con límites estrictos al reconocimiento facial.",
+   "fuente": "Política Electoral · seguridad",
+   "fuente_url": "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/comparar/seguridad",
+   "observaciones": []
+  },
+  {
+   "id": "cc-seguridad-1",
+   "url": "https://loquenocuentan.com/coalicion-canaria#cc-seguridad-1",
+   "partido": "CC",
+   "tema": "Seguridad",
+   "origen": "Declaración 2026",
+   "texto": "Que el Estado pague el 100 % de la Policía Canaria.",
+   "fuente": "Política Electoral · seguridad",
+   "fuente_url": "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/comparar/seguridad",
+   "observaciones": [
+    {
+     "etiqueta": "Contexto",
+     "texto": "Lo pidió en abril de 2025. No ha publicado propuestas de seguridad para el 29-N.",
+     "fuentes": [
+      "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/comparar/seguridad"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "salf-seguridad-1",
+   "url": "https://loquenocuentan.com/salf#salf-seguridad-1",
+   "partido": "SALF",
+   "tema": "Seguridad",
+   "origen": "Declaración 2026",
+   "texto": "Una macrocárcel de máxima seguridad para multirreincidentes, al estilo de El Salvador, con trabajo obligatorio y sin permisos.",
+   "fuente": "Política Electoral · seguridad",
+   "fuente_url": "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/comparar/seguridad",
+   "observaciones": [
+    {
+     "etiqueta": "Contexto",
+     "texto": "La Constitución orienta las penas de prisión a la reinserción y prohíbe los trabajos forzados (art. 25.2).",
+     "fuentes": [
+      "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "upn-seguridad-1",
+   "url": "https://loquenocuentan.com/upn#upn-seguridad-1",
+   "partido": "UPN-PP",
+   "tema": "Seguridad",
+   "origen": "Programa anterior",
+   "texto": "Policía Foral integral de 1.500 agentes, sin que se vayan la Guardia Civil ni la Policía Nacional.",
+   "fuente": "Política Electoral · seguridad",
+   "fuente_url": "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/comparar/seguridad",
+   "observaciones": [
+    {
+     "etiqueta": "Contexto",
+     "texto": "Es su programa de 2023.",
+     "fuentes": [
+      "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/comparar/seguridad"
+     ]
+    }
+   ]
+  },
+  {
    "id": "pp-112",
    "url": "https://loquenocuentan.com/pp#pp-112",
    "partido": "PP",
@@ -5188,6 +6096,470 @@
    ]
   },
   {
+   "id": "pp-228",
+   "url": "https://loquenocuentan.com/pp#pp-228",
+   "partido": "PP",
+   "tema": "Energía y medio ambiente",
+   "origen": "Programa 29-N",
+   "texto": "Quitar el calendario de cierre de las nucleares (Almaraz, Ascó, Vandellós, Cofrentes y Trillo) y alargar su vida útil.",
+   "fuente": "PP 2026, medida 228 (p. 54)",
+   "fuente_url": "https://www.pp.es/wp-content/uploads/2026/11/LA-RECONSTRUCCION-NACIONAL.pdf#page=54",
+   "observaciones": [
+    {
+     "etiqueta": "Contexto",
+     "texto": "En agosto de 2026 el Gobierno ya autorizó Almaraz hasta junio de 2030, con informe favorable del Consejo de Seguridad Nuclear.",
+     "fuentes": [
+      "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/comparar/medio-ambiente"
+     ]
+    },
+    {
+     "etiqueta": "Contexto",
+     "texto": "En noviembre de 2025 su enmienda para quitar la fecha de cierre de Almaraz, Ascó I y Cofrentes cayó por 171 votos a 172.",
+     "fuentes": [
+      "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/comparar/medio-ambiente"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "pp-229",
+   "url": "https://loquenocuentan.com/pp#pp-229",
+   "partido": "PP",
+   "tema": "Energía y medio ambiente",
+   "origen": "Programa 29-N",
+   "texto": "Eliminar el impuesto del 7 % a la producción eléctrica y cambiar los bonos social eléctrico y térmico por una Tarifa Social Única.",
+   "fuente": "PP 2026, medida 229 (p. 54)",
+   "fuente_url": "https://www.pp.es/wp-content/uploads/2026/11/LA-RECONSTRUCCION-NACIONAL.pdf#page=54",
+   "observaciones": [
+    {
+     "etiqueta": "Sin concretar",
+     "texto": "No dice cuánto se dejaría de recaudar ni cómo sería la nueva tarifa.",
+     "fuentes": []
+    }
+   ]
+  },
+  {
+   "id": "pp-230",
+   "url": "https://loquenocuentan.com/pp#pp-230",
+   "partido": "PP",
+   "tema": "Energía y medio ambiente",
+   "origen": "Programa 29-N",
+   "texto": "Plan de choque de 18 meses para desbloquear las conexiones a la red eléctrica.",
+   "fuente": "PP 2026, medida 230 (p. 54)",
+   "fuente_url": "https://www.pp.es/wp-content/uploads/2026/11/LA-RECONSTRUCCION-NACIONAL.pdf#page=54",
+   "observaciones": []
+  },
+  {
+   "id": "pp-232",
+   "url": "https://loquenocuentan.com/pp#pp-232",
+   "partido": "PP",
+   "tema": "Energía y medio ambiente",
+   "origen": "Programa 29-N",
+   "texto": "Revisar los ritmos de descarbonización y evitar «calendarios imposibles».",
+   "fuente": "PP 2026, medida 232 (p. 55)",
+   "fuente_url": "https://www.pp.es/wp-content/uploads/2026/11/LA-RECONSTRUCCION-NACIONAL.pdf#page=55",
+   "observaciones": [
+    {
+     "etiqueta": "Sin concretar",
+     "texto": "No dice qué objetivos cambiaría.",
+     "fuentes": []
+    }
+   ]
+  },
+  {
+   "id": "pp-126",
+   "url": "https://loquenocuentan.com/pp#pp-126",
+   "partido": "PP",
+   "tema": "Energía y medio ambiente",
+   "origen": "Programa 29-N",
+   "texto": "Pacto Nacional del Agua: embalses, regadíos, agua depurada y desalación.",
+   "fuente": "PP 2026, medida 126 y 199 (p. 37)",
+   "fuente_url": "https://www.pp.es/wp-content/uploads/2026/11/LA-RECONSTRUCCION-NACIONAL.pdf#page=37",
+   "observaciones": [
+    {
+     "etiqueta": "Sin concretar",
+     "texto": "Según Política Electoral, el programa prevé hasta 40.000 millones hasta 2030. En precampaña Feijóo habló de 100.000 millones hasta 2035.",
+     "fuentes": [
+      "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/comparar/medio-ambiente"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "psoe-energia-medio-ambiente-1",
+   "url": "https://loquenocuentan.com/psoe#psoe-energia-medio-ambiente-1",
+   "partido": "PSOE",
+   "tema": "Energía y medio ambiente",
+   "origen": "Gobierno / ley",
+   "texto": "Plan Nacional de Energía y Clima 2023-2030: 81 % de electricidad renovable en 2030.",
+   "fuente": "Política Electoral · medio ambiente",
+   "fuente_url": "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/comparar/medio-ambiente",
+   "observaciones": [
+    {
+     "etiqueta": "Contexto",
+     "texto": "No ha presentado propuestas nuevas para el 29-N.",
+     "fuentes": [
+      "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/comparar/medio-ambiente"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "psoe-energia-medio-ambiente-2",
+   "url": "https://loquenocuentan.com/psoe#psoe-energia-medio-ambiente-2",
+   "partido": "PSOE",
+   "tema": "Energía y medio ambiente",
+   "origen": "Gobierno / ley",
+   "texto": "Prórroga de la central nuclear de Almaraz hasta junio de 2030.",
+   "fuente": "Política Electoral · medio ambiente",
+   "fuente_url": "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/comparar/medio-ambiente",
+   "observaciones": [
+    {
+     "etiqueta": "Ya existe",
+     "texto": "Autorizada en agosto de 2026 con informe favorable del Consejo de Seguridad Nuclear.",
+     "fuentes": [
+      "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/comparar/medio-ambiente"
+     ]
+    },
+    {
+     "etiqueta": "Contexto",
+     "texto": "Sumar, su socio de Gobierno, la considera un incumplimiento del acuerdo de coalición.",
+     "fuentes": [
+      "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/comparar/medio-ambiente"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "psoe-energia-medio-ambiente-3",
+   "url": "https://loquenocuentan.com/psoe#psoe-energia-medio-ambiente-3",
+   "partido": "PSOE",
+   "tema": "Energía y medio ambiente",
+   "origen": "Declaración 2026",
+   "texto": "Un pacto de Estado frente a la emergencia climática.",
+   "fuente": "Política Electoral · medio ambiente",
+   "fuente_url": "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/comparar/medio-ambiente",
+   "observaciones": [
+    {
+     "etiqueta": "Sin concretar",
+     "texto": "Sin contenido concreto.",
+     "fuentes": []
+    }
+   ]
+  },
+  {
+   "id": "vox-8-energia-medio-ambiente",
+   "url": "https://loquenocuentan.com/vox#vox-8-energia-medio-ambiente",
+   "partido": "Vox",
+   "tema": "Energía y medio ambiente",
+   "origen": "Programa 29-N",
+   "texto": "Bajada «masiva» de los impuestos de la electricidad.",
+   "fuente": "Vox 2026, medida 8 (p. 9)",
+   "fuente_url": "https://loquenocuentan.com/vox-programa-29n.html#p9",
+   "observaciones": [
+    {
+     "etiqueta": "Sin concretar",
+     "texto": "No fija tipos ni cuánto se dejaría de recaudar.",
+     "fuentes": []
+    }
+   ]
+  },
+  {
+   "id": "vox-44",
+   "url": "https://loquenocuentan.com/vox#vox-44",
+   "partido": "Vox",
+   "tema": "Energía y medio ambiente",
+   "origen": "Programa 29-N",
+   "texto": "Acabar con las «imposiciones climáticas» del Pacto Verde y con las zonas de bajas emisiones.",
+   "fuente": "Vox 2026, medida 44 (p. 25)",
+   "fuente_url": "https://loquenocuentan.com/vox-programa-29n.html#p25",
+   "observaciones": [
+    {
+     "etiqueta": "Contexto",
+     "texto": "La prohibición de vender coches de combustión desde 2035 y el comercio de emisiones son normas europeas: España no puede derogarlas sola.",
+     "fuentes": []
+    },
+    {
+     "etiqueta": "Contexto",
+     "texto": "Las zonas de bajas emisiones las exige la Ley de Cambio Climático de 2021 a los municipios de más de 50.000 habitantes.",
+     "fuentes": [
+      "https://www.boe.es/buscar/act.php?id=BOE-A-2021-8447"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "vox-115",
+   "url": "https://loquenocuentan.com/vox#vox-115",
+   "partido": "Vox",
+   "tema": "Energía y medio ambiente",
+   "origen": "Programa 29-N",
+   "texto": "Plan Nacional del Agua que conecte todas las cuencas.",
+   "fuente": "Vox 2026, medida 115 (p. 53-54)",
+   "fuente_url": "https://loquenocuentan.com/vox-programa-29n.html#p53",
+   "observaciones": [
+    {
+     "etiqueta": "Sin concretar",
+     "texto": "Sin coste ni calendario.",
+     "fuentes": []
+    },
+    {
+     "etiqueta": "Depende de las CCAA",
+     "texto": "Afecta a cuencas que cruzan varias comunidades.",
+     "fuentes": []
+    }
+   ]
+  },
+  {
+   "id": "vox-54",
+   "url": "https://loquenocuentan.com/vox#vox-54",
+   "partido": "Vox",
+   "tema": "Energía y medio ambiente",
+   "origen": "Programa 29-N",
+   "texto": "Frenar las «macroplantas» solares y eólicas que destruyan riqueza agrícola.",
+   "fuente": "Vox 2026, medida 54 (p. 29)",
+   "fuente_url": "https://loquenocuentan.com/vox-programa-29n.html#p29",
+   "observaciones": [
+    {
+     "etiqueta": "Sin concretar",
+     "texto": "No define qué sería una instalación «descontrolada».",
+     "fuentes": []
+    }
+   ]
+  },
+  {
+   "id": "vox-55",
+   "url": "https://loquenocuentan.com/vox#vox-55",
+   "partido": "Vox",
+   "tema": "Energía y medio ambiente",
+   "origen": "Programa 29-N",
+   "texto": "Limpiar los montes, revisar las restricciones ambientales y endurecer las penas a los incendiarios.",
+   "fuente": "Vox 2026, medida 55 (p. 29)",
+   "fuente_url": "https://loquenocuentan.com/vox-programa-29n.html#p29",
+   "observaciones": [
+    {
+     "etiqueta": "Depende de las CCAA",
+     "texto": "La prevención y extinción de incendios forestales es sobre todo autonómica.",
+     "fuentes": []
+    },
+    {
+     "etiqueta": "Sin concretar",
+     "texto": "Sin medios ni presupuesto.",
+     "fuentes": []
+    }
+   ]
+  },
+  {
+   "id": "vox-8-energia-medio-ambiente-2",
+   "url": "https://loquenocuentan.com/vox#vox-8-energia-medio-ambiente-2",
+   "partido": "Vox",
+   "tema": "Energía y medio ambiente",
+   "origen": "Programa 29-N",
+   "texto": "Plan nacional de reindustrialización, plan nuclear y derogar el calendario de cierre de las centrales.",
+   "fuente": "Vox 2026, medida 8 (p. 9-10)",
+   "fuente_url": "https://loquenocuentan.com/vox-programa-29n.html#p9",
+   "observaciones": [
+    {
+     "etiqueta": "Sin concretar",
+     "texto": "Sin presupuesto ni calendario.",
+     "fuentes": []
+    }
+   ]
+  },
+  {
+   "id": "fa-energia-medio-ambiente-1",
+   "url": "https://loquenocuentan.com/frente-amplio#fa-energia-medio-ambiente-1",
+   "partido": "Frente Amplio",
+   "tema": "Energía y medio ambiente",
+   "origen": "Programa anterior",
+   "texto": "90 % de electricidad renovable en 2030 y emisiones netas cero en 2040.",
+   "fuente": "Política Electoral · medio ambiente",
+   "fuente_url": "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/comparar/medio-ambiente",
+   "observaciones": [
+    {
+     "etiqueta": "Contexto",
+     "texto": "Es su programa de 2023: no tiene programa ambiental para el 29-N.",
+     "fuentes": [
+      "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/comparar/medio-ambiente"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "fa-energia-medio-ambiente-2",
+   "url": "https://loquenocuentan.com/frente-amplio#fa-energia-medio-ambiente-2",
+   "partido": "Frente Amplio",
+   "tema": "Energía y medio ambiente",
+   "origen": "Declaración 2026",
+   "texto": "Cerrar todas las nucleares en 2035, sin prórrogas.",
+   "fuente": "Política Electoral · Sumar (Frente Amplio)",
+   "fuente_url": "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/sumar",
+   "observaciones": [
+    {
+     "etiqueta": "Contexto",
+     "texto": "El Gobierno del que forma parte prorrogó Almaraz hasta 2030 en agosto de 2026; Sumar lo llamó «error estratégico».",
+     "fuentes": [
+      "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/sumar"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "pod-energia-medio-ambiente-1",
+   "url": "https://loquenocuentan.com/podemos#pod-energia-medio-ambiente-1",
+   "partido": "Podemos",
+   "tema": "Energía y medio ambiente",
+   "origen": "Documento 2026",
+   "texto": "Una empresa pública de energía, pagar cada megavatio hora según lo que cuesta producirlo y más impuestos a las eléctricas.",
+   "fuente": "Política Electoral · medio ambiente",
+   "fuente_url": "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/comparar/medio-ambiente",
+   "observaciones": [
+    {
+     "etiqueta": "Contexto",
+     "texto": "Documento político de abril de 2025.",
+     "fuentes": [
+      "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/comparar/medio-ambiente"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "erc-energia-medio-ambiente-1",
+   "url": "https://loquenocuentan.com/erc#erc-energia-medio-ambiente-1",
+   "partido": "ERC",
+   "tema": "Energía y medio ambiente",
+   "origen": "Programa 29-N · vía prensa",
+   "texto": "Reducir el CO₂ un 65 % en 2030 respecto a 1990 y traspasar a la Generalitat las centrales hidroeléctricas cuando caduquen sus concesiones.",
+   "fuente": "Política Electoral · medio ambiente",
+   "fuente_url": "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/comparar/medio-ambiente",
+   "observaciones": [
+    {
+     "etiqueta": "Contexto",
+     "texto": "En febrero de 2025 se abstuvo en la propuesta del PP de alargar siete reactores.",
+     "fuentes": [
+      "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/comparar/medio-ambiente"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "junts-energia-medio-ambiente-1",
+   "url": "https://loquenocuentan.com/junts#junts-energia-medio-ambiente-1",
+   "partido": "Junts",
+   "tema": "Energía y medio ambiente",
+   "origen": "Declaración 2026",
+   "texto": "Más competencias de la Generalitat sobre agua, energía y territorio.",
+   "fuente": "Política Electoral · medio ambiente",
+   "fuente_url": "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/comparar/medio-ambiente",
+   "observaciones": [
+    {
+     "etiqueta": "Contexto",
+     "texto": "Se abstuvo en junio y noviembre de 2025 en las votaciones del PP para alargar las nucleares.",
+     "fuentes": [
+      "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/comparar/medio-ambiente"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "bildu-energia-medio-ambiente-1",
+   "url": "https://loquenocuentan.com/eh-bildu#bildu-energia-medio-ambiente-1",
+   "partido": "EH Bildu",
+   "tema": "Energía y medio ambiente",
+   "origen": "Programa anterior",
+   "texto": "Neutralidad climática en 2040, comercializadoras eléctricas públicas y cambiar el sistema que fija el precio de la luz.",
+   "fuente": "Política Electoral · medio ambiente",
+   "fuente_url": "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/comparar/medio-ambiente",
+   "observaciones": [
+    {
+     "etiqueta": "Contexto",
+     "texto": "Es su compromiso de 2023.",
+     "fuentes": [
+      "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/comparar/medio-ambiente"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "pnv-energia-medio-ambiente-1",
+   "url": "https://loquenocuentan.com/pnv#pnv-energia-medio-ambiente-1",
+   "partido": "PNV",
+   "tema": "Energía y medio ambiente",
+   "origen": "Programa 29-N · vía prensa",
+   "texto": "Bajar de forma permanente el Impuesto Especial sobre la Electricidad al 0,5 % y acelerar las inversiones en la red eléctrica.",
+   "fuente": "Demócrata, 9 nov 2026 (presentación del programa)",
+   "fuente_url": "https://www.democrata.es/politica/pnv-plantea-bajar-al-0-5-el-impuesto-electrico-y-acelerar-las-inversiones-en-redes/",
+   "observaciones": []
+  },
+  {
+   "id": "bng-energia-medio-ambiente-1",
+   "url": "https://loquenocuentan.com/bng#bng-energia-medio-ambiente-1",
+   "partido": "BNG",
+   "tema": "Energía y medio ambiente",
+   "origen": "Programa 29-N · vía prensa",
+   "texto": "Nueva ley de minas sin explotaciones a cielo abierto ni cianuro, y que Galicia decida sobre las instalaciones de más de 50 megavatios.",
+   "fuente": "Política Electoral · medio ambiente",
+   "fuente_url": "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/comparar/medio-ambiente",
+   "observaciones": []
+  },
+  {
+   "id": "cc-energia-medio-ambiente-1",
+   "url": "https://loquenocuentan.com/coalicion-canaria#cc-energia-medio-ambiente-1",
+   "partido": "CC",
+   "tema": "Energía y medio ambiente",
+   "origen": "Documento 2026",
+   "texto": "Abaratar el agua desalada en Canarias hasta igualarla con la de la Península, con dinero de los Presupuestos del Estado.",
+   "fuente": "Política Electoral · medio ambiente",
+   "fuente_url": "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/comparar/medio-ambiente",
+   "observaciones": [
+    {
+     "etiqueta": "Contexto",
+     "texto": "Lo acordó con el PSOE en noviembre de 2023.",
+     "fuentes": [
+      "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/comparar/medio-ambiente"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "salf-energia-medio-ambiente-1",
+   "url": "https://loquenocuentan.com/salf#salf-energia-medio-ambiente-1",
+   "partido": "SALF",
+   "tema": "Energía y medio ambiente",
+   "origen": "Declaración 2026",
+   "texto": "Parar el cierre de las nucleares, reactores modulares pequeños y renovables solo en zonas degradadas, polígonos y tejados.",
+   "fuente": "Política Electoral · medio ambiente",
+   "fuente_url": "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/comparar/medio-ambiente",
+   "observaciones": [
+    {
+     "etiqueta": "Otro ámbito",
+     "texto": "Viene de su contrato electoral para Castilla y León (marzo de 2026). No tiene propuestas ambientales para las generales.",
+     "fuentes": [
+      "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/comparar/medio-ambiente"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "upn-energia-medio-ambiente-1",
+   "url": "https://loquenocuentan.com/upn#upn-energia-medio-ambiente-1",
+   "partido": "UPN-PP",
+   "tema": "Energía y medio ambiente",
+   "origen": "Documento 2026",
+   "texto": "Segunda fase del Canal de Navarra y refuerzo de la red eléctrica navarra.",
+   "fuente": "Política Electoral · medio ambiente",
+   "fuente_url": "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/comparar/medio-ambiente",
+   "observaciones": [
+    {
+     "etiqueta": "Contexto",
+     "texto": "Propuesta de su coalición con el PP para el 29-N.",
+     "fuentes": [
+      "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/comparar/medio-ambiente"
+     ]
+    }
+   ]
+  },
+  {
    "id": "pp-100",
    "url": "https://loquenocuentan.com/pp#pp-100",
    "partido": "PP",
@@ -5366,28 +6738,6 @@
    ]
   },
   {
-   "id": "vox-115",
-   "url": "https://loquenocuentan.com/vox#vox-115",
-   "partido": "Vox",
-   "tema": "Territorio y España vaciada",
-   "origen": "Programa 29-N",
-   "texto": "Plan Nacional del Agua que conecte todas las cuencas.",
-   "fuente": "Vox 2026, medida 115 (p. 53-54)",
-   "fuente_url": "https://loquenocuentan.com/vox-programa-29n.html#p53",
-   "observaciones": [
-    {
-     "etiqueta": "Sin concretar",
-     "texto": "Sin coste ni calendario.",
-     "fuentes": []
-    },
-    {
-     "etiqueta": "Depende de las CCAA",
-     "texto": "Afecta a cuencas que cruzan varias comunidades.",
-     "fuentes": []
-    }
-   ]
-  },
-  {
    "id": "vox-40",
    "url": "https://loquenocuentan.com/vox#vox-40",
    "partido": "Vox",
@@ -5399,8 +6749,8 @@
    "observaciones": []
   },
   {
-   "id": "vox-44",
-   "url": "https://loquenocuentan.com/vox#vox-44",
+   "id": "vox-44-territorio",
+   "url": "https://loquenocuentan.com/vox#vox-44-territorio",
    "partido": "Vox",
    "tema": "Territorio y España vaciada",
    "origen": "Programa 29-N",
@@ -5444,8 +6794,8 @@
    ]
   },
   {
-   "id": "vox-103",
-   "url": "https://loquenocuentan.com/vox#vox-103",
+   "id": "vox-103-territorio",
+   "url": "https://loquenocuentan.com/vox#vox-103-territorio",
    "partido": "Vox",
    "tema": "Territorio y España vaciada",
    "origen": "Programa 29-N",
@@ -5463,8 +6813,8 @@
    ]
   },
   {
-   "id": "vox-1",
-   "url": "https://loquenocuentan.com/vox#vox-1",
+   "id": "vox-1-territorio",
+   "url": "https://loquenocuentan.com/vox#vox-1-territorio",
    "partido": "Vox",
    "tema": "Territorio y España vaciada",
    "origen": "Programa 29-N",
@@ -5535,23 +6885,6 @@
    ]
   },
   {
-   "id": "vox-1-territorio",
-   "url": "https://loquenocuentan.com/vox#vox-1-territorio",
-   "partido": "Vox",
-   "tema": "Territorio y España vaciada",
-   "origen": "Programa 29-N",
-   "texto": "Promover ante la Justicia el procesamiento de Pedro Sánchez y su Gobierno por «traición» por su actuación en la crisis de Ceuta.",
-   "fuente": "Vox 2026, medida 1 (p. 5)",
-   "fuente_url": "https://loquenocuentan.com/vox-programa-29n.html#p5",
-   "observaciones": [
-    {
-     "etiqueta": "Sin concretar",
-     "texto": "No aporta hechos concretos. Procesar a alguien lo deciden los tribunales, no el Gobierno.",
-     "fuentes": []
-    }
-   ]
-  },
-  {
    "id": "vox-48",
    "url": "https://loquenocuentan.com/vox#vox-48",
    "partido": "Vox",
@@ -5615,45 +6948,6 @@
    ]
   },
   {
-   "id": "vox-54",
-   "url": "https://loquenocuentan.com/vox#vox-54",
-   "partido": "Vox",
-   "tema": "Territorio y España vaciada",
-   "origen": "Programa 29-N",
-   "texto": "Frenar las «macroplantas» solares y eólicas que destruyan riqueza agrícola.",
-   "fuente": "Vox 2026, medida 54 (p. 29)",
-   "fuente_url": "https://loquenocuentan.com/vox-programa-29n.html#p29",
-   "observaciones": [
-    {
-     "etiqueta": "Sin concretar",
-     "texto": "No define qué sería una instalación «descontrolada».",
-     "fuentes": []
-    }
-   ]
-  },
-  {
-   "id": "vox-55",
-   "url": "https://loquenocuentan.com/vox#vox-55",
-   "partido": "Vox",
-   "tema": "Territorio y España vaciada",
-   "origen": "Programa 29-N",
-   "texto": "Limpiar los montes, revisar las restricciones ambientales y endurecer las penas a los incendiarios.",
-   "fuente": "Vox 2026, medida 55 (p. 29)",
-   "fuente_url": "https://loquenocuentan.com/vox-programa-29n.html#p29",
-   "observaciones": [
-    {
-     "etiqueta": "Depende de las CCAA",
-     "texto": "La prevención y extinción de incendios forestales es sobre todo autonómica.",
-     "fuentes": []
-    },
-    {
-     "etiqueta": "Sin concretar",
-     "texto": "Sin medios ni presupuesto.",
-     "fuentes": []
-    }
-   ]
-  },
-  {
    "id": "vox-112",
    "url": "https://loquenocuentan.com/vox#vox-112",
    "partido": "Vox",
@@ -5710,164 +7004,6 @@
    ]
   },
   {
-   "id": "vox-80",
-   "url": "https://loquenocuentan.com/vox#vox-80",
-   "partido": "Vox",
-   "tema": "Territorio y España vaciada",
-   "origen": "Programa 29-N",
-   "texto": "Rebajar la edad de responsabilidad penal de los menores y plantear que no haya inimputabilidad en homicidios y agresiones sexuales.",
-   "fuente": "Vox 2026, medida 80 (p. 39)",
-   "fuente_url": "https://loquenocuentan.com/vox-programa-29n.html#p39",
-   "observaciones": [
-    {
-     "etiqueta": "Contexto",
-     "texto": "Hoy la ley penal del menor se aplica desde los 14 años.",
-     "fuentes": [
-      "https://www.boe.es/buscar/act.php?id=BOE-A-2000-641"
-     ]
-    },
-    {
-     "etiqueta": "Sin concretar",
-     "texto": "No dice a qué edad.",
-     "fuentes": []
-    }
-   ]
-  },
-  {
-   "id": "vox-81",
-   "url": "https://loquenocuentan.com/vox#vox-81",
-   "partido": "Vox",
-   "tema": "Territorio y España vaciada",
-   "origen": "Programa 29-N",
-   "texto": "Ampliar la prisión permanente revisable.",
-   "fuente": "Vox 2026, medida 81 (p. 39)",
-   "fuente_url": "https://loquenocuentan.com/vox-programa-29n.html#p39",
-   "observaciones": [
-    {
-     "etiqueta": "Ya existe",
-     "texto": "Existe desde 2015 para los asesinatos más graves, el terrorismo con muerte y otros delitos.",
-     "fuentes": [
-      "https://www.boe.es/buscar/act.php?id=BOE-A-2015-3439"
-     ]
-    },
-    {
-     "etiqueta": "Sin concretar",
-     "texto": "No dice a qué delitos se ampliaría.",
-     "fuentes": []
-    }
-   ]
-  },
-  {
-   "id": "vox-86",
-   "url": "https://loquenocuentan.com/vox#vox-86",
-   "partido": "Vox",
-   "tema": "Territorio y España vaciada",
-   "origen": "Programa 29-N",
-   "texto": "Restablecer de inmediato el OCON-Sur contra el narcotráfico.",
-   "fuente": "Vox 2026, medida 86 (p. 40)",
-   "fuente_url": "https://loquenocuentan.com/vox-programa-29n.html#p40",
-   "observaciones": [
-    {
-     "etiqueta": "Contexto",
-     "texto": "Interior lo creó en 2018 y lo disolvió en 2022. El fiscal general lo calificó de error. Interior sostiene que integró a sus agentes y no restó medios.",
-     "fuentes": [
-      "https://theobjective.com/espana/tribunales/2024-02-13/fiscalia-gobierno-operativo-antidroga-cadiz/",
-      "https://theobjective.com/espana/politica/2024-02-21/marlaska-unidad-ocon-sur-lucha-narcotrafico/"
-     ]
-    }
-   ]
-  },
-  {
-   "id": "vox-100",
-   "url": "https://loquenocuentan.com/vox#vox-100",
-   "partido": "Vox",
-   "tema": "Territorio y España vaciada",
-   "origen": "Programa 29-N",
-   "texto": "Que los propios jueces elijan a los doce vocales judiciales del CGPJ.",
-   "fuente": "Vox 2026, medida 100 (p. 48)",
-   "fuente_url": "https://loquenocuentan.com/vox-programa-29n.html#p48",
-   "observaciones": [
-    {
-     "etiqueta": "Contexto",
-     "texto": "La reforma de 2024, pactada por PP y PSOE, obligó al CGPJ a proponer un nuevo sistema. En febrero de 2025 lo envió a las Cortes con varios modelos, sin consenso.",
-     "fuentes": [
-      "https://www.legaltoday.com/actualidad-juridica/noticias-de-derecho/el-cgpj-cumple-en-plazo-el-mandato-del-legislador-y-acuerda-por-unanimidad-remitir-al-gobierno-y-a-las-cortes-una-propuesta-sobre-la-reforma-del-sistema-de-eleccion-de-los-vocales-de-procedencia-judic-2025-02-05/"
-     ]
-    }
-   ]
-  },
-  {
-   "id": "vox-101",
-   "url": "https://loquenocuentan.com/vox#vox-101",
-   "partido": "Vox",
-   "tema": "Territorio y España vaciada",
-   "origen": "Programa 29-N",
-   "texto": "«Liberar el Tribunal Constitucional de las manos de los políticos».",
-   "fuente": "Vox 2026, medida 101 (p. 48)",
-   "fuente_url": "https://loquenocuentan.com/vox-programa-29n.html#p48",
-   "observaciones": [
-    {
-     "etiqueta": "Sin concretar",
-     "texto": "No dice cómo se elegirían sus magistrados.",
-     "fuentes": []
-    },
-    {
-     "etiqueta": "Contexto",
-     "texto": "La Constitución fija que los proponen Congreso, Senado, Gobierno y CGPJ (art. 159). Cambiarlo exige reformarla.",
-     "fuentes": [
-      "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229"
-     ]
-    }
-   ]
-  },
-  {
-   "id": "vox-107",
-   "url": "https://loquenocuentan.com/vox#vox-107",
-   "partido": "Vox",
-   "tema": "Territorio y España vaciada",
-   "origen": "Programa 29-N",
-   "texto": "Que los condenados por corrupción respondan con todos sus bienes presentes y futuros hasta devolver lo desviado.",
-   "fuente": "Vox 2026, medida 107 (p. 50)",
-   "fuente_url": "https://loquenocuentan.com/vox-programa-29n.html#p50",
-   "observaciones": [
-    {
-     "etiqueta": "Ya existe",
-     "texto": "Ya es así: quien debe responde «con todos sus bienes presentes y futuros» (art. 1911 del Código Civil), y el Código Penal obliga a reparar el daño (arts. 109 a 116).",
-     "fuentes": [
-      "https://www.boe.es/buscar/act.php?id=BOE-A-1889-4763",
-      "https://www.boe.es/buscar/act.php?id=BOE-A-1995-25444"
-     ]
-    }
-   ]
-  },
-  {
-   "id": "vox-109",
-   "url": "https://loquenocuentan.com/vox#vox-109",
-   "partido": "Vox",
-   "tema": "Territorio y España vaciada",
-   "origen": "Programa 29-N",
-   "texto": "Considerar de lesa humanidad todos los crímenes de ETA para que no prescriban, e imprescriptibilidad de todos los delitos de terrorismo.",
-   "fuente": "Vox 2026, medida 109 (p. 50)",
-   "fuente_url": "https://loquenocuentan.com/vox-programa-29n.html#p50",
-   "observaciones": [
-    {
-     "etiqueta": "Ya existe",
-     "texto": "Desde 2010 no prescriben los delitos de terrorismo con resultado de muerte. Y la Audiencia Nacional ya juzga a la cúpula de ETA por lesa humanidad en los asesinatos desde 2004.",
-     "fuentes": [
-      "https://www.boe.es/buscar/act.php?id=BOE-A-1995-25444",
-      "https://www.noticiasdenavarra.com/politica/2022/04/04/audiencia-nacional-impulsa-causa-eta-2086966.amp.html"
-     ]
-    },
-    {
-     "etiqueta": "Contexto",
-     "texto": "El delito de lesa humanidad entró en el Código Penal en octubre de 2004. Aplicar hacia atrás normas penales más duras choca con la irretroactividad (arts. 9.3 y 25 de la Constitución). Por ese principio, la Audiencia Nacional archivó en 2024 por prescripción la causa contra «Anboto» por el asesinato de Miguel Ángel Blanco (1997).",
-     "fuentes": [
-      "https://www.poderjudicial.es/cgpj/es/Poder-Judicial/Audiencia-Nacional/Oficina-de-Comunicacion/Archivo-de-notas-de-prensa/La-Audiencia-Nacional-archiva-la-causa-contra-la-jefa-de-ETA--Anboto--por-el-secuestro-y-asesinato-de-Miguel-Angel-Blanco"
-     ]
-    }
-   ]
-  },
-  {
    "id": "fa-territorio-1",
    "url": "https://loquenocuentan.com/frente-amplio#fa-territorio-1",
    "partido": "Frente Amplio",
@@ -5894,25 +7030,6 @@
    "fuente": "Política Electoral · Sumar (Frente Amplio)",
    "fuente_url": "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/sumar",
    "observaciones": []
-  },
-  {
-   "id": "fa-territorio-3",
-   "url": "https://loquenocuentan.com/frente-amplio#fa-territorio-3",
-   "partido": "Frente Amplio",
-   "tema": "Territorio y España vaciada",
-   "origen": "Declaración 2026",
-   "texto": "Cerrar todas las nucleares en 2035, sin prórrogas.",
-   "fuente": "Política Electoral · Sumar (Frente Amplio)",
-   "fuente_url": "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/sumar",
-   "observaciones": [
-    {
-     "etiqueta": "Contexto",
-     "texto": "El Gobierno del que forma parte prorrogó Almaraz hasta 2030 en agosto de 2026; Sumar lo llamó «error estratégico».",
-     "fuentes": [
-      "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/sumar"
-     ]
-    }
-   ]
   },
   {
    "id": "erc-territorio-1",

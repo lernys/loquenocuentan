@@ -15,8 +15,8 @@ const INDEXNOW_KEY = fs.existsSync('indexnow-key.txt') ? fs.readFileSync('indexn
 let index = fs.readFileSync('index.html', 'utf8');
 const script = index.slice(index.indexOf('<script>') + 8, index.indexOf('let topic='));
 const ctx = {}; vm.createContext(ctx);
-vm.runInContext(script + ';globalThis.__o={TOPICS,PARTIES,FLAGS,S,D,CLAVES,TSLUG,PSLUG}', ctx);
-const { TOPICS, PARTIES, FLAGS, S, D, CLAVES, TSLUG, PSLUG } = ctx.__o;
+vm.runInContext(script + ';globalThis.__o={TOPICS,PARTIES,FLAGS,S,D,CLAVES,CAMARAS,TSLUG,PSLUG}', ctx);
+const { TOPICS, PARTIES, FLAGS, S, D, CLAVES, CAMARAS, TSLUG, PSLUG } = ctx.__o;
 
 const LBL = { p29: 'Programa 29-N', p29p: 'Programa 29-N · vía prensa', pa: 'Programa anterior', doc: 'Documento 2026', dec: 'Declaración 2026', pl: 'Proposición de ley', gob: 'Gobierno / ley' };
 const ART = { pp: 'el PP', psoe: 'el PSOE', vox: 'Vox', fa: 'el Frente Amplio', pod: 'Podemos', erc: 'ERC', junts: 'Junts', bildu: 'EH Bildu', pnv: 'el PNV', bng: 'el BNG', cc: 'Coalición Canaria', salf: 'Se Acabó La Fiesta (SALF)', upn: 'UPN' };
@@ -157,7 +157,10 @@ ${footerHTML(date)}
 
 const partyNav = (cur) => `<div class="chips">${PARTIES.map(([k]) => `<a class="party${k === cur ? ' on' : ''}" href="/${P[k].slug}" style="--pc:${P[k].color}"><i></i>${esc(P[k].name)}</a>`).join('')}</div>`;
 const topicNav = (cur, prefix = '/tema/', only) => `<div class="chips">${TOPICS.filter(([k]) => !only || only.includes(k)).map(([k]) => `<a class="topic${k === cur ? ' on' : ''}" href="${prefix}${T[k].slug}">${esc(T[k].name)}</a>`).join('')}</div>`;
-const clavesHTML = t => CLAVES[t] ? `<aside class="context"><h2>Contexto: qué existe ya y quién decide</h2><ul>${CLAVES[t].map(x => `<li>${esc(x)}</li>`).join('')}</ul></aside>` : '';
+/* Una clave puede ser texto o [texto, clave de fuente] */
+const claveLi = x => { const [t, k] = Array.isArray(x) ? x : [x]; return `<li>${esc(t)}${k && S[k] ? ` <a class="src" href="${esc(S[k][1])}" rel="noopener">${esc(S[k][0])}</a>` : ''}</li>`; };
+const camarasHTML = t => CAMARAS.temas.includes(t) ? `<div class="camaras"><h3>Qué mayoría hace falta y qué puede hacer el Senado</h3><div class="scroll"><table class="tbl"><thead><tr><th scope="col">Qué se quiere cambiar</th><th scope="col">Mayoría necesaria</th><th scope="col">¿Puede pararlo el Senado?</th></tr></thead><tbody>${CAMARAS.filas.map(r => `<tr>${r.map(x => `<td>${esc(x)}</td>`).join('')}</tr>`).join('')}</tbody></table></div><p class="src">Fuente: <a href="${esc(S[CAMARAS.fuente][1])}" rel="noopener">${esc(S[CAMARAS.fuente][0])}</a></p></div>` : '';
+const clavesHTML = t => CLAVES[t] ? `<aside class="context"><h2>Contexto: qué existe ya y quién decide</h2><ul>${CLAVES[t].map(claveLi).join('')}</ul>${camarasHTML(t)}</aside>` : '';
 
 /* Recuento de concreción sobre los programas oficiales (misma regla para todos: medida con alguna cifra, plazo o porcentaje). */
 const CONCR = { pp: { c: 53, n: 241 }, vox: { c: 5, n: 115, extra: 'Ninguna dice cuánto cuesta ni cuándo se haría.' } };
@@ -421,6 +424,10 @@ h1{font-size:clamp(1.7rem,4.4vw,2.7rem);font-weight:800;line-height:1.06;letter-
 .scroll{overflow-x:auto}
 .tbl{border-collapse:collapse;width:100%;font-size:.92rem}
 .tbl th,.tbl td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+.camaras{margin-top:14px;background:var(--paper);border-radius:12px;padding:12px 14px}
+.camaras h3{font:700 .78rem var(--f-body);text-transform:uppercase;letter-spacing:.08em;color:var(--accent);margin:0 0 6px}
+.camaras td:last-child{font-weight:600}
+.context .src{font-size:.82rem;color:var(--muted)}
 .tbl thead th{font-size:.72rem;text-transform:uppercase;letter-spacing:.07em;color:var(--muted)}
 .tbl th a{color:var(--ink);text-decoration:none;display:inline-flex;gap:8px;align-items:center;white-space:nowrap}.tbl th i{width:12px;height:12px;border-radius:50%}
 .mut{color:var(--muted);font-size:.85rem}

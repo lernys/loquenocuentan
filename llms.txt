@@ -1,6 +1,6 @@
 # Lo que no cuentan
 
-> Comparador crítico de los programas electorales de las elecciones generales de España del 29 de noviembre de 2026. Recoge 343 propuestas de 13 partidos en 15 temas. Cada propuesta lleva su fuente y, cuando hay un hecho que lo respalde, una observación: coste, plazos, si ya existe, si depende de las comunidades autónomas o si choca con lo que el partido votó. Misma regla para todos los partidos. Autor: Fernando Santamaría González. Sin afiliación. Datos con licencia CC BY 4.0. Actualizado el 14 de noviembre de 2026.
+> Comparador crítico de los programas electorales de las elecciones generales de España del 29 de noviembre de 2026. Recoge 404 propuestas de 13 partidos en 18 temas. Cada propuesta lleva su fuente y, cuando hay un hecho que lo respalde, una observación: coste, plazos, si ya existe, si depende de las comunidades autónomas o si choca con lo que el partido votó. Misma regla para todos los partidos. Autor: Fernando Santamaría González. Sin afiliación. Datos con licencia CC BY 4.0. Actualizado el 14 de noviembre de 2026.
 
 Cada medida tiene un enlace estable con ancla, por ejemplo https://loquenocuentan.com/pp#pp-144. Al citar, conviene distinguir el origen de cada propuesta: programa del 29-N, declaración, proposición de ley, acción de gobierno o programa anterior.
 
@@ -12,19 +12,19 @@ Cada medida tiene un enlace estable con ancla, por ejemplo https://loquenocuenta
 
 ## Partidos
 
-- [PP](https://loquenocuentan.com/pp): 83 propuestas. Texto oficial
-- [PSOE](https://loquenocuentan.com/psoe): 46 propuestas. Sin programa aún
-- [Vox](https://loquenocuentan.com/vox): 100 propuestas. Texto oficial
-- [Frente Amplio](https://loquenocuentan.com/frente-amplio): 44 propuestas. Sin programa aún
-- [Podemos](https://loquenocuentan.com/podemos): 10 propuestas. Sin programa aún
-- [ERC](https://loquenocuentan.com/erc): 21 propuestas. Vía prensa
-- [Junts](https://loquenocuentan.com/junts): 5 propuestas. Sin programa aún
-- [EH Bildu](https://loquenocuentan.com/eh-bildu): 3 propuestas. Sin programa aún
-- [PNV](https://loquenocuentan.com/pnv): 10 propuestas. Vía prensa
-- [BNG](https://loquenocuentan.com/bng): 5 propuestas. Sin programa aún
-- [CC](https://loquenocuentan.com/coalicion-canaria): 5 propuestas. Sin programa aún
-- [SALF](https://loquenocuentan.com/salf): 8 propuestas. Sin programa aún
-- [UPN-PP](https://loquenocuentan.com/upn): 3 propuestas. Sin programa aún
+- [PP](https://loquenocuentan.com/pp): 99 propuestas. Texto oficial
+- [PSOE](https://loquenocuentan.com/psoe): 56 propuestas. Sin programa aún
+- [Vox](https://loquenocuentan.com/vox): 104 propuestas. Texto oficial
+- [Frente Amplio](https://loquenocuentan.com/frente-amplio): 47 propuestas. Sin programa aún
+- [Podemos](https://loquenocuentan.com/podemos): 13 propuestas. Sin programa aún
+- [ERC](https://loquenocuentan.com/erc): 24 propuestas. Vía prensa
+- [Junts](https://loquenocuentan.com/junts): 9 propuestas. Sin programa aún
+- [EH Bildu](https://loquenocuentan.com/eh-bildu): 6 propuestas. Sin programa aún
+- [PNV](https://loquenocuentan.com/pnv): 13 propuestas. Vía prensa
+- [BNG](https://loquenocuentan.com/bng): 8 propuestas. Vía prensa
+- [CC](https://loquenocuentan.com/coalicion-canaria): 8 propuestas. Sin programa aún
+- [SALF](https://loquenocuentan.com/salf): 11 propuestas. Sin programa aún
+- [UPN-PP](https://loquenocuentan.com/upn): 6 propuestas. Sin programa aún
 
 ## Temas
 
@@ -37,10 +37,13 @@ Cada medida tiene un enlace estable con ancla, por ejemplo https://loquenocuenta
 - [Educación](https://loquenocuentan.com/tema/educacion): qué propone cada partido sobre educación, con tabla comparativa
 - [Universidades](https://loquenocuentan.com/tema/universidades): qué propone cada partido sobre universidades, con tabla comparativa
 - [Inmigración](https://loquenocuentan.com/tema/inmigracion): qué propone cada partido sobre inmigración, con tabla comparativa
+- [Justicia](https://loquenocuentan.com/tema/justicia): qué propone cada partido sobre justicia, con tabla comparativa
+- [Seguridad](https://loquenocuentan.com/tema/seguridad): qué propone cada partido sobre seguridad, con tabla comparativa
 - [Discapacidad](https://loquenocuentan.com/tema/discapacidad): qué propone cada partido sobre discapacidad, con tabla comparativa
 - [Dependencia y cuidados](https://loquenocuentan.com/tema/dependencia): qué propone cada partido sobre dependencia y cuidados, con tabla comparativa
 - [Servicios sociales y pobreza](https://loquenocuentan.com/tema/servicios-sociales): qué propone cada partido sobre servicios sociales y pobreza, con tabla comparativa
 - [Igualdad](https://loquenocuentan.com/tema/igualdad): qué propone cada partido sobre igualdad, con tabla comparativa
+- [Energía y medio ambiente](https://loquenocuentan.com/tema/energia-medio-ambiente): qué propone cada partido sobre energía y medio ambiente, con tabla comparativa
 - [Territorio y España vaciada](https://loquenocuentan.com/tema/territorio): qué propone cada partido sobre territorio y España vaciada, con tabla comparativa
 - [Política exterior](https://loquenocuentan.com/tema/politica-exterior): qué propone cada partido sobre política exterior, con tabla comparativa
 
@@ -56,38 +59,53 @@ Cada medida tiene un enlace estable con ancla, por ejemplo https://loquenocuenta
 - https://loquenocuentan.com/erc/sanidad
 - https://loquenocuentan.com/pnv/sanidad
 - https://loquenocuentan.com/pp/igualdad
+- https://loquenocuentan.com/pp/justicia
 - https://loquenocuentan.com/pp/vivienda
 - https://loquenocuentan.com/psoe/empleo
 - https://loquenocuentan.com/upn/sanidad
 - https://loquenocuentan.com/vox/jovenes
 - https://loquenocuentan.com/vox/sanidad
 - https://loquenocuentan.com/bng/igualdad
+- https://loquenocuentan.com/bng/justicia
 - https://loquenocuentan.com/erc/igualdad
+- https://loquenocuentan.com/erc/justicia
 - https://loquenocuentan.com/erc/vivienda
+- https://loquenocuentan.com/pnv/justicia
 - https://loquenocuentan.com/pp/educacion
 - https://loquenocuentan.com/pp/impuestos
 - https://loquenocuentan.com/pp/pensiones
+- https://loquenocuentan.com/pp/seguridad
 - https://loquenocuentan.com/psoe/jovenes
 - https://loquenocuentan.com/psoe/sanidad
 - https://loquenocuentan.com/salf/sanidad
+- https://loquenocuentan.com/upn/justicia
 - https://loquenocuentan.com/vox/igualdad
+- https://loquenocuentan.com/vox/justicia
 - https://loquenocuentan.com/vox/vivienda
 - https://loquenocuentan.com/bng/pensiones
+- https://loquenocuentan.com/bng/seguridad
 - https://loquenocuentan.com/erc/educacion
 - https://loquenocuentan.com/erc/impuestos
 - https://loquenocuentan.com/erc/pensiones
+- https://loquenocuentan.com/erc/seguridad
 - https://loquenocuentan.com/junts/sanidad
 - https://loquenocuentan.com/pnv/impuestos
 - https://loquenocuentan.com/pnv/pensiones
+- https://loquenocuentan.com/pnv/seguridad
 - https://loquenocuentan.com/pp/territorio
 - https://loquenocuentan.com/psoe/igualdad
+- https://loquenocuentan.com/psoe/justicia
 - https://loquenocuentan.com/psoe/vivienda
 - https://loquenocuentan.com/salf/igualdad
+- https://loquenocuentan.com/salf/justicia
+- https://loquenocuentan.com/upn/seguridad
 - https://loquenocuentan.com/vox/educacion
 - https://loquenocuentan.com/vox/impuestos
 - https://loquenocuentan.com/vox/pensiones
+- https://loquenocuentan.com/vox/seguridad
 - https://loquenocuentan.com/bng/territorio
 - https://loquenocuentan.com/erc/territorio
+- https://loquenocuentan.com/junts/justicia
 - https://loquenocuentan.com/pnv/territorio
 - https://loquenocuentan.com/podemos/empleo
 - https://loquenocuentan.com/pp/dependencia
@@ -95,14 +113,17 @@ Cada medida tiene un enlace estable con ancla, por ejemplo https://loquenocuenta
 - https://loquenocuentan.com/psoe/educacion
 - https://loquenocuentan.com/psoe/impuestos
 - https://loquenocuentan.com/psoe/pensiones
+- https://loquenocuentan.com/psoe/seguridad
 - https://loquenocuentan.com/salf/educacion
 - https://loquenocuentan.com/salf/impuestos
 - https://loquenocuentan.com/salf/pensiones
+- https://loquenocuentan.com/salf/seguridad
 - https://loquenocuentan.com/vox/territorio
 - https://loquenocuentan.com/bng/dependencia
 - https://loquenocuentan.com/erc/dependencia
 - https://loquenocuentan.com/erc/inmigracion
 - https://loquenocuentan.com/junts/pensiones
+- https://loquenocuentan.com/junts/seguridad
 - https://loquenocuentan.com/pnv/dependencia
 - https://loquenocuentan.com/podemos/sanidad
 - https://loquenocuentan.com/pp/discapacidad
@@ -113,6 +134,7 @@ Cada medida tiene un enlace estable con ancla, por ejemplo https://loquenocuenta
 - https://loquenocuentan.com/eh-bildu/sanidad
 - https://loquenocuentan.com/junts/territorio
 - https://loquenocuentan.com/podemos/igualdad
+- https://loquenocuentan.com/podemos/justicia
 - https://loquenocuentan.com/podemos/vivienda
 - https://loquenocuentan.com/pp/universidades
 - https://loquenocuentan.com/psoe/dependencia
@@ -121,13 +143,16 @@ Cada medida tiene un enlace estable con ancla, por ejemplo https://loquenocuenta
 - https://loquenocuentan.com/salf/inmigracion
 - https://loquenocuentan.com/upn/discapacidad
 - https://loquenocuentan.com/vox/discapacidad
+- https://loquenocuentan.com/eh-bildu/justicia
 - https://loquenocuentan.com/erc/universidades
 - https://loquenocuentan.com/junts/inmigracion
 - https://loquenocuentan.com/podemos/impuestos
 - https://loquenocuentan.com/podemos/pensiones
+- https://loquenocuentan.com/podemos/seguridad
 - https://loquenocuentan.com/psoe/discapacidad
 - https://loquenocuentan.com/vox/universidades
 - https://loquenocuentan.com/eh-bildu/pensiones
+- https://loquenocuentan.com/eh-bildu/seguridad
 - https://loquenocuentan.com/psoe/universidades
 - https://loquenocuentan.com/eh-bildu/territorio
 - https://loquenocuentan.com/podemos/dependencia
@@ -139,6 +164,7 @@ Cada medida tiene un enlace estable con ancla, por ejemplo https://loquenocuenta
 - https://loquenocuentan.com/vox/politica-exterior
 - https://loquenocuentan.com/erc/servicios-sociales
 - https://loquenocuentan.com/frente-amplio/igualdad
+- https://loquenocuentan.com/frente-amplio/justicia
 - https://loquenocuentan.com/frente-amplio/vivienda
 - https://loquenocuentan.com/pnv/servicios-sociales
 - https://loquenocuentan.com/psoe/politica-exterior
@@ -146,18 +172,34 @@ Cada medida tiene un enlace estable con ancla, por ejemplo https://loquenocuenta
 - https://loquenocuentan.com/frente-amplio/educacion
 - https://loquenocuentan.com/frente-amplio/impuestos
 - https://loquenocuentan.com/frente-amplio/pensiones
+- https://loquenocuentan.com/frente-amplio/seguridad
 - https://loquenocuentan.com/psoe/servicios-sociales
 - https://loquenocuentan.com/salf/servicios-sociales
 - https://loquenocuentan.com/frente-amplio/territorio
 - https://loquenocuentan.com/coalicion-canaria/sanidad
 - https://loquenocuentan.com/frente-amplio/dependencia
 - https://loquenocuentan.com/frente-amplio/inmigracion
+- https://loquenocuentan.com/pp/energia-medio-ambiente
+- https://loquenocuentan.com/bng/energia-medio-ambiente
+- https://loquenocuentan.com/coalicion-canaria/justicia
+- https://loquenocuentan.com/erc/energia-medio-ambiente
 - https://loquenocuentan.com/frente-amplio/discapacidad
+- https://loquenocuentan.com/pnv/energia-medio-ambiente
 - https://loquenocuentan.com/podemos/servicios-sociales
+- https://loquenocuentan.com/upn/energia-medio-ambiente
+- https://loquenocuentan.com/vox/energia-medio-ambiente
 - https://loquenocuentan.com/coalicion-canaria/pensiones
+- https://loquenocuentan.com/coalicion-canaria/seguridad
 - https://loquenocuentan.com/frente-amplio/universidades
+- https://loquenocuentan.com/psoe/energia-medio-ambiente
+- https://loquenocuentan.com/salf/energia-medio-ambiente
+- https://loquenocuentan.com/junts/energia-medio-ambiente
 - https://loquenocuentan.com/coalicion-canaria/dependencia
 - https://loquenocuentan.com/coalicion-canaria/inmigracion
+- https://loquenocuentan.com/podemos/energia-medio-ambiente
+- https://loquenocuentan.com/eh-bildu/energia-medio-ambiente
 - https://loquenocuentan.com/frente-amplio/politica-exterior
 - https://loquenocuentan.com/frente-amplio/servicios-sociales
 - https://loquenocuentan.com/coalicion-canaria/servicios-sociales
+- https://loquenocuentan.com/frente-amplio/energia-medio-ambiente
+- https://loquenocuentan.com/coalicion-canaria/energia-medio-ambiente

@@ -1,6 +1,6 @@
 {
  "/pp": {
-  "hash": "233bca2434e0",
+  "hash": "333e98f99919",
   "date": "2026-11-14"
  },
  "/pp/vivienda": {
@@ -64,7 +64,7 @@
   "date": "2026-11-14"
  },
  "/psoe": {
-  "hash": "f4fc0373e1d6",
+  "hash": "28e1f1df896e",
   "date": "2026-11-14"
  },
  "/psoe/vivienda": {
@@ -128,7 +128,7 @@
   "date": "2026-11-13"
  },
  "/vox": {
-  "hash": "0c5d8a0dc6a7",
+  "hash": "d4122aa6b3d7",
   "date": "2026-11-14"
  },
  "/vox/vivienda": {
@@ -148,7 +148,7 @@
   "date": "2026-11-13"
  },
  "/vox/empleo": {
-  "hash": "72703b234889",
+  "hash": "624717a43fdb",
   "date": "2026-11-14"
  },
  "/vox/impuestos": {
@@ -184,7 +184,7 @@
   "date": "2026-11-14"
  },
  "/vox/territorio": {
-  "hash": "3f6f4f5e77bf",
+  "hash": "e155ab4c0685",
   "date": "2026-11-14"
  },
  "/vox/politica-exterior": {
@@ -192,8 +192,8 @@
   "date": "2026-11-14"
  },
  "/frente-amplio": {
-  "hash": "5e087ce3695b",
-  "date": "2026-11-13"
+  "hash": "ed06adfa623c",
+  "date": "2026-11-14"
  },
  "/frente-amplio/vivienda": {
   "hash": "ad4ea3a50a07",
@@ -248,16 +248,16 @@
   "date": "2026-11-13"
  },
  "/frente-amplio/territorio": {
-  "hash": "dc59cb4e820f",
-  "date": "2026-11-13"
+  "hash": "f936fd0b24d0",
+  "date": "2026-11-14"
  },
  "/frente-amplio/politica-exterior": {
   "hash": "2d0226fd5cff",
   "date": "2026-11-13"
  },
  "/podemos": {
-  "hash": "d0516211b2db",
-  "date": "2026-11-13"
+  "hash": "934697fd62fd",
+  "date": "2026-11-14"
  },
  "/podemos/vivienda": {
   "hash": "ad0c36c2e130",
@@ -292,8 +292,8 @@
   "date": "2026-11-13"
  },
  "/erc": {
-  "hash": "c93998e0e5fc",
-  "date": "2026-11-13"
+  "hash": "362d48358aba",
+  "date": "2026-11-14"
  },
  "/erc/vivienda": {
   "hash": "abfafad31571",
@@ -344,8 +344,8 @@
   "date": "2026-11-13"
  },
  "/junts": {
-  "hash": "c3f0bcaef4f7",
-  "date": "2026-11-13"
+  "hash": "22406650cf5a",
+  "date": "2026-11-14"
  },
  "/junts/sanidad": {
   "hash": "da61efa9a58f",
@@ -364,8 +364,8 @@
   "date": "2026-11-13"
  },
  "/eh-bildu": {
-  "hash": "0e746554be76",
-  "date": "2026-11-13"
+  "hash": "01f02d53bc08",
+  "date": "2026-11-14"
  },
  "/eh-bildu/sanidad": {
   "hash": "b2d5059095da",
@@ -380,8 +380,8 @@
   "date": "2026-11-13"
  },
  "/pnv": {
-  "hash": "345127272a88",
-  "date": "2026-11-13"
+  "hash": "d600c488616d",
+  "date": "2026-11-14"
  },
  "/pnv/sanidad": {
   "hash": "130c13ec4232",
@@ -412,8 +412,8 @@
   "date": "2026-11-13"
  },
  "/bng": {
-  "hash": "3f2172682a77",
-  "date": "2026-11-13"
+  "hash": "cf866a18feef",
+  "date": "2026-11-14"
  },
  "/bng/sanidad": {
   "hash": "fde1b7200923",
@@ -436,8 +436,8 @@
   "date": "2026-11-13"
  },
  "/coalicion-canaria": {
-  "hash": "dd5d2ae22e84",
-  "date": "2026-11-13"
+  "hash": "f805790bcae9",
+  "date": "2026-11-14"
  },
  "/coalicion-canaria/sanidad": {
   "hash": "1cdc800947d7",
@@ -460,8 +460,8 @@
   "date": "2026-11-13"
  },
  "/salf": {
-  "hash": "08a8b43d0be5",
-  "date": "2026-11-13"
+  "hash": "16878fe34d91",
+  "date": "2026-11-14"
  },
  "/salf/sanidad": {
   "hash": "2c71835a476e",
@@ -496,8 +496,8 @@
   "date": "2026-11-13"
  },
  "/upn": {
-  "hash": "eaebe10fcd11",
-  "date": "2026-11-13"
+  "hash": "d91389f9b63c",
+  "date": "2026-11-14"
  },
  "/upn/sanidad": {
   "hash": "5f0656496e77",
@@ -528,7 +528,7 @@
   "date": "2026-11-14"
  },
  "/tema/empleo": {
-  "hash": "3c12c676b47b",
+  "hash": "c5ede1df3f53",
   "date": "2026-11-14"
  },
  "/tema/impuestos": {
@@ -564,7 +564,7 @@
   "date": "2026-11-14"
  },
  "/tema/territorio": {
-  "hash": "a97c60d90413",
+  "hash": "a03c8c65112f",
   "date": "2026-11-14"
  },
  "/tema/politica-exterior": {
@@ -572,11 +572,11 @@
   "date": "2026-11-14"
  },
  "/metodologia": {
-  "hash": "f01fbdd0a6d6",
+  "hash": "6f061fae58d6",
   "date": "2026-11-14"
  },
  "/datos/medidas.json": {
-  "hash": "32968526b836",
+  "hash": "54bfbf4695f9",
   "date": "2026-11-14"
  },
  "/datos": {
@@ -584,7 +584,175 @@
   "date": "2026-11-14"
  },
  "/": {
-  "hash": "32968526b836",
+  "hash": "54bfbf4695f9",
+  "date": "2026-11-14"
+ },
+ "/pp/justicia": {
+  "hash": "9edf2780e3fd",
+  "date": "2026-11-14"
+ },
+ "/pp/seguridad": {
+  "hash": "5a8e9925a9d0",
+  "date": "2026-11-14"
+ },
+ "/pp/energia-medio-ambiente": {
+  "hash": "4ad5397abd4e",
+  "date": "2026-11-14"
+ },
+ "/psoe/justicia": {
+  "hash": "920b9f2be7cf",
+  "date": "2026-11-14"
+ },
+ "/psoe/seguridad": {
+  "hash": "cb372cdd1619",
+  "date": "2026-11-14"
+ },
+ "/psoe/energia-medio-ambiente": {
+  "hash": "9ce9ba9f1a80",
+  "date": "2026-11-14"
+ },
+ "/vox/justicia": {
+  "hash": "058c478d2843",
+  "date": "2026-11-14"
+ },
+ "/vox/seguridad": {
+  "hash": "f7851538980c",
+  "date": "2026-11-14"
+ },
+ "/vox/energia-medio-ambiente": {
+  "hash": "d42b9f4d5103",
+  "date": "2026-11-14"
+ },
+ "/frente-amplio/justicia": {
+  "hash": "a3d79df34199",
+  "date": "2026-11-14"
+ },
+ "/frente-amplio/seguridad": {
+  "hash": "33a0009b9bcd",
+  "date": "2026-11-14"
+ },
+ "/frente-amplio/energia-medio-ambiente": {
+  "hash": "ff01abe11b8f",
+  "date": "2026-11-14"
+ },
+ "/podemos/justicia": {
+  "hash": "22ce8dd8c1de",
+  "date": "2026-11-14"
+ },
+ "/podemos/seguridad": {
+  "hash": "0877a6052561",
+  "date": "2026-11-14"
+ },
+ "/podemos/energia-medio-ambiente": {
+  "hash": "62c563da190f",
+  "date": "2026-11-14"
+ },
+ "/erc/justicia": {
+  "hash": "52454df31155",
+  "date": "2026-11-14"
+ },
+ "/erc/seguridad": {
+  "hash": "6f39b0631150",
+  "date": "2026-11-14"
+ },
+ "/erc/energia-medio-ambiente": {
+  "hash": "48e282ef3089",
+  "date": "2026-11-14"
+ },
+ "/junts/justicia": {
+  "hash": "dfae2f44af71",
+  "date": "2026-11-14"
+ },
+ "/junts/seguridad": {
+  "hash": "6b520f67bdd4",
+  "date": "2026-11-14"
+ },
+ "/junts/energia-medio-ambiente": {
+  "hash": "c63c65989db4",
+  "date": "2026-11-14"
+ },
+ "/eh-bildu/justicia": {
+  "hash": "4a91e637e14f",
+  "date": "2026-11-14"
+ },
+ "/eh-bildu/seguridad": {
+  "hash": "55c15cf2bb25",
+  "date": "2026-11-14"
+ },
+ "/eh-bildu/energia-medio-ambiente": {
+  "hash": "f90946c1112a",
+  "date": "2026-11-14"
+ },
+ "/pnv/justicia": {
+  "hash": "2c9cc3a5a179",
+  "date": "2026-11-14"
+ },
+ "/pnv/seguridad": {
+  "hash": "4f68a4c3a579",
+  "date": "2026-11-14"
+ },
+ "/pnv/energia-medio-ambiente": {
+  "hash": "70f5752aacfb",
+  "date": "2026-11-14"
+ },
+ "/bng/justicia": {
+  "hash": "15d8a8eee0ad",
+  "date": "2026-11-14"
+ },
+ "/bng/seguridad": {
+  "hash": "b520f7fa74f3",
+  "date": "2026-11-14"
+ },
+ "/bng/energia-medio-ambiente": {
+  "hash": "4aa938ddc90d",
+  "date": "2026-11-14"
+ },
+ "/coalicion-canaria/justicia": {
+  "hash": "4dbacbd3898b",
+  "date": "2026-11-14"
+ },
+ "/coalicion-canaria/seguridad": {
+  "hash": "24e8e399f368",
+  "date": "2026-11-14"
+ },
+ "/coalicion-canaria/energia-medio-ambiente": {
+  "hash": "6c9edf6d9d67",
+  "date": "2026-11-14"
+ },
+ "/salf/justicia": {
+  "hash": "5d95863a5126",
+  "date": "2026-11-14"
+ },
+ "/salf/seguridad": {
+  "hash": "7e09e56d05bf",
+  "date": "2026-11-14"
+ },
+ "/salf/energia-medio-ambiente": {
+  "hash": "76856a06293b",
+  "date": "2026-11-14"
+ },
+ "/upn/justicia": {
+  "hash": "451ff6d85aeb",
+  "date": "2026-11-14"
+ },
+ "/upn/seguridad": {
+  "hash": "31b6d81584af",
+  "date": "2026-11-14"
+ },
+ "/upn/energia-medio-ambiente": {
+  "hash": "77222d6bb439",
+  "date": "2026-11-14"
+ },
+ "/tema/justicia": {
+  "hash": "9e2290f1da2c",
+  "date": "2026-11-14"
+ },
+ "/tema/seguridad": {
+  "hash": "1e0490919c92",
+  "date": "2026-11-14"
+ },
+ "/tema/energia-medio-ambiente": {
+  "hash": "c94bdbac7d3c",
   "date": "2026-11-14"
  }
 }
