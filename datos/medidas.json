@@ -3,7 +3,7 @@
  "autor": "Fernando Santamaría González",
  "licencia": "CC BY 4.0",
  "web": "https://loquenocuentan.com",
- "actualizado": "2026-11-14",
+ "actualizado": "2026-11-15",
  "medidas": [
   {
    "id": "pp-144",
@@ -189,6 +189,25 @@
      "texto": "En la misma respuesta dijo que la vivienda «es la primera prioridad» para la mayoría de la gente, sobre todo para los menores de 40 años.",
      "fuentes": [
       "https://www.youtube.com/watch?v=1YlGArMx_N4&t=1029s"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "pp-vivienda-8",
+   "url": "https://loquenocuentan.com/pp#pp-vivienda-8",
+   "partido": "PP",
+   "tema": "Vivienda",
+   "origen": "Declaración 2026",
+   "texto": "Bravo: han desaparecido 400.000 viviendas en alquiler «por la okupación».",
+   "fuente": "Debate de laSexta, 13 nov 2026 (extracto de El País)",
+   "fuente_url": "https://www.youtube.com/watch?v=jt7dkPhYltg",
+   "observaciones": [
+    {
+     "etiqueta": "Contexto",
+     "texto": "La cifra coincide con la caída de anuncios en Idealista entre 2018 y 2025. No está probado que la okupación sea la causa principal.",
+     "fuentes": [
+      "https://www.eldiario.es/economia/mentiras-pp-vox-debate-economico-inmigracion-falso-vaciado-pensiones_1_13663511.html"
      ]
     }
    ]
@@ -1774,9 +1793,10 @@
     },
     {
      "etiqueta": "Su voto",
-     "texto": "Votó contra los decretos ómnibus de 2025 y 2026, que incluían la subida, y a favor cuando se votó sola.",
+     "texto": "Votó contra la ley de 2021 que liga las pensiones al IPC, contra los presupuestos de 2022 y 2023 que aplicaban la subida y contra el decreto de la subida de 2024. En 2025 y 2026 votó contra los decretos ómnibus que la incluían y a favor cuando se votó sola.",
      "fuentes": [
-      "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/comparar/pensiones"
+      "https://www.newtral.es/pp-pensiones-ipc-voto/20261021/",
+      "https://www.newtral.es/verificacion-debate-directo-electoral-lasexta/20261113/"
      ]
     }
    ]
@@ -1861,6 +1881,33 @@
      "texto": "Cifró en unos 50.000 millones lo que pasa de los impuestos a las pensiones. Según Fedea, las transferencias del Estado a la Seguridad Social superan ya los 60.000 millones al año.",
      "fuentes": [
       "https://www.vozpopuli.com/economia/macroeconomia/el-estado-acumula-ya-600000-millones-en-ayudas-a-la-seguridad-social-para-pagar-las-pensiones.html"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "pp-pensiones-5",
+   "url": "https://loquenocuentan.com/pp#pp-pensiones-5",
+   "partido": "PP",
+   "tema": "Pensiones",
+   "origen": "Declaración 2026",
+   "texto": "Juan Bravo, en el debate de laSexta: el PP ha votado a favor de subir las pensiones con el IPC siempre que la subida se presentó por separado.",
+   "fuente": "Debate de laSexta, 13 nov 2026 (extracto de El País)",
+   "fuente_url": "https://www.youtube.com/watch?v=jt7dkPhYltg",
+   "observaciones": [
+    {
+     "etiqueta": "Su voto",
+     "texto": "Es cierto en 2025 y 2026. Antes votó contra la ley de 2021 que garantiza esa subida, contra los presupuestos de 2022 y 2023 y contra el decreto de 2024.",
+     "fuentes": [
+      "https://www.newtral.es/verificacion-debate-directo-electoral-lasexta/20261113/",
+      "https://www.newtral.es/pp-pensiones-ipc-voto/20261021/"
+     ]
+    },
+    {
+     "etiqueta": "Contexto",
+     "texto": "Bravo sostuvo que la reforma del Gobierno prevé bajar las pensiones. Según elDiario.es, la ley dice otra cosa: si el gasto se desvía y no hay acuerdo, suben las cotizaciones.",
+     "fuentes": [
+      "https://www.eldiario.es/economia/mentiras-pp-vox-debate-economico-inmigracion-falso-vaciado-pensiones_1_13663511.html"
      ]
     }
    ]
@@ -1961,8 +2008,10 @@
     },
     {
      "etiqueta": "Su voto",
-     "texto": "Fue el único grupo que votó contra la revalorización de 2026.",
+     "texto": "Fue el único grupo que votó contra la subida de las pensiones cuando se votó sola, en febrero de 2025 y en febrero de 2026. También votó contra los dos decretos ómnibus que la incluían.",
      "fuentes": [
+      "https://www.deia.eus/economia/2026/02/26/congreso-convalida-subida-pensiones-2026-vox-10751901.html",
+      "https://www.democrata.es/politicas/subida-pensiones-2026-opciones-ejecutivo-aprobar-real-decreto-ley/",
       "https://tupapeleta.es/programa-electoral/vox/"
      ]
     }
@@ -1982,6 +2031,41 @@
      "etiqueta": "Sin coste",
      "texto": "Sin coste estimado.",
      "fuentes": []
+    }
+   ]
+  },
+  {
+   "id": "vox-pensiones-3",
+   "url": "https://loquenocuentan.com/vox#vox-pensiones-3",
+   "partido": "Vox",
+   "tema": "Pensiones",
+   "origen": "Declaración 2026",
+   "texto": "José María Figaredo, en el debate de laSexta: Vox subiría las pensiones con el IPC («por supuesto»).",
+   "fuente": "Debate de laSexta, 13 nov 2026 (extracto de El País)",
+   "fuente_url": "https://www.youtube.com/watch?v=jt7dkPhYltg",
+   "observaciones": [
+    {
+     "etiqueta": "Su voto",
+     "texto": "Fue el único grupo que votó contra la subida de las pensiones cuando se votó sola, en febrero de 2025 y en febrero de 2026. También votó contra los dos decretos ómnibus que la incluían.",
+     "fuentes": [
+      "https://www.deia.eus/economia/2026/02/26/congreso-convalida-subida-pensiones-2026-vox-10751901.html",
+      "https://www.democrata.es/politicas/subida-pensiones-2026-opciones-ejecutivo-aprobar-real-decreto-ley/",
+      "https://tupapeleta.es/programa-electoral/vox/"
+     ]
+    },
+    {
+     "etiqueta": "Dato desmentido",
+     "texto": "Dijo que el Gobierno «ha vaciado la caja de las pensiones». El Fondo de Reserva tiene 15.200 millones, frente a 2.100 en 2019.",
+     "fuentes": [
+      "https://www.eldiario.es/economia/mentiras-pp-vox-debate-economico-inmigracion-falso-vaciado-pensiones_1_13663511.html"
+     ]
+    },
+    {
+     "etiqueta": "Contexto",
+     "texto": "Su programa económico de 2025 proponía ir hacia un sistema mixto «similar» al de Suecia, con un fondo público capitalizado. Figaredo niega que eso sea privatizar.",
+     "fuentes": [
+      "https://maldita.es/desinfo/20261019/vox-dice-que-las-pensiones-estan-quebradas-y-apuesta-por-avanzar-en-su-privatizacion/"
+     ]
     }
    ]
   },
@@ -2288,6 +2372,56 @@
    ]
   },
   {
+   "id": "pp-empleo-8",
+   "url": "https://loquenocuentan.com/pp#pp-empleo-8",
+   "partido": "PP",
+   "tema": "Empleo y autónomos",
+   "origen": "Declaración 2026",
+   "texto": "Subir el salario medio de unos 30.000 € a 50.000 € en dos legislaturas, «con productividad y competitividad».",
+   "fuente": "Debate de laSexta, 13 nov 2026 (extracto de El País)",
+   "fuente_url": "https://www.youtube.com/watch?v=jt7dkPhYltg",
+   "observaciones": [
+    {
+     "etiqueta": "Sin concretar",
+     "texto": "Preguntado cómo, Bravo no citó ninguna medida concreta.",
+     "fuentes": [
+      "https://www.youtube.com/watch?v=jt7dkPhYltg"
+     ]
+    },
+    {
+     "etiqueta": "Contexto",
+     "texto": "Supone subir un 67 % en ocho años: algo más de un 6,5 % cada año.",
+     "fuentes": []
+    }
+   ]
+  },
+  {
+   "id": "pp-empleo-9",
+   "url": "https://loquenocuentan.com/pp#pp-empleo-9",
+   "partido": "PP",
+   "tema": "Empleo y autónomos",
+   "origen": "Declaración 2026",
+   "texto": "Bravo: el salario mínimo «debe salir del acuerdo entre la patronal y los sindicatos».",
+   "fuente": "Debate de laSexta, 13 nov 2026 (extracto de El País)",
+   "fuente_url": "https://www.youtube.com/watch?v=jt7dkPhYltg",
+   "observaciones": [
+    {
+     "etiqueta": "Contexto",
+     "texto": "La ley no exige acuerdo. El Gobierno lo fija cada año tras consultar a sindicatos y patronal (artículo 27 del Estatuto de los Trabajadores).",
+     "fuentes": [
+      "https://www.boe.es/buscar/act.php?id=BOE-A-2015-11430"
+     ]
+    },
+    {
+     "etiqueta": "Dato desmentido",
+     "texto": "En el mismo debate dijo que hay «más de tres millones» de parados. La última EPA los cifra en casi 2,6 millones.",
+     "fuentes": [
+      "https://www.eldiario.es/economia/mentiras-pp-vox-debate-economico-inmigracion-falso-vaciado-pensiones_1_13663511.html"
+     ]
+    }
+   ]
+  },
+  {
    "id": "psoe-empleo-1",
    "url": "https://loquenocuentan.com/psoe#psoe-empleo-1",
    "partido": "PSOE",
@@ -2402,6 +2536,25 @@
      "etiqueta": "Sin concretar",
      "texto": "No dice qué medidas fiscales.",
      "fuentes": []
+    }
+   ]
+  },
+  {
+   "id": "vox-empleo-5",
+   "url": "https://loquenocuentan.com/vox#vox-empleo-5",
+   "partido": "Vox",
+   "tema": "Empleo y autónomos",
+   "origen": "Declaración 2026",
+   "texto": "Figaredo: el sueldo más frecuente ha caído desde 2018.",
+   "fuente": "Debate de laSexta, 13 nov 2026 (extracto de El País)",
+   "fuente_url": "https://www.youtube.com/watch?v=jt7dkPhYltg",
+   "observaciones": [
+    {
+     "etiqueta": "Contexto",
+     "texto": "Es cierto según el INE: 16.520 € en 2024 frente a 18.469 € en 2018. Es el sueldo más repetido, no el sueldo medio.",
+     "fuentes": [
+      "https://www.newtral.es/verificacion-debate-directo-electoral-lasexta/20261113/"
+     ]
     }
    ]
   },
@@ -3641,6 +3794,13 @@
      "texto": "El INE contó 4,7 millones de llegadas del extranjero entre 2021 y 2024, incluidos los españoles que volvían. Descontadas las salidas, el saldo fue de 2,2 millones.",
      "fuentes": [
       "https://ine.es/dyngs/Prensa/EMCR2024.htm"
+     ]
+    },
+    {
+     "etiqueta": "Dato desmentido",
+     "texto": "En el debate de laSexta, Figaredo habló de «prácticamente 6 millones de inmigrantes en los últimos 5 años». La población creció unos 2,5 millones entre 2021 y octubre de 2026, y el saldo de extranjeros fue de algo más de 2 millones.",
+     "fuentes": [
+      "https://www.eldiario.es/economia/mentiras-pp-vox-debate-economico-inmigracion-falso-vaciado-pensiones_1_13663511.html"
      ]
     }
    ]
@@ -6932,6 +7092,13 @@
      "etiqueta": "Sin coste",
      "texto": "Gasto nuevo sin cuantificar.",
      "fuentes": []
+    },
+    {
+     "etiqueta": "Su voto",
+     "texto": "El 8 de mayo de 2025 Vox votó contra el decreto de ayudas frente a los aranceles de Estados Unidos (14.100 millones). El PP también votó en contra.",
+     "fuentes": [
+      "https://www.elindependiente.com/espana/2025/05/08/el-congreso-convalida-el-decreto-antiaranceles-del-gobierno-con-la-oposicion-de-pp-vox/"
+     ]
     }
    ]
   },

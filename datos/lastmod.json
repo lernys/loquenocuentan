@@ -1,11 +1,11 @@
 {
  "/pp": {
-  "hash": "49f651aa6795",
-  "date": "2026-11-14"
+  "hash": "a46998e82551",
+  "date": "2026-11-15"
  },
  "/pp/vivienda": {
-  "hash": "1c91974c1fd5",
-  "date": "2026-11-14"
+  "hash": "6be6825d5948",
+  "date": "2026-11-15"
  },
  "/pp/jovenes": {
   "hash": "09997dc9155c",
@@ -16,12 +16,12 @@
   "date": "2026-11-13"
  },
  "/pp/pensiones": {
-  "hash": "9ba765146dc5",
-  "date": "2026-11-14"
+  "hash": "8a6650f4c4e6",
+  "date": "2026-11-15"
  },
  "/pp/empleo": {
-  "hash": "e28f5b3cff2d",
-  "date": "2026-11-14"
+  "hash": "6fc074944916",
+  "date": "2026-11-15"
  },
  "/pp/impuestos": {
   "hash": "82f51ac0cd3c",
@@ -128,8 +128,8 @@
   "date": "2026-11-13"
  },
  "/vox": {
-  "hash": "d4122aa6b3d7",
-  "date": "2026-11-14"
+  "hash": "6d3c30f4220e",
+  "date": "2026-11-15"
  },
  "/vox/vivienda": {
   "hash": "d0bd6137fbdd",
@@ -144,12 +144,12 @@
   "date": "2026-11-14"
  },
  "/vox/pensiones": {
-  "hash": "dace42d0ee5c",
-  "date": "2026-11-13"
+  "hash": "af05c473571e",
+  "date": "2026-11-15"
  },
  "/vox/empleo": {
-  "hash": "624717a43fdb",
-  "date": "2026-11-14"
+  "hash": "969fe0a6f83d",
+  "date": "2026-11-15"
  },
  "/vox/impuestos": {
   "hash": "60e2567fb34f",
@@ -164,8 +164,8 @@
   "date": "2026-11-14"
  },
  "/vox/inmigracion": {
-  "hash": "15d74a0c1ea7",
-  "date": "2026-11-14"
+  "hash": "cb51de75c9c7",
+  "date": "2026-11-15"
  },
  "/vox/discapacidad": {
   "hash": "cc76cd493c38",
@@ -184,8 +184,8 @@
   "date": "2026-11-14"
  },
  "/vox/territorio": {
-  "hash": "e155ab4c0685",
-  "date": "2026-11-14"
+  "hash": "7245d19c27fe",
+  "date": "2026-11-15"
  },
  "/vox/politica-exterior": {
   "hash": "47f5acdcc417",
@@ -512,8 +512,8 @@
   "date": "2026-11-13"
  },
  "/tema/vivienda": {
-  "hash": "b7bceb39a629",
-  "date": "2026-11-14"
+  "hash": "145ca8d28bdc",
+  "date": "2026-11-15"
  },
  "/tema/jovenes": {
   "hash": "80314b830fd1",
@@ -524,12 +524,12 @@
   "date": "2026-11-14"
  },
  "/tema/pensiones": {
-  "hash": "fcb08f345508",
-  "date": "2026-11-14"
+  "hash": "d425a6481154",
+  "date": "2026-11-15"
  },
  "/tema/empleo": {
-  "hash": "c5ede1df3f53",
-  "date": "2026-11-14"
+  "hash": "6a74faf3530b",
+  "date": "2026-11-15"
  },
  "/tema/impuestos": {
   "hash": "6bce5e0dfe61",
@@ -544,8 +544,8 @@
   "date": "2026-11-14"
  },
  "/tema/inmigracion": {
-  "hash": "74ad9aa58849",
-  "date": "2026-11-14"
+  "hash": "f91b57524e0b",
+  "date": "2026-11-15"
  },
  "/tema/discapacidad": {
   "hash": "58cec863b118",
@@ -564,8 +564,8 @@
   "date": "2026-11-14"
  },
  "/tema/territorio": {
-  "hash": "a03c8c65112f",
-  "date": "2026-11-14"
+  "hash": "f4c66b634387",
+  "date": "2026-11-15"
  },
  "/tema/politica-exterior": {
   "hash": "e0f09ddad488",
@@ -576,16 +576,16 @@
   "date": "2026-11-14"
  },
  "/datos/medidas.json": {
-  "hash": "48d21270df7c",
-  "date": "2026-11-14"
+  "hash": "5c01050767af",
+  "date": "2026-11-15"
  },
  "/datos": {
-  "hash": "ea00a0204f80",
-  "date": "2026-11-14"
+  "hash": "d64bf8d7238a",
+  "date": "2026-11-15"
  },
  "/": {
-  "hash": "48d21270df7c",
-  "date": "2026-11-14"
+  "hash": "5c01050767af",
+  "date": "2026-11-15"
  },
  "/pp/justicia": {
   "hash": "9edf2780e3fd",
@@ -756,7 +756,7 @@
   "date": "2026-11-14"
  },
  "/dossier": {
-  "hash": "915f0c0b75f6",
-  "date": "2026-11-14"
+  "hash": "5bd05b69374b",
+  "date": "2026-11-15"
  }
 }
