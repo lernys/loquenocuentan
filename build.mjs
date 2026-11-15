@@ -173,6 +173,45 @@ const DESARR = {
   vox: { n: 115, w: '6.800', med: 49, eur: 0, det: 'Cada medida agrupa varias acciones, por eso son más largas. Ninguna asigna un importe.' }
 };
 const desarrLI = k => DESARR[k] ? `<li><b>Cuánto desarrolla: ${DESARR[k].n} medidas y unas ${DESARR[k].w} palabras, con una mediana de ${DESARR[k].med} por medida. ${DESARR[k].eur ? DESARR[k].eur + ' asignan un importe en euros.' : 'Ninguna asigna un importe en euros.'}</b> ${esc(DESARR[k].det)}</li>${Object.keys(DESARR).filter(x => x !== k).map(x => `<li>Con la misma medida, ${esc(ART[x])}: ${DESARR[x].n} medidas, unas ${DESARR[x].w} palabras, mediana de ${DESARR[x].med} y ${DESARR[x].eur || 'ningún'} ${DESARR[x].eur === 1 ? 'importe asignado' : DESARR[x].eur ? 'importes asignados' : 'importe asignado'}.</li>`).join('')}<li>La extensión del programa del PP (249 medidas) está pendiente de medir.</li>` : '';
+/* Las cuentas del programa: lo que baja en ingresos, lo que promete en gasto y cómo dice pagarlo. Misma plantilla para cada partido; cada cifra con su fuente. */
+const CUENTAS = {
+  vox: {
+    titulo: 'Las cuentas del programa: de dónde sale el dinero',
+    intro: 'El programa promete tres cosas a la vez: bajar mucho los impuestos, gastar más y reducir la deuda. Esto es lo que dice y lo que no dice sobre cómo se paga.',
+    pasos: [
+      ['Lo que deja de ingresar', 'Promete una «rebaja masiva» del IRPF, el IVA y Sociedades (medida 2). El programa no da ni un tipo ni una cifra. Su responsable económico, José María Figaredo, calculó que solo la rebaja del IRPF resta unos 46.000 millones al año. Hacienda la calcula en 85.000 millones.', [['Política Electoral · Vox', 'https://www.politicaelectoral.com/es/espana/generales-2026/nacional/vox']]],
+      ['Lo que promete gastar de más', 'Al menos 20 de sus 115 medidas piden más gasto: defensa, policía y prisiones, sanidad, dependencia, vivienda protegida, justicia, infraestructuras y un fondo agrario. Ninguna dice cuánto cuesta.', []],
+      ['Cómo dice que lo paga', 'Recortando «todos los gastos superfluos» de la Administración (medida 43). No dice cuáles son, ni cuánto se ahorra, ni qué servicios o plantillas desaparecen.', []]
+    ],
+    barrasTitulo: 'Para hacerse una idea del tamaño',
+    barras: [
+      ['Rebaja del IRPF, según Vox', 46000, 'hueco'],
+      ['Rebaja del IRPF, según Hacienda', 85000, 'hueco'],
+      ['Toda la educación pública (2023)', 67938, 'ref'],
+      ['Toda la sanidad pública (2024)', 101739, 'ref'],
+      ['Todo lo que recauda el IRPF (2025)', 142466, 'ref']
+    ],
+    lectura: [
+      'El dinero que dejaría de entrar equivale a entre un tercio y el 60 % de todo lo que recauda el IRPF.',
+      'Es entre el 45 % y el 84 % de lo que cuesta toda la sanidad pública de un año. La sanidad pública cuesta hoy 2.084 euros por persona y año.',
+      'El programa no propone recortar la sanidad ni la educación, ni cobrarlas aparte: promete reforzarlas. Lo que no explica es con qué dinero, si a la vez ingresa mucho menos.',
+      'De las 115 medidas, solo 5 llevan alguna cifra o plazo. Sin cifras no se puede comprobar si las cuentas cuadran.'
+    ],
+    fuentes: [
+      ['Ministerio de Sanidad, gasto sanitario público 2024', 'https://www.sanidad.gob.es/gabinete/notasPrensa.do?id=6908'],
+      ['Agencia Tributaria, informe de recaudación 2025', 'https://sede.agenciatributaria.gob.es/Sede/estadisticas/recaudacion-tributaria/informe-anual/ejercicio-2025/resumen.html'],
+      ['Gasto público en educación 2023 (Público, con datos del ministerio)', 'https://www.publico.es/sociedad/educacion/inversion-educacion-espana-crece-7-llegar-67-900-millones.html'],
+      ['Cifras de la rebaja: Política Electoral · Vox', 'https://www.politicaelectoral.com/es/espana/generales-2026/nacional/vox']
+    ]
+  }
+};
+const miles = n => String(n).replace(/\B(?=(\d{3})+(?!\d))/g, '.');
+const cuentasHTML = k => { const c = CUENTAS[k]; if (!c) return ''; const max = Math.max(...c.barras.map(b => b[1]));
+  return `<section class="cuentas" id="cuentas" aria-labelledby="cuentas-t"><h2 id="cuentas-t">${esc(c.titulo)}</h2><p class="cu-intro">${esc(c.intro)}</p>
+<ol class="cu-pasos">${c.pasos.map(([t, x, f]) => `<li><b>${esc(t)}</b><p>${esc(x)}${f.map(([l, u]) => ` <a class="src" href="${u}" rel="noopener">${esc(l)}</a>`).join('')}</p></li>`).join('')}</ol>
+<div class="cu-graf"><h3>${esc(c.barrasTitulo)}</h3>${c.barras.map(([l, v, t]) => `<div class="cu-bar cu-${t}"><span>${esc(l)}</span><i style="width:${Math.round(v / max * 100)}%"></i><b>${miles(v)} M€</b></div>`).join('')}<p class="cu-nota">Millones de euros al año. En rojo, lo que dejaría de ingresarse. En gris, lo que cuestan hoy esos servicios.</p></div>
+<ul class="cu-lect">${c.lectura.map(x => `<li>${esc(x)}</li>`).join('')}</ul>
+<p class="cu-src">Fuentes: ${c.fuentes.map(([l, u]) => `<a href="${u}" rel="noopener">${esc(l)}</a>`).join(' · ')}. Se aplicará la misma plantilla a cada programa.</p></section>`; };
 const pct = k => Math.round(CONCR[k].c / CONCR[k].n * 100);
 const concrTile = k => CONCR[k] ? `<div class="tile"><b>${pct(k)} %</b><span>medidas con alguna cifra o plazo</span></div>` : '';
 const concrHTML = k => CONCR[k] ? `<aside class="context" id="concrecion"><h2>Cuánto concreta el programa</h2><ul><li><b>${esc(P[k].name)}: ${CONCR[k].c} de ${CONCR[k].n} medidas (${pct(k)} %) llevan alguna cifra, plazo o porcentaje.</b>${CONCR[k].extra ? ' ' + esc(CONCR[k].extra) : ''}</li>${Object.keys(CONCR).filter(x => x !== k).map(x => `<li>Con la misma regla, ${esc(ART[x])}: ${CONCR[x].c} de ${CONCR[x].n} (${pct(x)} %).</li>`).join('')}${desarrLI(k)}<li>Recuento propio sobre el texto oficial, que se aplicará a cada programa que se publique. <a href="/metodologia#concrecion">Regla y lista de medidas contadas</a>. <a href="/vox-programa-29n">Ver el programa de Vox página a página</a>.</li></ul></aside>` : '';
@@ -194,7 +233,7 @@ for (const p of Object.values(P)) {
 <h1>Qué propone ${esc(ART[p.k])} para el 29-N y qué no cuenta</h1>
 <p class="lead">${esc(p.status)}.</p>
 <div class="tiles"><div class="tile"><b>${p.items.length}</b><span>propuestas localizadas</span></div><div class="tile"><b>${flagged}</b><span>con alguna observación</span></div><div class="tile"><b>${topics.length}</b><span>temas de 15</span></div>${concrTile(p.k)}</div>
-</header>${concrHTML(p.k)}
+</header>${concrHTML(p.k)}${cuentasHTML(p.k)}
 ${topics.length ? `<nav class="jump" aria-label="Temas de esta página"><div class="jrow"><span class="fl">Ir a</span>${topics.map(t => `<a href="#${T[t].slug}">${esc(T[t].name)} <b>${p.items.filter(i => i.topic === t).length}</b></a>`).join('')}</div>${filterHTML(p.items)}</nav>` : '<div class="none"><b>Sin propuestas localizadas</b>No se ha encontrado nada de este partido hasta hoy.</div>'}
 ${topics.map(t => { const its = p.items.filter(i => i.topic === t); return `<section class="block" id="${T[t].slug}"><h2><a href="/${p.slug}/${T[t].slug}">${esc(T[t].name)}</a> <small>${plural(its.length, 'propuesta', 'propuestas')} · <a href="/tema/${T[t].slug}">comparar con el resto</a></small></h2><div class="grid">${its.map(i => itemHTML(i, { who: false })).join('\n')}</div></section>`; }).join('\n')}
 <p class="back">Que un partido tenga más observaciones suele indicar que hay más documentación suya, no que sea peor. <a href="/metodologia">Cómo se hace la lectura crítica</a>.</p>
@@ -443,6 +482,25 @@ h1{font-size:clamp(1.7rem,4.4vw,2.7rem);font-weight:800;line-height:1.06;letter-
 .camaras h3{font:700 .78rem var(--f-body);text-transform:uppercase;letter-spacing:.08em;color:var(--accent);margin:0 0 6px}
 .camaras td:last-child{font-weight:600}
 .context .src{font-size:.82rem;color:var(--muted)}
+.cuentas{background:var(--paper);border:2px solid var(--ink);border-radius:16px;padding:20px 22px;display:flex;flex-direction:column;gap:14px}
+.cuentas>h2{font:800 1.35rem/1.15 var(--f-disp);margin:0}
+.cu-intro{margin:0;max-width:75ch}
+.cu-pasos{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:10px;counter-reset:cu}
+.cu-pasos li{background:var(--accent-soft);border-radius:12px;padding:12px 14px;counter-increment:cu}
+.cu-pasos li>b{display:block;font:800 1rem var(--f-disp);margin-bottom:4px}
+.cu-pasos li>b::before{content:counter(cu) ". ";color:var(--red,#d93a26)}
+.cu-pasos p{margin:0;font-size:.93rem}
+.cu-pasos .src{font-size:.8rem;white-space:nowrap}
+.cu-graf{background:var(--navy);color:#fff;border-radius:12px;padding:14px 16px;display:flex;flex-direction:column;gap:8px}
+.cu-graf h3{margin:0 0 2px;font:700 .8rem var(--f-body);text-transform:uppercase;letter-spacing:.08em;color:var(--teal-l)}
+.cu-bar{display:grid;grid-template-columns:minmax(150px,34%) 1fr auto;align-items:center;gap:10px;font-size:.88rem}
+.cu-bar i{display:block;height:16px;border-radius:4px;background:#8a97a6;min-width:4px}
+.cu-bar.cu-hueco i{background:var(--red,#d93a26)}
+.cu-bar b{font-variant-numeric:tabular-nums;white-space:nowrap}
+.cu-nota{margin:2px 0 0;font-size:.78rem;color:#c5cfd9}
+.cu-lect{margin:0;padding-left:18px;display:flex;flex-direction:column;gap:5px;max-width:85ch}
+.cu-src{margin:0;font-size:.8rem;color:var(--muted)}
+@media(max-width:560px){.cu-bar{grid-template-columns:1fr auto}.cu-bar span{grid-column:1/-1}}
 .tbl thead th{font-size:.72rem;text-transform:uppercase;letter-spacing:.07em;color:var(--muted)}
 .tbl th a{color:var(--ink);text-decoration:none;display:inline-flex;gap:8px;align-items:center;white-space:nowrap}.tbl th i{width:12px;height:12px;border-radius:50%}
 .mut{color:var(--muted);font-size:.85rem}
