@@ -2222,13 +2222,13 @@
    "partido": "PSOE",
    "tema": "Pensiones",
    "origen": "Programa 29-N",
-   "texto": "Mejorar la jubilación en los trabajos penosos, con una cuenta individual de penosidad.",
+   "texto": "Estudiar mejoras en la jubilación de los trabajos penosos y en las jubilaciones anticipadas forzosas, con una cuenta individual de penosidad.",
    "fuente": "PSOE 2026, medida 103 (p. 41)",
    "fuente_url": "https://www.democrata.es/uploads/s1/35/40/05/6/programapsoe29n26.pdf#page=40",
    "observaciones": [
     {
      "etiqueta": "Sin concretar",
-     "texto": "Sin lista de trabajos ni coeficientes.",
+     "texto": "El texto solo se compromete a «evaluar» la mejora. Sin lista de trabajos ni coeficientes.",
      "fuentes": []
     }
    ]
@@ -3193,7 +3193,7 @@
    "observaciones": [
     {
      "etiqueta": "Sin concretar",
-     "texto": "Sin tipos ni plazo. Sobre los tokens solo se compromete a promover el debate.",
+     "texto": "Sin tipos ni plazo. Sobre los tokens (compromiso 458) solo se compromete a promover el debate.",
      "fuentes": []
     },
     {
@@ -6451,8 +6451,8 @@
    "tema": "Servicios sociales y pobreza",
    "origen": "Programa 29-N",
    "texto": "Cuenta de Futuro: 1.000 € públicos al nacer, disponibles a los 18 años.",
-   "fuente": "PSOE 2026, medida 193 (p. 58)",
-   "fuente_url": "https://www.democrata.es/uploads/s1/35/40/05/6/programapsoe29n26.pdf#page=57",
+   "fuente": "PSOE 2026, medida 193 (p. 57)",
+   "fuente_url": "https://www.democrata.es/uploads/s1/35/40/05/6/programapsoe29n26.pdf#page=56",
    "observaciones": [
     {
      "etiqueta": "Sin concretar",
@@ -6985,7 +6985,13 @@
    "texto": "Castigar en el Código Penal las terapias de conversión.",
    "fuente": "PSOE 2026, medida 414 (p. 98)",
    "fuente_url": "https://www.democrata.es/uploads/s1/35/40/05/6/programapsoe29n26.pdf#page=97",
-   "observaciones": []
+   "observaciones": [
+    {
+     "etiqueta": "Sin cumplir o caída",
+     "texto": "El propio programa dice que retoma una iniciativa de la legislatura anterior que no se culminó.",
+     "fuentes": []
+    }
+   ]
   },
   {
    "id": "psoe-igualdad-8",
@@ -7294,7 +7300,7 @@
    "partido": "PSOE",
    "tema": "Energía y medio ambiente",
    "origen": "Programa 29-N",
-   "texto": "Renovables hasta el 81 % de la generación eléctrica en 2030.",
+   "texto": "Renovables hasta el 81 % de la generación eléctrica en 2030, instaladas con prioridad en «Zonas de Aceleración Renovable».",
    "fuente": "PSOE 2026, medida 234 (p. 66)",
    "fuente_url": "https://www.democrata.es/uploads/s1/35/40/05/6/programapsoe29n26.pdf#page=65",
    "observaciones": [
@@ -8453,7 +8459,7 @@
    "observaciones": [
     {
      "etiqueta": "Contexto",
-     "texto": "El programa no cita el embargo de armas a Israel, en vigor desde 2025.",
+     "texto": "La introducción del programa cita el embargo de armas a Israel como un logro. Ningún compromiso dice si se mantendrá.",
      "fuentes": [
       "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/psoe"
      ]

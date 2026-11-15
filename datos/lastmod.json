@@ -64,7 +64,7 @@
   "date": "2026-11-14"
  },
  "/psoe": {
-  "hash": "004161ce7abd",
+  "hash": "e7e67578e8c5",
   "date": "2026-11-15"
  },
  "/psoe/vivienda": {
@@ -80,7 +80,7 @@
   "date": "2026-11-15"
  },
  "/psoe/pensiones": {
-  "hash": "e4e15fb6273d",
+  "hash": "06a88c689ed3",
   "date": "2026-11-15"
  },
  "/psoe/empleo": {
@@ -88,7 +88,7 @@
   "date": "2026-11-15"
  },
  "/psoe/impuestos": {
-  "hash": "ff0afc72c4a3",
+  "hash": "77d065cc695a",
   "date": "2026-11-15"
  },
  "/psoe/educacion": {
@@ -112,11 +112,11 @@
   "date": "2026-11-15"
  },
  "/psoe/servicios-sociales": {
-  "hash": "85fbd147a9e1",
+  "hash": "e32e498687bf",
   "date": "2026-11-15"
  },
  "/psoe/igualdad": {
-  "hash": "41f98df145bb",
+  "hash": "9c8daae55e48",
   "date": "2026-11-15"
  },
  "/psoe/territorio": {
@@ -124,7 +124,7 @@
   "date": "2026-11-15"
  },
  "/psoe/politica-exterior": {
-  "hash": "a9cfe3204bc8",
+  "hash": "c9659ed17f40",
   "date": "2026-11-15"
  },
  "/vox": {
@@ -524,7 +524,7 @@
   "date": "2026-11-15"
  },
  "/tema/pensiones": {
-  "hash": "db319bbea058",
+  "hash": "9b58a92437e4",
   "date": "2026-11-15"
  },
  "/tema/empleo": {
@@ -532,7 +532,7 @@
   "date": "2026-11-15"
  },
  "/tema/impuestos": {
-  "hash": "e64aaf46e19f",
+  "hash": "abc5d9c7ce58",
   "date": "2026-11-15"
  },
  "/tema/educacion": {
@@ -556,11 +556,11 @@
   "date": "2026-11-15"
  },
  "/tema/servicios-sociales": {
-  "hash": "f3cf621b4c39",
+  "hash": "ee5e602f79e9",
   "date": "2026-11-15"
  },
  "/tema/igualdad": {
-  "hash": "05936a6477f9",
+  "hash": "067f56e9ee62",
   "date": "2026-11-15"
  },
  "/tema/territorio": {
@@ -568,15 +568,15 @@
   "date": "2026-11-15"
  },
  "/tema/politica-exterior": {
-  "hash": "a36c9285f3a1",
+  "hash": "37246f1ca72f",
   "date": "2026-11-15"
  },
  "/metodologia": {
-  "hash": "4975c775bb53",
+  "hash": "5726fe56ad16",
   "date": "2026-11-15"
  },
  "/datos/medidas.json": {
-  "hash": "dfa7c179c793",
+  "hash": "bc88404a0455",
   "date": "2026-11-15"
  },
  "/datos": {
@@ -584,7 +584,7 @@
   "date": "2026-11-15"
  },
  "/": {
-  "hash": "dfa7c179c793",
+  "hash": "bc88404a0455",
   "date": "2026-11-15"
  },
  "/pp/justicia": {
@@ -608,7 +608,7 @@
   "date": "2026-11-15"
  },
  "/psoe/energia-medio-ambiente": {
-  "hash": "a022ee1698d3",
+  "hash": "2ac4bdb3d1a3",
   "date": "2026-11-15"
  },
  "/vox/justicia": {
@@ -752,11 +752,11 @@
   "date": "2026-11-15"
  },
  "/tema/energia-medio-ambiente": {
-  "hash": "f953925881fe",
+  "hash": "eb5fc1bc1b8a",
   "date": "2026-11-15"
  },
  "/dossier": {
-  "hash": "7e559230fc9d",
+  "hash": "ab6bea0c26c4",
   "date": "2026-11-15"
  }
 }
