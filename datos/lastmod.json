@@ -64,11 +64,11 @@
   "date": "2026-11-14"
  },
  "/psoe": {
-  "hash": "69bdd249f381",
+  "hash": "f0a2ca278f0f",
   "date": "2026-11-15"
  },
  "/psoe/vivienda": {
-  "hash": "deeb4192950c",
+  "hash": "4cbba9913454",
   "date": "2026-11-15"
  },
  "/psoe/jovenes": {
@@ -84,7 +84,7 @@
   "date": "2026-11-15"
  },
  "/psoe/empleo": {
-  "hash": "29108e986cbc",
+  "hash": "4f598be0799e",
   "date": "2026-11-15"
  },
  "/psoe/impuestos": {
@@ -92,11 +92,11 @@
   "date": "2026-11-15"
  },
  "/psoe/educacion": {
-  "hash": "97c41ac0db54",
+  "hash": "da9b8d722a2b",
   "date": "2026-11-15"
  },
  "/psoe/universidades": {
-  "hash": "d0890e3a478b",
+  "hash": "c90a1859d9bf",
   "date": "2026-11-15"
  },
  "/psoe/inmigracion": {
@@ -108,11 +108,11 @@
   "date": "2026-11-15"
  },
  "/psoe/dependencia": {
-  "hash": "f89183b72457",
+  "hash": "44812b4dc339",
   "date": "2026-11-15"
  },
  "/psoe/servicios-sociales": {
-  "hash": "e32e498687bf",
+  "hash": "7c993e5f84d2",
   "date": "2026-11-15"
  },
  "/psoe/igualdad": {
@@ -120,7 +120,7 @@
   "date": "2026-11-15"
  },
  "/psoe/territorio": {
-  "hash": "cbdc5c10058c",
+  "hash": "968ea6e40c79",
   "date": "2026-11-15"
  },
  "/psoe/politica-exterior": {
@@ -512,7 +512,7 @@
   "date": "2026-11-13"
  },
  "/tema/vivienda": {
-  "hash": "3660427bf898",
+  "hash": "e9e9192c89de",
   "date": "2026-11-15"
  },
  "/tema/jovenes": {
@@ -528,7 +528,7 @@
   "date": "2026-11-15"
  },
  "/tema/empleo": {
-  "hash": "e608def980d1",
+  "hash": "6e3a4416332a",
   "date": "2026-11-15"
  },
  "/tema/impuestos": {
@@ -536,11 +536,11 @@
   "date": "2026-11-15"
  },
  "/tema/educacion": {
-  "hash": "939a7ac0fddc",
+  "hash": "eba088a68a52",
   "date": "2026-11-15"
  },
  "/tema/universidades": {
-  "hash": "2982b2443cf7",
+  "hash": "732729f7025f",
   "date": "2026-11-15"
  },
  "/tema/inmigracion": {
@@ -552,11 +552,11 @@
   "date": "2026-11-15"
  },
  "/tema/dependencia": {
-  "hash": "f027bfabc3ae",
+  "hash": "38760ebe9765",
   "date": "2026-11-15"
  },
  "/tema/servicios-sociales": {
-  "hash": "ee5e602f79e9",
+  "hash": "accbd3e90199",
   "date": "2026-11-15"
  },
  "/tema/igualdad": {
@@ -564,7 +564,7 @@
   "date": "2026-11-15"
  },
  "/tema/territorio": {
-  "hash": "7cc9b30ac764",
+  "hash": "edb8a667d7de",
   "date": "2026-11-15"
  },
  "/tema/politica-exterior": {
@@ -576,7 +576,7 @@
   "date": "2026-11-15"
  },
  "/datos/medidas.json": {
-  "hash": "d6da4a921a44",
+  "hash": "ea15e525b49c",
   "date": "2026-11-15"
  },
  "/datos": {
@@ -584,7 +584,7 @@
   "date": "2026-11-15"
  },
  "/": {
-  "hash": "d6da4a921a44",
+  "hash": "ea15e525b49c",
   "date": "2026-11-15"
  },
  "/pp/justicia": {
@@ -600,7 +600,7 @@
   "date": "2026-11-14"
  },
  "/psoe/justicia": {
-  "hash": "61bf03fbb9c2",
+  "hash": "e68f5e9e8da3",
   "date": "2026-11-15"
  },
  "/psoe/seguridad": {
@@ -744,7 +744,7 @@
   "date": "2026-11-14"
  },
  "/tema/justicia": {
-  "hash": "ace57b205a8c",
+  "hash": "65a495a901eb",
   "date": "2026-11-15"
  },
  "/tema/seguridad": {
@@ -756,7 +756,7 @@
   "date": "2026-11-15"
  },
  "/dossier": {
-  "hash": "146daaeb5464",
+  "hash": "d1c0b4d958c2",
   "date": "2026-11-15"
  }
 }

@@ -277,7 +277,7 @@
    "partido": "PSOE",
    "tema": "Vivienda",
    "origen": "Programa 29-N",
-   "texto": "Parque público estatal de 100.000 viviendas con Casa 47, construidas o compradas, para alquiler o venta asequible.",
+   "texto": "Parque público estatal de 100.000 viviendas con Casa 47, construidas o compradas, para alquiler o venta asequible. Lo que ingrese se reinvierte en más vivienda.",
    "fuente": "PSOE 2026, medida 42 (p. 29)",
    "fuente_url": "https://www.democrata.es/uploads/s1/35/40/05/6/programapsoe29n26.pdf#page=28",
    "observaciones": [
@@ -428,8 +428,54 @@
    ]
   },
   {
-   "id": "psoe-vivienda-10",
-   "url": "https://loquenocuentan.com/psoe#psoe-vivienda-10",
+   "id": "psoe-41",
+   "url": "https://loquenocuentan.com/psoe#psoe-41",
+   "partido": "PSOE",
+   "tema": "Vivienda",
+   "origen": "Programa 29-N",
+   "texto": "Que al menos una de cada cuatro viviendas nuevas sea pública o protegida para siempre, con el Plan Estatal de Vivienda 2026-2030.",
+   "fuente": "PSOE 2026, medida 41 (p. 28)",
+   "fuente_url": "https://www.democrata.es/uploads/s1/35/40/05/6/programapsoe29n26.pdf#page=27",
+   "observaciones": [
+    {
+     "etiqueta": "Contexto",
+     "texto": "El Plan Estatal 2026-2030 de su Gobierno suma 7.000 millones en cinco años.",
+     "fuentes": [
+      "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/psoe"
+     ]
+    },
+    {
+     "etiqueta": "Depende de las CCAA",
+     "texto": "Las viviendas las promueven las comunidades con el dinero que transfiere el Estado.",
+     "fuentes": []
+    }
+   ]
+  },
+  {
+   "id": "psoe-68",
+   "url": "https://loquenocuentan.com/psoe#psoe-68",
+   "partido": "PSOE",
+   "tema": "Vivienda",
+   "origen": "Programa 29-N",
+   "texto": "Sacar viviendas vacías al alquiler asequible: intermediación pública con garantía de cobro para el propietario y un programa que rehabilita y gestiona los pisos cedidos.",
+   "fuente": "PSOE 2026, medida 68 (p. 32)",
+   "fuente_url": "https://www.democrata.es/uploads/s1/35/40/05/6/programapsoe29n26.pdf#page=31",
+   "observaciones": [
+    {
+     "etiqueta": "Contexto",
+     "texto": "El programa toma como modelo el sistema del País Vasco (compromisos 68 y 74).",
+     "fuentes": []
+    },
+    {
+     "etiqueta": "Sin concretar",
+     "texto": "Sin dotación, sin número de viviendas y sin fecha.",
+     "fuentes": []
+    }
+   ]
+  },
+  {
+   "id": "psoe-vivienda-12",
+   "url": "https://loquenocuentan.com/psoe#psoe-vivienda-12",
    "partido": "PSOE",
    "tema": "Vivienda",
    "origen": "Gobierno / ley",
@@ -452,8 +498,8 @@
    ]
   },
   {
-   "id": "psoe-vivienda-11",
-   "url": "https://loquenocuentan.com/psoe#psoe-vivienda-11",
+   "id": "psoe-vivienda-13",
+   "url": "https://loquenocuentan.com/psoe#psoe-vivienda-13",
    "partido": "PSOE",
    "tema": "Vivienda",
    "origen": "Gobierno / ley",
@@ -471,8 +517,8 @@
    ]
   },
   {
-   "id": "psoe-vivienda-12",
-   "url": "https://loquenocuentan.com/psoe#psoe-vivienda-12",
+   "id": "psoe-vivienda-14",
+   "url": "https://loquenocuentan.com/psoe#psoe-vivienda-14",
    "partido": "PSOE",
    "tema": "Vivienda",
    "origen": "Gobierno / ley",
@@ -490,8 +536,8 @@
    ]
   },
   {
-   "id": "psoe-vivienda-13",
-   "url": "https://loquenocuentan.com/psoe#psoe-vivienda-13",
+   "id": "psoe-vivienda-15",
+   "url": "https://loquenocuentan.com/psoe#psoe-vivienda-15",
    "partido": "PSOE",
    "tema": "Vivienda",
    "origen": "Gobierno / ley",
@@ -509,8 +555,8 @@
    ]
   },
   {
-   "id": "psoe-vivienda-14",
-   "url": "https://loquenocuentan.com/psoe#psoe-vivienda-14",
+   "id": "psoe-vivienda-16",
+   "url": "https://loquenocuentan.com/psoe#psoe-vivienda-16",
    "partido": "PSOE",
    "tema": "Vivienda",
    "origen": "Proposición de ley",
@@ -2912,6 +2958,45 @@
    ]
   },
   {
+   "id": "psoe-90",
+   "url": "https://loquenocuentan.com/psoe#psoe-90",
+   "partido": "PSOE",
+   "tema": "Empleo y autónomos",
+   "origen": "Programa 29-N",
+   "texto": "Promover que las empresas repartan beneficios y ganancias de productividad con la plantilla, sin sustituir el salario fijo. En las pymes, con ayudas ligadas a mejoras de salarios, formación y estabilidad.",
+   "fuente": "PSOE 2026, medida 90 (p. 39)",
+   "fuente_url": "https://www.democrata.es/uploads/s1/35/40/05/6/programapsoe29n26.pdf#page=38",
+   "observaciones": [
+    {
+     "etiqueta": "Sin concretar",
+     "texto": "El texto dice «promover»: no obliga a las empresas. Tampoco fija la cuantía de las ayudas.",
+     "fuentes": []
+    }
+   ]
+  },
+  {
+   "id": "psoe-16",
+   "url": "https://loquenocuentan.com/psoe#psoe-16",
+   "partido": "PSOE",
+   "tema": "Empleo y autónomos",
+   "origen": "Programa 29-N",
+   "texto": "Servicio público de acceso a herramientas avanzadas de inteligencia artificial, con formación, y más ayudas para que pymes y autónomos las adopten.",
+   "fuente": "PSOE 2026, medida 16 (p. 18-19)",
+   "fuente_url": "https://www.democrata.es/uploads/s1/35/40/05/6/programapsoe29n26.pdf#page=17",
+   "observaciones": [
+    {
+     "etiqueta": "Ya existe",
+     "texto": "El Bono IA y la Red NEURONA ya existen: el programa habla de ampliarlos.",
+     "fuentes": []
+    },
+    {
+     "etiqueta": "Sin concretar",
+     "texto": "Sin presupuesto ni fecha para el servicio público.",
+     "fuentes": []
+    }
+   ]
+  },
+  {
    "id": "vox-8-empleo",
    "url": "https://loquenocuentan.com/vox#vox-8-empleo",
    "partido": "Vox",
@@ -3827,6 +3912,45 @@
    ]
   },
   {
+   "id": "psoe-159",
+   "url": "https://loquenocuentan.com/psoe#psoe-159",
+   "partido": "PSOE",
+   "tema": "Educación",
+   "origen": "Programa 29-N",
+   "texto": "Estatuto del Docente: menos burocracia, plan nacional de bienestar docente, carrera profesional y equiparación progresiva entre cuerpos.",
+   "fuente": "PSOE 2026, medida 159 (p. 53)",
+   "fuente_url": "https://www.democrata.es/uploads/s1/35/40/05/6/programapsoe29n26.pdf#page=52",
+   "observaciones": [
+    {
+     "etiqueta": "Sin concretar",
+     "texto": "Sin calendario ni coste de la equiparación.",
+     "fuentes": []
+    },
+    {
+     "etiqueta": "Depende de las CCAA",
+     "texto": "Las plantillas y sus condiciones de trabajo las gestionan las comunidades.",
+     "fuentes": []
+    }
+   ]
+  },
+  {
+   "id": "psoe-166",
+   "url": "https://loquenocuentan.com/psoe#psoe-166",
+   "partido": "PSOE",
+   "tema": "Educación",
+   "origen": "Programa 29-N",
+   "texto": "Estrategia para el uso educativo de la inteligencia artificial: formación permanente del profesorado y una plataforma pública de recursos.",
+   "fuente": "PSOE 2026, medida 166 (p. 53)",
+   "fuente_url": "https://www.democrata.es/uploads/s1/35/40/05/6/programapsoe29n26.pdf#page=52",
+   "observaciones": [
+    {
+     "etiqueta": "Sin concretar",
+     "texto": "Sin presupuesto ni plazo.",
+     "fuentes": []
+    }
+   ]
+  },
+  {
    "id": "vox-66",
    "url": "https://loquenocuentan.com/vox#vox-66",
    "partido": "Vox",
@@ -4157,8 +4281,25 @@
    ]
   },
   {
-   "id": "psoe-universidades-4",
-   "url": "https://loquenocuentan.com/psoe#psoe-universidades-4",
+   "id": "psoe-177",
+   "url": "https://loquenocuentan.com/psoe#psoe-177",
+   "partido": "PSOE",
+   "tema": "Universidades",
+   "origen": "Programa 29-N",
+   "texto": "Complementos de beca para estudiantes que sean la primera generación de su familia en la universidad y para quienes tengan más dificultades económicas.",
+   "fuente": "PSOE 2026, medida 177 (p. 55)",
+   "fuente_url": "https://www.democrata.es/uploads/s1/35/40/05/6/programapsoe29n26.pdf#page=54",
+   "observaciones": [
+    {
+     "etiqueta": "Sin concretar",
+     "texto": "Sin cuantía ni requisitos.",
+     "fuentes": []
+    }
+   ]
+  },
+  {
+   "id": "psoe-universidades-5",
+   "url": "https://loquenocuentan.com/psoe#psoe-universidades-5",
    "partido": "PSOE",
    "tema": "Universidades",
    "origen": "Gobierno / ley",
@@ -4183,8 +4324,8 @@
    ]
   },
   {
-   "id": "psoe-universidades-5",
-   "url": "https://loquenocuentan.com/psoe#psoe-universidades-5",
+   "id": "psoe-universidades-6",
+   "url": "https://loquenocuentan.com/psoe#psoe-universidades-6",
    "partido": "PSOE",
    "tema": "Universidades",
    "origen": "Gobierno / ley",
@@ -4202,8 +4343,8 @@
    ]
   },
   {
-   "id": "psoe-universidades-6",
-   "url": "https://loquenocuentan.com/psoe#psoe-universidades-6",
+   "id": "psoe-universidades-7",
+   "url": "https://loquenocuentan.com/psoe#psoe-universidades-7",
    "partido": "PSOE",
    "tema": "Universidades",
    "origen": "Gobierno / ley",
@@ -5022,8 +5163,69 @@
    ]
   },
   {
-   "id": "psoe-justicia-6",
-   "url": "https://loquenocuentan.com/psoe#psoe-justicia-6",
+   "id": "psoe-371",
+   "url": "https://loquenocuentan.com/psoe#psoe-371",
+   "partido": "PSOE",
+   "tema": "Justicia",
+   "origen": "Programa 29-N",
+   "texto": "Escaño ciudadano en el Congreso y el Senado, sin voto, para preguntar al Gobierno y presentar iniciativas, y menos firmas para la iniciativa legislativa popular.",
+   "fuente": "PSOE 2026, medida 371 (p. 91)",
+   "fuente_url": "https://www.democrata.es/uploads/s1/35/40/05/6/programapsoe29n26.pdf#page=90",
+   "observaciones": [
+    {
+     "etiqueta": "Contexto",
+     "texto": "La Constitución exige «no menos de 500.000 firmas» (art. 87.3). Bajar de esa cifra obliga a reformarla.",
+     "fuentes": []
+    },
+    {
+     "etiqueta": "Sin concretar",
+     "texto": "No dice cuántas firmas ni cómo se elige quién ocupa el escaño.",
+     "fuentes": []
+    }
+   ]
+  },
+  {
+   "id": "psoe-404",
+   "url": "https://loquenocuentan.com/psoe#psoe-404",
+   "partido": "PSOE",
+   "tema": "Justicia",
+   "origen": "Programa 29-N",
+   "texto": "Dar rango de ley a la Carta de Derechos Digitales: derecho a que te atienda una persona en los servicios públicos y a que ninguna decisión se tome solo de forma automática.",
+   "fuente": "PSOE 2026, medida 404 (p. 96)",
+   "fuente_url": "https://www.democrata.es/uploads/s1/35/40/05/6/programapsoe29n26.pdf#page=95",
+   "observaciones": [
+    {
+     "etiqueta": "Contexto",
+     "texto": "La Carta se aprobó en 2021 y hoy no es una norma: no obliga.",
+     "fuentes": []
+    },
+    {
+     "etiqueta": "Sin concretar",
+     "texto": "Sin plazo.",
+     "fuentes": []
+    }
+   ]
+  },
+  {
+   "id": "psoe-407",
+   "url": "https://loquenocuentan.com/psoe#psoe-407",
+   "partido": "PSOE",
+   "tema": "Justicia",
+   "origen": "Programa 29-N",
+   "texto": "Ley de Transparencia Algorítmica: auditorías independientes de los sistemas de IA que afecten a derechos y un observatorio público de discriminación algorítmica.",
+   "fuente": "PSOE 2026, medida 407 (p. 97)",
+   "fuente_url": "https://www.democrata.es/uploads/s1/35/40/05/6/programapsoe29n26.pdf#page=96",
+   "observaciones": [
+    {
+     "etiqueta": "Sin concretar",
+     "texto": "Sin plazo ni sanciones.",
+     "fuentes": []
+    }
+   ]
+  },
+  {
+   "id": "psoe-justicia-9",
+   "url": "https://loquenocuentan.com/psoe#psoe-justicia-9",
    "partido": "PSOE",
    "tema": "Justicia",
    "origen": "Gobierno / ley",
@@ -5041,8 +5243,8 @@
    ]
   },
   {
-   "id": "psoe-justicia-7",
-   "url": "https://loquenocuentan.com/psoe#psoe-justicia-7",
+   "id": "psoe-justicia-10",
+   "url": "https://loquenocuentan.com/psoe#psoe-justicia-10",
    "partido": "PSOE",
    "tema": "Justicia",
    "origen": "Gobierno / ley",
@@ -5067,8 +5269,8 @@
    ]
   },
   {
-   "id": "psoe-justicia-8",
-   "url": "https://loquenocuentan.com/psoe#psoe-justicia-8",
+   "id": "psoe-justicia-11",
+   "url": "https://loquenocuentan.com/psoe#psoe-justicia-11",
    "partido": "PSOE",
    "tema": "Justicia",
    "origen": "Gobierno / ley",
@@ -5086,8 +5288,8 @@
    ]
   },
   {
-   "id": "psoe-justicia-9",
-   "url": "https://loquenocuentan.com/psoe#psoe-justicia-9",
+   "id": "psoe-justicia-12",
+   "url": "https://loquenocuentan.com/psoe#psoe-justicia-12",
    "partido": "PSOE",
    "tema": "Justicia",
    "origen": "Gobierno / ley",
@@ -6179,10 +6381,16 @@
    "partido": "PSOE",
    "tema": "Dependencia y cuidados",
    "origen": "Programa 29-N",
-   "texto": "Plan «A Tu Lado», con visitas a domicilio a partir de los 80 años.",
+   "texto": "Plan «A Tu Lado» para envejecer en casa: ayudas para ascensores y eliminar barreras, y visitas periódicas de enfermería o trabajo social a partir de los 80 años.",
    "fuente": "PSOE 2026, medida 214 (p. 59-60)",
    "fuente_url": "https://www.democrata.es/uploads/s1/35/40/05/6/programapsoe29n26.pdf#page=58",
-   "observaciones": []
+   "observaciones": [
+    {
+     "etiqueta": "Sin concretar",
+     "texto": "Sin cuantía de las ayudas ni fecha.",
+     "fuentes": []
+    }
+   ]
   },
   {
    "id": "psoe-209",
@@ -6603,13 +6811,13 @@
    "partido": "PSOE",
    "tema": "Servicios sociales y pobreza",
    "origen": "Programa 29-N",
-   "texto": "Bono social único y automático.",
+   "texto": "Bono social único y automático: une las ayudas de luz, calefacción y transporte, y las tarifas sociales de teléfono y agua. Se concede de oficio, sin pedirlo.",
    "fuente": "PSOE 2026, medida 93 (p. 39)",
    "fuente_url": "https://www.democrata.es/uploads/s1/35/40/05/6/programapsoe29n26.pdf#page=38",
    "observaciones": [
     {
      "etiqueta": "Sin concretar",
-     "texto": "Sin fecha.",
+     "texto": "Sin fecha. Las tarifas de teléfono y agua dependen de convenios que están por firmar.",
      "fuentes": []
     }
    ]
@@ -8036,7 +8244,7 @@
    "partido": "PSOE",
    "tema": "Territorio y España vaciada",
    "origen": "Programa 29-N",
-   "texto": "Atención en las oficinas del Estado sin cita previa obligatoria y oficinas itinerantes en las comarcas rurales.",
+   "texto": "Atención en las oficinas del Estado sin cita previa obligatoria, oficinas itinerantes en las comarcas rurales, no volver a pedir un documento que la Administración ya tiene y aviso por SMS o correo de cada notificación electrónica.",
    "fuente": "PSOE 2026, medida 439 (p. 102)",
    "fuente_url": "https://www.democrata.es/uploads/s1/35/40/05/6/programapsoe29n26.pdf#page=101",
    "observaciones": [
@@ -8044,6 +8252,13 @@
      "etiqueta": "Sin concretar",
      "texto": "Sin fecha.",
      "fuentes": []
+    },
+    {
+     "etiqueta": "Contexto",
+     "texto": "La ley ya reconoce desde 2015 el derecho a no aportar documentos que la Administración tiene (art. 28 de la Ley 39/2015).",
+     "fuentes": [
+      "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10565"
+     ]
     }
    ]
   },
