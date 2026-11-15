@@ -1,6 +1,6 @@
 {
  "/pp": {
-  "hash": "a46998e82551",
+  "hash": "9a8988907211",
   "date": "2026-11-15"
  },
  "/pp/vivienda": {
@@ -64,7 +64,7 @@
   "date": "2026-11-14"
  },
  "/psoe": {
-  "hash": "f0a2ca278f0f",
+  "hash": "896188c9f773",
   "date": "2026-11-15"
  },
  "/psoe/vivienda": {
@@ -128,7 +128,7 @@
   "date": "2026-11-15"
  },
  "/vox": {
-  "hash": "6d3c30f4220e",
+  "hash": "71beab802d9f",
   "date": "2026-11-15"
  },
  "/vox/vivienda": {
@@ -176,15 +176,15 @@
   "date": "2026-11-13"
  },
  "/vox/servicios-sociales": {
-  "hash": "168f5d56bc74",
-  "date": "2026-11-14"
+  "hash": "eccb1e6a1bc0",
+  "date": "2026-11-15"
  },
  "/vox/igualdad": {
   "hash": "cb14ba01a7e6",
   "date": "2026-11-14"
  },
  "/vox/territorio": {
-  "hash": "7245d19c27fe",
+  "hash": "1847536e4439",
   "date": "2026-11-15"
  },
  "/vox/politica-exterior": {
@@ -192,8 +192,8 @@
   "date": "2026-11-14"
  },
  "/frente-amplio": {
-  "hash": "ed06adfa623c",
-  "date": "2026-11-14"
+  "hash": "fe4c9ab7a38c",
+  "date": "2026-11-15"
  },
  "/frente-amplio/vivienda": {
   "hash": "ad4ea3a50a07",
@@ -364,8 +364,8 @@
   "date": "2026-11-13"
  },
  "/eh-bildu": {
-  "hash": "01f02d53bc08",
-  "date": "2026-11-14"
+  "hash": "d3dff5f7971b",
+  "date": "2026-11-15"
  },
  "/eh-bildu/sanidad": {
   "hash": "b2d5059095da",
@@ -380,8 +380,8 @@
   "date": "2026-11-13"
  },
  "/pnv": {
-  "hash": "d600c488616d",
-  "date": "2026-11-14"
+  "hash": "7fe01e47c927",
+  "date": "2026-11-15"
  },
  "/pnv/sanidad": {
   "hash": "130c13ec4232",
@@ -460,8 +460,8 @@
   "date": "2026-11-13"
  },
  "/salf": {
-  "hash": "16878fe34d91",
-  "date": "2026-11-14"
+  "hash": "20e240592506",
+  "date": "2026-11-15"
  },
  "/salf/sanidad": {
   "hash": "2c71835a476e",
@@ -556,7 +556,7 @@
   "date": "2026-11-15"
  },
  "/tema/servicios-sociales": {
-  "hash": "accbd3e90199",
+  "hash": "c46759b8767f",
   "date": "2026-11-15"
  },
  "/tema/igualdad": {
@@ -564,7 +564,7 @@
   "date": "2026-11-15"
  },
  "/tema/territorio": {
-  "hash": "edb8a667d7de",
+  "hash": "2fac1a16aba1",
   "date": "2026-11-15"
  },
  "/tema/politica-exterior": {
@@ -576,7 +576,7 @@
   "date": "2026-11-15"
  },
  "/datos/medidas.json": {
-  "hash": "ea15e525b49c",
+  "hash": "7304b2806a6c",
   "date": "2026-11-15"
  },
  "/datos": {
@@ -584,12 +584,12 @@
   "date": "2026-11-15"
  },
  "/": {
-  "hash": "ea15e525b49c",
+  "hash": "7304b2806a6c",
   "date": "2026-11-15"
  },
  "/pp/justicia": {
-  "hash": "9edf2780e3fd",
-  "date": "2026-11-14"
+  "hash": "0878f65beb1e",
+  "date": "2026-11-15"
  },
  "/pp/seguridad": {
   "hash": "5a8e9925a9d0",
@@ -600,7 +600,7 @@
   "date": "2026-11-14"
  },
  "/psoe/justicia": {
-  "hash": "e68f5e9e8da3",
+  "hash": "b475bad94fea",
   "date": "2026-11-15"
  },
  "/psoe/seguridad": {
@@ -612,8 +612,8 @@
   "date": "2026-11-15"
  },
  "/vox/justicia": {
-  "hash": "058c478d2843",
-  "date": "2026-11-14"
+  "hash": "6af5226d17bd",
+  "date": "2026-11-15"
  },
  "/vox/seguridad": {
   "hash": "f7851538980c",
@@ -744,7 +744,7 @@
   "date": "2026-11-14"
  },
  "/tema/justicia": {
-  "hash": "65a495a901eb",
+  "hash": "a0fe5275a49f",
   "date": "2026-11-15"
  },
  "/tema/seguridad": {
@@ -756,7 +756,39 @@
   "date": "2026-11-15"
  },
  "/dossier": {
-  "hash": "d1c0b4d958c2",
+  "hash": "68f9b97307fc",
+  "date": "2026-11-15"
+ },
+ "/pp/democracia-derechos-digitales": {
+  "hash": "4605726e6255",
+  "date": "2026-11-15"
+ },
+ "/psoe/democracia-derechos-digitales": {
+  "hash": "acc96e6b1357",
+  "date": "2026-11-15"
+ },
+ "/vox/democracia-derechos-digitales": {
+  "hash": "4117473421c4",
+  "date": "2026-11-15"
+ },
+ "/frente-amplio/democracia-derechos-digitales": {
+  "hash": "a2925a16d4df",
+  "date": "2026-11-15"
+ },
+ "/eh-bildu/democracia-derechos-digitales": {
+  "hash": "6dda20547b96",
+  "date": "2026-11-15"
+ },
+ "/pnv/democracia-derechos-digitales": {
+  "hash": "337b9ac0d00f",
+  "date": "2026-11-15"
+ },
+ "/salf/democracia-derechos-digitales": {
+  "hash": "3303b4b2fd9c",
+  "date": "2026-11-15"
+ },
+ "/tema/democracia-derechos-digitales": {
+  "hash": "fcc7e29e152b",
   "date": "2026-11-15"
  }
 }

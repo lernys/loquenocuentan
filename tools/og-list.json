@@ -5,7 +5,7 @@
   "l1": "Qué propone el PP",
   "l2": "y qué no cuenta",
   "color": "#1f6fc4",
-  "foot": "103 propuestas. Cada una, con su fuente."
+  "foot": "109 propuestas. Cada una, con su fuente."
  },
  {
   "file": "og/psoe.png",
@@ -13,7 +13,7 @@
   "l1": "Qué propone el PSOE",
   "l2": "y qué no cuenta",
   "color": "#d8261c",
-  "foot": "126 propuestas. Cada una, con su fuente."
+  "foot": "128 propuestas. Cada una, con su fuente."
  },
  {
   "file": "og/vox.png",
@@ -21,7 +21,7 @@
   "l1": "Qué propone Vox",
   "l2": "y qué no cuenta",
   "color": "#5aa62b",
-  "foot": "106 propuestas. Cada una, con su fuente."
+  "foot": "109 propuestas. Cada una, con su fuente."
  },
  {
   "file": "og/frente-amplio.png",
@@ -29,7 +29,7 @@
   "l1": "Qué propone el Frente Amplio",
   "l2": "y qué no cuenta",
   "color": "#c2185b",
-  "foot": "47 propuestas. Cada una, con su fuente."
+  "foot": "48 propuestas. Cada una, con su fuente."
  },
  {
   "file": "og/podemos.png",
@@ -181,7 +181,7 @@
   "l1": "Justicia",
   "l2": "qué propone cada partido",
   "color": "#ffd23f",
-  "foot": "13 partidos comparados. Cada dato, con su fuente."
+  "foot": "10 partidos comparados. Cada dato, con su fuente."
  },
  {
   "file": "og/tema-seguridad.png",
@@ -190,6 +190,14 @@
   "l2": "qué propone cada partido",
   "color": "#ffd23f",
   "foot": "13 partidos comparados. Cada dato, con su fuente."
+ },
+ {
+  "file": "og/tema-democracia-derechos-digitales.png",
+  "kicker": "ELECCIONES GENERALES · 29 DE NOVIEMBRE",
+  "l1": "Democracia y derechos digitales",
+  "l2": "qué propone cada partido",
+  "color": "#ffd23f",
+  "foot": "7 partidos comparados. Cada dato, con su fuente."
  },
  {
   "file": "og/tema-discapacidad.png",

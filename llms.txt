@@ -1,6 +1,6 @@
 # Lo que no cuentan
 
-> Comparador crítico de los programas electorales de las elecciones generales de España del 29 de noviembre de 2026 (29N, 29-N). Recoge 480 propuestas de 13 partidos en 18 temas. Cada propuesta lleva su fuente y, cuando hay un hecho que lo respalde, una observación: coste, plazos, si ya existe, si depende de las comunidades autónomas o si choca con lo que el partido votó. Misma regla para todos los partidos. Autor: Fernando Santamaría González. Sin afiliación. Datos con licencia CC BY 4.0. Actualizado el 15 de noviembre de 2026.
+> Comparador crítico de los programas electorales de las elecciones generales de España del 29 de noviembre de 2026 (29N, 29-N). Recoge 492 propuestas de 13 partidos en 19 temas. Cada propuesta lleva su fuente y, cuando hay un hecho que lo respalde, una observación: coste, plazos, si ya existe, si depende de las comunidades autónomas o si choca con lo que el partido votó. Misma regla para todos los partidos. Autor: Fernando Santamaría González. Sin afiliación. Datos con licencia CC BY 4.0. Actualizado el 15 de noviembre de 2026.
 
 Cada medida tiene un enlace estable con ancla, por ejemplo https://loquenocuentan.com/pp#pp-144. Al citar, conviene distinguir el origen de cada propuesta: programa del 29-N, declaración, proposición de ley, acción de gobierno o programa anterior.
 
@@ -12,10 +12,10 @@ Cada medida tiene un enlace estable con ancla, por ejemplo https://loquenocuenta
 
 ## Partidos
 
-- [PP](https://loquenocuentan.com/pp): 103 propuestas. Texto oficial
-- [PSOE](https://loquenocuentan.com/psoe): 126 propuestas. Texto oficial
-- [Vox](https://loquenocuentan.com/vox): 106 propuestas. Texto oficial
-- [Frente Amplio](https://loquenocuentan.com/frente-amplio): 47 propuestas. Sin programa aún
+- [PP](https://loquenocuentan.com/pp): 109 propuestas. Texto oficial
+- [PSOE](https://loquenocuentan.com/psoe): 128 propuestas. Texto oficial
+- [Vox](https://loquenocuentan.com/vox): 109 propuestas. Texto oficial
+- [Frente Amplio](https://loquenocuentan.com/frente-amplio): 48 propuestas. Sin programa aún
 - [Podemos](https://loquenocuentan.com/podemos): 13 propuestas. Sin programa aún
 - [ERC](https://loquenocuentan.com/erc): 24 propuestas. Vía prensa
 - [Junts](https://loquenocuentan.com/junts): 9 propuestas. Sin programa aún
@@ -39,6 +39,7 @@ Cada medida tiene un enlace estable con ancla, por ejemplo https://loquenocuenta
 - [Inmigración](https://loquenocuentan.com/tema/inmigracion): qué propone cada partido sobre inmigración, con tabla comparativa
 - [Justicia](https://loquenocuentan.com/tema/justicia): qué propone cada partido sobre justicia, con tabla comparativa
 - [Seguridad](https://loquenocuentan.com/tema/seguridad): qué propone cada partido sobre seguridad, con tabla comparativa
+- [Democracia y derechos digitales](https://loquenocuentan.com/tema/democracia-derechos-digitales): qué propone cada partido sobre democracia y derechos digitales, con tabla comparativa
 - [Discapacidad](https://loquenocuentan.com/tema/discapacidad): qué propone cada partido sobre discapacidad, con tabla comparativa
 - [Dependencia y cuidados](https://loquenocuentan.com/tema/dependencia): qué propone cada partido sobre dependencia y cuidados, con tabla comparativa
 - [Servicios sociales y pobreza](https://loquenocuentan.com/tema/servicios-sociales): qué propone cada partido sobre servicios sociales y pobreza, con tabla comparativa
@@ -70,7 +71,6 @@ Cada medida tiene un enlace estable con ancla, por ejemplo https://loquenocuenta
 - https://loquenocuentan.com/erc/igualdad
 - https://loquenocuentan.com/erc/justicia
 - https://loquenocuentan.com/erc/vivienda
-- https://loquenocuentan.com/pnv/justicia
 - https://loquenocuentan.com/pp/educacion
 - https://loquenocuentan.com/pp/impuestos
 - https://loquenocuentan.com/pp/pensiones
@@ -97,7 +97,6 @@ Cada medida tiene un enlace estable con ancla, por ejemplo https://loquenocuenta
 - https://loquenocuentan.com/psoe/justicia
 - https://loquenocuentan.com/psoe/vivienda
 - https://loquenocuentan.com/salf/igualdad
-- https://loquenocuentan.com/salf/justicia
 - https://loquenocuentan.com/upn/seguridad
 - https://loquenocuentan.com/vox/educacion
 - https://loquenocuentan.com/vox/impuestos
@@ -143,7 +142,6 @@ Cada medida tiene un enlace estable con ancla, por ejemplo https://loquenocuenta
 - https://loquenocuentan.com/salf/inmigracion
 - https://loquenocuentan.com/upn/discapacidad
 - https://loquenocuentan.com/vox/discapacidad
-- https://loquenocuentan.com/eh-bildu/justicia
 - https://loquenocuentan.com/erc/universidades
 - https://loquenocuentan.com/junts/inmigracion
 - https://loquenocuentan.com/podemos/impuestos
@@ -200,6 +198,13 @@ Cada medida tiene un enlace estable con ancla, por ejemplo https://loquenocuenta
 - https://loquenocuentan.com/eh-bildu/energia-medio-ambiente
 - https://loquenocuentan.com/frente-amplio/politica-exterior
 - https://loquenocuentan.com/frente-amplio/servicios-sociales
+- https://loquenocuentan.com/pp/democracia-derechos-digitales
+- https://loquenocuentan.com/pnv/democracia-derechos-digitales
+- https://loquenocuentan.com/vox/democracia-derechos-digitales
+- https://loquenocuentan.com/psoe/democracia-derechos-digitales
+- https://loquenocuentan.com/salf/democracia-derechos-digitales
 - https://loquenocuentan.com/coalicion-canaria/servicios-sociales
 - https://loquenocuentan.com/frente-amplio/energia-medio-ambiente
+- https://loquenocuentan.com/eh-bildu/democracia-derechos-digitales
 - https://loquenocuentan.com/coalicion-canaria/energia-medio-ambiente
+- https://loquenocuentan.com/frente-amplio/democracia-derechos-digitales

@@ -232,7 +232,7 @@ for (const p of Object.values(P)) {
 <p class="kicker">Elecciones generales · 29 de noviembre de 2026</p>
 <h1>Qué propone ${esc(ART[p.k])} para el 29-N y qué no cuenta</h1>
 <p class="lead">${esc(p.status)}.</p>
-<div class="tiles"><div class="tile"><b>${p.items.length}</b><span>propuestas localizadas</span></div><div class="tile"><b>${flagged}</b><span>con alguna observación</span></div><div class="tile"><b>${topics.length}</b><span>temas de 15</span></div>${concrTile(p.k)}</div>
+<div class="tiles"><div class="tile"><b>${p.items.length}</b><span>propuestas localizadas</span></div><div class="tile"><b>${flagged}</b><span>con alguna observación</span></div><div class="tile"><b>${topics.length}</b><span>temas de ${TOPICS.length}</span></div>${concrTile(p.k)}</div>
 </header>${concrHTML(p.k)}${cuentasHTML(p.k)}
 ${topics.length ? `<nav class="jump" aria-label="Temas de esta página"><div class="jrow"><span class="fl">Ir a</span>${topics.map(t => `<a href="#${T[t].slug}">${esc(T[t].name)} <b>${p.items.filter(i => i.topic === t).length}</b></a>`).join('')}</div>${filterHTML(p.items)}</nav>` : '<div class="none"><b>Sin propuestas localizadas</b>No se ha encontrado nada de este partido hasta hoy.</div>'}
 ${topics.map(t => { const its = p.items.filter(i => i.topic === t); return `<section class="block" id="${T[t].slug}"><h2><a href="/${p.slug}/${T[t].slug}">${esc(T[t].name)}</a> <small>${plural(its.length, 'propuesta', 'propuestas')} · <a href="/tema/${T[t].slug}">comparar con el resto</a></small></h2><div class="grid">${its.map(i => itemHTML(i, { who: false })).join('\n')}</div></section>`; }).join('\n')}

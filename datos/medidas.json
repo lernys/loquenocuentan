@@ -5036,30 +5036,6 @@
    ]
   },
   {
-   "id": "pp-61",
-   "url": "https://loquenocuentan.com/pp#pp-61",
-   "partido": "PP",
-   "tema": "Justicia",
-   "origen": "Programa 29-N",
-   "texto": "Reformar el suplicatorio y revisar los aforamientos.",
-   "fuente": "PP 2026, medida 61 (p. 25)",
-   "fuente_url": "https://www.pp.es/wp-content/uploads/2026/11/LA-RECONSTRUCCION-NACIONAL.pdf#page=25",
-   "observaciones": [
-    {
-     "etiqueta": "Sin concretar",
-     "texto": "No dice qué aforamientos quitaría.",
-     "fuentes": []
-    },
-    {
-     "etiqueta": "Contexto",
-     "texto": "Los de diputados, senadores y miembros del Gobierno están en la Constitución (arts. 71 y 102). Quitarlos exige reformarla, con tres quintos del Congreso y del Senado.",
-     "fuentes": [
-      "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229"
-     ]
-    }
-   ]
-  },
-  {
    "id": "psoe-436",
    "url": "https://loquenocuentan.com/psoe#psoe-436",
    "partido": "PSOE",
@@ -5075,73 +5051,6 @@
      "fuentes": [
       "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/comparar/justicia"
      ]
-    }
-   ]
-  },
-  {
-   "id": "psoe-445",
-   "url": "https://loquenocuentan.com/psoe#psoe-445",
-   "partido": "PSOE",
-   "tema": "Justicia",
-   "origen": "Programa 29-N",
-   "texto": "Ley orgánica de integridad pública, estrategia anticorrupción con mapas de riesgos y agencia independiente.",
-   "fuente": "PSOE 2026, medida 445 (p. 103)",
-   "fuente_url": "https://www.democrata.es/uploads/s1/35/40/05/6/programapsoe29n26.pdf#page=102",
-   "observaciones": [
-    {
-     "etiqueta": "Sin cumplir o caída",
-     "texto": "La Ley de Integridad Pública decayó con la disolución.",
-     "fuentes": [
-      "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/comparar/justicia"
-     ]
-    },
-    {
-     "etiqueta": "Contexto",
-     "texto": "El Gobierno presentó ese paquete tras los casos de José Luis Ábalos y Santos Cerdán, ex secretarios de Organización del PSOE. No logró sacarlo entero adelante.",
-     "fuentes": [
-      "https://elpais.com/espana/elecciones-generales/2026-11-15/el-psoe-propone-destinar-el-1-del-pib-a-vivienda-social-y-crear-una-prestacion-estatal-por-crianza.html"
-     ]
-    }
-   ]
-  },
-  {
-   "id": "psoe-446",
-   "url": "https://loquenocuentan.com/psoe#psoe-446",
-   "partido": "PSOE",
-   "tema": "Justicia",
-   "origen": "Programa 29-N",
-   "texto": "Ley de grupos de interés («lobbies») con registro obligatorio y publicidad de las reuniones.",
-   "fuente": "PSOE 2026, medida 446 (p. 103)",
-   "fuente_url": "https://www.democrata.es/uploads/s1/35/40/05/6/programapsoe29n26.pdf#page=102",
-   "observaciones": [
-    {
-     "etiqueta": "Sin cumplir o caída",
-     "texto": "El Congreso tumbó la ley de «lobbies» en la legislatura que termina.",
-     "fuentes": [
-      "https://elpais.com/espana/elecciones-generales/2026-11-15/el-psoe-propone-destinar-el-1-del-pib-a-vivienda-social-y-crear-una-prestacion-estatal-por-crianza.html"
-     ]
-    }
-   ]
-  },
-  {
-   "id": "psoe-373",
-   "url": "https://loquenocuentan.com/psoe#psoe-373",
-   "partido": "PSOE",
-   "tema": "Justicia",
-   "origen": "Programa 29-N",
-   "texto": "Suprimir los aforamientos para los delitos ajenos al cargo.",
-   "fuente": "PSOE 2026, medida 373 (p. 91)",
-   "fuente_url": "https://www.democrata.es/uploads/s1/35/40/05/6/programapsoe29n26.pdf#page=90",
-   "observaciones": [
-    {
-     "etiqueta": "Contexto",
-     "texto": "El aforamiento de diputados, senadores y miembros del Gobierno está en la Constitución (arts. 71 y 102). Cambiarlo exige reformarla.",
-     "fuentes": []
-    },
-    {
-     "etiqueta": "Sin concretar",
-     "texto": "Sin plazo.",
-     "fuentes": []
     }
    ]
   },
@@ -5163,69 +5072,8 @@
    ]
   },
   {
-   "id": "psoe-371",
-   "url": "https://loquenocuentan.com/psoe#psoe-371",
-   "partido": "PSOE",
-   "tema": "Justicia",
-   "origen": "Programa 29-N",
-   "texto": "Escaño ciudadano en el Congreso y el Senado, sin voto, para preguntar al Gobierno y presentar iniciativas, y menos firmas para la iniciativa legislativa popular.",
-   "fuente": "PSOE 2026, medida 371 (p. 91)",
-   "fuente_url": "https://www.democrata.es/uploads/s1/35/40/05/6/programapsoe29n26.pdf#page=90",
-   "observaciones": [
-    {
-     "etiqueta": "Contexto",
-     "texto": "La Constitución exige «no menos de 500.000 firmas» (art. 87.3). Bajar de esa cifra obliga a reformarla.",
-     "fuentes": []
-    },
-    {
-     "etiqueta": "Sin concretar",
-     "texto": "No dice cuántas firmas ni cómo se elige quién ocupa el escaño.",
-     "fuentes": []
-    }
-   ]
-  },
-  {
-   "id": "psoe-404",
-   "url": "https://loquenocuentan.com/psoe#psoe-404",
-   "partido": "PSOE",
-   "tema": "Justicia",
-   "origen": "Programa 29-N",
-   "texto": "Dar rango de ley a la Carta de Derechos Digitales: derecho a que te atienda una persona en los servicios públicos y a que ninguna decisión se tome solo de forma automática.",
-   "fuente": "PSOE 2026, medida 404 (p. 96)",
-   "fuente_url": "https://www.democrata.es/uploads/s1/35/40/05/6/programapsoe29n26.pdf#page=95",
-   "observaciones": [
-    {
-     "etiqueta": "Contexto",
-     "texto": "La Carta se aprobó en 2021 y hoy no es una norma: no obliga.",
-     "fuentes": []
-    },
-    {
-     "etiqueta": "Sin concretar",
-     "texto": "Sin plazo.",
-     "fuentes": []
-    }
-   ]
-  },
-  {
-   "id": "psoe-407",
-   "url": "https://loquenocuentan.com/psoe#psoe-407",
-   "partido": "PSOE",
-   "tema": "Justicia",
-   "origen": "Programa 29-N",
-   "texto": "Ley de Transparencia Algorítmica: auditorías independientes de los sistemas de IA que afecten a derechos y un observatorio público de discriminación algorítmica.",
-   "fuente": "PSOE 2026, medida 407 (p. 97)",
-   "fuente_url": "https://www.democrata.es/uploads/s1/35/40/05/6/programapsoe29n26.pdf#page=96",
-   "observaciones": [
-    {
-     "etiqueta": "Sin concretar",
-     "texto": "Sin plazo ni sanciones.",
-     "fuentes": []
-    }
-   ]
-  },
-  {
-   "id": "psoe-justicia-9",
-   "url": "https://loquenocuentan.com/psoe#psoe-justicia-9",
+   "id": "psoe-justicia-3",
+   "url": "https://loquenocuentan.com/psoe#psoe-justicia-3",
    "partido": "PSOE",
    "tema": "Justicia",
    "origen": "Gobierno / ley",
@@ -5243,8 +5091,8 @@
    ]
   },
   {
-   "id": "psoe-justicia-10",
-   "url": "https://loquenocuentan.com/psoe#psoe-justicia-10",
+   "id": "psoe-justicia-4",
+   "url": "https://loquenocuentan.com/psoe#psoe-justicia-4",
    "partido": "PSOE",
    "tema": "Justicia",
    "origen": "Gobierno / ley",
@@ -5269,27 +5117,8 @@
    ]
   },
   {
-   "id": "psoe-justicia-11",
-   "url": "https://loquenocuentan.com/psoe#psoe-justicia-11",
-   "partido": "PSOE",
-   "tema": "Justicia",
-   "origen": "Gobierno / ley",
-   "texto": "Ley de Integridad Pública, con una agencia anticorrupción.",
-   "fuente": "Política Electoral · justicia",
-   "fuente_url": "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/comparar/justicia",
-   "observaciones": [
-    {
-     "etiqueta": "Sin cumplir o caída",
-     "texto": "Decayó con la disolución.",
-     "fuentes": [
-      "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/comparar/justicia"
-     ]
-    }
-   ]
-  },
-  {
-   "id": "psoe-justicia-12",
-   "url": "https://loquenocuentan.com/psoe#psoe-justicia-12",
+   "id": "psoe-justicia-5",
+   "url": "https://loquenocuentan.com/psoe#psoe-justicia-5",
    "partido": "PSOE",
    "tema": "Justicia",
    "origen": "Gobierno / ley",
@@ -5393,26 +5222,6 @@
    ]
   },
   {
-   "id": "vox-107",
-   "url": "https://loquenocuentan.com/vox#vox-107",
-   "partido": "Vox",
-   "tema": "Justicia",
-   "origen": "Programa 29-N",
-   "texto": "Que los condenados por corrupción respondan con todos sus bienes presentes y futuros hasta devolver lo desviado.",
-   "fuente": "Vox 2026, medida 107 (p. 50)",
-   "fuente_url": "https://loquenocuentan.com/vox-programa-29n.html#p50",
-   "observaciones": [
-    {
-     "etiqueta": "Ya existe",
-     "texto": "Ya es así: quien debe responde «con todos sus bienes presentes y futuros» (art. 1911 del Código Civil), y el Código Penal obliga a reparar el daño (arts. 109 a 116).",
-     "fuentes": [
-      "https://www.boe.es/buscar/act.php?id=BOE-A-1889-4763",
-      "https://www.boe.es/buscar/act.php?id=BOE-A-1995-25444"
-     ]
-    }
-   ]
-  },
-  {
    "id": "vox-109",
    "url": "https://loquenocuentan.com/vox#vox-109",
    "partido": "Vox",
@@ -5506,36 +5315,6 @@
    ]
   },
   {
-   "id": "bildu-justicia-1",
-   "url": "https://loquenocuentan.com/eh-bildu#bildu-justicia-1",
-   "partido": "EH Bildu",
-   "tema": "Justicia",
-   "origen": "Programa anterior",
-   "texto": "Sustituir la Ley de Secretos Oficiales de 1968 y ampliar la Ley de Memoria Democrática.",
-   "fuente": "Política Electoral · justicia",
-   "fuente_url": "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/comparar/justicia",
-   "observaciones": [
-    {
-     "etiqueta": "Contexto",
-     "texto": "Es su programa de 2023: no ha publicado programa para el 29-N.",
-     "fuentes": [
-      "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/comparar/justicia"
-     ]
-    }
-   ]
-  },
-  {
-   "id": "pnv-justicia-1",
-   "url": "https://loquenocuentan.com/pnv#pnv-justicia-1",
-   "partido": "PNV",
-   "tema": "Justicia",
-   "origen": "Programa 29-N · vía prensa",
-   "texto": "Nueva Ley de Secretos Oficiales con desclasificación automática, y que los juicios terminen en el Tribunal Superior del País Vasco, salvo los del Supremo.",
-   "fuente": "Política Electoral · justicia",
-   "fuente_url": "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/comparar/justicia",
-   "observaciones": []
-  },
-  {
    "id": "bng-justicia-1",
    "url": "https://loquenocuentan.com/bng#bng-justicia-1",
    "partido": "BNG",
@@ -5564,17 +5343,6 @@
      ]
     }
    ]
-  },
-  {
-   "id": "salf-justicia-1",
-   "url": "https://loquenocuentan.com/salf#salf-justicia-1",
-   "partido": "SALF",
-   "tema": "Justicia",
-   "origen": "Declaración 2026",
-   "texto": "Que la corrupción no prescriba y que quien no devuelva lo robado no pueda salir en tercer grado.",
-   "fuente": "Política Electoral · justicia",
-   "fuente_url": "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/comparar/justicia",
-   "observaciones": []
   },
   {
    "id": "upn-justicia-1",
@@ -6069,6 +5837,491 @@
      ]
     }
    ]
+  },
+  {
+   "id": "pp-democracia-derechos-digitales-1",
+   "url": "https://loquenocuentan.com/pp#pp-democracia-derechos-digitales-1",
+   "partido": "PP",
+   "tema": "Democracia y derechos digitales",
+   "origen": "Programa 29-N · vía prensa",
+   "texto": "Refundar el CIS, con un presidente de mandato propio y una auditoría de su trabajo desde 2018.",
+   "fuente": "Programa del PP, vía Demócrata (10 nov 2026)",
+   "fuente_url": "https://www.democrata.es/elecciones-generales-espana/programa-electoral-pp-29n-propuestas/",
+   "observaciones": [
+    {
+     "etiqueta": "Sin concretar",
+     "texto": "No dice quién elige al presidente ni cuánto dura el mandato.",
+     "fuentes": []
+    },
+    {
+     "etiqueta": "Contexto",
+     "texto": "Figura en el programa oficial. Falta localizar el número de medida: por eso va como «vía prensa».",
+     "fuentes": [
+      "https://www.democrata.es/elecciones-generales-espana/programa-electoral-pp-29n-propuestas/",
+      "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/pp"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "pp-democracia-derechos-digitales-2",
+   "url": "https://loquenocuentan.com/pp#pp-democracia-derechos-digitales-2",
+   "partido": "PP",
+   "tema": "Democracia y derechos digitales",
+   "origen": "Programa 29-N · vía prensa",
+   "texto": "Reformar RTVE y la agencia EFE en los primeros cien días.",
+   "fuente": "Programa del PP, vía Demócrata (10 nov 2026)",
+   "fuente_url": "https://www.democrata.es/elecciones-generales-espana/programa-electoral-pp-29n-propuestas/",
+   "observaciones": [
+    {
+     "etiqueta": "Sin concretar",
+     "texto": "Los resúmenes consultados no dicen en qué consiste la reforma ni cómo se elegiría a sus responsables.",
+     "fuentes": [
+      "https://www.democrata.es/elecciones-generales-espana/programa-electoral-pp-29n-propuestas/",
+      "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/pp"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "pp-democracia-derechos-digitales-3",
+   "url": "https://loquenocuentan.com/pp#pp-democracia-derechos-digitales-3",
+   "partido": "PP",
+   "tema": "Democracia y derechos digitales",
+   "origen": "Programa 29-N · vía prensa",
+   "texto": "Que dos prórrogas seguidas de los presupuestos obliguen a disolver las Cortes y convocar elecciones.",
+   "fuente": "Programa del PP, vía Demócrata (10 nov 2026)",
+   "fuente_url": "https://www.democrata.es/elecciones-generales-espana/programa-electoral-pp-29n-propuestas/",
+   "observaciones": [
+    {
+     "etiqueta": "Contexto",
+     "texto": "Hoy la disolución la decide el presidente del Gobierno (art. 115 de la Constitución) y los presupuestos se prorrogan de forma automática (art. 134). Hacerla obligatoria exige reformar la Constitución.",
+     "fuentes": []
+    },
+    {
+     "etiqueta": "Contexto",
+     "texto": "El Gobierno llega a las urnas sin presupuestos nuevos desde 2023.",
+     "fuentes": [
+      "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/psoe"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "pp-democracia-derechos-digitales-4",
+   "url": "https://loquenocuentan.com/pp#pp-democracia-derechos-digitales-4",
+   "partido": "PP",
+   "tema": "Democracia y derechos digitales",
+   "origen": "Programa 29-N · vía prensa",
+   "texto": "Registro de «lobbies» y trazabilidad digital de contratos y subvenciones.",
+   "fuente": "Programa del PP, vía Hoy Aragón (11 nov 2026)",
+   "fuente_url": "https://www.hoyaragon.es/espana/promesas-feijoo-29n-programa-electoral-reconstruccion-nacional/20261111114920152268.html",
+   "observaciones": [
+    {
+     "etiqueta": "Contexto",
+     "texto": "El Congreso tumbó en la legislatura que termina la ley de «lobbies» del Gobierno.",
+     "fuentes": [
+      "https://elpais.com/espana/elecciones-generales/2026-11-15/el-psoe-propone-destinar-el-1-del-pib-a-vivienda-social-y-crear-una-prestacion-estatal-por-crianza.html"
+     ]
+    },
+    {
+     "etiqueta": "Sin concretar",
+     "texto": "Sin plazo ni detalle.",
+     "fuentes": []
+    }
+   ]
+  },
+  {
+   "id": "pp-democracia-derechos-digitales-5",
+   "url": "https://loquenocuentan.com/pp#pp-democracia-derechos-digitales-5",
+   "partido": "PP",
+   "tema": "Democracia y derechos digitales",
+   "origen": "Programa 29-N · vía prensa",
+   "texto": "Fijar por ley el mandato del presidente del INE.",
+   "fuente": "Programa del PP, vía Demócrata (10 nov 2026)",
+   "fuente_url": "https://www.democrata.es/elecciones-generales-espana/programa-electoral-pp-29n-propuestas/",
+   "observaciones": [
+    {
+     "etiqueta": "Sin concretar",
+     "texto": "No dice cuántos años.",
+     "fuentes": []
+    }
+   ]
+  },
+  {
+   "id": "pp-61",
+   "url": "https://loquenocuentan.com/pp#pp-61",
+   "partido": "PP",
+   "tema": "Democracia y derechos digitales",
+   "origen": "Programa 29-N",
+   "texto": "Reformar el suplicatorio y revisar los aforamientos.",
+   "fuente": "PP 2026, medida 61 (p. 25)",
+   "fuente_url": "https://www.pp.es/wp-content/uploads/2026/11/LA-RECONSTRUCCION-NACIONAL.pdf#page=25",
+   "observaciones": [
+    {
+     "etiqueta": "Sin concretar",
+     "texto": "No dice qué aforamientos quitaría.",
+     "fuentes": []
+    },
+    {
+     "etiqueta": "Contexto",
+     "texto": "Los de diputados, senadores y miembros del Gobierno están en la Constitución (arts. 71 y 102). Quitarlos exige reformarla, con tres quintos del Congreso y del Senado.",
+     "fuentes": [
+      "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "pp-168-democracia-derechos-digitales",
+   "url": "https://loquenocuentan.com/pp#pp-168-democracia-derechos-digitales",
+   "partido": "PP",
+   "tema": "Democracia y derechos digitales",
+   "origen": "Programa 29-N",
+   "texto": "Ningún menor de 14 años con cuenta en redes sociales; hasta los 16, con autorización de los padres.",
+   "fuente": "PP 2026, medida 168 (p. 45)",
+   "fuente_url": "https://www.pp.es/wp-content/uploads/2026/11/LA-RECONSTRUCCION-NACIONAL.pdf#page=45",
+   "observaciones": [
+    {
+     "etiqueta": "Sin concretar",
+     "texto": "No explica cómo se verificaría la edad.",
+     "fuentes": []
+    }
+   ]
+  },
+  {
+   "id": "psoe-445",
+   "url": "https://loquenocuentan.com/psoe#psoe-445",
+   "partido": "PSOE",
+   "tema": "Democracia y derechos digitales",
+   "origen": "Programa 29-N",
+   "texto": "Ley orgánica de integridad pública, estrategia anticorrupción con mapas de riesgos y agencia independiente.",
+   "fuente": "PSOE 2026, medida 445 (p. 103)",
+   "fuente_url": "https://www.democrata.es/uploads/s1/35/40/05/6/programapsoe29n26.pdf#page=102",
+   "observaciones": [
+    {
+     "etiqueta": "Sin cumplir o caída",
+     "texto": "La Ley de Integridad Pública decayó con la disolución.",
+     "fuentes": [
+      "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/comparar/justicia"
+     ]
+    },
+    {
+     "etiqueta": "Contexto",
+     "texto": "El Gobierno presentó ese paquete tras los casos de José Luis Ábalos y Santos Cerdán, ex secretarios de Organización del PSOE. No logró sacarlo entero adelante.",
+     "fuentes": [
+      "https://elpais.com/espana/elecciones-generales/2026-11-15/el-psoe-propone-destinar-el-1-del-pib-a-vivienda-social-y-crear-una-prestacion-estatal-por-crianza.html"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "psoe-446",
+   "url": "https://loquenocuentan.com/psoe#psoe-446",
+   "partido": "PSOE",
+   "tema": "Democracia y derechos digitales",
+   "origen": "Programa 29-N",
+   "texto": "Ley de grupos de interés («lobbies») con registro obligatorio y publicidad de las reuniones.",
+   "fuente": "PSOE 2026, medida 446 (p. 103)",
+   "fuente_url": "https://www.democrata.es/uploads/s1/35/40/05/6/programapsoe29n26.pdf#page=102",
+   "observaciones": [
+    {
+     "etiqueta": "Sin cumplir o caída",
+     "texto": "El Congreso tumbó la ley de «lobbies» en la legislatura que termina.",
+     "fuentes": [
+      "https://elpais.com/espana/elecciones-generales/2026-11-15/el-psoe-propone-destinar-el-1-del-pib-a-vivienda-social-y-crear-una-prestacion-estatal-por-crianza.html"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "psoe-373",
+   "url": "https://loquenocuentan.com/psoe#psoe-373",
+   "partido": "PSOE",
+   "tema": "Democracia y derechos digitales",
+   "origen": "Programa 29-N",
+   "texto": "Suprimir los aforamientos para los delitos ajenos al cargo.",
+   "fuente": "PSOE 2026, medida 373 (p. 91)",
+   "fuente_url": "https://www.democrata.es/uploads/s1/35/40/05/6/programapsoe29n26.pdf#page=90",
+   "observaciones": [
+    {
+     "etiqueta": "Contexto",
+     "texto": "El aforamiento de diputados, senadores y miembros del Gobierno está en la Constitución (arts. 71 y 102). Cambiarlo exige reformarla.",
+     "fuentes": []
+    },
+    {
+     "etiqueta": "Sin concretar",
+     "texto": "Sin plazo.",
+     "fuentes": []
+    }
+   ]
+  },
+  {
+   "id": "psoe-371",
+   "url": "https://loquenocuentan.com/psoe#psoe-371",
+   "partido": "PSOE",
+   "tema": "Democracia y derechos digitales",
+   "origen": "Programa 29-N",
+   "texto": "Escaño ciudadano en el Congreso y el Senado, sin voto, para preguntar al Gobierno y presentar iniciativas, y menos firmas para la iniciativa legislativa popular.",
+   "fuente": "PSOE 2026, medida 371 (p. 91)",
+   "fuente_url": "https://www.democrata.es/uploads/s1/35/40/05/6/programapsoe29n26.pdf#page=90",
+   "observaciones": [
+    {
+     "etiqueta": "Contexto",
+     "texto": "La Constitución exige «no menos de 500.000 firmas» (art. 87.3). Bajar de esa cifra obliga a reformarla.",
+     "fuentes": []
+    },
+    {
+     "etiqueta": "Sin concretar",
+     "texto": "No dice cuántas firmas ni cómo se elige quién ocupa el escaño.",
+     "fuentes": []
+    }
+   ]
+  },
+  {
+   "id": "psoe-404",
+   "url": "https://loquenocuentan.com/psoe#psoe-404",
+   "partido": "PSOE",
+   "tema": "Democracia y derechos digitales",
+   "origen": "Programa 29-N",
+   "texto": "Dar rango de ley a la Carta de Derechos Digitales: derecho a que te atienda una persona en los servicios públicos y a que ninguna decisión se tome solo de forma automática.",
+   "fuente": "PSOE 2026, medida 404 (p. 96)",
+   "fuente_url": "https://www.democrata.es/uploads/s1/35/40/05/6/programapsoe29n26.pdf#page=95",
+   "observaciones": [
+    {
+     "etiqueta": "Contexto",
+     "texto": "La Carta se aprobó en 2021 y hoy no es una norma: no obliga.",
+     "fuentes": []
+    },
+    {
+     "etiqueta": "Sin concretar",
+     "texto": "Sin plazo.",
+     "fuentes": []
+    }
+   ]
+  },
+  {
+   "id": "psoe-407",
+   "url": "https://loquenocuentan.com/psoe#psoe-407",
+   "partido": "PSOE",
+   "tema": "Democracia y derechos digitales",
+   "origen": "Programa 29-N",
+   "texto": "Ley de Transparencia Algorítmica: auditorías independientes de los sistemas de IA que afecten a derechos y un observatorio público de discriminación algorítmica.",
+   "fuente": "PSOE 2026, medida 407 (p. 97)",
+   "fuente_url": "https://www.democrata.es/uploads/s1/35/40/05/6/programapsoe29n26.pdf#page=96",
+   "observaciones": [
+    {
+     "etiqueta": "Sin concretar",
+     "texto": "Sin plazo ni sanciones.",
+     "fuentes": []
+    }
+   ]
+  },
+  {
+   "id": "psoe-democracia-derechos-digitales-7",
+   "url": "https://loquenocuentan.com/psoe#psoe-democracia-derechos-digitales-7",
+   "partido": "PSOE",
+   "tema": "Democracia y derechos digitales",
+   "origen": "Gobierno / ley",
+   "texto": "Ley de Integridad Pública, con una agencia anticorrupción.",
+   "fuente": "Política Electoral · justicia",
+   "fuente_url": "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/comparar/justicia",
+   "observaciones": [
+    {
+     "etiqueta": "Sin cumplir o caída",
+     "texto": "Decayó con la disolución.",
+     "fuentes": [
+      "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/comparar/justicia"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "psoe-372-democracia-derechos-digitales",
+   "url": "https://loquenocuentan.com/psoe#psoe-372-democracia-derechos-digitales",
+   "partido": "PSOE",
+   "tema": "Democracia y derechos digitales",
+   "origen": "Programa 29-N",
+   "texto": "Voto a los 16 años.",
+   "fuente": "PSOE 2026, medida 372 (p. 91)",
+   "fuente_url": "https://www.democrata.es/uploads/s1/35/40/05/6/programapsoe29n26.pdf#page=90",
+   "observaciones": [
+    {
+     "etiqueta": "Sin concretar",
+     "texto": "No dice cómo ni cuándo.",
+     "fuentes": []
+    }
+   ]
+  },
+  {
+   "id": "psoe-399-democracia-derechos-digitales",
+   "url": "https://loquenocuentan.com/psoe#psoe-399-democracia-derechos-digitales",
+   "partido": "PSOE",
+   "tema": "Democracia y derechos digitales",
+   "origen": "Programa 29-N",
+   "texto": "Edad mínima de 16 años para usar redes sociales, con una ley en el primer año de legislatura.",
+   "fuente": "PSOE 2026, medida 399 (p. 96)",
+   "fuente_url": "https://www.democrata.es/uploads/s1/35/40/05/6/programapsoe29n26.pdf#page=95",
+   "observaciones": []
+  },
+  {
+   "id": "vox-106",
+   "url": "https://loquenocuentan.com/vox#vox-106",
+   "partido": "Vox",
+   "tema": "Democracia y derechos digitales",
+   "origen": "Programa 29-N",
+   "texto": "Más medios para los juzgados y las unidades de Policía y Guardia Civil que investigan la corrupción.",
+   "fuente": "Vox 2026, medida 106 (p. 49)",
+   "fuente_url": "https://loquenocuentan.com/vox-programa-29n.html#p49",
+   "observaciones": [
+    {
+     "etiqueta": "Sin concretar",
+     "texto": "Sin cifras de efectivos ni de presupuesto.",
+     "fuentes": []
+    }
+   ]
+  },
+  {
+   "id": "vox-111",
+   "url": "https://loquenocuentan.com/vox#vox-111",
+   "partido": "Vox",
+   "tema": "Democracia y derechos digitales",
+   "origen": "Programa 29-N",
+   "texto": "«Garantizar la libertad de expresión» frente a «la deriva censora del Gobierno».",
+   "fuente": "Vox 2026, medida 111 (p. 51)",
+   "fuente_url": "https://loquenocuentan.com/vox-programa-29n.html#p51",
+   "observaciones": [
+    {
+     "etiqueta": "Sin concretar",
+     "texto": "Es una sola frase. No dice qué ley cambiaría ni cómo.",
+     "fuentes": []
+    }
+   ]
+  },
+  {
+   "id": "vox-107",
+   "url": "https://loquenocuentan.com/vox#vox-107",
+   "partido": "Vox",
+   "tema": "Democracia y derechos digitales",
+   "origen": "Programa 29-N",
+   "texto": "Que los condenados por corrupción respondan con todos sus bienes presentes y futuros hasta devolver lo desviado.",
+   "fuente": "Vox 2026, medida 107 (p. 50)",
+   "fuente_url": "https://loquenocuentan.com/vox-programa-29n.html#p50",
+   "observaciones": [
+    {
+     "etiqueta": "Ya existe",
+     "texto": "Ya es así: quien debe responde «con todos sus bienes presentes y futuros» (art. 1911 del Código Civil), y el Código Penal obliga a reparar el daño (arts. 109 a 116).",
+     "fuentes": [
+      "https://www.boe.es/buscar/act.php?id=BOE-A-1889-4763",
+      "https://www.boe.es/buscar/act.php?id=BOE-A-1995-25444"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "vox-110",
+   "url": "https://loquenocuentan.com/vox#vox-110",
+   "partido": "Vox",
+   "tema": "Democracia y derechos digitales",
+   "origen": "Programa 29-N",
+   "texto": "«Limpiar RTVE de comisarios políticos».",
+   "fuente": "Vox 2026, medida 110 (p. 51)",
+   "fuente_url": "https://loquenocuentan.com/vox-programa-29n.html#p51",
+   "observaciones": [
+    {
+     "etiqueta": "Sin concretar",
+     "texto": "No dice cómo se garantizaría la independencia ni quién decidiría quién es un «comisario político».",
+     "fuentes": []
+    }
+   ]
+  },
+  {
+   "id": "vox-97",
+   "url": "https://loquenocuentan.com/vox#vox-97",
+   "partido": "Vox",
+   "tema": "Democracia y derechos digitales",
+   "origen": "Programa 29-N",
+   "texto": "Proteger a los menores en el entorno digital frente al juego, la pornografía y ciertos delitos.",
+   "fuente": "Vox 2026, medida 97 (p. 45)",
+   "fuente_url": "https://loquenocuentan.com/vox-programa-29n.html#p45",
+   "observaciones": [
+    {
+     "etiqueta": "Sin concretar",
+     "texto": "Ninguna medida concreta: ni verificación de edad ni límites de acceso.",
+     "fuentes": []
+    }
+   ]
+  },
+  {
+   "id": "vox-43-democracia-derechos-digitales",
+   "url": "https://loquenocuentan.com/vox#vox-43-democracia-derechos-digitales",
+   "partido": "Vox",
+   "tema": "Democracia y derechos digitales",
+   "origen": "Programa 29-N",
+   "texto": "Suprimir de forma progresiva las subvenciones a partidos, sindicatos, patronales, ONG y observatorios.",
+   "fuente": "Vox 2026, medida 43 (p. 25)",
+   "fuente_url": "https://loquenocuentan.com/vox-programa-29n.html#p25",
+   "observaciones": []
+  },
+  {
+   "id": "fa-democracia-derechos-digitales-1",
+   "url": "https://loquenocuentan.com/frente-amplio#fa-democracia-derechos-digitales-1",
+   "partido": "Frente Amplio",
+   "tema": "Democracia y derechos digitales",
+   "origen": "Gobierno / ley",
+   "texto": "Ley de protección de menores en entornos digitales: limitar las redes sociales a menores de 16 años.",
+   "fuente": "Política Electoral · Sumar (Frente Amplio)",
+   "fuente_url": "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/sumar",
+   "observaciones": [
+    {
+     "etiqueta": "Sin cumplir o caída",
+     "texto": "No llegó a aprobarse.",
+     "fuentes": [
+      "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/sumar"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "bildu-democracia-derechos-digitales-1",
+   "url": "https://loquenocuentan.com/eh-bildu#bildu-democracia-derechos-digitales-1",
+   "partido": "EH Bildu",
+   "tema": "Democracia y derechos digitales",
+   "origen": "Programa anterior",
+   "texto": "Sustituir la Ley de Secretos Oficiales de 1968 y ampliar la Ley de Memoria Democrática.",
+   "fuente": "Política Electoral · justicia",
+   "fuente_url": "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/comparar/justicia",
+   "observaciones": [
+    {
+     "etiqueta": "Contexto",
+     "texto": "Es su programa de 2023: no ha publicado programa para el 29-N.",
+     "fuentes": [
+      "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/comparar/justicia"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "pnv-democracia-derechos-digitales-1",
+   "url": "https://loquenocuentan.com/pnv#pnv-democracia-derechos-digitales-1",
+   "partido": "PNV",
+   "tema": "Democracia y derechos digitales",
+   "origen": "Programa 29-N · vía prensa",
+   "texto": "Nueva Ley de Secretos Oficiales con desclasificación automática, y que los juicios terminen en el Tribunal Superior del País Vasco, salvo los del Supremo.",
+   "fuente": "Política Electoral · justicia",
+   "fuente_url": "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/comparar/justicia",
+   "observaciones": []
+  },
+  {
+   "id": "salf-democracia-derechos-digitales-1",
+   "url": "https://loquenocuentan.com/salf#salf-democracia-derechos-digitales-1",
+   "partido": "SALF",
+   "tema": "Democracia y derechos digitales",
+   "origen": "Declaración 2026",
+   "texto": "Que la corrupción no prescriba y que quien no devuelva lo robado no pueda salir en tercer grado.",
+   "fuente": "Política Electoral · justicia",
+   "fuente_url": "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/comparar/justicia",
+   "observaciones": []
   },
   {
    "id": "pp-112",
@@ -6945,23 +7198,6 @@
     {
      "etiqueta": "Sin concretar",
      "texto": "No dice cuánto dinero ni qué zonas.",
-     "fuentes": []
-    }
-   ]
-  },
-  {
-   "id": "vox-97",
-   "url": "https://loquenocuentan.com/vox#vox-97",
-   "partido": "Vox",
-   "tema": "Servicios sociales y pobreza",
-   "origen": "Programa 29-N",
-   "texto": "Proteger a los menores en el entorno digital frente al juego, la pornografía y ciertos delitos.",
-   "fuente": "Vox 2026, medida 97 (p. 45)",
-   "fuente_url": "https://loquenocuentan.com/vox-programa-29n.html#p45",
-   "observaciones": [
-    {
-     "etiqueta": "Sin concretar",
-     "texto": "Ninguna medida concreta: ni verificación de edad ni límites de acceso.",
      "fuentes": []
     }
    ]
@@ -8389,23 +8625,6 @@
      "fuentes": [
       "https://hudoc.echr.coe.int/eng?i=001-181719"
      ]
-    }
-   ]
-  },
-  {
-   "id": "vox-110",
-   "url": "https://loquenocuentan.com/vox#vox-110",
-   "partido": "Vox",
-   "tema": "Territorio y España vaciada",
-   "origen": "Programa 29-N",
-   "texto": "«Limpiar RTVE de comisarios políticos».",
-   "fuente": "Vox 2026, medida 110 (p. 51)",
-   "fuente_url": "https://loquenocuentan.com/vox-programa-29n.html#p51",
-   "observaciones": [
-    {
-     "etiqueta": "Sin concretar",
-     "texto": "No dice cómo se garantizaría la independencia ni quién decidiría quién es un «comisario político».",
-     "fuentes": []
     }
    ]
   },
