@@ -213,8 +213,206 @@
    ]
   },
   {
-   "id": "psoe-vivienda-1",
-   "url": "https://loquenocuentan.com/psoe#psoe-vivienda-1",
+   "id": "psoe-38",
+   "url": "https://loquenocuentan.com/psoe#psoe-38",
+   "partido": "PSOE",
+   "tema": "Vivienda",
+   "origen": "Programa 29-N",
+   "texto": "Movilizar cada año el equivalente al 1 % del PIB para garantizar el acceso a la vivienda.",
+   "fuente": "PSOE 2026, medida 38 (p. 28)",
+   "fuente_url": "https://www.democrata.es/uploads/s1/35/40/05/6/programapsoe29n26.pdf#page=27",
+   "observaciones": [
+    {
+     "etiqueta": "Contexto",
+     "texto": "El PIB de 2025 fue de 1.690.012 millones de euros: el 1 % son unos 16.900 millones al año.",
+     "fuentes": [
+      "https://elpais.com/espana/elecciones-generales/2026-11-15/el-psoe-propone-destinar-el-1-del-pib-a-vivienda-social-y-crear-una-prestacion-estatal-por-crianza.html"
+     ]
+    },
+    {
+     "etiqueta": "Sin coste",
+     "texto": "No dice qué parte pone el Estado. El programa pide que se sumen «todas las administraciones» y el ICO.",
+     "fuentes": [
+      "https://www.elcorreogallego.es/espana/2026/11/15/psoe-plantea-subir-impuestos-tecno-oligarcas-136470388.html"
+     ]
+    },
+    {
+     "etiqueta": "Contexto",
+     "texto": "El Plan Estatal de Vivienda 2026-2030 de su Gobierno suma 7.000 millones en cinco años.",
+     "fuentes": [
+      "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/psoe"
+     ]
+    },
+    {
+     "etiqueta": "Contexto",
+     "texto": "Sumar se lo planteó al PSOE en el Gobierno de coalición, sin éxito.",
+     "fuentes": [
+      "https://elpais.com/espana/elecciones-generales/2026-11-15/el-psoe-propone-destinar-el-1-del-pib-a-vivienda-social-y-crear-una-prestacion-estatal-por-crianza.html"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "psoe-39",
+   "url": "https://loquenocuentan.com/psoe#psoe-39",
+   "partido": "PSOE",
+   "tema": "Vivienda",
+   "origen": "Programa 29-N",
+   "texto": "Ampliar el parque público y protegido hasta la media de los países de nuestro entorno.",
+   "fuente": "PSOE 2026, medida 39 (p. 28)",
+   "fuente_url": "https://www.democrata.es/uploads/s1/35/40/05/6/programapsoe29n26.pdf#page=27",
+   "observaciones": [
+    {
+     "etiqueta": "Sin concretar",
+     "texto": "El texto no fija porcentaje, plazo ni número de viviendas. Según El País, el objetivo es llegar en cuatro años al 8 %, el doble que hoy.",
+     "fuentes": [
+      "https://elpais.com/espana/elecciones-generales/2026-11-15/el-psoe-propone-destinar-el-1-del-pib-a-vivienda-social-y-crear-una-prestacion-estatal-por-crianza.html"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "psoe-42",
+   "url": "https://loquenocuentan.com/psoe#psoe-42",
+   "partido": "PSOE",
+   "tema": "Vivienda",
+   "origen": "Programa 29-N",
+   "texto": "Parque público estatal de 100.000 viviendas con Casa 47, construidas o compradas, para alquiler o venta asequible.",
+   "fuente": "PSOE 2026, medida 42 (p. 29)",
+   "fuente_url": "https://www.democrata.es/uploads/s1/35/40/05/6/programapsoe29n26.pdf#page=28",
+   "observaciones": [
+    {
+     "etiqueta": "Sin concretar",
+     "texto": "Sin plazo ni presupuesto.",
+     "fuentes": []
+    },
+    {
+     "etiqueta": "Sin cumplir o caída",
+     "texto": "Su programa de 2023 prometía 183.000 viviendas públicas de alquiler. No hemos localizado un balance de cuántas se han entregado.",
+     "fuentes": [
+      "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/psoe"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "psoe-70",
+   "url": "https://loquenocuentan.com/psoe#psoe-70",
+   "partido": "PSOE",
+   "tema": "Vivienda",
+   "origen": "Programa 29-N",
+   "texto": "Impuesto progresivo a las viviendas de grandes propietarios y fondos que no estén en alquiler asequible: vacías, turísticas o con precio abusivo.",
+   "fuente": "PSOE 2026, medida 70 (p. 32-33)",
+   "fuente_url": "https://www.democrata.es/uploads/s1/35/40/05/6/programapsoe29n26.pdf#page=31",
+   "observaciones": [
+    {
+     "etiqueta": "Sin concretar",
+     "texto": "No fija el tipo, ni a partir de cuántas viviendas se paga, ni qué precio es abusivo.",
+     "fuentes": []
+    },
+    {
+     "etiqueta": "Contexto",
+     "texto": "Fuentes del PSOE aseguran que no afectará a los pequeños propietarios.",
+     "fuentes": [
+      "https://elpais.com/espana/elecciones-generales/2026-11-15/el-psoe-propone-destinar-el-1-del-pib-a-vivienda-social-y-crear-una-prestacion-estatal-por-crianza.html"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "psoe-67",
+   "url": "https://loquenocuentan.com/psoe#psoe-67",
+   "partido": "PSOE",
+   "tema": "Vivienda",
+   "origen": "Programa 29-N",
+   "texto": "Programa TU CASA: 10.000 millones en préstamos sin intereses de hasta 50.000 € para la primera vivienda.",
+   "fuente": "PSOE 2026, medida 67 (p. 32)",
+   "fuente_url": "https://www.democrata.es/uploads/s1/35/40/05/6/programapsoe29n26.pdf#page=31",
+   "observaciones": [
+    {
+     "etiqueta": "Ya existe",
+     "texto": "El decreto convalidado el 12 de noviembre de 2026 ya incluye préstamos ICO al 0 % de hasta 50.000 €.",
+     "fuentes": [
+      "https://www.idealista.com/news/inmobiliario/vivienda/2026/11/12/923779-la-diputacion-permanente-convalida-el-decreto-de-vivienda-y-rechaza-el-de"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "psoe-61",
+   "url": "https://loquenocuentan.com/psoe#psoe-61",
+   "partido": "PSOE",
+   "tema": "Vivienda",
+   "origen": "Programa 29-N",
+   "texto": "Contratos de alquiler más largos y congelación temporal de las rentas que superen el índice de referencia en las zonas tensionadas.",
+   "fuente": "PSOE 2026, medida 61 (p. 31)",
+   "fuente_url": "https://www.democrata.es/uploads/s1/35/40/05/6/programapsoe29n26.pdf#page=30",
+   "observaciones": [
+    {
+     "etiqueta": "Sin concretar",
+     "texto": "No dice cuánto duran los contratos ni la congelación.",
+     "fuentes": []
+    },
+    {
+     "etiqueta": "Sin cumplir o caída",
+     "texto": "El 12 de noviembre de 2026 se rechazó, por 35 votos a 34, su prórroga casi indefinida del alquiler.",
+     "fuentes": [
+      "https://www.idealista.com/news/inmobiliario/vivienda/2026/11/12/923779-la-diputacion-permanente-convalida-el-decreto-de-vivienda-y-rechaza-el-de"
+     ]
+    },
+    {
+     "etiqueta": "Depende de las CCAA",
+     "texto": "Las zonas tensionadas las declaran las comunidades.",
+     "fuentes": [
+      "https://www.boe.es/buscar/act.php?id=BOE-A-2023-12203"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "psoe-84",
+   "url": "https://loquenocuentan.com/psoe#psoe-84",
+   "partido": "PSOE",
+   "tema": "Vivienda",
+   "origen": "Programa 29-N",
+   "texto": "Protección estable frente al desahucio de personas vulnerables sin alternativa. El coste lo asumen las administraciones, no el pequeño propietario.",
+   "fuente": "PSOE 2026, medida 84 (p. 34)",
+   "fuente_url": "https://www.democrata.es/uploads/s1/35/40/05/6/programapsoe29n26.pdf#page=33",
+   "observaciones": [
+    {
+     "etiqueta": "Ya existe",
+     "texto": "La moratoria de desahucios hasta 2030 está en vigor por decreto.",
+     "fuentes": [
+      "https://www.idealista.com/news/inmobiliario/vivienda/2026/11/12/923779-la-diputacion-permanente-convalida-el-decreto-de-vivienda-y-rechaza-el-de"
+     ]
+    },
+    {
+     "etiqueta": "Sin concretar",
+     "texto": "No dice cuánto cuesta ni cómo se compensa al propietario.",
+     "fuentes": []
+    }
+   ]
+  },
+  {
+   "id": "psoe-37",
+   "url": "https://loquenocuentan.com/psoe#psoe-37",
+   "partido": "PSOE",
+   "tema": "Vivienda",
+   "origen": "Programa 29-N",
+   "texto": "Reconocer la vivienda como derecho fundamental en la Constitución.",
+   "fuente": "PSOE 2026, medida 37 (p. 28)",
+   "fuente_url": "https://www.democrata.es/uploads/s1/35/40/05/6/programapsoe29n26.pdf#page=27",
+   "observaciones": [
+    {
+     "etiqueta": "Contexto",
+     "texto": "Exige reformar la Constitución: como mínimo, tres quintos de cada cámara (art. 167). Si se toca la sección de derechos fundamentales, hace falta el procedimiento agravado del art. 168.",
+     "fuentes": []
+    }
+   ]
+  },
+  {
+   "id": "psoe-vivienda-9",
+   "url": "https://loquenocuentan.com/psoe#psoe-vivienda-9",
    "partido": "PSOE",
    "tema": "Vivienda",
    "origen": "Gobierno / ley",
@@ -237,8 +435,8 @@
    ]
   },
   {
-   "id": "psoe-vivienda-2",
-   "url": "https://loquenocuentan.com/psoe#psoe-vivienda-2",
+   "id": "psoe-vivienda-10",
+   "url": "https://loquenocuentan.com/psoe#psoe-vivienda-10",
    "partido": "PSOE",
    "tema": "Vivienda",
    "origen": "Gobierno / ley",
@@ -256,8 +454,8 @@
    ]
   },
   {
-   "id": "psoe-vivienda-3",
-   "url": "https://loquenocuentan.com/psoe#psoe-vivienda-3",
+   "id": "psoe-vivienda-11",
+   "url": "https://loquenocuentan.com/psoe#psoe-vivienda-11",
    "partido": "PSOE",
    "tema": "Vivienda",
    "origen": "Gobierno / ley",
@@ -275,8 +473,8 @@
    ]
   },
   {
-   "id": "psoe-vivienda-4",
-   "url": "https://loquenocuentan.com/psoe#psoe-vivienda-4",
+   "id": "psoe-vivienda-12",
+   "url": "https://loquenocuentan.com/psoe#psoe-vivienda-12",
    "partido": "PSOE",
    "tema": "Vivienda",
    "origen": "Gobierno / ley",
@@ -294,8 +492,8 @@
    ]
   },
   {
-   "id": "psoe-vivienda-5",
-   "url": "https://loquenocuentan.com/psoe#psoe-vivienda-5",
+   "id": "psoe-vivienda-13",
+   "url": "https://loquenocuentan.com/psoe#psoe-vivienda-13",
    "partido": "PSOE",
    "tema": "Vivienda",
    "origen": "Proposición de ley",
@@ -306,23 +504,6 @@
     {
      "etiqueta": "Sin cumplir o caída",
      "texto": "Proposición de 2025 que no se aprobó.",
-     "fuentes": []
-    }
-   ]
-  },
-  {
-   "id": "psoe-vivienda-6",
-   "url": "https://loquenocuentan.com/psoe#psoe-vivienda-6",
-   "partido": "PSOE",
-   "tema": "Vivienda",
-   "origen": "Declaración 2026",
-   "texto": "Empresa Estatal de Vivienda y vivienda protegida para siempre.",
-   "fuente": "Qué Proponen · PSOE",
-   "fuente_url": "https://queproponen.es/partidos/psoe",
-   "observaciones": [
-    {
-     "etiqueta": "Sin concretar",
-     "texto": "Sin presupuesto ni número de viviendas.",
      "fuentes": []
     }
    ]
@@ -886,8 +1067,81 @@
    ]
   },
   {
-   "id": "psoe-jovenes-1",
-   "url": "https://loquenocuentan.com/psoe#psoe-jovenes-1",
+   "id": "psoe-372",
+   "url": "https://loquenocuentan.com/psoe#psoe-372",
+   "partido": "PSOE",
+   "tema": "Jóvenes",
+   "origen": "Programa 29-N",
+   "texto": "Voto a los 16 años.",
+   "fuente": "PSOE 2026, medida 372 (p. 91)",
+   "fuente_url": "https://www.democrata.es/uploads/s1/35/40/05/6/programapsoe29n26.pdf#page=90",
+   "observaciones": [
+    {
+     "etiqueta": "Sin concretar",
+     "texto": "No dice cómo ni cuándo.",
+     "fuentes": []
+    }
+   ]
+  },
+  {
+   "id": "psoe-64",
+   "url": "https://loquenocuentan.com/psoe#psoe-64",
+   "partido": "PSOE",
+   "tema": "Jóvenes",
+   "origen": "Programa 29-N",
+   "texto": "Garantía pública para que los jóvenes accedan al alquiler, con seguros de impago.",
+   "fuente": "PSOE 2026, medida 64 (p. 32)",
+   "fuente_url": "https://www.democrata.es/uploads/s1/35/40/05/6/programapsoe29n26.pdf#page=31",
+   "observaciones": [
+    {
+     "etiqueta": "Sin concretar",
+     "texto": "Sin cuantía, sin límite de edad y sin plazo.",
+     "fuentes": []
+    }
+   ]
+  },
+  {
+   "id": "psoe-118",
+   "url": "https://loquenocuentan.com/psoe#psoe-118",
+   "partido": "PSOE",
+   "tema": "Jóvenes",
+   "origen": "Programa 29-N",
+   "texto": "Plan de inserción laboral juvenil y Estatuto del Becario.",
+   "fuente": "PSOE 2026, medida 118 (p. 43-44)",
+   "fuente_url": "https://www.democrata.es/uploads/s1/35/40/05/6/programapsoe29n26.pdf#page=42",
+   "observaciones": [
+    {
+     "etiqueta": "Sin concretar",
+     "texto": "Sin calendario.",
+     "fuentes": []
+    }
+   ]
+  },
+  {
+   "id": "psoe-399",
+   "url": "https://loquenocuentan.com/psoe#psoe-399",
+   "partido": "PSOE",
+   "tema": "Jóvenes",
+   "origen": "Programa 29-N",
+   "texto": "Edad mínima de 16 años para usar redes sociales, con una ley en el primer año de legislatura.",
+   "fuente": "PSOE 2026, medida 399 (p. 96)",
+   "fuente_url": "https://www.democrata.es/uploads/s1/35/40/05/6/programapsoe29n26.pdf#page=95",
+   "observaciones": []
+  },
+  {
+   "id": "psoe-453",
+   "url": "https://loquenocuentan.com/psoe#psoe-453",
+   "partido": "PSOE",
+   "tema": "Jóvenes",
+   "origen": "Programa 29-N",
+   "texto": "Abono de cine de 15 € al mes para menores de 25 años.",
+   "fuente": "PSOE 2026, medida 453 (p. 104)",
+   "fuente_url": "https://www.democrata.es/uploads/s1/35/40/05/6/programapsoe29n26.pdf#page=103",
+   "observaciones": []
+  },
+  {
+   "id": "psoe-jovenes-6",
+   "url": "https://loquenocuentan.com/psoe#psoe-jovenes-6",
    "partido": "PSOE",
    "tema": "Jóvenes",
    "origen": "Gobierno / ley",
@@ -905,8 +1159,8 @@
    ]
   },
   {
-   "id": "psoe-jovenes-2",
-   "url": "https://loquenocuentan.com/psoe#psoe-jovenes-2",
+   "id": "psoe-jovenes-7",
+   "url": "https://loquenocuentan.com/psoe#psoe-jovenes-7",
    "partido": "PSOE",
    "tema": "Jóvenes",
    "origen": "Gobierno / ley",
@@ -924,8 +1178,8 @@
    ]
   },
   {
-   "id": "psoe-jovenes-3",
-   "url": "https://loquenocuentan.com/psoe#psoe-jovenes-3",
+   "id": "psoe-jovenes-8",
+   "url": "https://loquenocuentan.com/psoe#psoe-jovenes-8",
    "partido": "PSOE",
    "tema": "Jóvenes",
    "origen": "Gobierno / ley",
@@ -939,42 +1193,6 @@
      "fuentes": [
       "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/psoe"
      ]
-    }
-   ]
-  },
-  {
-   "id": "psoe-jovenes-4",
-   "url": "https://loquenocuentan.com/psoe#psoe-jovenes-4",
-   "partido": "PSOE",
-   "tema": "Jóvenes",
-   "origen": "Programa anterior",
-   "texto": "183.000 viviendas públicas de alquiler, la mitad para jóvenes.",
-   "fuente": "Política Electoral · PSOE",
-   "fuente_url": "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/psoe",
-   "observaciones": [
-    {
-     "etiqueta": "Sin cumplir o caída",
-     "texto": "Promesa de 2023. No hemos localizado un balance de cuántas se han entregado.",
-     "fuentes": [
-      "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/psoe"
-     ]
-    }
-   ]
-  },
-  {
-   "id": "psoe-jovenes-5",
-   "url": "https://loquenocuentan.com/psoe#psoe-jovenes-5",
-   "partido": "PSOE",
-   "tema": "Jóvenes",
-   "origen": "Declaración 2026",
-   "texto": "Estatuto del Becario.",
-   "fuente": "Qué Proponen · PSOE",
-   "fuente_url": "https://queproponen.es/partidos/psoe",
-   "observaciones": [
-    {
-     "etiqueta": "Sin concretar",
-     "texto": "Sin texto ni calendario.",
-     "fuentes": []
     }
    ]
   },
@@ -1248,18 +1466,28 @@
    ]
   },
   {
-   "id": "psoe-sanidad-1",
-   "url": "https://loquenocuentan.com/psoe#psoe-sanidad-1",
+   "id": "psoe-136",
+   "url": "https://loquenocuentan.com/psoe#psoe-136",
    "partido": "PSOE",
    "tema": "Sanidad",
-   "origen": "Declaración 2026",
-   "texto": "Defensa de la sanidad pública («cero recortes») y más financiación autonómica para servicios públicos.",
-   "fuente": "Política Electoral · sanidad",
-   "fuente_url": "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/comparar/sanidad",
+   "origen": "Programa 29-N",
+   "texto": "Acabar con las listas de espera y llevar la financiación pública de la sanidad a alrededor del 7 % del PIB.",
+   "fuente": "PSOE 2026, medida 136 (p. 50)",
+   "fuente_url": "https://www.democrata.es/uploads/s1/35/40/05/6/programapsoe29n26.pdf#page=49",
    "observaciones": [
     {
      "etiqueta": "Sin concretar",
-     "texto": "No hay propuestas sanitarias concretas para el 29-N.",
+     "texto": "Sin plazo para ninguna de las dos cosas.",
+     "fuentes": []
+    },
+    {
+     "etiqueta": "Depende de las CCAA",
+     "texto": "Las listas de espera las gestionan las comunidades.",
+     "fuentes": []
+    },
+    {
+     "etiqueta": "Sin cumplir o caída",
+     "texto": "Su programa de 2023 prometía una ley de tiempos máximos (120 días para operarse, 60 para el especialista y 30 para pruebas) que no se aprobó.",
      "fuentes": [
       "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/comparar/sanidad"
      ]
@@ -1267,44 +1495,50 @@
    ]
   },
   {
-   "id": "psoe-sanidad-2",
-   "url": "https://loquenocuentan.com/psoe#psoe-sanidad-2",
+   "id": "psoe-137",
+   "url": "https://loquenocuentan.com/psoe#psoe-137",
    "partido": "PSOE",
    "tema": "Sanidad",
-   "origen": "Programa anterior",
-   "texto": "Ley de tiempos máximos: 120 días para operarse, 60 para el especialista, 30 para pruebas.",
-   "fuente": "Política Electoral · sanidad",
-   "fuente_url": "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/comparar/sanidad",
+   "origen": "Programa 29-N",
+   "texto": "Plan Sonríe: tratamientos dentales básicos en la sanidad pública y ayuda de hasta 200 € al año por persona, empezando por rentas medias y bajas.",
+   "fuente": "PSOE 2026, medida 137 (p. 50)",
+   "fuente_url": "https://www.democrata.es/uploads/s1/35/40/05/6/programapsoe29n26.pdf#page=49",
    "observaciones": [
     {
-     "etiqueta": "Sin cumplir o caída",
-     "texto": "Estaba en su programa de 2023 y no se aprobó.",
+     "etiqueta": "Sin concretar",
+     "texto": "No fija el umbral de renta ni la fecha de inicio.",
      "fuentes": []
     },
     {
-     "etiqueta": "Ya existe",
-     "texto": "Un real decreto de 2011 ya fija tiempos máximos para algunas cirugías.",
+     "etiqueta": "Contexto",
+     "texto": "Incluir el dentista en la sanidad pública ya figuraba en su programa anterior.",
      "fuentes": [
-      "https://www.boe.es/buscar/doc.php?id=BOE-A-2011-13043"
+      "https://queproponen.es/partidos/psoe"
      ]
-    },
-    {
-     "etiqueta": "Depende de las CCAA",
-     "texto": "Las listas de espera las gestionan las comunidades.",
-     "fuentes": []
     }
    ]
   },
   {
-   "id": "psoe-sanidad-3",
-   "url": "https://loquenocuentan.com/psoe#psoe-sanidad-3",
+   "id": "psoe-143",
+   "url": "https://loquenocuentan.com/psoe#psoe-143",
    "partido": "PSOE",
    "tema": "Sanidad",
-   "origen": "Programa anterior",
-   "texto": "Incluir dentista, salud mental, gafas y audífonos en la sanidad pública, empezando por los niños.",
-   "fuente": "Qué Proponen · PSOE",
-   "fuente_url": "https://queproponen.es/partidos/psoe",
-   "observaciones": []
+   "origen": "Programa 29-N",
+   "texto": "Psicología gratuita, con la primera consulta en un máximo de 30 días.",
+   "fuente": "PSOE 2026, medida 143 (p. 51)",
+   "fuente_url": "https://www.democrata.es/uploads/s1/35/40/05/6/programapsoe29n26.pdf#page=50",
+   "observaciones": [
+    {
+     "etiqueta": "Depende de las CCAA",
+     "texto": "La atención la prestan las comunidades.",
+     "fuentes": []
+    },
+    {
+     "etiqueta": "Sin concretar",
+     "texto": "No dice con cuántos profesionales ni con qué dinero.",
+     "fuentes": []
+    }
+   ]
   },
   {
    "id": "psoe-sanidad-4",
@@ -1913,14 +2147,14 @@
    ]
   },
   {
-   "id": "psoe-pensiones-1",
-   "url": "https://loquenocuentan.com/psoe#psoe-pensiones-1",
+   "id": "psoe-100",
+   "url": "https://loquenocuentan.com/psoe#psoe-100",
    "partido": "PSOE",
    "tema": "Pensiones",
-   "origen": "Declaración 2026",
-   "texto": "Cuatro años más de revalorización con el IPC y 20.000 millones en el Fondo de Reserva.",
-   "fuente": "Política Electoral · pensiones",
-   "fuente_url": "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/comparar/pensiones",
+   "origen": "Programa 29-N",
+   "texto": "Blindar en la Constitución el sistema público de pensiones y su subida con el IPC.",
+   "fuente": "PSOE 2026, medida 100 (p. 41)",
+   "fuente_url": "https://www.democrata.es/uploads/s1/35/40/05/6/programapsoe29n26.pdf#page=40",
    "observaciones": [
     {
      "etiqueta": "Ya existe",
@@ -1928,22 +2162,10 @@
      "fuentes": [
       "https://www.boe.es/buscar/act.php?id=BOE-A-2021-21652"
      ]
-    }
-   ]
-  },
-  {
-   "id": "psoe-pensiones-2",
-   "url": "https://loquenocuentan.com/psoe#psoe-pensiones-2",
-   "partido": "PSOE",
-   "tema": "Pensiones",
-   "origen": "Programa anterior",
-   "texto": "Blindar en la Constitución la revalorización con el IPC.",
-   "fuente": "Política Electoral · pensiones",
-   "fuente_url": "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/comparar/pensiones",
-   "observaciones": [
+    },
     {
      "etiqueta": "Contexto",
-     "texto": "Exige reforma constitucional con tres quintos de cada cámara.",
+     "texto": "Exige reformar la Constitución: como mínimo, tres quintos de cada cámara (art. 167).",
      "fuentes": []
     },
     {
@@ -1956,8 +2178,64 @@
    ]
   },
   {
-   "id": "psoe-pensiones-3",
-   "url": "https://loquenocuentan.com/psoe#psoe-pensiones-3",
+   "id": "psoe-98",
+   "url": "https://loquenocuentan.com/psoe#psoe-98",
+   "partido": "PSOE",
+   "tema": "Pensiones",
+   "origen": "Programa 29-N",
+   "texto": "Garantizar el poder adquisitivo de las pensiones y acercar las pensiones mínimas.",
+   "fuente": "PSOE 2026, medida 98 (p. 40)",
+   "fuente_url": "https://www.democrata.es/uploads/s1/35/40/05/6/programapsoe29n26.pdf#page=39",
+   "observaciones": [
+    {
+     "etiqueta": "Sin concretar",
+     "texto": "Sin cifras ni calendario para las mínimas.",
+     "fuentes": []
+    }
+   ]
+  },
+  {
+   "id": "psoe-101",
+   "url": "https://loquenocuentan.com/psoe#psoe-101",
+   "partido": "PSOE",
+   "tema": "Pensiones",
+   "origen": "Programa 29-N",
+   "texto": "Un año más de cotización por cada hijo, para reducir la brecha de género en las pensiones.",
+   "fuente": "PSOE 2026, medida 101 (p. 41)",
+   "fuente_url": "https://www.democrata.es/uploads/s1/35/40/05/6/programapsoe29n26.pdf#page=40",
+   "observaciones": []
+  },
+  {
+   "id": "psoe-102",
+   "url": "https://loquenocuentan.com/psoe#psoe-102",
+   "partido": "PSOE",
+   "tema": "Pensiones",
+   "origen": "Programa 29-N",
+   "texto": "Baja por cáncer: cobrar el 75 % de la base reguladora desde el primer día.",
+   "fuente": "PSOE 2026, medida 102 (p. 41)",
+   "fuente_url": "https://www.democrata.es/uploads/s1/35/40/05/6/programapsoe29n26.pdf#page=40",
+   "observaciones": []
+  },
+  {
+   "id": "psoe-103",
+   "url": "https://loquenocuentan.com/psoe#psoe-103",
+   "partido": "PSOE",
+   "tema": "Pensiones",
+   "origen": "Programa 29-N",
+   "texto": "Mejorar la jubilación en los trabajos penosos, con una cuenta individual de penosidad.",
+   "fuente": "PSOE 2026, medida 103 (p. 41)",
+   "fuente_url": "https://www.democrata.es/uploads/s1/35/40/05/6/programapsoe29n26.pdf#page=40",
+   "observaciones": [
+    {
+     "etiqueta": "Sin concretar",
+     "texto": "Sin lista de trabajos ni coeficientes.",
+     "fuentes": []
+    }
+   ]
+  },
+  {
+   "id": "psoe-pensiones-6",
+   "url": "https://loquenocuentan.com/psoe#psoe-pensiones-6",
    "partido": "PSOE",
    "tema": "Pensiones",
    "origen": "Gobierno / ley",
@@ -2422,14 +2700,14 @@
    ]
   },
   {
-   "id": "psoe-empleo-1",
-   "url": "https://loquenocuentan.com/psoe#psoe-empleo-1",
+   "id": "psoe-108",
+   "url": "https://loquenocuentan.com/psoe#psoe-108",
    "partido": "PSOE",
    "tema": "Empleo y autónomos",
-   "origen": "Declaración 2026",
-   "texto": "Jornada de 36 horas antes de 2030 y salario mínimo en el 60 % del salario medio.",
-   "fuente": "Forbes, 6 oct 2026",
-   "fuente_url": "https://forbes.es/actualidad/1036705/elecciones-2026-batallas-economicas-29-n/",
+   "origen": "Programa 29-N",
+   "texto": "Completar la jornada de 37,5 horas sin bajar el sueldo y avanzar hacia las 35 con la negociación colectiva.",
+   "fuente": "PSOE 2026, medida 108 (p. 42)",
+   "fuente_url": "https://www.democrata.es/uploads/s1/35/40/05/6/programapsoe29n26.pdf#page=41",
    "observaciones": [
     {
      "etiqueta": "Sin cumplir o caída",
@@ -2437,22 +2715,113 @@
      "fuentes": [
       "https://www.periodicodeibiza.es/noticias/nacional/2025/09/11/2467647/congreso-tumba-reduccion-jornada-laboral-prosperar-veto-vox-junts.html"
      ]
+    },
+    {
+     "etiqueta": "Sin concretar",
+     "texto": "Sin fecha. El calendario se deja al diálogo social.",
+     "fuentes": []
+    },
+    {
+     "etiqueta": "Contexto",
+     "texto": "Antes del programa, el partido hablaba de 36 horas antes de 2030.",
+     "fuentes": [
+      "https://forbes.es/actualidad/1036705/elecciones-2026-batallas-economicas-29-n/"
+     ]
     }
    ]
   },
   {
-   "id": "psoe-empleo-2",
-   "url": "https://loquenocuentan.com/psoe#psoe-empleo-2",
+   "id": "psoe-87",
+   "url": "https://loquenocuentan.com/psoe#psoe-87",
    "partido": "PSOE",
    "tema": "Empleo y autónomos",
-   "origen": "Declaración 2026",
-   "texto": "Estatuto del Becario y cotización de autónomos por ingresos reales.",
-   "fuente": "Qué Proponen · PSOE",
-   "fuente_url": "https://queproponen.es/partidos/psoe",
+   "origen": "Programa 29-N",
+   "texto": "Salario mínimo blindado por ley por encima del 60 % del salario medio.",
+   "fuente": "PSOE 2026, medida 87 (p. 38)",
+   "fuente_url": "https://www.democrata.es/uploads/s1/35/40/05/6/programapsoe29n26.pdf#page=37",
    "observaciones": [
     {
-     "etiqueta": "Ya existe",
-     "texto": "La cotización por ingresos reales se aplica desde 2023, de forma gradual.",
+     "etiqueta": "Sin concretar",
+     "texto": "Sin cuantía ni fecha.",
+     "fuentes": []
+    }
+   ]
+  },
+  {
+   "id": "psoe-105",
+   "url": "https://loquenocuentan.com/psoe#psoe-105",
+   "partido": "PSOE",
+   "tema": "Empleo y autónomos",
+   "origen": "Programa 29-N",
+   "texto": "Cuatro semanas de permiso parental pagadas al 100 % para cuidar de hijos menores de 8 años, y una semana más para el segundo progenitor.",
+   "fuente": "PSOE 2026, medida 105 (p. 41-42)",
+   "fuente_url": "https://www.democrata.es/uploads/s1/35/40/05/6/programapsoe29n26.pdf#page=40",
+   "observaciones": [
+    {
+     "etiqueta": "Sin concretar",
+     "texto": "Sin fecha de entrada en vigor.",
+     "fuentes": []
+    }
+   ]
+  },
+  {
+   "id": "psoe-110",
+   "url": "https://loquenocuentan.com/psoe#psoe-110",
+   "partido": "PSOE",
+   "tema": "Empleo y autónomos",
+   "origen": "Programa 29-N",
+   "texto": "Reformar el despido improcedente para que la reparación sea disuasoria, como pide la Carta Social Europea.",
+   "fuente": "PSOE 2026, medida 110 (p. 42)",
+   "fuente_url": "https://www.democrata.es/uploads/s1/35/40/05/6/programapsoe29n26.pdf#page=41",
+   "observaciones": [
+    {
+     "etiqueta": "Sin concretar",
+     "texto": "No fija la indemnización.",
+     "fuentes": []
+    }
+   ]
+  },
+  {
+   "id": "psoe-109",
+   "url": "https://loquenocuentan.com/psoe#psoe-109",
+   "partido": "PSOE",
+   "tema": "Empleo y autónomos",
+   "origen": "Programa 29-N",
+   "texto": "Registro horario digital y fin de las horas extra sin pagar.",
+   "fuente": "PSOE 2026, medida 109 (p. 42)",
+   "fuente_url": "https://www.democrata.es/uploads/s1/35/40/05/6/programapsoe29n26.pdf#page=41",
+   "observaciones": [
+    {
+     "etiqueta": "Sin concretar",
+     "texto": "Sin plazo ni sanciones.",
+     "fuentes": []
+    }
+   ]
+  },
+  {
+   "id": "psoe-123",
+   "url": "https://loquenocuentan.com/psoe#psoe-123",
+   "partido": "PSOE",
+   "tema": "Empleo y autónomos",
+   "origen": "Programa 29-N",
+   "texto": "El contrato a tiempo parcial pasa a jornada completa si supera el 80 % de la jornada ordinaria.",
+   "fuente": "PSOE 2026, medida 123 (p. 44)",
+   "fuente_url": "https://www.democrata.es/uploads/s1/35/40/05/6/programapsoe29n26.pdf#page=43",
+   "observaciones": []
+  },
+  {
+   "id": "psoe-116",
+   "url": "https://loquenocuentan.com/psoe#psoe-116",
+   "partido": "PSOE",
+   "tema": "Empleo y autónomos",
+   "origen": "Programa 29-N",
+   "texto": "Autónomos: desarrollar la pasarela al régimen de autónomos (RETA) y actualizar el Estatuto del Trabajo Autónomo.",
+   "fuente": "PSOE 2026, medida 116 (p. 43)",
+   "fuente_url": "https://www.democrata.es/uploads/s1/35/40/05/6/programapsoe29n26.pdf#page=42",
+   "observaciones": [
+    {
+     "etiqueta": "Sin concretar",
+     "texto": "Sin plazos ni cuantías.",
      "fuentes": []
     }
    ]
@@ -2774,36 +3143,136 @@
    "observaciones": []
   },
   {
-   "id": "psoe-impuestos-1",
-   "url": "https://loquenocuentan.com/psoe#psoe-impuestos-1",
+   "id": "psoe-130",
+   "url": "https://loquenocuentan.com/psoe#psoe-130",
    "partido": "PSOE",
    "tema": "Impuestos",
-   "origen": "Declaración 2026",
-   "texto": "Más progresividad y más lucha contra el fraude fiscal.",
-   "fuente": "Qué Proponen · PSOE",
-   "fuente_url": "https://queproponen.es/partidos/psoe",
+   "origen": "Programa 29-N",
+   "texto": "Subir poco a poco el impuesto a las rentas del capital hasta un máximo del 35 % a partir de 300.000 €. Los dos primeros tramos (19 % y 21 %) no cambian.",
+   "fuente": "PSOE 2026, medida 130 (p. 49)",
+   "fuente_url": "https://www.democrata.es/uploads/s1/35/40/05/6/programapsoe29n26.pdf#page=48",
    "observaciones": [
     {
      "etiqueta": "Sin concretar",
-     "texto": "Sin medidas concretas.",
+     "texto": "Sin fecha ni tramos intermedios.",
      "fuentes": []
     }
    ]
   },
   {
-   "id": "psoe-impuestos-2",
-   "url": "https://loquenocuentan.com/psoe#psoe-impuestos-2",
+   "id": "psoe-127",
+   "url": "https://loquenocuentan.com/psoe#psoe-127",
    "partido": "PSOE",
    "tema": "Impuestos",
-   "origen": "Documento 2026",
-   "texto": "Tipo del IRPF del 50 % para rentas de más de 300.000 €.",
-   "fuente": "Política Electoral · PSOE",
-   "fuente_url": "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/psoe",
+   "origen": "Programa 29-N",
+   "texto": "Nuevo impuesto complementario a los grandes patrimonios para pagar la prestación por crianza.",
+   "fuente": "PSOE 2026, medida 127 (p. 48)",
+   "fuente_url": "https://www.democrata.es/uploads/s1/35/40/05/6/programapsoe29n26.pdf#page=47",
    "observaciones": [
     {
-     "etiqueta": "Otro ámbito",
-     "texto": "Procede de la ponencia de su congreso de 2024, no de un programa electoral.",
+     "etiqueta": "Sin concretar",
+     "texto": "Sin tipos, sin umbral y sin recaudación prevista.",
      "fuentes": []
+    },
+    {
+     "etiqueta": "Ya existe",
+     "texto": "Desde 2022 existe el Impuesto Temporal de Solidaridad de las Grandes Fortunas.",
+     "fuentes": []
+    }
+   ]
+  },
+  {
+   "id": "psoe-131",
+   "url": "https://loquenocuentan.com/psoe#psoe-131",
+   "partido": "PSOE",
+   "tema": "Impuestos",
+   "origen": "Programa 29-N",
+   "texto": "Más impuestos a las grandes tecnológicas y a la IA, y un debate internacional sobre un gravamen a los tokens de IA.",
+   "fuente": "PSOE 2026, medida 131 (p. 49)",
+   "fuente_url": "https://www.democrata.es/uploads/s1/35/40/05/6/programapsoe29n26.pdf#page=48",
+   "observaciones": [
+    {
+     "etiqueta": "Sin concretar",
+     "texto": "Sin tipos ni plazo. Sobre los tokens solo se compromete a promover el debate.",
+     "fuentes": []
+    },
+    {
+     "etiqueta": "Ya existe",
+     "texto": "El impuesto mínimo del 15 % a las multinacionales ya se aplica en España desde 2026. Hasta agosto había recaudado 46 millones.",
+     "fuentes": [
+      "https://elpais.com/espana/elecciones-generales/2026-11-15/el-psoe-propone-destinar-el-1-del-pib-a-vivienda-social-y-crear-una-prestacion-estatal-por-crianza.html"
+     ]
+    },
+    {
+     "etiqueta": "Contexto",
+     "texto": "A principios de 2026 la OCDE dejó fuera de ese impuesto a las empresas con matriz en Estados Unidos.",
+     "fuentes": [
+      "https://elpais.com/espana/elecciones-generales/2026-11-15/el-psoe-propone-destinar-el-1-del-pib-a-vivienda-social-y-crear-una-prestacion-estatal-por-crianza.html"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "psoe-135",
+   "url": "https://loquenocuentan.com/psoe#psoe-135",
+   "partido": "PSOE",
+   "tema": "Impuestos",
+   "origen": "Programa 29-N",
+   "texto": "Subir del 0,2 % al 0,4 % el impuesto a la compra de acciones de empresas de más de 1.000 millones de capitalización.",
+   "fuente": "PSOE 2026, medida 135 (p. 50)",
+   "fuente_url": "https://www.democrata.es/uploads/s1/35/40/05/6/programapsoe29n26.pdf#page=49",
+   "observaciones": []
+  },
+  {
+   "id": "psoe-133",
+   "url": "https://loquenocuentan.com/psoe#psoe-133",
+   "partido": "PSOE",
+   "tema": "Impuestos",
+   "origen": "Programa 29-N",
+   "texto": "Más impuestos a las cotizadas cuyo primer ejecutivo gane más de 100 veces el sueldo mediano de la plantilla.",
+   "fuente": "PSOE 2026, medida 133 (p. 49)",
+   "fuente_url": "https://www.democrata.es/uploads/s1/35/40/05/6/programapsoe29n26.pdf#page=48",
+   "observaciones": [
+    {
+     "etiqueta": "Sin concretar",
+     "texto": "Sin tipo.",
+     "fuentes": []
+    }
+   ]
+  },
+  {
+   "id": "psoe-134",
+   "url": "https://loquenocuentan.com/psoe#psoe-134",
+   "partido": "PSOE",
+   "tema": "Impuestos",
+   "origen": "Programa 29-N",
+   "texto": "Convertir el mínimo por hijo del IRPF en un crédito fiscal que se cobra aunque no se pague impuesto, para unos dos millones de hogares.",
+   "fuente": "PSOE 2026, medida 134 (p. 50)",
+   "fuente_url": "https://www.democrata.es/uploads/s1/35/40/05/6/programapsoe29n26.pdf#page=49",
+   "observaciones": [
+    {
+     "etiqueta": "Sin concretar",
+     "texto": "Sin importe ni fecha.",
+     "fuentes": []
+    }
+   ]
+  },
+  {
+   "id": "psoe-125",
+   "url": "https://loquenocuentan.com/psoe#psoe-125",
+   "partido": "PSOE",
+   "tema": "Impuestos",
+   "origen": "Programa 29-N",
+   "texto": "Presentar en primavera de 2027 un plan fiscal a medio plazo y seguir bajando el déficit y la deuda.",
+   "fuente": "PSOE 2026, medida 125 (p. 48)",
+   "fuente_url": "https://www.democrata.es/uploads/s1/35/40/05/6/programapsoe29n26.pdf#page=47",
+   "observaciones": [
+    {
+     "etiqueta": "Contexto",
+     "texto": "El Gobierno llega a las urnas sin presupuestos nuevos desde 2023.",
+     "fuentes": [
+      "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/psoe"
+     ]
     }
    ]
   },
@@ -3143,21 +3612,98 @@
    ]
   },
   {
-   "id": "psoe-educacion-1",
-   "url": "https://loquenocuentan.com/psoe#psoe-educacion-1",
+   "id": "psoe-157",
+   "url": "https://loquenocuentan.com/psoe#psoe-157",
    "partido": "PSOE",
    "tema": "Educación",
-   "origen": "Declaración 2026",
-   "texto": "Ratios de 22 alumnos en Primaria y 25 en ESO y menos horas lectivas.",
-   "fuente": "Política Electoral · PSOE",
-   "fuente_url": "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/psoe",
+   "origen": "Programa 29-N",
+   "texto": "Universalizar la educación de 0 a 3 años y bajar el número de alumnos por aula.",
+   "fuente": "PSOE 2026, medida 157 (p. 52-53)",
+   "fuente_url": "https://www.democrata.es/uploads/s1/35/40/05/6/programapsoe29n26.pdf#page=51",
    "observaciones": [
     {
+     "etiqueta": "Sin concretar",
+     "texto": "Sin número de plazas ni de alumnos por aula.",
+     "fuentes": []
+    },
+    {
      "etiqueta": "Sin cumplir o caída",
-     "texto": "El proyecto de ley decayó con la disolución.",
+     "texto": "El proyecto de ley que fijaba 22 alumnos en Primaria y 25 en ESO decayó con la disolución.",
      "fuentes": [
       "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/psoe"
      ]
+    },
+    {
+     "etiqueta": "Depende de las CCAA",
+     "texto": "Las plazas y las plantillas dependen de las comunidades.",
+     "fuentes": []
+    }
+   ]
+  },
+  {
+   "id": "psoe-160",
+   "url": "https://loquenocuentan.com/psoe#psoe-160",
+   "partido": "PSOE",
+   "tema": "Educación",
+   "origen": "Programa 29-N",
+   "texto": "Bajar el abandono escolar temprano del 10 % antes de 2030.",
+   "fuente": "PSOE 2026, medida 160 (p. 53)",
+   "fuente_url": "https://www.democrata.es/uploads/s1/35/40/05/6/programapsoe29n26.pdf#page=52",
+   "observaciones": []
+  },
+  {
+   "id": "psoe-161",
+   "url": "https://loquenocuentan.com/psoe#psoe-161",
+   "partido": "PSOE",
+   "tema": "Educación",
+   "origen": "Programa 29-N",
+   "texto": "Un orientador por cada 250 estudiantes.",
+   "fuente": "PSOE 2026, medida 161 (p. 53)",
+   "fuente_url": "https://www.democrata.es/uploads/s1/35/40/05/6/programapsoe29n26.pdf#page=52",
+   "observaciones": [
+    {
+     "etiqueta": "Depende de las CCAA",
+     "texto": "Los orientadores los contratan las comunidades.",
+     "fuentes": []
+    }
+   ]
+  },
+  {
+   "id": "psoe-168",
+   "url": "https://loquenocuentan.com/psoe#psoe-168",
+   "partido": "PSOE",
+   "tema": "Educación",
+   "origen": "Programa 29-N",
+   "texto": "Comedor escolar gratuito para el alumnado en situación de pobreza o exclusión.",
+   "fuente": "PSOE 2026, medida 168 (p. 54)",
+   "fuente_url": "https://www.democrata.es/uploads/s1/35/40/05/6/programapsoe29n26.pdf#page=53",
+   "observaciones": [
+    {
+     "etiqueta": "Sin concretar",
+     "texto": "Sin presupuesto ni fecha.",
+     "fuentes": []
+    }
+   ]
+  },
+  {
+   "id": "psoe-170",
+   "url": "https://loquenocuentan.com/psoe#psoe-170",
+   "partido": "PSOE",
+   "tema": "Educación",
+   "origen": "Programa 29-N",
+   "texto": "Más plazas públicas de Formación Profesional de grado medio y superior.",
+   "fuente": "PSOE 2026, medida 170 (p. 54)",
+   "fuente_url": "https://www.democrata.es/uploads/s1/35/40/05/6/programapsoe29n26.pdf#page=53",
+   "observaciones": [
+    {
+     "etiqueta": "Sin concretar",
+     "texto": "Sin número de plazas.",
+     "fuentes": []
+    },
+    {
+     "etiqueta": "Depende de las CCAA",
+     "texto": "Las plazas las crean las comunidades.",
+     "fuentes": []
     }
    ]
   },
@@ -3435,25 +3981,65 @@
    ]
   },
   {
-   "id": "psoe-universidades-1",
-   "url": "https://loquenocuentan.com/psoe#psoe-universidades-1",
+   "id": "psoe-179",
+   "url": "https://loquenocuentan.com/psoe#psoe-179",
    "partido": "PSOE",
    "tema": "Universidades",
-   "origen": "Programa anterior",
-   "texto": "Matrícula gratis en universidad y FP superior para quien apruebe a la primera.",
-   "fuente": "Politicheck (programas 2023)",
-   "fuente_url": "https://politicheck.es/29n-programas",
+   "origen": "Programa 29-N",
+   "texto": "Matrícula gratuita en el primer curso de grado de las universidades públicas.",
+   "fuente": "PSOE 2026, medida 179 (p. 55)",
+   "fuente_url": "https://www.democrata.es/uploads/s1/35/40/05/6/programapsoe29n26.pdf#page=54",
    "observaciones": [
     {
      "etiqueta": "Depende de las CCAA",
-     "texto": "Las tasas universitarias las fijan las comunidades.",
+     "texto": "Los precios de matrícula los fijan las comunidades.",
+     "fuentes": []
+    },
+    {
+     "etiqueta": "Sin concretar",
+     "texto": "El texto habla de «impulsar» la gratuidad. No dice quién la paga ni cuándo.",
      "fuentes": []
     }
    ]
   },
   {
-   "id": "psoe-universidades-2",
-   "url": "https://loquenocuentan.com/psoe#psoe-universidades-2",
+   "id": "psoe-178",
+   "url": "https://loquenocuentan.com/psoe#psoe-178",
+   "partido": "PSOE",
+   "tema": "Universidades",
+   "origen": "Programa 29-N",
+   "texto": "Becas Erasmus de 1.000 a 1.500 € al mes, según los ingresos.",
+   "fuente": "PSOE 2026, medida 178 (p. 55)",
+   "fuente_url": "https://www.democrata.es/uploads/s1/35/40/05/6/programapsoe29n26.pdf#page=54",
+   "observaciones": []
+  },
+  {
+   "id": "psoe-181",
+   "url": "https://loquenocuentan.com/psoe#psoe-181",
+   "partido": "PSOE",
+   "tema": "Universidades",
+   "origen": "Programa 29-N",
+   "texto": "Ley de Equidad en el Acceso a la Universidad Pública, con financiación para varios años.",
+   "fuente": "PSOE 2026, medida 181 (p. 55)",
+   "fuente_url": "https://www.democrata.es/uploads/s1/35/40/05/6/programapsoe29n26.pdf#page=54",
+   "observaciones": [
+    {
+     "etiqueta": "Sin concretar",
+     "texto": "Sin cuantía ni plazo.",
+     "fuentes": []
+    },
+    {
+     "etiqueta": "Depende de las CCAA",
+     "texto": "La financiación de las universidades públicas depende sobre todo de las comunidades.",
+     "fuentes": [
+      "https://www.democrata.es/sociedad/huelga-universidades-publicas-madrid-4-5-noviembre-motivos/"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "psoe-universidades-4",
+   "url": "https://loquenocuentan.com/psoe#psoe-universidades-4",
    "partido": "PSOE",
    "tema": "Universidades",
    "origen": "Gobierno / ley",
@@ -3478,8 +4064,8 @@
    ]
   },
   {
-   "id": "psoe-universidades-3",
-   "url": "https://loquenocuentan.com/psoe#psoe-universidades-3",
+   "id": "psoe-universidades-5",
+   "url": "https://loquenocuentan.com/psoe#psoe-universidades-5",
    "partido": "PSOE",
    "tema": "Universidades",
    "origen": "Gobierno / ley",
@@ -3497,8 +4083,8 @@
    ]
   },
   {
-   "id": "psoe-universidades-4",
-   "url": "https://loquenocuentan.com/psoe#psoe-universidades-4",
+   "id": "psoe-universidades-6",
+   "url": "https://loquenocuentan.com/psoe#psoe-universidades-6",
    "partido": "PSOE",
    "tema": "Universidades",
    "origen": "Gobierno / ley",
@@ -3726,18 +4312,18 @@
    "observaciones": []
   },
   {
-   "id": "psoe-inmigracion-1",
-   "url": "https://loquenocuentan.com/psoe#psoe-inmigracion-1",
+   "id": "psoe-388",
+   "url": "https://loquenocuentan.com/psoe#psoe-388",
    "partido": "PSOE",
    "tema": "Inmigración",
-   "origen": "Programa anterior",
-   "texto": "Migración regular, segura y ordenada; reformas del arraigo y migración circular.",
-   "fuente": "Politicheck (programas 2023)",
-   "fuente_url": "https://politicheck.es/29n-programas",
+   "origen": "Programa 29-N",
+   "texto": "Plan de Integración y Ciudadanía 2026-2030, con 500 millones de euros iniciales.",
+   "fuente": "PSOE 2026, medida 388 (p. 93)",
+   "fuente_url": "https://www.democrata.es/uploads/s1/35/40/05/6/programapsoe29n26.pdf#page=92",
    "observaciones": [
     {
-     "etiqueta": "Sin concretar",
-     "texto": "Sin medidas nuevas para el 29-N.",
+     "etiqueta": "Contexto",
+     "texto": "El programa no habla de nuevas regularizaciones. La de 2026 recibió 1.174.978 solicitudes.",
      "fuentes": [
       "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/psoe"
      ]
@@ -3745,8 +4331,42 @@
    ]
   },
   {
-   "id": "psoe-inmigracion-2",
-   "url": "https://loquenocuentan.com/psoe#psoe-inmigracion-2",
+   "id": "psoe-389",
+   "url": "https://loquenocuentan.com/psoe#psoe-389",
+   "partido": "PSOE",
+   "tema": "Inmigración",
+   "origen": "Programa 29-N",
+   "texto": "Más vías legales y seguras para pedir protección internacional y más plazas de acogida.",
+   "fuente": "PSOE 2026, medida 389 (p. 93)",
+   "fuente_url": "https://www.democrata.es/uploads/s1/35/40/05/6/programapsoe29n26.pdf#page=92",
+   "observaciones": [
+    {
+     "etiqueta": "Sin concretar",
+     "texto": "Sin cupos ni número de plazas.",
+     "fuentes": []
+    }
+   ]
+  },
+  {
+   "id": "psoe-391",
+   "url": "https://loquenocuentan.com/psoe#psoe-391",
+   "partido": "PSOE",
+   "tema": "Inmigración",
+   "origen": "Programa 29-N",
+   "texto": "Acogida digna y protección de los menores que llegan solos.",
+   "fuente": "PSOE 2026, medida 391 (p. 94)",
+   "fuente_url": "https://www.democrata.es/uploads/s1/35/40/05/6/programapsoe29n26.pdf#page=93",
+   "observaciones": [
+    {
+     "etiqueta": "Sin concretar",
+     "texto": "Sin plazas ni presupuesto.",
+     "fuentes": []
+    }
+   ]
+  },
+  {
+   "id": "psoe-inmigracion-4",
+   "url": "https://loquenocuentan.com/psoe#psoe-inmigracion-4",
    "partido": "PSOE",
    "tema": "Inmigración",
    "origen": "Gobierno / ley",
@@ -3764,8 +4384,8 @@
    ]
   },
   {
-   "id": "psoe-inmigracion-3",
-   "url": "https://loquenocuentan.com/psoe#psoe-inmigracion-3",
+   "id": "psoe-inmigracion-5",
+   "url": "https://loquenocuentan.com/psoe#psoe-inmigracion-5",
    "partido": "PSOE",
    "tema": "Inmigración",
    "origen": "Gobierno / ley",
@@ -4180,8 +4800,111 @@
    ]
   },
   {
-   "id": "psoe-justicia-1",
-   "url": "https://loquenocuentan.com/psoe#psoe-justicia-1",
+   "id": "psoe-436",
+   "url": "https://loquenocuentan.com/psoe#psoe-436",
+   "partido": "PSOE",
+   "tema": "Justicia",
+   "origen": "Programa 29-N",
+   "texto": "Mandato de cinco años para el fiscal general, desligado de la legislatura, y nueva Ley de Enjuiciamiento Criminal.",
+   "fuente": "PSOE 2026, medida 436 (p. 101)",
+   "fuente_url": "https://www.democrata.es/uploads/s1/35/40/05/6/programapsoe29n26.pdf#page=100",
+   "observaciones": [
+    {
+     "etiqueta": "Sin cumplir o caída",
+     "texto": "La nueva Ley de Enjuiciamiento Criminal decayó con la disolución de las Cortes.",
+     "fuentes": [
+      "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/comparar/justicia"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "psoe-445",
+   "url": "https://loquenocuentan.com/psoe#psoe-445",
+   "partido": "PSOE",
+   "tema": "Justicia",
+   "origen": "Programa 29-N",
+   "texto": "Ley orgánica de integridad pública, estrategia anticorrupción con mapas de riesgos y agencia independiente.",
+   "fuente": "PSOE 2026, medida 445 (p. 103)",
+   "fuente_url": "https://www.democrata.es/uploads/s1/35/40/05/6/programapsoe29n26.pdf#page=102",
+   "observaciones": [
+    {
+     "etiqueta": "Sin cumplir o caída",
+     "texto": "La Ley de Integridad Pública decayó con la disolución.",
+     "fuentes": [
+      "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/comparar/justicia"
+     ]
+    },
+    {
+     "etiqueta": "Contexto",
+     "texto": "El Gobierno presentó ese paquete tras los casos de José Luis Ábalos y Santos Cerdán, ex secretarios de Organización del PSOE. No logró sacarlo entero adelante.",
+     "fuentes": [
+      "https://elpais.com/espana/elecciones-generales/2026-11-15/el-psoe-propone-destinar-el-1-del-pib-a-vivienda-social-y-crear-una-prestacion-estatal-por-crianza.html"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "psoe-446",
+   "url": "https://loquenocuentan.com/psoe#psoe-446",
+   "partido": "PSOE",
+   "tema": "Justicia",
+   "origen": "Programa 29-N",
+   "texto": "Ley de grupos de interés («lobbies») con registro obligatorio y publicidad de las reuniones.",
+   "fuente": "PSOE 2026, medida 446 (p. 103)",
+   "fuente_url": "https://www.democrata.es/uploads/s1/35/40/05/6/programapsoe29n26.pdf#page=102",
+   "observaciones": [
+    {
+     "etiqueta": "Sin cumplir o caída",
+     "texto": "El Congreso tumbó la ley de «lobbies» en la legislatura que termina.",
+     "fuentes": [
+      "https://elpais.com/espana/elecciones-generales/2026-11-15/el-psoe-propone-destinar-el-1-del-pib-a-vivienda-social-y-crear-una-prestacion-estatal-por-crianza.html"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "psoe-373",
+   "url": "https://loquenocuentan.com/psoe#psoe-373",
+   "partido": "PSOE",
+   "tema": "Justicia",
+   "origen": "Programa 29-N",
+   "texto": "Suprimir los aforamientos para los delitos ajenos al cargo.",
+   "fuente": "PSOE 2026, medida 373 (p. 91)",
+   "fuente_url": "https://www.democrata.es/uploads/s1/35/40/05/6/programapsoe29n26.pdf#page=90",
+   "observaciones": [
+    {
+     "etiqueta": "Contexto",
+     "texto": "El aforamiento de diputados, senadores y miembros del Gobierno está en la Constitución (arts. 71 y 102). Cambiarlo exige reformarla.",
+     "fuentes": []
+    },
+    {
+     "etiqueta": "Sin concretar",
+     "texto": "Sin plazo.",
+     "fuentes": []
+    }
+   ]
+  },
+  {
+   "id": "psoe-438",
+   "url": "https://loquenocuentan.com/psoe#psoe-438",
+   "partido": "PSOE",
+   "tema": "Justicia",
+   "origen": "Programa 29-N",
+   "texto": "Seguir con los juicios rápidos contra la ocupación ilegal y dar más medios a los juzgados de guardia.",
+   "fuente": "PSOE 2026, medida 438 (p. 102)",
+   "fuente_url": "https://www.democrata.es/uploads/s1/35/40/05/6/programapsoe29n26.pdf#page=101",
+   "observaciones": [
+    {
+     "etiqueta": "Ya existe",
+     "texto": "Los juicios rápidos están en vigor desde 2025, como recoge el propio programa.",
+     "fuentes": []
+    }
+   ]
+  },
+  {
+   "id": "psoe-justicia-6",
+   "url": "https://loquenocuentan.com/psoe#psoe-justicia-6",
    "partido": "PSOE",
    "tema": "Justicia",
    "origen": "Gobierno / ley",
@@ -4199,8 +4922,8 @@
    ]
   },
   {
-   "id": "psoe-justicia-2",
-   "url": "https://loquenocuentan.com/psoe#psoe-justicia-2",
+   "id": "psoe-justicia-7",
+   "url": "https://loquenocuentan.com/psoe#psoe-justicia-7",
    "partido": "PSOE",
    "tema": "Justicia",
    "origen": "Gobierno / ley",
@@ -4225,8 +4948,8 @@
    ]
   },
   {
-   "id": "psoe-justicia-3",
-   "url": "https://loquenocuentan.com/psoe#psoe-justicia-3",
+   "id": "psoe-justicia-8",
+   "url": "https://loquenocuentan.com/psoe#psoe-justicia-8",
    "partido": "PSOE",
    "tema": "Justicia",
    "origen": "Gobierno / ley",
@@ -4244,8 +4967,8 @@
    ]
   },
   {
-   "id": "psoe-justicia-4",
-   "url": "https://loquenocuentan.com/psoe#psoe-justicia-4",
+   "id": "psoe-justicia-9",
+   "url": "https://loquenocuentan.com/psoe#psoe-justicia-9",
    "partido": "PSOE",
    "tema": "Justicia",
    "origen": "Gobierno / ley",
@@ -4653,8 +5376,66 @@
    ]
   },
   {
-   "id": "psoe-seguridad-1",
-   "url": "https://loquenocuentan.com/psoe#psoe-seguridad-1",
+   "id": "psoe-431",
+   "url": "https://loquenocuentan.com/psoe#psoe-431",
+   "partido": "PSOE",
+   "tema": "Seguridad",
+   "origen": "Programa 29-N",
+   "texto": "Nueva Ley de Seguridad Ciudadana que sustituya a la de 2015.",
+   "fuente": "PSOE 2026, medida 431 (p. 100)",
+   "fuente_url": "https://www.democrata.es/uploads/s1/35/40/05/6/programapsoe29n26.pdf#page=99",
+   "observaciones": [
+    {
+     "etiqueta": "Sin cumplir o caída",
+     "texto": "La reforma de la «ley mordaza» se quedó atascada en el Congreso y decayó con la disolución.",
+     "fuentes": [
+      "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/comparar/seguridad"
+     ]
+    },
+    {
+     "etiqueta": "Sin concretar",
+     "texto": "No detalla qué sanciones cambian.",
+     "fuentes": []
+    }
+   ]
+  },
+  {
+   "id": "psoe-425",
+   "url": "https://loquenocuentan.com/psoe#psoe-425",
+   "partido": "PSOE",
+   "tema": "Seguridad",
+   "origen": "Programa 29-N",
+   "texto": "Más policías nacionales y guardias civiles, mejor repartidos, y refuerzo de la seguridad rural.",
+   "fuente": "PSOE 2026, medida 425 (p. 100)",
+   "fuente_url": "https://www.democrata.es/uploads/s1/35/40/05/6/programapsoe29n26.pdf#page=99",
+   "observaciones": [
+    {
+     "etiqueta": "Sin concretar",
+     "texto": "No dice cuántos agentes.",
+     "fuentes": []
+    }
+   ]
+  },
+  {
+   "id": "psoe-427",
+   "url": "https://loquenocuentan.com/psoe#psoe-427",
+   "partido": "PSOE",
+   "tema": "Seguridad",
+   "origen": "Programa 29-N",
+   "texto": "Primer Plan Nacional Integral contra el Narcotráfico y refuerzo del plan del Campo de Gibraltar.",
+   "fuente": "PSOE 2026, medida 427 (p. 100)",
+   "fuente_url": "https://www.democrata.es/uploads/s1/35/40/05/6/programapsoe29n26.pdf#page=99",
+   "observaciones": [
+    {
+     "etiqueta": "Sin concretar",
+     "texto": "Sin presupuesto ni efectivos.",
+     "fuentes": []
+    }
+   ]
+  },
+  {
+   "id": "psoe-seguridad-4",
+   "url": "https://loquenocuentan.com/psoe#psoe-seguridad-4",
    "partido": "PSOE",
    "tema": "Seguridad",
    "origen": "Gobierno / ley",
@@ -4672,8 +5453,8 @@
    ]
   },
   {
-   "id": "psoe-seguridad-2",
-   "url": "https://loquenocuentan.com/psoe#psoe-seguridad-2",
+   "id": "psoe-seguridad-5",
+   "url": "https://loquenocuentan.com/psoe#psoe-seguridad-5",
    "partido": "PSOE",
    "tema": "Seguridad",
    "origen": "Gobierno / ley",
@@ -4684,25 +5465,6 @@
     {
      "etiqueta": "Sin cumplir o caída",
      "texto": "Se quedó atascada en el Congreso y decayó con la disolución.",
-     "fuentes": [
-      "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/comparar/seguridad"
-     ]
-    }
-   ]
-  },
-  {
-   "id": "psoe-seguridad-3",
-   "url": "https://loquenocuentan.com/psoe#psoe-seguridad-3",
-   "partido": "PSOE",
-   "tema": "Seguridad",
-   "origen": "Programa anterior",
-   "texto": "Más agentes de Policía Nacional y Guardia Civil y más medios contra la violencia de género (VioGén).",
-   "fuente": "Política Electoral · seguridad",
-   "fuente_url": "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/comparar/seguridad",
-   "observaciones": [
-    {
-     "etiqueta": "Contexto",
-     "texto": "Es su programa de 2023: no ha presentado propuestas nuevas de seguridad.",
      "fuentes": [
       "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/comparar/seguridad"
      ]
@@ -5055,67 +5817,38 @@
    "observaciones": []
   },
   {
-   "id": "psoe-discapacidad-1",
-   "url": "https://loquenocuentan.com/psoe#psoe-discapacidad-1",
+   "id": "psoe-124",
+   "url": "https://loquenocuentan.com/psoe#psoe-124",
    "partido": "PSOE",
    "tema": "Discapacidad",
-   "origen": "Programa anterior",
-   "texto": "Reformar el artículo 49 de la Constitución para dejar de usar el término «disminuidos».",
-   "fuente": "Servimedia/Discapnet, 2023",
-   "fuente_url": "https://www.discapnet.es/noticia/partidos-ofrecen-personas-discapacidad-mejoras-empleo-educacion-dependencia",
+   "origen": "Programa 29-N",
+   "texto": "Hacer cumplir la cuota de reserva del 2 % del empleo para personas con discapacidad.",
+   "fuente": "PSOE 2026, medida 124 (p. 44)",
+   "fuente_url": "https://www.democrata.es/uploads/s1/35/40/05/6/programapsoe29n26.pdf#page=43",
    "observaciones": [
     {
      "etiqueta": "Ya existe",
-     "texto": "Reforma aprobada y publicada en el BOE en febrero de 2024.",
-     "fuentes": [
-      "https://www.boe.es/buscar/doc.php?id=BOE-A-2024-3099"
-     ]
+     "texto": "La cuota del 2 % en empresas de 50 o más trabajadores es obligatoria desde 1982.",
+     "fuentes": []
     }
    ]
   },
   {
-   "id": "psoe-discapacidad-2",
-   "url": "https://loquenocuentan.com/psoe#psoe-discapacidad-2",
+   "id": "psoe-220",
+   "url": "https://loquenocuentan.com/psoe#psoe-220",
    "partido": "PSOE",
    "tema": "Discapacidad",
-   "origen": "Programa anterior",
-   "texto": "Atención personalizada en los centros escolares, compatible con los centros de educación especial.",
-   "fuente": "Servimedia/Discapnet, 2023",
-   "fuente_url": "https://www.discapnet.es/noticia/partidos-ofrecen-personas-discapacidad-mejoras-empleo-educacion-dependencia",
+   "origen": "Programa 29-N",
+   "texto": "Desarrollar el artículo 49 de la Constitución: apoyos para la vida independiente y Programa Estatal de Accesibilidad Universal.",
+   "fuente": "PSOE 2026, medida 220 (p. 60-61)",
+   "fuente_url": "https://www.democrata.es/uploads/s1/35/40/05/6/programapsoe29n26.pdf#page=59",
    "observaciones": [
     {
      "etiqueta": "Sin concretar",
-     "texto": "No concreta recursos, plantillas ni plazos.",
-     "fuentes": []
-    },
-    {
-     "etiqueta": "Depende de las CCAA",
-     "texto": "Los centros y su personal dependen de las comunidades.",
+     "texto": "Sin presupuesto ni plazos.",
      "fuentes": []
     }
    ]
-  },
-  {
-   "id": "psoe-discapacidad-3",
-   "url": "https://loquenocuentan.com/psoe#psoe-discapacidad-3",
-   "partido": "PSOE",
-   "tema": "Discapacidad",
-   "origen": "Programa anterior",
-   "texto": "Extender a los menores de 18 años las exenciones de copago.",
-   "fuente": "Servimedia/Discapnet, 2023",
-   "fuente_url": "https://www.discapnet.es/noticia/partidos-ofrecen-personas-discapacidad-mejoras-empleo-educacion-dependencia",
-   "observaciones": []
-  },
-  {
-   "id": "psoe-discapacidad-4",
-   "url": "https://loquenocuentan.com/psoe#psoe-discapacidad-4",
-   "partido": "PSOE",
-   "tema": "Discapacidad",
-   "origen": "Programa anterior",
-   "texto": "Inclusión financiera de mayores y personas con discapacidad: atención presencial, cartillas y horarios garantizados.",
-   "fuente": "Programa PSOE 2023",
-   "fuente_url": "https://www.psoe.es/media-content/2023/07/PROGRAMA_ELECTORAL-GENERALES-2023.pdf",
-   "observaciones": []
   },
   {
    "id": "vox-95",
@@ -5293,40 +6026,55 @@
    ]
   },
   {
-   "id": "psoe-dependencia-1",
-   "url": "https://loquenocuentan.com/psoe#psoe-dependencia-1",
+   "id": "psoe-205",
+   "url": "https://loquenocuentan.com/psoe#psoe-205",
    "partido": "PSOE",
    "tema": "Dependencia y cuidados",
-   "origen": "Programa anterior",
-   "texto": "Reformar el sistema de autonomía personal y dependencia y reforzar los servicios sociales.",
-   "fuente": "Programa PSOE 2023",
-   "fuente_url": "https://www.psoe.es/media-content/2023/07/PROGRAMA_ELECTORAL-GENERALES-2023.pdf",
+   "origen": "Programa 29-N",
+   "texto": "Aplicar la Ley 4/2026 de dependencia con un plan económico de varios años para reducir las listas de espera.",
+   "fuente": "PSOE 2026, medida 205 (p. 58)",
+   "fuente_url": "https://www.democrata.es/uploads/s1/35/40/05/6/programapsoe29n26.pdf#page=57",
    "observaciones": [
     {
      "etiqueta": "Ya existe",
-     "texto": "La reforma se aprobó en julio de 2026, impulsada desde el ministerio que dirigía Sumar.",
+     "texto": "La reforma de la dependencia se aprobó en julio de 2026.",
      "fuentes": [
       "https://www.dsca.gob.es/comunicacion/notas-prensa/congreso-aprueba-reforma-ley-discapacidad-refundacion-sistema-dependencia"
      ]
+    },
+    {
+     "etiqueta": "Sin concretar",
+     "texto": "Sin cifras ni plazos.",
+     "fuentes": []
+    },
+    {
+     "etiqueta": "Depende de las CCAA",
+     "texto": "Las listas de espera las gestionan las comunidades.",
+     "fuentes": []
     }
    ]
   },
   {
-   "id": "psoe-dependencia-2",
-   "url": "https://loquenocuentan.com/psoe#psoe-dependencia-2",
+   "id": "psoe-214",
+   "url": "https://loquenocuentan.com/psoe#psoe-214",
    "partido": "PSOE",
    "tema": "Dependencia y cuidados",
-   "origen": "Programa anterior",
-   "texto": "Subir el mínimo por descendientes y personas dependientes en el IRPF.",
-   "fuente": "Programa PSOE 2023",
-   "fuente_url": "https://www.psoe.es/media-content/2023/07/PROGRAMA_ELECTORAL-GENERALES-2023.pdf",
-   "observaciones": [
-    {
-     "etiqueta": "Sin concretar",
-     "texto": "Sin cuantía.",
-     "fuentes": []
-    }
-   ]
+   "origen": "Programa 29-N",
+   "texto": "Plan «A Tu Lado», con visitas a domicilio a partir de los 80 años.",
+   "fuente": "PSOE 2026, medida 214 (p. 59-60)",
+   "fuente_url": "https://www.democrata.es/uploads/s1/35/40/05/6/programapsoe29n26.pdf#page=58",
+   "observaciones": []
+  },
+  {
+   "id": "psoe-209",
+   "url": "https://loquenocuentan.com/psoe#psoe-209",
+   "partido": "PSOE",
+   "tema": "Dependencia y cuidados",
+   "origen": "Programa 29-N",
+   "texto": "Atención integral a las personas con ELA en grado III+.",
+   "fuente": "PSOE 2026, medida 209 (p. 59)",
+   "fuente_url": "https://www.democrata.es/uploads/s1/35/40/05/6/programapsoe29n26.pdf#page=58",
+   "observaciones": []
   },
   {
    "id": "vox-95-dependencia",
@@ -5666,18 +6414,100 @@
    ]
   },
   {
-   "id": "psoe-servicios-sociales-1",
-   "url": "https://loquenocuentan.com/psoe#psoe-servicios-sociales-1",
+   "id": "psoe-192",
+   "url": "https://loquenocuentan.com/psoe#psoe-192",
    "partido": "PSOE",
    "tema": "Servicios sociales y pobreza",
-   "origen": "Programa anterior",
-   "texto": "Consolidar el Ingreso Mínimo Vital con el objetivo de «pobreza cero».",
-   "fuente": "Programa PSOE 2023",
-   "fuente_url": "https://www.psoe.es/media-content/2023/07/PROGRAMA_ELECTORAL-GENERALES-2023.pdf",
+   "origen": "Programa 29-N",
+   "texto": "Prestación estatal por crianza para todos los hogares con menores de edad, con más protección para las rentas bajas.",
+   "fuente": "PSOE 2026, medida 192 (p. 57)",
+   "fuente_url": "https://www.democrata.es/uploads/s1/35/40/05/6/programapsoe29n26.pdf#page=56",
    "observaciones": [
     {
      "etiqueta": "Sin concretar",
-     "texto": "Sin metas cuantificadas ni plazos.",
+     "texto": "El programa no fija la cuantía ni la fecha.",
+     "fuentes": [
+      "https://www.democrata.es/elecciones-generales-espana/todas-claves-programa-psoe-29n-100000-viviendas-ayudas-por-hijo-nuevos-impuestos/"
+     ]
+    },
+    {
+     "etiqueta": "Contexto",
+     "texto": "Sumar propuso en la legislatura 200 € al mes por hijo. No se aprobó porque el PSOE «no lo veía claro», según El País.",
+     "fuentes": [
+      "https://elpais.com/espana/elecciones-generales/2026-11-15/el-psoe-propone-destinar-el-1-del-pib-a-vivienda-social-y-crear-una-prestacion-estatal-por-crianza.html"
+     ]
+    },
+    {
+     "etiqueta": "Contexto",
+     "texto": "Se pagaría con los nuevos impuestos a grandes patrimonios y rentas del capital, que tampoco llevan cifra de recaudación.",
+     "fuentes": []
+    }
+   ]
+  },
+  {
+   "id": "psoe-193",
+   "url": "https://loquenocuentan.com/psoe#psoe-193",
+   "partido": "PSOE",
+   "tema": "Servicios sociales y pobreza",
+   "origen": "Programa 29-N",
+   "texto": "Cuenta de Futuro: 1.000 € públicos al nacer, disponibles a los 18 años.",
+   "fuente": "PSOE 2026, medida 193 (p. 58)",
+   "fuente_url": "https://www.democrata.es/uploads/s1/35/40/05/6/programapsoe29n26.pdf#page=57",
+   "observaciones": [
+    {
+     "etiqueta": "Sin concretar",
+     "texto": "No dice cuánto cuesta ni cuánto se aporta después a los hogares con menos renta.",
+     "fuentes": []
+    }
+   ]
+  },
+  {
+   "id": "psoe-89",
+   "url": "https://loquenocuentan.com/psoe#psoe-89",
+   "partido": "PSOE",
+   "tema": "Servicios sociales y pobreza",
+   "origen": "Programa 29-N",
+   "texto": "Reforzar el Ingreso Mínimo Vital.",
+   "fuente": "PSOE 2026, medida 89 (p. 39)",
+   "fuente_url": "https://www.democrata.es/uploads/s1/35/40/05/6/programapsoe29n26.pdf#page=38",
+   "observaciones": [
+    {
+     "etiqueta": "Sin concretar",
+     "texto": "Sin metas ni cifras.",
+     "fuentes": []
+    }
+   ]
+  },
+  {
+   "id": "psoe-93",
+   "url": "https://loquenocuentan.com/psoe#psoe-93",
+   "partido": "PSOE",
+   "tema": "Servicios sociales y pobreza",
+   "origen": "Programa 29-N",
+   "texto": "Bono social único y automático.",
+   "fuente": "PSOE 2026, medida 93 (p. 39)",
+   "fuente_url": "https://www.democrata.es/uploads/s1/35/40/05/6/programapsoe29n26.pdf#page=38",
+   "observaciones": [
+    {
+     "etiqueta": "Sin concretar",
+     "texto": "Sin fecha.",
+     "fuentes": []
+    }
+   ]
+  },
+  {
+   "id": "psoe-202",
+   "url": "https://loquenocuentan.com/psoe#psoe-202",
+   "partido": "PSOE",
+   "tema": "Servicios sociales y pobreza",
+   "origen": "Programa 29-N",
+   "texto": "Primera ley estatal de servicios sociales, con una cartera común en toda España.",
+   "fuente": "PSOE 2026, medida 202 (p. 58)",
+   "fuente_url": "https://www.democrata.es/uploads/s1/35/40/05/6/programapsoe29n26.pdf#page=57",
+   "observaciones": [
+    {
+     "etiqueta": "Depende de las CCAA",
+     "texto": "Los servicios sociales son competencia de las comunidades.",
      "fuentes": []
     }
    ]
@@ -6033,8 +6863,133 @@
    ]
   },
   {
-   "id": "psoe-igualdad-1",
-   "url": "https://loquenocuentan.com/psoe#psoe-igualdad-1",
+   "id": "psoe-327",
+   "url": "https://loquenocuentan.com/psoe#psoe-327",
+   "partido": "PSOE",
+   "tema": "Igualdad",
+   "origen": "Programa 29-N",
+   "texto": "Blindar el aborto en la Constitución con la reforma del artículo 43.",
+   "fuente": "PSOE 2026, medida 327 (p. 82)",
+   "fuente_url": "https://www.democrata.es/uploads/s1/35/40/05/6/programapsoe29n26.pdf#page=81",
+   "observaciones": [
+    {
+     "etiqueta": "Sin cumplir o caída",
+     "texto": "La reforma se inició en 2026 y decayó con la disolución.",
+     "fuentes": [
+      "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/comparar/igualdad"
+     ]
+    },
+    {
+     "etiqueta": "Contexto",
+     "texto": "Exige reformar la Constitución: como mínimo, tres quintos de cada cámara (art. 167).",
+     "fuentes": []
+    }
+   ]
+  },
+  {
+   "id": "psoe-335",
+   "url": "https://loquenocuentan.com/psoe#psoe-335",
+   "partido": "PSOE",
+   "tema": "Igualdad",
+   "origen": "Programa 29-N",
+   "texto": "Ley orgánica contra la violencia vicaria.",
+   "fuente": "PSOE 2026, medida 335 (p. 83)",
+   "fuente_url": "https://www.democrata.es/uploads/s1/35/40/05/6/programapsoe29n26.pdf#page=82",
+   "observaciones": [
+    {
+     "etiqueta": "Sin cumplir o caída",
+     "texto": "Decayó con la disolución.",
+     "fuentes": [
+      "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/comparar/igualdad"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "psoe-342",
+   "url": "https://loquenocuentan.com/psoe#psoe-342",
+   "partido": "PSOE",
+   "tema": "Igualdad",
+   "origen": "Programa 29-N",
+   "texto": "Ley contra la trata y ley abolicionista de la prostitución.",
+   "fuente": "PSOE 2026, medida 342 (p. 84)",
+   "fuente_url": "https://www.democrata.es/uploads/s1/35/40/05/6/programapsoe29n26.pdf#page=83",
+   "observaciones": [
+    {
+     "etiqueta": "Sin cumplir o caída",
+     "texto": "La ley abolicionista estaba en su programa de 2023 y no se aprobó.",
+     "fuentes": [
+      "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/comparar/igualdad"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "psoe-349",
+   "url": "https://loquenocuentan.com/psoe#psoe-349",
+   "partido": "PSOE",
+   "tema": "Igualdad",
+   "origen": "Programa 29-N",
+   "texto": "Convertir en delito los «deepfakes» sexuales.",
+   "fuente": "PSOE 2026, medida 349 (p. 85)",
+   "fuente_url": "https://www.democrata.es/uploads/s1/35/40/05/6/programapsoe29n26.pdf#page=84",
+   "observaciones": []
+  },
+  {
+   "id": "psoe-370",
+   "url": "https://loquenocuentan.com/psoe#psoe-370",
+   "partido": "PSOE",
+   "tema": "Igualdad",
+   "origen": "Programa 29-N",
+   "texto": "«Unión de amistad» en el Código Civil: amparo legal para amigos que se comprometen a cuidarse.",
+   "fuente": "PSOE 2026, medida 370 (p. 90-91)",
+   "fuente_url": "https://www.democrata.es/uploads/s1/35/40/05/6/programapsoe29n26.pdf#page=89",
+   "observaciones": [
+    {
+     "etiqueta": "Contexto",
+     "texto": "Toma como modelo una figura del derecho civil de Navarra.",
+     "fuentes": [
+      "https://elpais.com/espana/elecciones-generales/2026-11-15/el-psoe-propone-destinar-el-1-del-pib-a-vivienda-social-y-crear-una-prestacion-estatal-por-crianza.html"
+     ]
+    },
+    {
+     "etiqueta": "Sin concretar",
+     "texto": "Sin requisitos ni plazo.",
+     "fuentes": []
+    }
+   ]
+  },
+  {
+   "id": "psoe-325",
+   "url": "https://loquenocuentan.com/psoe#psoe-325",
+   "partido": "PSOE",
+   "tema": "Igualdad",
+   "origen": "Programa 29-N",
+   "texto": "Ampliar los permisos y la reducción de jornada para cuidar de hijos hasta los 16 años.",
+   "fuente": "PSOE 2026, medida 325 (p. 81)",
+   "fuente_url": "https://www.democrata.es/uploads/s1/35/40/05/6/programapsoe29n26.pdf#page=80",
+   "observaciones": [
+    {
+     "etiqueta": "Sin concretar",
+     "texto": "Sin fecha.",
+     "fuentes": []
+    }
+   ]
+  },
+  {
+   "id": "psoe-414",
+   "url": "https://loquenocuentan.com/psoe#psoe-414",
+   "partido": "PSOE",
+   "tema": "Igualdad",
+   "origen": "Programa 29-N",
+   "texto": "Castigar en el Código Penal las terapias de conversión.",
+   "fuente": "PSOE 2026, medida 414 (p. 98)",
+   "fuente_url": "https://www.democrata.es/uploads/s1/35/40/05/6/programapsoe29n26.pdf#page=97",
+   "observaciones": []
+  },
+  {
+   "id": "psoe-igualdad-8",
+   "url": "https://loquenocuentan.com/psoe#psoe-igualdad-8",
    "partido": "PSOE",
    "tema": "Igualdad",
    "origen": "Gobierno / ley",
@@ -6052,23 +7007,6 @@
     {
      "etiqueta": "Contexto",
      "texto": "La reforma constitucional exige tres quintos de cada cámara.",
-     "fuentes": []
-    }
-   ]
-  },
-  {
-   "id": "psoe-igualdad-2",
-   "url": "https://loquenocuentan.com/psoe#psoe-igualdad-2",
-   "partido": "PSOE",
-   "tema": "Igualdad",
-   "origen": "Programa anterior",
-   "texto": "Ley abolicionista de la prostitución.",
-   "fuente": "Política Electoral · igualdad",
-   "fuente_url": "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/comparar/igualdad",
-   "observaciones": [
-    {
-     "etiqueta": "Sin cumplir o caída",
-     "texto": "Estaba en su programa de 2023 y no se aprobó.",
      "fuentes": []
     }
    ]
@@ -6351,18 +7289,44 @@
    ]
   },
   {
-   "id": "psoe-energia-medio-ambiente-1",
-   "url": "https://loquenocuentan.com/psoe#psoe-energia-medio-ambiente-1",
+   "id": "psoe-234",
+   "url": "https://loquenocuentan.com/psoe#psoe-234",
    "partido": "PSOE",
    "tema": "Energía y medio ambiente",
-   "origen": "Gobierno / ley",
-   "texto": "Plan Nacional de Energía y Clima 2023-2030: 81 % de electricidad renovable en 2030.",
-   "fuente": "Política Electoral · medio ambiente",
-   "fuente_url": "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/comparar/medio-ambiente",
+   "origen": "Programa 29-N",
+   "texto": "Renovables hasta el 81 % de la generación eléctrica en 2030.",
+   "fuente": "PSOE 2026, medida 234 (p. 66)",
+   "fuente_url": "https://www.democrata.es/uploads/s1/35/40/05/6/programapsoe29n26.pdf#page=65",
+   "observaciones": [
+    {
+     "etiqueta": "Ya existe",
+     "texto": "Es el objetivo del Plan Nacional de Energía y Clima 2023-2030, ya vigente.",
+     "fuentes": [
+      "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/comparar/medio-ambiente"
+     ]
+    },
+    {
+     "etiqueta": "Contexto",
+     "texto": "En 2025 las renovables generaron el 55,5 % de la electricidad, según Red Eléctrica.",
+     "fuentes": [
+      "https://elpais.com/espana/elecciones-generales/2026-11-15/el-psoe-propone-destinar-el-1-del-pib-a-vivienda-social-y-crear-una-prestacion-estatal-por-crianza.html"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "psoe-240",
+   "url": "https://loquenocuentan.com/psoe#psoe-240",
+   "partido": "PSOE",
+   "tema": "Energía y medio ambiente",
+   "origen": "Programa 29-N",
+   "texto": "Mantener el calendario de cierre de las centrales nucleares hasta 2035.",
+   "fuente": "PSOE 2026, medida 240 (p. 67)",
+   "fuente_url": "https://www.democrata.es/uploads/s1/35/40/05/6/programapsoe29n26.pdf#page=66",
    "observaciones": [
     {
      "etiqueta": "Contexto",
-     "texto": "No ha presentado propuestas nuevas para el 29-N.",
+     "texto": "En agosto de 2026 su Gobierno autorizó prorrogar Almaraz hasta junio de 2030.",
      "fuentes": [
       "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/comparar/medio-ambiente"
      ]
@@ -6370,8 +7334,25 @@
    ]
   },
   {
-   "id": "psoe-energia-medio-ambiente-2",
-   "url": "https://loquenocuentan.com/psoe#psoe-energia-medio-ambiente-2",
+   "id": "psoe-251",
+   "url": "https://loquenocuentan.com/psoe#psoe-251",
+   "partido": "PSOE",
+   "tema": "Energía y medio ambiente",
+   "origen": "Programa 29-N",
+   "texto": "Centro Estatal de Predicción de Fenómenos Extremos y Agencia Estatal de Protección Civil y Emergencias.",
+   "fuente": "PSOE 2026, medida 251 (p. 68)",
+   "fuente_url": "https://www.democrata.es/uploads/s1/35/40/05/6/programapsoe29n26.pdf#page=67",
+   "observaciones": [
+    {
+     "etiqueta": "Sin concretar",
+     "texto": "Sin presupuesto ni plazo.",
+     "fuentes": []
+    }
+   ]
+  },
+  {
+   "id": "psoe-energia-medio-ambiente-4",
+   "url": "https://loquenocuentan.com/psoe#psoe-energia-medio-ambiente-4",
    "partido": "PSOE",
    "tema": "Energía y medio ambiente",
    "origen": "Gobierno / ley",
@@ -6392,23 +7373,6 @@
      "fuentes": [
       "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/comparar/medio-ambiente"
      ]
-    }
-   ]
-  },
-  {
-   "id": "psoe-energia-medio-ambiente-3",
-   "url": "https://loquenocuentan.com/psoe#psoe-energia-medio-ambiente-3",
-   "partido": "PSOE",
-   "tema": "Energía y medio ambiente",
-   "origen": "Declaración 2026",
-   "texto": "Un pacto de Estado frente a la emergencia climática.",
-   "fuente": "Política Electoral · medio ambiente",
-   "fuente_url": "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/comparar/medio-ambiente",
-   "observaciones": [
-    {
-     "etiqueta": "Sin concretar",
-     "texto": "Sin contenido concreto.",
-     "fuentes": []
     }
    ]
   },
@@ -6836,14 +7800,14 @@
    ]
   },
   {
-   "id": "psoe-territorio-1",
-   "url": "https://loquenocuentan.com/psoe#psoe-territorio-1",
+   "id": "psoe-229",
+   "url": "https://loquenocuentan.com/psoe#psoe-229",
    "partido": "PSOE",
    "tema": "Territorio y España vaciada",
-   "origen": "Declaración 2026",
-   "texto": "Nuevo modelo de financiación autonómica con unos 21.000 millones más en 2027.",
-   "fuente": "Política Electoral · sanidad",
-   "fuente_url": "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/comparar/sanidad",
+   "origen": "Programa 29-N",
+   "texto": "Nuevo sistema de financiación autonómica con 21.000 millones más.",
+   "fuente": "PSOE 2026, medida 229 (p. 61-62)",
+   "fuente_url": "https://www.democrata.es/uploads/s1/35/40/05/6/programapsoe29n26.pdf#page=60",
    "observaciones": [
     {
      "etiqueta": "Sin cumplir o caída",
@@ -6856,29 +7820,22 @@
      "fuentes": [
       "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/psoe"
      ]
-    },
-    {
-     "etiqueta": "Contexto",
-     "texto": "El Gobierno llega a las urnas sin presupuestos nuevos desde 2023.",
-     "fuentes": [
-      "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/psoe"
-     ]
     }
    ]
   },
   {
-   "id": "psoe-territorio-2",
-   "url": "https://loquenocuentan.com/psoe#psoe-territorio-2",
+   "id": "psoe-231",
+   "url": "https://loquenocuentan.com/psoe#psoe-231",
    "partido": "PSOE",
    "tema": "Territorio y España vaciada",
-   "origen": "Gobierno / ley",
-   "texto": "Condonar 83.252 millones de deuda autonómica.",
-   "fuente": "Política Electoral · PSOE",
-   "fuente_url": "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/psoe",
+   "origen": "Programa 29-N",
+   "texto": "Asumir una parte de los 83.000 millones de deuda autonómica.",
+   "fuente": "PSOE 2026, medida 231 (p. 62)",
+   "fuente_url": "https://www.democrata.es/uploads/s1/35/40/05/6/programapsoe29n26.pdf#page=61",
    "observaciones": [
     {
      "etiqueta": "Sin cumplir o caída",
-     "texto": "Superó las enmiendas a la totalidad de PP y Vox en julio, pero decayó con la legislatura.",
+     "texto": "La condonación superó las enmiendas a la totalidad de PP y Vox en julio, pero decayó con la legislatura.",
      "fuentes": [
       "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/psoe"
      ]
@@ -6886,21 +7843,56 @@
    ]
   },
   {
-   "id": "psoe-territorio-3",
-   "url": "https://loquenocuentan.com/psoe#psoe-territorio-3",
+   "id": "psoe-275",
+   "url": "https://loquenocuentan.com/psoe#psoe-275",
    "partido": "PSOE",
    "tema": "Territorio y España vaciada",
-   "origen": "Programa anterior",
-   "texto": "Servicios básicos a un máximo de 30 minutos en el medio rural.",
-   "fuente": "Programa PSOE 2023",
-   "fuente_url": "https://www.psoe.es/media-content/2023/07/PROGRAMA_ELECTORAL-GENERALES-2023.pdf",
+   "origen": "Programa 29-N",
+   "texto": "«País de los 30 minutos»: servicios básicos y transporte a media hora como máximo en el medio rural.",
+   "fuente": "PSOE 2026, medida 275 (p. 71)",
+   "fuente_url": "https://www.democrata.es/uploads/s1/35/40/05/6/programapsoe29n26.pdf#page=70",
    "observaciones": [
+    {
+     "etiqueta": "Sin cumplir o caída",
+     "texto": "Ya figuraba en su programa de 2023.",
+     "fuentes": [
+      "https://www.psoe.es/media-content/2023/07/PROGRAMA_ELECTORAL-GENERALES-2023.pdf"
+     ]
+    },
     {
      "etiqueta": "Sin concretar",
      "texto": "Sin calendario ni presupuesto.",
      "fuentes": []
     }
    ]
+  },
+  {
+   "id": "psoe-382",
+   "url": "https://loquenocuentan.com/psoe#psoe-382",
+   "partido": "PSOE",
+   "tema": "Territorio y España vaciada",
+   "origen": "Programa 29-N",
+   "texto": "Convertir el Senado en una cámara de representación territorial.",
+   "fuente": "PSOE 2026, medida 382 (p. 92)",
+   "fuente_url": "https://www.democrata.es/uploads/s1/35/40/05/6/programapsoe29n26.pdf#page=91",
+   "observaciones": [
+    {
+     "etiqueta": "Contexto",
+     "texto": "Exige reformar la Constitución: como mínimo, tres quintos de cada cámara (art. 167).",
+     "fuentes": []
+    }
+   ]
+  },
+  {
+   "id": "psoe-23",
+   "url": "https://loquenocuentan.com/psoe#psoe-23",
+   "partido": "PSOE",
+   "tema": "Territorio y España vaciada",
+   "origen": "Programa 29-N",
+   "texto": "19.000 millones de euros para conservar la red ferroviaria entre 2026 y 2030.",
+   "fuente": "PSOE 2026, medida 23 (p. 20)",
+   "fuente_url": "https://www.democrata.es/uploads/s1/35/40/05/6/programapsoe29n26.pdf#page=19",
+   "observaciones": []
   },
   {
    "id": "vox-40",
@@ -7426,8 +8418,87 @@
    ]
   },
   {
-   "id": "psoe-politica-exterior-1",
-   "url": "https://loquenocuentan.com/psoe#psoe-politica-exterior-1",
+   "id": "psoe-493",
+   "url": "https://loquenocuentan.com/psoe#psoe-493",
+   "partido": "PSOE",
+   "tema": "Política exterior",
+   "origen": "Programa 29-N",
+   "texto": "Defensa vinculada a la diplomacia y a las misiones internacionales, con modernización de las Fuerzas Armadas.",
+   "fuente": "PSOE 2026, medida 493 (p. 113)",
+   "fuente_url": "https://www.democrata.es/uploads/s1/35/40/05/6/programapsoe29n26.pdf#page=112",
+   "observaciones": [
+    {
+     "etiqueta": "Sin concretar",
+     "texto": "Ningún compromiso fija el gasto en porcentaje del PIB. La introducción rechaza el 5 % pactado en la OTAN.",
+     "fuentes": []
+    },
+    {
+     "etiqueta": "Contexto",
+     "texto": "Su Gobierno lo situó en el 2,1 %. España fue el único aliado que no asumió el 5 %.",
+     "fuentes": [
+      "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/psoe"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "psoe-468",
+   "url": "https://loquenocuentan.com/psoe#psoe-468",
+   "partido": "PSOE",
+   "tema": "Política exterior",
+   "origen": "Programa 29-N",
+   "texto": "Solución de los dos Estados para Israel y Palestina, con sanciones europeas a quien la obstaculice.",
+   "fuente": "PSOE 2026, medida 468 (p. 110)",
+   "fuente_url": "https://www.democrata.es/uploads/s1/35/40/05/6/programapsoe29n26.pdf#page=109",
+   "observaciones": [
+    {
+     "etiqueta": "Contexto",
+     "texto": "El programa no cita el embargo de armas a Israel, en vigor desde 2025.",
+     "fuentes": [
+      "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/psoe"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "psoe-459",
+   "url": "https://loquenocuentan.com/psoe#psoe-459",
+   "partido": "PSOE",
+   "tema": "Política exterior",
+   "origen": "Programa 29-N",
+   "texto": "Llegar al 0,7 % de la renta nacional en ayuda al desarrollo.",
+   "fuente": "PSOE 2026, medida 459 (p. 108)",
+   "fuente_url": "https://www.democrata.es/uploads/s1/35/40/05/6/programapsoe29n26.pdf#page=107",
+   "observaciones": [
+    {
+     "etiqueta": "Sin concretar",
+     "texto": "Sin fecha. Su programa de 2023 lo fijaba para 2030.",
+     "fuentes": [
+      "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/psoe"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "psoe-457",
+   "url": "https://loquenocuentan.com/psoe#psoe-457",
+   "partido": "PSOE",
+   "tema": "Política exterior",
+   "origen": "Programa 29-N",
+   "texto": "Impulsar un impuesto mínimo mundial a las grandes fortunas.",
+   "fuente": "PSOE 2026, medida 457 (p. 108)",
+   "fuente_url": "https://www.democrata.es/uploads/s1/35/40/05/6/programapsoe29n26.pdf#page=107",
+   "observaciones": [
+    {
+     "etiqueta": "Sin concretar",
+     "texto": "Depende de un acuerdo internacional. Sin tipo ni umbral.",
+     "fuentes": []
+    }
+   ]
+  },
+  {
+   "id": "psoe-politica-exterior-5",
+   "url": "https://loquenocuentan.com/psoe#psoe-politica-exterior-5",
    "partido": "PSOE",
    "tema": "Política exterior",
    "origen": "Gobierno / ley",
@@ -7441,53 +8512,6 @@
      "fuentes": [
       "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/psoe"
      ]
-    }
-   ]
-  },
-  {
-   "id": "psoe-politica-exterior-2",
-   "url": "https://loquenocuentan.com/psoe#psoe-politica-exterior-2",
-   "partido": "PSOE",
-   "tema": "Política exterior",
-   "origen": "Declaración 2026",
-   "texto": "Gasto en defensa del 2,1 % del PIB, sin aceptar el 5 % pactado en la OTAN.",
-   "fuente": "Política Electoral · PSOE",
-   "fuente_url": "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/psoe",
-   "observaciones": [
-    {
-     "etiqueta": "Contexto",
-     "texto": "España fue el único aliado que no asumió el 5 %. Le ha valido críticas de Donald Trump.",
-     "fuentes": [
-      "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/psoe"
-     ]
-    }
-   ]
-  },
-  {
-   "id": "psoe-politica-exterior-3",
-   "url": "https://loquenocuentan.com/psoe#psoe-politica-exterior-3",
-   "partido": "PSOE",
-   "tema": "Política exterior",
-   "origen": "Declaración 2026",
-   "texto": "Apoyo político y militar a Ucrania.",
-   "fuente": "Política Electoral · PSOE",
-   "fuente_url": "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/psoe",
-   "observaciones": []
-  },
-  {
-   "id": "psoe-politica-exterior-4",
-   "url": "https://loquenocuentan.com/psoe#psoe-politica-exterior-4",
-   "partido": "PSOE",
-   "tema": "Política exterior",
-   "origen": "Programa anterior",
-   "texto": "Ayuda al desarrollo hacia el 0,7 % de la renta nacional en 2030.",
-   "fuente": "Política Electoral · PSOE",
-   "fuente_url": "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/psoe",
-   "observaciones": [
-    {
-     "etiqueta": "Sin concretar",
-     "texto": "Objetivo de su programa de 2023, sin calendario intermedio.",
-     "fuentes": []
     }
    ]
   },

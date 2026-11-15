@@ -25,6 +25,7 @@ const low = s => s[0].toLowerCase() + s.slice(1);
 const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 const abs = u => /^https?:/.test(u) ? u : '/' + u.replace(/^\//, '');
 const fecha = iso => { const [y, m, d] = iso.split('-'); return `${+d} de ${['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre'][m - 1]} de ${y}`; };
+const lista = a => a.length > 1 ? a.slice(0, -1).join(', ') + ' y ' + a[a.length - 1] : a.join('');
 const plural = (n, a, b) => `${n} ${n === 1 ? a : b}`;
 
 const P = Object.fromEntries(PARTIES.map(([k, name, color, cand]) => [k, { k, name, color, cand, slug: PSLUG[k], items: [] }]));
@@ -165,7 +166,7 @@ const camarasHTML = t => CAMARAS.temas.includes(t) ? `<div class="camaras"><h3>Q
 const clavesHTML = t => CLAVES[t] ? `<aside class="context"><h2>Contexto: qué existe ya y quién decide</h2><ul>${CLAVES[t].map(claveLi).join('')}</ul>${camarasHTML(t)}</aside>` : '';
 
 /* Recuento de concreción sobre los programas oficiales (misma regla para todos: medida con alguna cifra, plazo o porcentaje). */
-const CONCR = { pp: { c: 62, n: 249, ids: [1, 5, 7, 9, 15, 19, 24, 28, 33, 35, 37, 41, 46, 65, 66, 67, 68, 70, 72, 75, 76, 79, 89, 105, 108, 114, 117, 126, 130, 139, 144, 148, 153, 154, 155, 156, 157, 158, 161, 168, 170, 171, 172, 174, 175, 179, 180, 181, 187, 188, 190, 191, 192, 203, 212, 220, 225, 228, 229, 230, 231, 249] }, vox: { c: 5, n: 115, ids: [2, 31, 34, 40, 94], extra: 'Ninguna dice cuánto cuesta ni cuándo se haría.' } };
+const CONCR = { pp: { c: 62, n: 249, ids: [1, 5, 7, 9, 15, 19, 24, 28, 33, 35, 37, 41, 46, 65, 66, 67, 68, 70, 72, 75, 76, 79, 89, 105, 108, 114, 117, 126, 130, 139, 144, 148, 153, 154, 155, 156, 157, 158, 161, 168, 170, 171, 172, 174, 175, 179, 180, 181, 187, 188, 190, 191, 192, 203, 212, 220, 225, 228, 229, 230, 231, 249] }, vox: { c: 5, n: 115, ids: [2, 31, 34, 40, 94], extra: 'Ninguna dice cuánto cuesta ni cuándo se haría.' } , psoe: { c: 57, n: 500, ids: [8, 22, 23, 32, 38, 40, 41, 42, 55, 56, 57, 59, 67, 87, 92, 97, 101, 102, 105, 106, 108, 119, 123, 124, 125, 128, 130, 133, 134, 135, 136, 137, 143, 160, 161, 178, 193, 214, 229, 231, 234, 240, 246, 275, 288, 325, 326, 338, 372, 374, 388, 399, 402, 406, 436, 453, 459], extra: 'Recuento provisional, hecho el día de la publicación.' } };
 const pct = k => Math.round(CONCR[k].c / CONCR[k].n * 100);
 const concrTile = k => CONCR[k] ? `<div class="tile"><b>${pct(k)} %</b><span>medidas con alguna cifra o plazo</span></div>` : '';
 const concrHTML = k => CONCR[k] ? `<aside class="context" id="concrecion"><h2>Cuánto concreta el programa</h2><ul><li><b>${esc(P[k].name)}: ${CONCR[k].c} de ${CONCR[k].n} medidas (${pct(k)} %) llevan alguna cifra, plazo o porcentaje.</b>${CONCR[k].extra ? ' ' + esc(CONCR[k].extra) : ''}</li>${Object.keys(CONCR).filter(x => x !== k).map(x => `<li>Con la misma regla, ${esc(ART[x])}: ${CONCR[x].c} de ${CONCR[x].n} (${pct(x)} %).</li>`).join('')}<li>Recuento propio sobre el texto oficial, que se aplicará a cada programa que se publique. <a href="/metodologia#concrecion">Regla y lista de medidas contadas</a>. <a href="/vox-programa-29n">Ver el programa de Vox página a página</a>.</li></ul></aside>` : '';
@@ -284,7 +285,7 @@ page({
 <ul><li>Un programa recoge promesas, no medidas aprobadas.</li>
 <li>Los partidos con menos documentación aparecen con más silencios. Eso refleja lo localizado hasta hoy, no necesariamente lo que piensan.</li>
 <li>Los partidos se ordenan por escaños de 2023, que no es una clasificación.</li>
-<li>Estado actual: ${PARTIES.filter(([k]) => P[k].short === 'Texto oficial').map(([k]) => P[k].name).join(' y ')} con texto oficial. ${PARTIES.filter(([k]) => P[k].short === 'Vía prensa').map(([k]) => P[k].name).join(' y ')} vía prensa. El resto se añadirá el día que publique su programa, con el mismo recuento.</li></ul></section>
+<li>Estado actual: ${lista(PARTIES.filter(([k]) => P[k].short === 'Texto oficial').map(([k]) => P[k].name))} con texto oficial. ${lista(PARTIES.filter(([k]) => P[k].short === 'Vía prensa').map(([k]) => P[k].name))} vía prensa. El resto se añadirá el día que publique su programa, con el mismo recuento.</li></ul></section>
 <section class="block prose" id="concrecion"><h2>Cómo se cuenta la concreción de un programa</h2>
 <p>Una medida cuenta como concreta si su texto compromete al menos una de estas cosas: un importe, una cantidad, un porcentaje, un plazo o fecha para hacerlo, una periodicidad («cada año», «cada trimestre») o un umbral numérico de aplicación (una edad, un número de habitantes, la duración de un mandato).</p>
 <p>No cuentan las cifras que solo describen el pasado o la situación actual, los nombres de planes con años («Agenda 2030», «presupuesto 2028-2034») ni las fórmulas vagas como «en la legislatura», «al inicio» o «desde el primer momento». Tampoco cuenta el número de la propia medida.</p>

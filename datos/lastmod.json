@@ -64,68 +64,68 @@
   "date": "2026-11-14"
  },
  "/psoe": {
-  "hash": "28e1f1df896e",
-  "date": "2026-11-14"
+  "hash": "004161ce7abd",
+  "date": "2026-11-15"
  },
  "/psoe/vivienda": {
-  "hash": "a25c9024ba9f",
-  "date": "2026-11-13"
+  "hash": "1590c392feab",
+  "date": "2026-11-15"
  },
  "/psoe/jovenes": {
-  "hash": "94cd38db76d4",
-  "date": "2026-11-13"
+  "hash": "4a790f0c7634",
+  "date": "2026-11-15"
  },
  "/psoe/sanidad": {
-  "hash": "c3c251dea896",
-  "date": "2026-11-13"
+  "hash": "77be600d7e3c",
+  "date": "2026-11-15"
  },
  "/psoe/pensiones": {
-  "hash": "64290cbf2717",
-  "date": "2026-11-14"
+  "hash": "e4e15fb6273d",
+  "date": "2026-11-15"
  },
  "/psoe/empleo": {
-  "hash": "0e5c3e80bebb",
-  "date": "2026-11-13"
+  "hash": "afaab3a921b2",
+  "date": "2026-11-15"
  },
  "/psoe/impuestos": {
-  "hash": "8931bea7d35c",
-  "date": "2026-11-13"
+  "hash": "ff0afc72c4a3",
+  "date": "2026-11-15"
  },
  "/psoe/educacion": {
-  "hash": "e6b0021986aa",
-  "date": "2026-11-13"
+  "hash": "97c41ac0db54",
+  "date": "2026-11-15"
  },
  "/psoe/universidades": {
-  "hash": "caec451b04bd",
-  "date": "2026-11-13"
+  "hash": "d0890e3a478b",
+  "date": "2026-11-15"
  },
  "/psoe/inmigracion": {
-  "hash": "2d7eb9d89c84",
-  "date": "2026-11-13"
+  "hash": "9e53002000ce",
+  "date": "2026-11-15"
  },
  "/psoe/discapacidad": {
-  "hash": "4f4b9b22f15b",
-  "date": "2026-11-13"
+  "hash": "1997be5fad6c",
+  "date": "2026-11-15"
  },
  "/psoe/dependencia": {
-  "hash": "cf8b0c75cfdd",
-  "date": "2026-11-13"
+  "hash": "f89183b72457",
+  "date": "2026-11-15"
  },
  "/psoe/servicios-sociales": {
-  "hash": "b383ee500950",
-  "date": "2026-11-13"
+  "hash": "85fbd147a9e1",
+  "date": "2026-11-15"
  },
  "/psoe/igualdad": {
-  "hash": "92ea0401e871",
-  "date": "2026-11-13"
+  "hash": "41f98df145bb",
+  "date": "2026-11-15"
  },
  "/psoe/territorio": {
-  "hash": "8e7ac5b453a2",
-  "date": "2026-11-13"
+  "hash": "abf9defe1070",
+  "date": "2026-11-15"
  },
  "/psoe/politica-exterior": {
-  "hash": "a6a4bb2b9bdb",
-  "date": "2026-11-13"
+  "hash": "a9cfe3204bc8",
+  "date": "2026-11-15"
  },
  "/vox": {
   "hash": "6d3c30f4220e",
@@ -512,71 +512,71 @@
   "date": "2026-11-13"
  },
  "/tema/vivienda": {
-  "hash": "145ca8d28bdc",
+  "hash": "738d3eb42f31",
   "date": "2026-11-15"
  },
  "/tema/jovenes": {
-  "hash": "80314b830fd1",
-  "date": "2026-11-13"
+  "hash": "5c17941e02e7",
+  "date": "2026-11-15"
  },
  "/tema/sanidad": {
-  "hash": "4b89d86930e6",
-  "date": "2026-11-14"
+  "hash": "ea2548d41e9b",
+  "date": "2026-11-15"
  },
  "/tema/pensiones": {
-  "hash": "d425a6481154",
+  "hash": "db319bbea058",
   "date": "2026-11-15"
  },
  "/tema/empleo": {
-  "hash": "6a74faf3530b",
+  "hash": "e70b5b464885",
   "date": "2026-11-15"
  },
  "/tema/impuestos": {
-  "hash": "6bce5e0dfe61",
-  "date": "2026-11-14"
+  "hash": "e64aaf46e19f",
+  "date": "2026-11-15"
  },
  "/tema/educacion": {
-  "hash": "03fe8d6aea75",
-  "date": "2026-11-13"
+  "hash": "939a7ac0fddc",
+  "date": "2026-11-15"
  },
  "/tema/universidades": {
-  "hash": "a5bddd313c15",
-  "date": "2026-11-14"
+  "hash": "2982b2443cf7",
+  "date": "2026-11-15"
  },
  "/tema/inmigracion": {
-  "hash": "f91b57524e0b",
+  "hash": "189e8bb49af9",
   "date": "2026-11-15"
  },
  "/tema/discapacidad": {
-  "hash": "58cec863b118",
-  "date": "2026-11-13"
+  "hash": "56debe02b8c6",
+  "date": "2026-11-15"
  },
  "/tema/dependencia": {
-  "hash": "2d90b45f5819",
-  "date": "2026-11-13"
+  "hash": "f027bfabc3ae",
+  "date": "2026-11-15"
  },
  "/tema/servicios-sociales": {
-  "hash": "b991236b5b52",
-  "date": "2026-11-14"
+  "hash": "f3cf621b4c39",
+  "date": "2026-11-15"
  },
  "/tema/igualdad": {
-  "hash": "3d095c14db96",
-  "date": "2026-11-14"
+  "hash": "05936a6477f9",
+  "date": "2026-11-15"
  },
  "/tema/territorio": {
-  "hash": "f4c66b634387",
+  "hash": "20e7c805e166",
   "date": "2026-11-15"
  },
  "/tema/politica-exterior": {
-  "hash": "e0f09ddad488",
-  "date": "2026-11-14"
+  "hash": "a36c9285f3a1",
+  "date": "2026-11-15"
  },
  "/metodologia": {
-  "hash": "810b4a4b7be8",
-  "date": "2026-11-14"
+  "hash": "4975c775bb53",
+  "date": "2026-11-15"
  },
  "/datos/medidas.json": {
-  "hash": "5c01050767af",
+  "hash": "dfa7c179c793",
   "date": "2026-11-15"
  },
  "/datos": {
@@ -584,7 +584,7 @@
   "date": "2026-11-15"
  },
  "/": {
-  "hash": "5c01050767af",
+  "hash": "dfa7c179c793",
   "date": "2026-11-15"
  },
  "/pp/justicia": {
@@ -600,16 +600,16 @@
   "date": "2026-11-14"
  },
  "/psoe/justicia": {
-  "hash": "920b9f2be7cf",
-  "date": "2026-11-14"
+  "hash": "61bf03fbb9c2",
+  "date": "2026-11-15"
  },
  "/psoe/seguridad": {
-  "hash": "cb372cdd1619",
-  "date": "2026-11-14"
+  "hash": "3c712f5aa8fc",
+  "date": "2026-11-15"
  },
  "/psoe/energia-medio-ambiente": {
-  "hash": "9ce9ba9f1a80",
-  "date": "2026-11-14"
+  "hash": "a022ee1698d3",
+  "date": "2026-11-15"
  },
  "/vox/justicia": {
   "hash": "058c478d2843",
@@ -744,19 +744,19 @@
   "date": "2026-11-14"
  },
  "/tema/justicia": {
-  "hash": "9e2290f1da2c",
-  "date": "2026-11-14"
+  "hash": "ace57b205a8c",
+  "date": "2026-11-15"
  },
  "/tema/seguridad": {
-  "hash": "1e0490919c92",
-  "date": "2026-11-14"
+  "hash": "971a36501568",
+  "date": "2026-11-15"
  },
  "/tema/energia-medio-ambiente": {
-  "hash": "c94bdbac7d3c",
-  "date": "2026-11-14"
+  "hash": "f953925881fe",
+  "date": "2026-11-15"
  },
  "/dossier": {
-  "hash": "5bd05b69374b",
+  "hash": "7e559230fc9d",
   "date": "2026-11-15"
  }
 }

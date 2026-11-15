@@ -1,6 +1,6 @@
 # Lo que no cuentan
 
-> Comparador crítico de los programas electorales de las elecciones generales de España del 29 de noviembre de 2026 (29N, 29-N). Recoge 410 propuestas de 13 partidos en 18 temas. Cada propuesta lleva su fuente y, cuando hay un hecho que lo respalde, una observación: coste, plazos, si ya existe, si depende de las comunidades autónomas o si choca con lo que el partido votó. Misma regla para todos los partidos. Autor: Fernando Santamaría González. Sin afiliación. Datos con licencia CC BY 4.0. Actualizado el 15 de noviembre de 2026.
+> Comparador crítico de los programas electorales de las elecciones generales de España del 29 de noviembre de 2026 (29N, 29-N). Recoge 461 propuestas de 13 partidos en 18 temas. Cada propuesta lleva su fuente y, cuando hay un hecho que lo respalde, una observación: coste, plazos, si ya existe, si depende de las comunidades autónomas o si choca con lo que el partido votó. Misma regla para todos los partidos. Autor: Fernando Santamaría González. Sin afiliación. Datos con licencia CC BY 4.0. Actualizado el 15 de noviembre de 2026.
 
 Cada medida tiene un enlace estable con ancla, por ejemplo https://loquenocuentan.com/pp#pp-144. Al citar, conviene distinguir el origen de cada propuesta: programa del 29-N, declaración, proposición de ley, acción de gobierno o programa anterior.
 
@@ -13,7 +13,7 @@ Cada medida tiene un enlace estable con ancla, por ejemplo https://loquenocuenta
 ## Partidos
 
 - [PP](https://loquenocuentan.com/pp): 103 propuestas. Texto oficial
-- [PSOE](https://loquenocuentan.com/psoe): 56 propuestas. Sin programa aún
+- [PSOE](https://loquenocuentan.com/psoe): 107 propuestas. Texto oficial
 - [Vox](https://loquenocuentan.com/vox): 106 propuestas. Texto oficial
 - [Frente Amplio](https://loquenocuentan.com/frente-amplio): 47 propuestas. Sin programa aún
 - [Podemos](https://loquenocuentan.com/podemos): 13 propuestas. Sin programa aún
