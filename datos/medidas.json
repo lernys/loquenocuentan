@@ -362,7 +362,7 @@
     },
     {
      "etiqueta": "Depende de las CCAA",
-     "texto": "Las zonas tensionadas las declaran las comunidades.",
+     "texto": "Las zonas tensionadas las declaran las comunidades. El programa propone que el ministerio publique su propio mapa donde no lo hagan (compromiso 63).",
      "fuentes": [
       "https://www.boe.es/buscar/act.php?id=BOE-A-2023-12203"
      ]
@@ -411,8 +411,25 @@
    ]
   },
   {
-   "id": "psoe-vivienda-9",
-   "url": "https://loquenocuentan.com/psoe#psoe-vivienda-9",
+   "id": "psoe-73",
+   "url": "https://loquenocuentan.com/psoe#psoe-73",
+   "partido": "PSOE",
+   "tema": "Vivienda",
+   "origen": "Programa 29-N",
+   "texto": "Permitir a los ayuntamientos un recargo sobre las noches en pisos turísticos.",
+   "fuente": "PSOE 2026, medida 73 (p. 33)",
+   "fuente_url": "https://www.democrata.es/uploads/s1/35/40/05/6/programapsoe29n26.pdf#page=32",
+   "observaciones": [
+    {
+     "etiqueta": "Sin concretar",
+     "texto": "Sin tipo ni fecha. El marco estatal respetaría los tributos autonómicos que ya existen.",
+     "fuentes": []
+    }
+   ]
+  },
+  {
+   "id": "psoe-vivienda-10",
+   "url": "https://loquenocuentan.com/psoe#psoe-vivienda-10",
    "partido": "PSOE",
    "tema": "Vivienda",
    "origen": "Gobierno / ley",
@@ -435,8 +452,8 @@
    ]
   },
   {
-   "id": "psoe-vivienda-10",
-   "url": "https://loquenocuentan.com/psoe#psoe-vivienda-10",
+   "id": "psoe-vivienda-11",
+   "url": "https://loquenocuentan.com/psoe#psoe-vivienda-11",
    "partido": "PSOE",
    "tema": "Vivienda",
    "origen": "Gobierno / ley",
@@ -454,8 +471,8 @@
    ]
   },
   {
-   "id": "psoe-vivienda-11",
-   "url": "https://loquenocuentan.com/psoe#psoe-vivienda-11",
+   "id": "psoe-vivienda-12",
+   "url": "https://loquenocuentan.com/psoe#psoe-vivienda-12",
    "partido": "PSOE",
    "tema": "Vivienda",
    "origen": "Gobierno / ley",
@@ -473,8 +490,8 @@
    ]
   },
   {
-   "id": "psoe-vivienda-12",
-   "url": "https://loquenocuentan.com/psoe#psoe-vivienda-12",
+   "id": "psoe-vivienda-13",
+   "url": "https://loquenocuentan.com/psoe#psoe-vivienda-13",
    "partido": "PSOE",
    "tema": "Vivienda",
    "origen": "Gobierno / ley",
@@ -492,8 +509,8 @@
    ]
   },
   {
-   "id": "psoe-vivienda-13",
-   "url": "https://loquenocuentan.com/psoe#psoe-vivienda-13",
+   "id": "psoe-vivienda-14",
+   "url": "https://loquenocuentan.com/psoe#psoe-vivienda-14",
    "partido": "PSOE",
    "tema": "Vivienda",
    "origen": "Proposición de ley",
@@ -1541,8 +1558,25 @@
    ]
   },
   {
-   "id": "psoe-sanidad-4",
-   "url": "https://loquenocuentan.com/psoe#psoe-sanidad-4",
+   "id": "psoe-155",
+   "url": "https://loquenocuentan.com/psoe#psoe-155",
+   "partido": "PSOE",
+   "tema": "Sanidad",
+   "origen": "Programa 29-N",
+   "texto": "Ayudas a las personas celíacas por el sobrecoste de los productos sin gluten.",
+   "fuente": "PSOE 2026, medida 155 (p. 52)",
+   "fuente_url": "https://www.democrata.es/uploads/s1/35/40/05/6/programapsoe29n26.pdf#page=51",
+   "observaciones": [
+    {
+     "etiqueta": "Sin concretar",
+     "texto": "Sin cuantía.",
+     "fuentes": []
+    }
+   ]
+  },
+  {
+   "id": "psoe-sanidad-5",
+   "url": "https://loquenocuentan.com/psoe#psoe-sanidad-5",
    "partido": "PSOE",
    "tema": "Sanidad",
    "origen": "Gobierno / ley",
@@ -2234,8 +2268,25 @@
    ]
   },
   {
-   "id": "psoe-pensiones-6",
-   "url": "https://loquenocuentan.com/psoe#psoe-pensiones-6",
+   "id": "psoe-107",
+   "url": "https://loquenocuentan.com/psoe#psoe-107",
+   "partido": "PSOE",
+   "tema": "Pensiones",
+   "origen": "Programa 29-N",
+   "texto": "Convertir las mutuas colaboradoras en entidades públicas de la Seguridad Social.",
+   "fuente": "PSOE 2026, medida 107 (p. 42)",
+   "fuente_url": "https://www.democrata.es/uploads/s1/35/40/05/6/programapsoe29n26.pdf#page=41",
+   "observaciones": [
+    {
+     "etiqueta": "Sin concretar",
+     "texto": "Sin calendario. Se remite al diálogo social.",
+     "fuentes": []
+    }
+   ]
+  },
+  {
+   "id": "psoe-pensiones-7",
+   "url": "https://loquenocuentan.com/psoe#psoe-pensiones-7",
    "partido": "PSOE",
    "tema": "Pensiones",
    "origen": "Gobierno / ley",
@@ -2827,6 +2878,40 @@
    ]
   },
   {
+   "id": "psoe-111",
+   "url": "https://loquenocuentan.com/psoe#psoe-111",
+   "partido": "PSOE",
+   "tema": "Empleo y autónomos",
+   "origen": "Programa 29-N",
+   "texto": "Recuperar los salarios de tramitación en los despidos, en los supuestos que fije la ley.",
+   "fuente": "PSOE 2026, medida 111 (p. 42)",
+   "fuente_url": "https://www.democrata.es/uploads/s1/35/40/05/6/programapsoe29n26.pdf#page=41",
+   "observaciones": [
+    {
+     "etiqueta": "Sin concretar",
+     "texto": "No dice en qué supuestos.",
+     "fuentes": []
+    }
+   ]
+  },
+  {
+   "id": "psoe-113",
+   "url": "https://loquenocuentan.com/psoe#psoe-113",
+   "partido": "PSOE",
+   "tema": "Empleo y autónomos",
+   "origen": "Programa 29-N",
+   "texto": "Derecho a paro para los becarios, en prácticas curriculares y extracurriculares.",
+   "fuente": "PSOE 2026, medida 113 (p. 43)",
+   "fuente_url": "https://www.democrata.es/uploads/s1/35/40/05/6/programapsoe29n26.pdf#page=42",
+   "observaciones": [
+    {
+     "etiqueta": "Sin concretar",
+     "texto": "Sin fecha ni requisitos.",
+     "fuentes": []
+    }
+   ]
+  },
+  {
    "id": "vox-8-empleo",
    "url": "https://loquenocuentan.com/vox#vox-8-empleo",
    "partido": "Vox",
@@ -3273,6 +3358,40 @@
      "fuentes": [
       "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/psoe"
      ]
+    }
+   ]
+  },
+  {
+   "id": "psoe-132",
+   "url": "https://loquenocuentan.com/psoe#psoe-132",
+   "partido": "PSOE",
+   "tema": "Impuestos",
+   "origen": "Programa 29-N",
+   "texto": "Tasa a los viajes de lujo con mucha huella de carbono: megayates, vuelos privados y billetes en clase «business».",
+   "fuente": "PSOE 2026, medida 132 (p. 49)",
+   "fuente_url": "https://www.democrata.es/uploads/s1/35/40/05/6/programapsoe29n26.pdf#page=48",
+   "observaciones": [
+    {
+     "etiqueta": "Sin concretar",
+     "texto": "Sin tipo ni recaudación prevista.",
+     "fuentes": []
+    }
+   ]
+  },
+  {
+   "id": "psoe-88",
+   "url": "https://loquenocuentan.com/psoe#psoe-88",
+   "partido": "PSOE",
+   "tema": "Impuestos",
+   "origen": "Programa 29-N",
+   "texto": "Deducción en el IRPF para rentas medias y bajas que se activa cuando suben los precios.",
+   "fuente": "PSOE 2026, medida 88 (p. 38)",
+   "fuente_url": "https://www.democrata.es/uploads/s1/35/40/05/6/programapsoe29n26.pdf#page=37",
+   "observaciones": [
+    {
+     "etiqueta": "Sin concretar",
+     "texto": "No fija la cuantía ni a partir de qué subida se activa.",
+     "fuentes": []
     }
    ]
   },
@@ -7899,6 +8018,34 @@
    "fuente": "PSOE 2026, medida 23 (p. 20)",
    "fuente_url": "https://www.democrata.es/uploads/s1/35/40/05/6/programapsoe29n26.pdf#page=19",
    "observaciones": []
+  },
+  {
+   "id": "psoe-32",
+   "url": "https://loquenocuentan.com/psoe#psoe-32",
+   "partido": "PSOE",
+   "tema": "Territorio y España vaciada",
+   "origen": "Programa 29-N",
+   "texto": "Reparar el firme de 5.000 km de carreteras del Estado en cuatro años, con 1.629 millones de euros.",
+   "fuente": "PSOE 2026, medida 32 (p. 22)",
+   "fuente_url": "https://www.democrata.es/uploads/s1/35/40/05/6/programapsoe29n26.pdf#page=21",
+   "observaciones": []
+  },
+  {
+   "id": "psoe-439",
+   "url": "https://loquenocuentan.com/psoe#psoe-439",
+   "partido": "PSOE",
+   "tema": "Territorio y España vaciada",
+   "origen": "Programa 29-N",
+   "texto": "Atención en las oficinas del Estado sin cita previa obligatoria y oficinas itinerantes en las comarcas rurales.",
+   "fuente": "PSOE 2026, medida 439 (p. 102)",
+   "fuente_url": "https://www.democrata.es/uploads/s1/35/40/05/6/programapsoe29n26.pdf#page=101",
+   "observaciones": [
+    {
+     "etiqueta": "Sin concretar",
+     "texto": "Sin fecha.",
+     "fuentes": []
+    }
+   ]
   },
   {
    "id": "vox-40",

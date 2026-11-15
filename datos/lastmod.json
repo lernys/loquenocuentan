@@ -64,11 +64,11 @@
   "date": "2026-11-14"
  },
  "/psoe": {
-  "hash": "e7e67578e8c5",
+  "hash": "69bdd249f381",
   "date": "2026-11-15"
  },
  "/psoe/vivienda": {
-  "hash": "1590c392feab",
+  "hash": "deeb4192950c",
   "date": "2026-11-15"
  },
  "/psoe/jovenes": {
@@ -76,19 +76,19 @@
   "date": "2026-11-15"
  },
  "/psoe/sanidad": {
-  "hash": "77be600d7e3c",
+  "hash": "6deb88e9a642",
   "date": "2026-11-15"
  },
  "/psoe/pensiones": {
-  "hash": "06a88c689ed3",
+  "hash": "ce59ede24b3c",
   "date": "2026-11-15"
  },
  "/psoe/empleo": {
-  "hash": "afaab3a921b2",
+  "hash": "29108e986cbc",
   "date": "2026-11-15"
  },
  "/psoe/impuestos": {
-  "hash": "77d065cc695a",
+  "hash": "a18b3651b6a0",
   "date": "2026-11-15"
  },
  "/psoe/educacion": {
@@ -120,7 +120,7 @@
   "date": "2026-11-15"
  },
  "/psoe/territorio": {
-  "hash": "abf9defe1070",
+  "hash": "cbdc5c10058c",
   "date": "2026-11-15"
  },
  "/psoe/politica-exterior": {
@@ -512,7 +512,7 @@
   "date": "2026-11-13"
  },
  "/tema/vivienda": {
-  "hash": "738d3eb42f31",
+  "hash": "3660427bf898",
   "date": "2026-11-15"
  },
  "/tema/jovenes": {
@@ -520,19 +520,19 @@
   "date": "2026-11-15"
  },
  "/tema/sanidad": {
-  "hash": "ea2548d41e9b",
+  "hash": "787a100a9d23",
   "date": "2026-11-15"
  },
  "/tema/pensiones": {
-  "hash": "9b58a92437e4",
+  "hash": "33b0498ce87b",
   "date": "2026-11-15"
  },
  "/tema/empleo": {
-  "hash": "e70b5b464885",
+  "hash": "e608def980d1",
   "date": "2026-11-15"
  },
  "/tema/impuestos": {
-  "hash": "abc5d9c7ce58",
+  "hash": "8b007972f4f2",
   "date": "2026-11-15"
  },
  "/tema/educacion": {
@@ -564,7 +564,7 @@
   "date": "2026-11-15"
  },
  "/tema/territorio": {
-  "hash": "20e7c805e166",
+  "hash": "7cc9b30ac764",
   "date": "2026-11-15"
  },
  "/tema/politica-exterior": {
@@ -576,7 +576,7 @@
   "date": "2026-11-15"
  },
  "/datos/medidas.json": {
-  "hash": "bc88404a0455",
+  "hash": "d6da4a921a44",
   "date": "2026-11-15"
  },
  "/datos": {
@@ -584,7 +584,7 @@
   "date": "2026-11-15"
  },
  "/": {
-  "hash": "bc88404a0455",
+  "hash": "d6da4a921a44",
   "date": "2026-11-15"
  },
  "/pp/justicia": {
@@ -756,7 +756,7 @@
   "date": "2026-11-15"
  },
  "/dossier": {
-  "hash": "ab6bea0c26c4",
+  "hash": "146daaeb5464",
   "date": "2026-11-15"
  }
 }
