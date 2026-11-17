@@ -3,7 +3,7 @@
  "autor": "Fernando Santamaría González",
  "licencia": "CC BY 4.0",
  "web": "https://loquenocuentan.com",
- "actualizado": "2026-11-15",
+ "actualizado": "2026-11-17",
  "medidas": [
   {
    "id": "pp-144",
@@ -6359,6 +6359,14 @@
      "etiqueta": "Sin concretar",
      "texto": "No dice qué pensiones ni con qué límites.",
      "fuentes": []
+    },
+    {
+     "etiqueta": "Ya existe",
+     "texto": "El síndrome de Down ya da acceso a la jubilación anticipada desde 2009: a los 56 años con un 45 % de discapacidad (Real Decreto 1851/2009). En 2023 los años cotizados exigidos con la discapacidad bajaron de 15 a 5. En julio de 2026 la lista sumó once patologías.",
+     "fuentes": [
+      "https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/inclusion/paginas/2023/180523-jubilacion-anticipada-discapacidad.aspx",
+      "https://www.inclusion.gob.es/w/el-gobierno-amplia-el-acceso-a-la-jubilacion-anticipada-por-razon-de-discapacidad-a-los-afectados-por-11-nuevas-patologias"
+     ]
     }
    ]
   },
@@ -6554,14 +6562,32 @@
    "partido": "PP",
    "tema": "Dependencia y cuidados",
    "origen": "Programa 29-N",
-   "texto": "Deducción del 40 % de lo que paguen las familias por atención profesional; el Estado cotizará por quien deje de trabajar para cuidar a un familiar.",
+   "texto": "Deducción del 40 % de lo que paguen las familias por atención profesional; el Estado cotizará por quien deje de trabajar o reduzca su jornada para cuidar a un familiar dependiente.",
    "fuente": "PP 2026, medida 114 (p. 35)",
    "fuente_url": "https://www.pp.es/wp-content/uploads/2026/11/LA-RECONSTRUCCION-NACIONAL.pdf#page=35",
    "observaciones": [
     {
      "etiqueta": "Ya existe",
-     "texto": "Desde 2019 el Estado ya paga la cotización de los cuidadores no profesionales. La deducción del 40 % es nueva.",
-     "fuentes": []
+     "texto": "El Estado ya paga la cotización de los cuidadores no profesionales. La figura existe desde 2007 y el pago estatal está en vigor desde el 1 de abril de 2019.",
+     "fuentes": [
+      "https://www.boe.es/eli/es/rd/2007/05/11/615",
+      "https://revista.seg-social.es/-/novedades-en-el-convenio-especial-para-cuidadores-no-profesionales"
+     ]
+    },
+    {
+     "etiqueta": "Contexto",
+     "texto": "En julio de 2012 había 179.829 convenios. El Real Decreto-ley 20/2012, del Gobierno del PP, hizo que desde 2013 la cuota la pagara el cuidador. En marzo de 2019 quedaban 7.304. El Real Decreto-ley 6/2019, del Gobierno del PSOE, devolvió el pago al Estado.",
+     "fuentes": [
+      "https://revista.seg-social.es/-/la-seguridad-social-registra-26.414-convenios-especiales-de-cuidadores-no-profesionales",
+      "https://revista.seg-social.es/-/novedades-en-el-convenio-especial-para-cuidadores-no-profesionales"
+     ]
+    },
+    {
+     "etiqueta": "Contexto",
+     "texto": "Lo nuevo de la propuesta: incluye a quien reduzca su jornada, cobre o no la prestación por cuidados en el entorno familiar. La deducción del 40 % también es nueva.",
+     "fuentes": [
+      "https://www.democrata.es/politica/feijoo-propone-que-el-cuidado-desgrava-40-de-deduccion-por-contratar-a-un-profesional-para-un-mayor-dependiente/"
+     ]
     }
    ]
   },
@@ -6655,6 +6681,54 @@
    "fuente": "PSOE 2026, medida 209 (p. 59)",
    "fuente_url": "https://www.democrata.es/uploads/s1/35/40/05/6/programapsoe29n26.pdf#page=58",
    "observaciones": []
+  },
+  {
+   "id": "psoe-207",
+   "url": "https://loquenocuentan.com/psoe#psoe-207",
+   "partido": "PSOE",
+   "tema": "Dependencia y cuidados",
+   "origen": "Programa 29-N",
+   "texto": "Mejorar la protección social de las cuidadoras principales y estudiar medidas que compensen el efecto de los cuidados en su carrera laboral.",
+   "fuente": "PSOE 2026, medida 207 (p. 58-59)",
+   "fuente_url": "https://www.democrata.es/uploads/s1/35/40/05/6/programapsoe29n26.pdf#page=57",
+   "observaciones": [
+    {
+     "etiqueta": "Sin concretar",
+     "texto": "Solo compromete «estudiar» medidas. Sin cifras ni plazos.",
+     "fuentes": []
+    },
+    {
+     "etiqueta": "Ya existe",
+     "texto": "Desde el 1 de abril de 2019 el Estado paga su cotización a la Seguridad Social.",
+     "fuentes": [
+      "https://revista.seg-social.es/-/novedades-en-el-convenio-especial-para-cuidadores-no-profesionales"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "psoe-322",
+   "url": "https://loquenocuentan.com/psoe#psoe-322",
+   "partido": "PSOE",
+   "tema": "Dependencia y cuidados",
+   "origen": "Programa 29-N",
+   "texto": "Igualar al salario mínimo la remuneración de las cuidadoras principales, reforzar la financiación de los servicios de cuidados y profesionalizar el sector.",
+   "fuente": "PSOE 2026, medida 322 (p. 81)",
+   "fuente_url": "https://www.democrata.es/uploads/s1/35/40/05/6/programapsoe29n26.pdf#page=80",
+   "observaciones": [
+    {
+     "etiqueta": "Sin concretar",
+     "texto": "Sin cifras ni plazos.",
+     "fuentes": []
+    },
+    {
+     "etiqueta": "Contexto",
+     "texto": "El salario mínimo de 2026 es de 1.221 € en 14 pagas.",
+     "fuentes": [
+      "https://www.politicaelectoral.com/es/espana/generales-2026/nacional/sumar"
+     ]
+    }
+   ]
   },
   {
    "id": "vox-95-dependencia",

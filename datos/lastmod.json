@@ -1,7 +1,7 @@
 {
  "/pp": {
-  "hash": "9a8988907211",
-  "date": "2026-11-15"
+  "hash": "5ea1670a3664",
+  "date": "2026-11-17"
  },
  "/pp/vivienda": {
   "hash": "6be6825d5948",
@@ -40,12 +40,12 @@
   "date": "2026-11-13"
  },
  "/pp/discapacidad": {
-  "hash": "9580c338f22f",
-  "date": "2026-11-13"
+  "hash": "d10f1ce75370",
+  "date": "2026-11-17"
  },
  "/pp/dependencia": {
-  "hash": "998a88e61445",
-  "date": "2026-11-13"
+  "hash": "18bfe1eccdf4",
+  "date": "2026-11-17"
  },
  "/pp/servicios-sociales": {
   "hash": "7590fd764913",
@@ -64,8 +64,8 @@
   "date": "2026-11-14"
  },
  "/psoe": {
-  "hash": "896188c9f773",
-  "date": "2026-11-15"
+  "hash": "ed6d2a11bbd9",
+  "date": "2026-11-17"
  },
  "/psoe/vivienda": {
   "hash": "4cbba9913454",
@@ -108,8 +108,8 @@
   "date": "2026-11-15"
  },
  "/psoe/dependencia": {
-  "hash": "44812b4dc339",
-  "date": "2026-11-15"
+  "hash": "079bec636166",
+  "date": "2026-11-17"
  },
  "/psoe/servicios-sociales": {
   "hash": "7c993e5f84d2",
@@ -172,8 +172,8 @@
   "date": "2026-11-13"
  },
  "/vox/dependencia": {
-  "hash": "bed281b5841c",
-  "date": "2026-11-13"
+  "hash": "8278f27a3849",
+  "date": "2026-11-17"
  },
  "/vox/servicios-sociales": {
   "hash": "eccb1e6a1bc0",
@@ -236,8 +236,8 @@
   "date": "2026-11-13"
  },
  "/frente-amplio/dependencia": {
-  "hash": "8877a186c0fb",
-  "date": "2026-11-13"
+  "hash": "003e3ab48968",
+  "date": "2026-11-17"
  },
  "/frente-amplio/servicios-sociales": {
   "hash": "2a562ead952b",
@@ -280,8 +280,8 @@
   "date": "2026-11-13"
  },
  "/podemos/dependencia": {
-  "hash": "ade96599dccf",
-  "date": "2026-11-13"
+  "hash": "936bbf111fa7",
+  "date": "2026-11-17"
  },
  "/podemos/servicios-sociales": {
   "hash": "33c13f653498",
@@ -328,8 +328,8 @@
   "date": "2026-11-13"
  },
  "/erc/dependencia": {
-  "hash": "2aab6c8fb89d",
-  "date": "2026-11-13"
+  "hash": "26f19e5ec822",
+  "date": "2026-11-17"
  },
  "/erc/servicios-sociales": {
   "hash": "65c8faaadbfe",
@@ -400,8 +400,8 @@
   "date": "2026-11-13"
  },
  "/pnv/dependencia": {
-  "hash": "bb209683a71f",
-  "date": "2026-11-13"
+  "hash": "895ab1cf832f",
+  "date": "2026-11-17"
  },
  "/pnv/servicios-sociales": {
   "hash": "4447b1c629a0",
@@ -424,8 +424,8 @@
   "date": "2026-11-13"
  },
  "/bng/dependencia": {
-  "hash": "14323697c322",
-  "date": "2026-11-13"
+  "hash": "e157c447db73",
+  "date": "2026-11-17"
  },
  "/bng/igualdad": {
   "hash": "83adb217b454",
@@ -452,8 +452,8 @@
   "date": "2026-11-13"
  },
  "/coalicion-canaria/dependencia": {
-  "hash": "42e0abe5dc78",
-  "date": "2026-11-13"
+  "hash": "97dc93c0ed31",
+  "date": "2026-11-17"
  },
  "/coalicion-canaria/servicios-sociales": {
   "hash": "99edbd3d33aa",
@@ -484,8 +484,8 @@
   "date": "2026-11-13"
  },
  "/salf/dependencia": {
-  "hash": "b8bc70cced63",
-  "date": "2026-11-13"
+  "hash": "18e79edbb727",
+  "date": "2026-11-17"
  },
  "/salf/servicios-sociales": {
   "hash": "5baf7a7f68da",
@@ -508,8 +508,8 @@
   "date": "2026-11-13"
  },
  "/upn/dependencia": {
-  "hash": "9451a1f30c0c",
-  "date": "2026-11-13"
+  "hash": "84ce57338751",
+  "date": "2026-11-17"
  },
  "/tema/vivienda": {
   "hash": "e9e9192c89de",
@@ -548,12 +548,12 @@
   "date": "2026-11-15"
  },
  "/tema/discapacidad": {
-  "hash": "56debe02b8c6",
-  "date": "2026-11-15"
+  "hash": "6958c0966992",
+  "date": "2026-11-17"
  },
  "/tema/dependencia": {
-  "hash": "38760ebe9765",
-  "date": "2026-11-15"
+  "hash": "6c0e53efeef4",
+  "date": "2026-11-17"
  },
  "/tema/servicios-sociales": {
   "hash": "c46759b8767f",
@@ -576,16 +576,16 @@
   "date": "2026-11-15"
  },
  "/datos/medidas.json": {
-  "hash": "7304b2806a6c",
-  "date": "2026-11-15"
+  "hash": "dda02b166d2d",
+  "date": "2026-11-17"
  },
  "/datos": {
-  "hash": "d64bf8d7238a",
-  "date": "2026-11-15"
+  "hash": "7e8cf671139e",
+  "date": "2026-11-17"
  },
  "/": {
-  "hash": "7304b2806a6c",
-  "date": "2026-11-15"
+  "hash": "dda02b166d2d",
+  "date": "2026-11-17"
  },
  "/pp/justicia": {
   "hash": "0878f65beb1e",
@@ -756,8 +756,8 @@
   "date": "2026-11-15"
  },
  "/dossier": {
-  "hash": "68f9b97307fc",
-  "date": "2026-11-15"
+  "hash": "b102a78b5237",
+  "date": "2026-11-17"
  },
  "/pp/democracia-derechos-digitales": {
   "hash": "4605726e6255",
