@@ -1,6 +1,6 @@
 {
  "/pp": {
-  "hash": "5ea1670a3664",
+  "hash": "fbf3a6e2c1ea",
   "date": "2026-11-17"
  },
  "/pp/vivienda": {
@@ -44,7 +44,7 @@
   "date": "2026-11-17"
  },
  "/pp/dependencia": {
-  "hash": "18bfe1eccdf4",
+  "hash": "2ae000aaa2e0",
   "date": "2026-11-17"
  },
  "/pp/servicios-sociales": {
@@ -64,7 +64,7 @@
   "date": "2026-11-14"
  },
  "/psoe": {
-  "hash": "ed6d2a11bbd9",
+  "hash": "bf43a6d07d96",
   "date": "2026-11-17"
  },
  "/psoe/vivienda": {
@@ -108,7 +108,7 @@
   "date": "2026-11-15"
  },
  "/psoe/dependencia": {
-  "hash": "079bec636166",
+  "hash": "d0131aa30064",
   "date": "2026-11-17"
  },
  "/psoe/servicios-sociales": {
@@ -172,7 +172,7 @@
   "date": "2026-11-13"
  },
  "/vox/dependencia": {
-  "hash": "8278f27a3849",
+  "hash": "f8ab0932a15a",
   "date": "2026-11-17"
  },
  "/vox/servicios-sociales": {
@@ -236,7 +236,7 @@
   "date": "2026-11-13"
  },
  "/frente-amplio/dependencia": {
-  "hash": "003e3ab48968",
+  "hash": "36a9dfe7d3f2",
   "date": "2026-11-17"
  },
  "/frente-amplio/servicios-sociales": {
@@ -280,7 +280,7 @@
   "date": "2026-11-13"
  },
  "/podemos/dependencia": {
-  "hash": "936bbf111fa7",
+  "hash": "03e8b7ffd8cd",
   "date": "2026-11-17"
  },
  "/podemos/servicios-sociales": {
@@ -328,7 +328,7 @@
   "date": "2026-11-13"
  },
  "/erc/dependencia": {
-  "hash": "26f19e5ec822",
+  "hash": "76c4c85b3ab1",
   "date": "2026-11-17"
  },
  "/erc/servicios-sociales": {
@@ -400,7 +400,7 @@
   "date": "2026-11-13"
  },
  "/pnv/dependencia": {
-  "hash": "895ab1cf832f",
+  "hash": "fd8babf67bf9",
   "date": "2026-11-17"
  },
  "/pnv/servicios-sociales": {
@@ -424,7 +424,7 @@
   "date": "2026-11-13"
  },
  "/bng/dependencia": {
-  "hash": "e157c447db73",
+  "hash": "824d6a40bc7e",
   "date": "2026-11-17"
  },
  "/bng/igualdad": {
@@ -452,7 +452,7 @@
   "date": "2026-11-13"
  },
  "/coalicion-canaria/dependencia": {
-  "hash": "97dc93c0ed31",
+  "hash": "191c003c7caa",
   "date": "2026-11-17"
  },
  "/coalicion-canaria/servicios-sociales": {
@@ -484,7 +484,7 @@
   "date": "2026-11-13"
  },
  "/salf/dependencia": {
-  "hash": "18e79edbb727",
+  "hash": "8cf95b1c546e",
   "date": "2026-11-17"
  },
  "/salf/servicios-sociales": {
@@ -508,7 +508,7 @@
   "date": "2026-11-13"
  },
  "/upn/dependencia": {
-  "hash": "84ce57338751",
+  "hash": "0586f5e7a3cb",
   "date": "2026-11-17"
  },
  "/tema/vivienda": {
@@ -552,7 +552,7 @@
   "date": "2026-11-17"
  },
  "/tema/dependencia": {
-  "hash": "6c0e53efeef4",
+  "hash": "16770b83101a",
   "date": "2026-11-17"
  },
  "/tema/servicios-sociales": {
@@ -576,7 +576,7 @@
   "date": "2026-11-15"
  },
  "/datos/medidas.json": {
-  "hash": "dda02b166d2d",
+  "hash": "860511cce80a",
   "date": "2026-11-17"
  },
  "/datos": {
@@ -584,7 +584,7 @@
   "date": "2026-11-17"
  },
  "/": {
-  "hash": "dda02b166d2d",
+  "hash": "860511cce80a",
   "date": "2026-11-17"
  },
  "/pp/justicia": {
@@ -756,7 +756,7 @@
   "date": "2026-11-15"
  },
  "/dossier": {
-  "hash": "b102a78b5237",
+  "hash": "7900b50f0431",
   "date": "2026-11-17"
  },
  "/pp/democracia-derechos-digitales": {

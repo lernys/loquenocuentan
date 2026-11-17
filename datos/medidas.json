@@ -6553,6 +6553,13 @@
      "fuentes": [
       "https://www.dsca.gob.es/comunicacion/notas-prensa/congreso-aprueba-reforma-ley-discapacidad-refundacion-sistema-dependencia"
      ]
+    },
+    {
+     "etiqueta": "Su voto",
+     "texto": "En julio de 2026 el PP se abstuvo en la reforma de la ley (en comisión votó en contra) y apoyó el decreto que añade 6.200 millones. Vox votó en contra.",
+     "fuentes": [
+      "https://www.eldiario.es/1_cc2609"
+     ]
     }
    ]
   },
@@ -6636,15 +6643,16 @@
    "fuente_url": "https://www.democrata.es/uploads/s1/35/40/05/6/programapsoe29n26.pdf#page=57",
    "observaciones": [
     {
-     "etiqueta": "Ya existe",
-     "texto": "La reforma de la dependencia se aprobó en julio de 2026.",
+     "etiqueta": "Contexto",
+     "texto": "Es la ley que aprobó el Gobierno de coalición PSOE-Sumar, en vigor desde el 23 de octubre de 2026. El compromiso es aplicarla y darle financiación de varios años.",
      "fuentes": [
+      "https://www.boe.es/eli/es/l/2026/10/01/4",
       "https://www.dsca.gob.es/comunicacion/notas-prensa/congreso-aprueba-reforma-ley-discapacidad-refundacion-sistema-dependencia"
      ]
     },
     {
      "etiqueta": "Sin concretar",
-     "texto": "Sin cifras ni plazos.",
+     "texto": "Sin cifras ni plazos en el texto del compromiso.",
      "fuentes": []
     },
     {
