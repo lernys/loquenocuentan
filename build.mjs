@@ -96,7 +96,7 @@ const ICON_SVG = '<svg viewBox="0 0 1092 1092" aria-hidden="true"><rect width="1
 const headerHTML = (cur = '') => `<a class="lq-skip" href="#contenido">Saltar al contenido</a>
 <header class="lq-top"><div class="lq-in">
 <a class="lq-brand" href="/" aria-label="${NAME}, inicio">${ICON_SVG}<span class="lq-word">lo que <b>no cuentan</b></span></a>
-<nav class="lq-nav" aria-label="Principal">${[['/#res', 'Comparar', 'comparar'], ['/#temas', 'Temas', 'temas'], ['/#partidos', 'Partidos', 'partidos'], ['/#cuentas', 'Las cuentas que no salen', 'cuentas'], ['/metodologia', 'Metodología', 'metodologia'], ['/datos', 'Datos', 'datos'], ['/dossier', 'Dossier', 'dossier']].map(([h, n, k]) => `<a href="${h}"${k === cur ? ' aria-current="page"' : ''}>${n}</a>`).join('')}</nav>
+<nav class="lq-nav" aria-label="Principal">${[['/#res', 'Comparar', 'comparar'], ['/#temas', 'Temas', 'temas'], ['/#partidos', 'Partidos', 'partidos'], ['/#cuentas', 'Las cuentas que no salen', 'cuentas'], ['/metodologia', 'Metodología', 'metodologia'], ['/datos', 'Datos', 'datos'], ['/dossier', 'Dossier', 'dossier'], ['/debate-cara-a-cara', 'Cara a cara', 'debate']].map(([h, n, k]) => `<a href="${h}"${k === cur ? ' aria-current="page"' : ''}>${n}</a>`).join('')}</nav>
 </div></header>`;
 const footerHTML = (date) => `<footer class="lq-foot"><div class="lq-in lq-fgrid">
 <div><a class="lq-brand" href="/">${ICON_SVG}<span class="lq-word">lo que <b>no cuentan</b></span></a>
@@ -600,6 +600,148 @@ ${Object.keys(CONCR).map(k => `<div class="ds-bar"><div><span>${esc(P[k].name)} 
 <p style="margin:0">Después del 29-N, el comparador pasa a seguir el cumplimiento: cada promesa del nuevo Gobierno, con su estado.</p></section>
 </div>`
 });
+
+/* ---------- 8c. Debate cara a cara (19 nov 2026) ---------- */
+/* Fuentes: VerificaRTVE, Newtral, elDiario.es y El País (textos del 19 y 20 nov).
+   Cada fila: [lo que dijo, lo que dicen los datos, quién lo verifica]. */
+const CARA = {
+  fuentes: [
+    ['VerificaRTVE', 'Verificación, datos y contexto del debate cara a cara entre Sánchez y Feijóo', '20 nov 2026, 00:30', ''],
+    ['Newtral', 'Verificación en directo del cara a cara entre Sánchez y Feijóo: datos y contexto', '19 nov 2026', ''],
+    ['elDiario.es', 'Todas las mentiras del cara a cara entre Sánchez y Feijóo', '20 nov 2026, 00:36', ''],
+    ['El País', 'Mentiras y medias verdades del debate cara a cara entre Pedro Sánchez y Alberto Núñez Feijóo', '19 nov 2026, 23:17', '']
+  ],
+  feijoo: {
+    n: 34, cierto: 8,
+    falso: [
+      ['«Usted ha excarcelado a 1.400 violadores» por la ley del «solo sí es sí».', 'El último dato oficial (CGPJ, noviembre de 2023) habla de 1.233 rebajas de pena y 126 excarcelaciones. La cifra de 1.400 no es oficial. Las rebajas sí ocurrieron.', 'RTVE · Newtral · El País'],
+      ['«Está usted imputado por financiación irregular en dos sumarios».', 'Ni Sánchez ni el PSOE están imputados. En octubre el juez Pedraz rechazó imputar al PSOE en el caso Leire Díez, como pedía la Fiscalía Anticorrupción. La investigación del juez Moreno sobre pagos en metálico no tiene imputados del PSOE.', 'RTVE · elDiario.es · El País'],
+      ['«Usted ha subido 100 veces los impuestos».', 'La cifra sale del Instituto Juan de Mariana. Cuenta como subida el fin de rebajas temporales, como el IVA de la luz, y cuenta varias veces la misma medida. Con ese método, Rajoy habría subido los impuestos 137 veces.', 'elDiario.es · El País'],
+      ['El ministro Cuerpo dijo que el sistema de pensiones «va a petar».', 'Cuerpo dijo en Onda Cero que el gasto crecerá por la jubilación del baby boom. Y añadió: «decir que va a crecer el gasto no es decir que el sistema no sea sostenible».', 'Newtral · elDiario.es · El País'],
+      ['El Ministerio de Vivienda solo ejecutó el 29 % de su presupuesto.', 'En 2025 ejecutó el 95,8 %, según Hacienda. El 32 % fue en 2024.', 'elDiario.es'],
+      ['España tendrá que devolver 80.000 millones de los fondos europeos.', 'La mayor parte es a fondo perdido. España renunció a 60.000 millones en préstamos. Lo que habría que devolver ronda los 20.000.', 'elDiario.es'],
+      ['«Prometió 184.000 viviendas y ha entregado 540».', 'Entre 2023 y mediados de 2026 se terminaron 47.346 viviendas protegidas (Observatorio de Vivienda). Las 540 son una suma de notas de prensa.', 'El País'],
+      ['En Barcelona la oferta de alquiler ha bajado un 69 %.', 'Se firman menos contratos nuevos porque los inquilinos se mudan menos (Incasòl). No hay ningún dato de una caída del 69 % de la oferta.', 'El País'],
+      ['Frontex no está en España.', 'Agentes de Frontex trabajan en Canarias desde hace años. El Gobierno pidió su ayuda en agosto, en la crisis de Ceuta.', 'Newtral'],
+      ['El Gobierno no ha explicado el apagón de abril de 2025.', 'Cuatro organismos han publicado sus causas. El Gobierno lo hizo dos meses después del apagón.', 'Newtral'],
+      ['La oficina anticorrupción de Baleares «no existía».', 'Se creó en 2016 y se suprimió en 2024, según el BOE.', 'Newtral'],
+      ['El PP rechazó el Tratado con Francia por las interconexiones eléctricas.', 'Su objeción fue otra: que ministros franceses pudieran asistir al Consejo de Ministros. El Constitucional avaló el texto y PP y Vox lo volvieron a rechazar.', 'El País'],
+      ['El 5 % del PIB en defensa «lo ha firmado usted en la OTAN».', 'España firmó con una cláusula de flexibilidad. El Gobierno calcula que le basta el 2,1 % hasta 2035.', 'El País'],
+      ['«La inseguridad se ha incrementado de forma exponencial».', 'La criminalidad es más baja que hace veinte años, con el doble de población extranjera. Tocó mínimo en 2021. En el primer semestre de 2026 subió un 0,5 %.', 'elDiario.es']
+    ],
+    eng: [
+      ['276.000 desahucios durante su mandato.', 'La cifra se refiere a lanzamientos, y no todos son desahucios. Además bajan: de 67.000 en 2015 a unos 24.500 en 2025. RTVE y Newtral no dan la misma cifra total.', 'RTVE · Newtral'],
+      ['España es el tercer país de la UE que más ha subido la presión fiscal.', 'Es cierto que sube. Pero España sigue por debajo de la media europea: 38,1 % del PIB frente al 40,7 %.', 'RTVE · Newtral · elDiario.es'],
+      ['Se han perdido 400.000 pisos de alquiler «por la okupación».', 'Es la caída de anuncios en Idealista. Nada prueba que la causa sea la okupación.', 'Newtral · elDiario.es'],
+      ['Los pisos turísticos son solo el 1 % de las viviendas.', 'Son el 1,28 % en toda España, pero pasan del 10 % en muchos barrios céntricos.', 'El País'],
+      ['El salario neto ha perdido un 3,8 % de poder adquisitivo.', 'Es un cálculo del Instituto Juan de Mariana. Los expertos del salario mínimo calculan una ganancia de 2,5 puntos entre 2022 y 2026.', 'El País'],
+      ['«Usted está investigado por la Fiscalía Europea» por las pulseras.', 'Se investiga la compra de pulseras del Ministerio de Igualdad, no a Sánchez. Los fallos de las pulseras sí son reales.', 'El País'],
+      ['España tiene el 70 % de los muertos en alta velocidad del mundo.', 'Desde 1964 es alrededor del 50 %. El 70 % solo vale si se cuenta desde el año 2000.', 'El País'],
+      ['Sánchez ha subido la deuda «más que nadie».', 'Con Rajoy creció más deprisa: 188,5 millones al día, frente a 178,9 con Sánchez. Sobre el PIB, baja casi 14 puntos desde 2021.', 'Newtral'],
+      ['Expulsará a los inmigrantes que cometan delitos graves.', 'Lo presenta como nuevo, pero ya lo permiten el Código Penal y la Ley de Extranjería.', 'elDiario.es'],
+      ['El CNI avisó antes de la entrada masiva en Ceuta.', 'Hubo un aviso de la Policía Nacional el 28 de julio, no del CNI.', 'Newtral'],
+      ['Los médicos llevan un año y medio de huelga.', 'Hubo paros sueltos desde junio de 2025. La huelga indefinida empezó en febrero.', 'Newtral'],
+      ['Sánchez faltó al «funeral de Estado» por Urda.', 'Fue un funeral católico organizado por el Arzobispado de Toledo, no un funeral de Estado.', 'El País']
+    ]
+  },
+  sanchez: {
+    n: 19, cierto: 10, nc: 2,
+    falso: [
+      ['«Hemos construido durante estos ocho años un millón de viviendas».', 'Se terminaron entre 694.000 y 752.000, según la fuente. El millón se acerca a las obras empezadas o a los permisos, no a las casas acabadas.', 'RTVE · Newtral · elDiario.es · El País'],
+      ['El PP lleva el 5 % del PIB en defensa en su programa.', 'El programa del PP no da esa cifra. La dijo un diputado del PP, Carlos Rojas, como «meta».', 'Newtral'],
+      ['En Barcelona, con la ley de vivienda, el alquiler ha bajado un 4,4 %.', 'Según Idealista, en octubre el alquiler subió un 0,3 % en un año. Lo que baja es el número de contratos nuevos.', 'Newtral']
+    ],
+    eng: [
+      ['«Hemos rehabilitado más de medio millón de viviendas».', 'Las 510.000 eran el objetivo del plan europeo. Las ayudas aprobadas son 455.849 y no todas son obras terminadas.', 'RTVE · El País'],
+      ['Ha subido las pensiones 600 euros.', 'La pensión media de jubilación subió unos 494 euros al mes. Y es una media: no todos los pensionistas cobran eso de más.', 'Newtral · El País'],
+      ['19.000 millones para el mantenimiento de la alta velocidad.', 'Es la cifra de su programa. Lo pactado con los sindicatos en febrero son 8.152 millones en cinco años.', 'El País'],
+      ['Feijóo quiere que las menores de 16 y 17 años pidan permiso a sus padres para abortar.', 'Feijóo habló de que los padres lo sepan, no de que den permiso.', 'elDiario.es (23 oct) · Newtral']
+    ]
+  }
+};
+{
+  const F = CARA.feijoo, Sx = CARA.sanchez;
+  const pc = (a, b) => Math.round(a / b * 100);
+  const fila = ([d, v, w], k) => `<li class="cc-it ${k}"><p class="cc-d">${esc(d)}</p><p class="cc-v"><b>${k === 'f' ? 'Falso' : 'Engañoso'}.</b> ${esc(v)}</p><p class="cc-w">Lo verifica: ${esc(w)}</p></li>`;
+  const marc = (nom, x, col) => `<div class="cc-col" style="--c:${col}"><h3>${nom}</h3><p class="cc-big"><b>${x.falso.length}</b> falsas</p><p class="cc-sub">de ${x.n} afirmaciones revisadas · ${pc(x.falso.length, x.n)} %</p>
+<div class="cc-bars">${[['Falsas', x.falso.length, 'var(--red)'], ['Engañosas', x.eng.length, '#f08a24'], ['Ciertas o con matiz', x.cierto, 'var(--teal-l)'], ...(x.nc ? [['No comprobables', x.nc, '#8796a5']] : [])].map(([l, v, c]) => `<div class="cc-bar"><span>${l}</span><i><i style="width:${pc(v, 34)}%;background:${c}"></i></i><b>${v}</b></div>`).join('')}</div></div>`;
+  page({
+    url: '/debate-cara-a-cara',
+    title: `Debate cara a cara Sánchez-Feijóo: lo que fue falso · Elecciones generales 29N · ${NAME}`,
+    desc: `Todas las afirmaciones falsas y engañosas del cara a cara entre Pedro Sánchez y Alberto Núñez Feijóo del 19 de noviembre de 2026, con lo que dicen los datos y qué verificador lo comprobó.`,
+    nav: 'debate',
+    crumbs: [['Debate cara a cara', '/debate-cara-a-cara']],
+    ld: [{ '@context': 'https://schema.org', '@type': 'Article', headline: 'Debate cara a cara: Feijóo dijo 14 cosas falsas. Sánchez, 3.', datePublished: '2026-11-20', url: SITE + '/debate-cara-a-cara', author: person, publisher: org, inLanguage: 'es' }],
+    body: `<style>
+.cc{display:flex;flex-direction:column;gap:22px}
+.cc h2{font:800 clamp(1.5rem,3.4vw,2.1rem)/1.08 var(--f-disp);letter-spacing:-.015em;margin:0}
+.cc-hero{background:var(--navy);color:#fff;border-radius:22px 22px 22px 8px;padding:34px 30px;display:flex;flex-direction:column;gap:20px}
+.cc-hero h1{font:800 clamp(2.1rem,6.4vw,3.9rem)/.98 var(--f-disp);letter-spacing:-.025em;margin:0;color:#fff}
+.cc-hero h1 em{font-style:normal;color:var(--yellow)}
+.cc-lead{margin:0;color:#d5dde5;font-size:1.15rem;max-width:62ch}
+.cc-score{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:12px}
+.cc-col{background:var(--navy2);border-radius:18px;padding:18px 20px;border-top:8px solid var(--c);display:flex;flex-direction:column;gap:6px}
+.cc-col h3{margin:0;font:800 1.25rem var(--f-disp)}
+.cc-big{margin:0;font-size:1.2rem}.cc-big b{font:800 clamp(3.4rem,10vw,5.6rem)/.86 var(--f-disp);letter-spacing:-.04em;color:var(--yellow);margin-right:6px}
+.cc-sub{margin:0;color:#aeb9c4;font-size:.95rem}
+.cc-bars{display:flex;flex-direction:column;gap:7px;margin-top:8px}
+.cc-bar{display:grid;grid-template-columns:150px 1fr 28px;gap:10px;align-items:center;font-size:.9rem;color:#d5dde5}
+.cc-bar>i{display:block;height:14px;border-radius:5px;background:#33404f}.cc-bar>i>i{display:block;height:100%;border-radius:5px}
+.cc-bar b{text-align:right}
+.cc-intro{background:#eef2f5;color:var(--navy);border-radius:22px 22px 22px 8px;padding:26px 28px;display:flex;flex-direction:column;gap:12px}
+.cc-intro p{margin:0;font-size:1.08rem;line-height:1.55;max-width:70ch}
+.cc-sec{border-radius:22px 22px 22px 8px;padding:26px 24px;display:flex;flex-direction:column;gap:14px}
+.cc-sec.pp{background:#e8f0fa;border-left:10px solid #1f6fc4}
+.cc-sec.ps{background:#fbeceb;border-left:10px solid #d8261c}
+.cc-sec h2 span{display:inline-block;font:700 .8rem var(--f-body,inherit);letter-spacing:.1em;text-transform:uppercase;color:#fff;background:var(--red);border-radius:999px;padding:4px 12px;vertical-align:middle;margin-left:8px}
+.cc-sec h2 span.o{background:#c46a12}
+.cc-list{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.cc-it{background:#fff;border-radius:16px 16px 16px 6px;padding:16px 18px;display:flex;flex-direction:column;gap:8px;border-top:5px solid var(--red)}
+.cc-it.e{border-top-color:#f08a24}
+.cc-d{margin:0;font:700 1.08rem/1.3 var(--f-disp);color:var(--navy)}
+.cc-v{margin:0;color:#2f3b47;line-height:1.45}.cc-v b{color:var(--red)}.cc-it.e .cc-v b{color:#b35a00}
+.cc-w{margin:0;font-size:.82rem;color:#5d6b78}
+.cc-dash{border:3px dashed var(--red);border-radius:16px;padding:16px 20px;background:#fff6f4;color:var(--navy);display:flex;flex-direction:column;gap:8px}
+.cc-dash p{margin:0;line-height:1.5}
+.cc-src{background:#fff;border:2px solid #dfe6ec;border-radius:18px;padding:20px 22px}
+.cc-src ul{margin:8px 0 0;padding-left:20px;display:flex;flex-direction:column;gap:4px}
+@media (max-width:760px){.cc-score,.cc-list{grid-template-columns:minmax(0,1fr)}.cc-hero,.cc-sec,.cc-intro{padding:22px 18px}.cc-bar{grid-template-columns:110px 1fr 24px}}
+</style>
+<div class="cc">
+<header class="cc-hero"><p class="kicker">Debate cara a cara · RTVE · 19 de noviembre de 2026</p>
+<h1>Feijóo dijo ${F.falso.length} cosas falsas. <em>Sánchez, ${Sx.falso.length}.</em></h1>
+<p class="cc-lead">Cuatro verificadores revisaron el debate: VerificaRTVE, Newtral, elDiario.es y El País. Hemos juntado lo que comprobaron. El resultado no está igualado.</p>
+<div class="cc-score">${marc('Alberto Núñez Feijóo · PP', F, '#1f6fc4')}${marc('Pedro Sánchez · PSOE', Sx, '#d8261c')}</div></header>
+
+<section class="cc-intro">
+<p>El cara a cara del jueves se jugó con cifras. Vivienda, impuestos, pensiones, deuda, inmigración. Cada candidato llegó cargado de datos. La pregunta es cuántos eran ciertos.</p>
+<p><b>Feijóo perdió esa partida con mucha diferencia.</b> De ${F.n} afirmaciones suyas revisadas, ${F.falso.length} eran falsas y ${F.eng.length} engañosas. Solo ${F.cierto} aguantaron la comprobación. Es decir, ${pc(F.falso.length, F.n)} de cada 100 de sus frases revisadas eran falsas. En Sánchez fueron ${pc(Sx.falso.length, Sx.n)} de cada 100.</p>
+<p>Y no fueron fallos menores. Feijóo dijo que Sánchez está imputado, y no lo está. Habló de 1.400 violadores excarcelados, y fueron 126. Puso en boca de un ministro una frase que no dijo. Negó que Frontex esté en España, y lleva años en Canarias.</p>
+<p>Sánchez también falló, y en el tema que más preocupa: <b>el millón de viviendas construidas no existe.</b> Se han terminado unas 750.000. Lo contamos igual, porque aquí la vara de medir es la misma para los dos.</p>
+</section>
+
+<section class="cc-sec pp"><h2>Lo que Feijóo dijo y era falso <span>${F.falso.length}</span></h2>
+<ul class="cc-list">${F.falso.map(r => fila(r, 'f')).join('')}</ul></section>
+
+<section class="cc-sec ps"><h2>Lo que Sánchez dijo y era falso <span>${Sx.falso.length}</span></h2>
+<ul class="cc-list">${Sx.falso.map(r => fila(r, 'f')).join('')}</ul></section>
+
+<section class="cc-sec pp"><h2>Feijóo: cifras con trampa <span class="o">${F.eng.length}</span></h2>
+<p style="margin:0">El dato existe, pero le falta contexto o se lee al revés.</p>
+<ul class="cc-list">${F.eng.map(r => fila(r, 'e')).join('')}</ul></section>
+
+<section class="cc-sec ps"><h2>Sánchez: cifras con trampa <span class="o">${Sx.eng.length}</span></h2>
+<p style="margin:0">El dato existe, pero le falta contexto o se lee al revés.</p>
+<ul class="cc-list">${Sx.eng.map(r => fila(r, 'e')).join('')}</ul></section>
+
+<div class="cc-dash"><p><b>Cómo lo hemos contado.</b> Sumamos lo que comprobaron los cuatro medios. Una frase cuenta una sola vez aunque la verifiquen varios. Cada medio elige qué frases revisa, y Feijóo dio más cifras que Sánchez: por eso le revisaron más. Por eso damos también el porcentaje. Las afirmaciones ciertas (${F.cierto} de Feijóo y ${Sx.cierto} de Sánchez) están en el marcador de arriba.</p>
+<p>¿Ves un error? Escríbenos a <a href="mailto:${MAIL}">${MAIL}</a>. Lo corregimos en público.</p></div>
+
+<section class="cc-src"><h2 style="font-size:1.3rem">Fuentes</h2><ul>${CARA.fuentes.map(([m, t, d, u]) => `<li><b>${esc(m)}</b>: ${u ? `<a href="${esc(u)}" rel="noopener">${esc(t)}</a>` : `«${esc(t)}»`}, ${esc(d)}.</li>`).join('')}</ul>
+<p class="mut" style="margin:10px 0 0">¿Quieres ver qué prometen? <a href="/pp">Programa del PP</a> · <a href="/psoe">Programa del PSOE</a> · <a href="/tema/vivienda">Vivienda, partido a partido</a></p></section>
+</div>`
+  });
+}
 
 /* ---------- 9. sitemap, robots, llms.txt, IndexNow ---------- */
 pages.sort((a, b) => a.url.length - b.url.length || a.url.localeCompare(b.url));
