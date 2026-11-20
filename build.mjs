@@ -616,8 +616,8 @@ const CARA = {
     falso: [
       ['«Usted ha excarcelado a 1.400 violadores» por la ley del «solo sí es sí».', 'El último dato oficial (CGPJ, noviembre de 2023) habla de 1.233 rebajas de pena y 126 excarcelaciones. La cifra de 1.400 no es oficial. Las rebajas sí ocurrieron.', 'RTVE · Newtral · El País'],
       ['«Está usted imputado por financiación irregular en dos sumarios».', 'Ni Sánchez ni el PSOE están imputados. En octubre el juez Pedraz rechazó imputar al PSOE en el caso Leire Díez, como pedía la Fiscalía Anticorrupción. La investigación del juez Moreno sobre pagos en metálico no tiene imputados del PSOE.', 'RTVE · elDiario.es · El País'],
-      ['«Usted ha subido 100 veces los impuestos».', 'La cifra sale del Instituto Juan de Mariana. Cuenta como subida el fin de rebajas temporales, como el IVA de la luz, y cuenta varias veces la misma medida. Con ese método, Rajoy habría subido los impuestos 137 veces.', 'elDiario.es · El País'],
-      ['El ministro Cuerpo dijo que el sistema de pensiones «va a petar».', 'Cuerpo dijo en Onda Cero que el gasto crecerá por la jubilación del baby boom. Y añadió: «decir que va a crecer el gasto no es decir que el sistema no sea sostenible».', 'Newtral · elDiario.es · El País'],
+      ['«Usted ha subido 100 veces los impuestos».', 'La cifra sale del Instituto Juan de Mariana. Cuenta como subida el fin de rebajas temporales, como el IVA de la luz, y cuenta varias veces la misma medida. Con ese método, Rajoy habría subido los impuestos 137 veces.', 'elDiario.es · El País', ['El PP repite esta cifra desde hace meses. Cinco días antes del debate, elDiario.es ya la había desmentido cuando la usó Juan Bravo en el debate económico de laSexta.', 'elDiario.es, 14 nov 2026', 'https://www.eldiario.es/economia/mentiras-pp-vox-debate-economico-inmigracion-falso-vaciado-pensiones_1_13663511.html']],
+      ['El ministro Cuerpo dijo que el sistema de pensiones «va a petar».', 'Cuerpo dijo en Onda Cero que el gasto crecerá por la jubilación del baby boom. Y añadió: «decir que va a crecer el gasto no es decir que el sistema no sea sostenible».', 'Newtral · elDiario.es · El País', ['Feijóo ya atribuyó a Cuerpo esa idea en la Cadena SER el 23 de octubre. elDiario.es lo desmintió ese mismo día. En el debate lo repitió.', 'elDiario.es, 23 oct 2026', 'https://www.eldiario.es/politica/falsedades-feijoo-entrevista-salario-minimo-irpf-aumento-edad-jubilacion_1_13609274.html']],
       ['El Ministerio de Vivienda solo ejecutó el 29 % de su presupuesto.', 'En 2025 ejecutó el 95,8 %, según Hacienda. El 32 % fue en 2024.', 'elDiario.es'],
       ['España tendrá que devolver 80.000 millones de los fondos europeos.', 'La mayor parte es a fondo perdido. España renunció a 60.000 millones en préstamos. Lo que habría que devolver ronda los 20.000.', 'elDiario.es'],
       ['«Prometió 184.000 viviendas y ha entregado 540».', 'Entre 2023 y mediados de 2026 se terminaron 47.346 viviendas protegidas (Observatorio de Vivienda). Las 540 son una suma de notas de prensa.', 'El País'],
@@ -662,7 +662,7 @@ const CARA = {
 {
   const F = CARA.feijoo, Sx = CARA.sanchez;
   const pc = (a, b) => Math.round(a / b * 100);
-  const fila = ([d, v, w], k) => `<li class="cc-it ${k}"><p class="cc-d">${esc(d)}</p><p class="cc-v"><b>${k === 'f' ? 'Falso' : 'Engañoso'}.</b> ${esc(v)}</p><p class="cc-w">Lo verifica: ${esc(w)}</p></li>`;
+  const fila = ([d, v, w, ya], k) => `<li class="cc-it ${k}${ya ? ' ya' : ''}">${ya ? '<span class="cc-ya">Ya desmentido antes del debate</span>' : ''}<p class="cc-d">${esc(d)}</p><p class="cc-v"><b>${k === 'f' ? 'Falso' : 'Engañoso'}.</b> ${esc(v)}</p>${ya ? `<p class="cc-yat">${esc(ya[0])} <a href="${esc(ya[2])}" rel="noopener">${esc(ya[1])}</a></p>` : ''}<p class="cc-w">Lo verifica: ${esc(w)}</p></li>`;
   const marc = (nom, x, col) => `<div class="cc-col" style="--c:${col}"><h3>${nom}</h3><p class="cc-big"><b>${x.falso.length}</b> falsas</p><p class="cc-sub">de ${x.n} afirmaciones revisadas · ${pc(x.falso.length, x.n)} %</p>
 <div class="cc-bars">${[['Falsas', x.falso.length, 'var(--red)'], ['Engañosas', x.eng.length, '#f08a24'], ['Ciertas o con matiz', x.cierto, 'var(--teal-l)'], ...(x.nc ? [['No comprobables', x.nc, '#8796a5']] : [])].map(([l, v, c]) => `<div class="cc-bar"><span>${l}</span><i><i style="width:${pc(v, 34)}%;background:${c}"></i></i><b>${v}</b></div>`).join('')}</div></div>`;
   page({
@@ -701,6 +701,9 @@ const CARA = {
 .cc-d{margin:0;font:700 1.08rem/1.3 var(--f-disp);color:var(--navy)}
 .cc-v{margin:0;color:#2f3b47;line-height:1.45}.cc-v b{color:var(--red)}.cc-it.e .cc-v b{color:#b35a00}
 .cc-w{margin:0;font-size:.82rem;color:#5d6b78}
+.cc-ya{align-self:flex-start;font:700 .74rem var(--f-body,inherit);letter-spacing:.08em;text-transform:uppercase;color:var(--navy);background:var(--yellow);border-radius:999px;padding:4px 12px}
+.cc-it.ya{box-shadow:inset 0 0 0 3px var(--yellow)}
+.cc-yat{margin:0;background:#fff8d6;border-radius:10px;padding:10px 12px;font-size:.93rem;line-height:1.45;color:#2f3b47}.cc-yat a{color:var(--navy);font-weight:700}
 .cc-dash{border:3px dashed var(--red);border-radius:16px;padding:16px 20px;background:#fff6f4;color:var(--navy);display:flex;flex-direction:column;gap:8px}
 .cc-dash p{margin:0;line-height:1.5}
 .cc-src{background:#fff;border:2px solid #dfe6ec;border-radius:18px;padding:20px 22px}
@@ -716,7 +719,7 @@ const CARA = {
 <section class="cc-intro">
 <p>El cara a cara del jueves se jugó con cifras. Vivienda, impuestos, pensiones, deuda, inmigración. Cada candidato llegó cargado de datos. La pregunta es cuántos eran ciertos.</p>
 <p><b>Feijóo perdió esa partida con mucha diferencia.</b> De ${F.n} afirmaciones suyas revisadas, ${F.falso.length} eran falsas y ${F.eng.length} engañosas. Solo ${F.cierto} aguantaron la comprobación. Es decir, ${pc(F.falso.length, F.n)} de cada 100 de sus frases revisadas eran falsas. En Sánchez fueron ${pc(Sx.falso.length, Sx.n)} de cada 100.</p>
-<p>Y no fueron fallos menores. Feijóo dijo que Sánchez está imputado, y no lo está. Habló de 1.400 violadores excarcelados, y fueron 126. Puso en boca de un ministro una frase que no dijo. Negó que Frontex esté en España, y lleva años en Canarias.</p>
+<p>Y no fueron fallos menores. Feijóo dijo que Sánchez está imputado, y no lo está. Habló de 1.400 violadores excarcelados, y fueron 126. Puso en boca de un ministro una frase que no dijo, y no era la primera vez. Negó que Frontex esté en España, y lleva años en Canarias.</p>
 <p>Sánchez también falló, y en el tema que más preocupa: <b>el millón de viviendas construidas no existe.</b> Se han terminado unas 750.000. Lo contamos igual, porque aquí la vara de medir es la misma para los dos.</p>
 </section>
 
